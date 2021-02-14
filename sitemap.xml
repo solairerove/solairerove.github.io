@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://solairerove.github.io/</loc>
-    <lastmod>2021-02-14T19:26:04+03:00</lastmod>
+    <loc>https://solairerove.github.io/posts/fibonacci/</loc>
+    <lastmod>2021-02-14T20:35:43+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/my-first-post/</loc>
-    <lastmod>2021-02-14T19:26:04+03:00</lastmod>
+    <loc>https://solairerove.github.io/</loc>
+    <lastmod>2021-02-14T20:35:43+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/posts/</loc>
+    <lastmod>2021-02-14T20:35:43+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/posts/my-first-post/</loc>
     <lastmod>2021-02-14T19:26:04+03:00</lastmod>
   </url>
   
