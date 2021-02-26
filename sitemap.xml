@@ -1,33 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://solairerove.github.io/posts/fibonacci/</loc>
-    <lastmod>2021-02-14T20:35:43+03:00</lastmod>
-  </url>
-  
-  <url>
+    <loc>https://solairerove.github.io/posts/binary-search/</loc>
+    <lastmod>2021-02-25T17:32:26+03:00</lastmod>
+  </url><url>
     <loc>https://solairerove.github.io/</loc>
-    <lastmod>2021-02-14T20:35:43+03:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-02-25T17:32:26+03:00</lastmod>
+  </url><url>
     <loc>https://solairerove.github.io/posts/</loc>
-    <lastmod>2021-02-14T20:35:43+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/posts/my-first-post/</loc>
-    <lastmod>2021-02-14T19:26:04+03:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-02-25T17:32:26+03:00</lastmod>
+  </url><url>
     <loc>https://solairerove.github.io/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://solairerove.github.io/tags/</loc>
   </url>
-  
 </urlset>

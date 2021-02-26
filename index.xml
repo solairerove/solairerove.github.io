@@ -6,23 +6,17 @@
     <description>Recent content on Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Feb 2021 20:35:43 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Feb 2021 17:32:26 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Fibonacci</title>
-      <link>https://solairerove.github.io/posts/fibonacci/</link>
-      <pubDate>Sun, 14 Feb 2021 20:35:43 +0300</pubDate>
+      <title>Binary Search</title>
+      <link>https://solairerove.github.io/posts/binary-search/</link>
+      <pubDate>Thu, 25 Feb 2021 17:32:26 +0300</pubDate>
       
-      <guid>https://solairerove.github.io/posts/fibonacci/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My first post</title>
-      <link>https://solairerove.github.io/posts/my-first-post/</link>
-      <pubDate>Sun, 14 Feb 2021 19:26:04 +0300</pubDate>
-      
-      <guid>https://solairerove.github.io/posts/my-first-post/</guid>
-      <description></description>
+      <guid>https://solairerove.github.io/posts/binary-search/</guid>
+      <description>Бинарный поиск - алгоритм, на вход которого подается отсортированный список элементов. Если искомый элемент присутствует, то бинарный поиск возвращает его позицию.
+Предположим, что вы загадали число от 1 до 100. При каждой попытке угадать я буду давать один из трех ответов: много, мало и угадал. Можно перебирать все вариант подряд: 1, 2, 3, 4. А можно исключить сразу половину чисел на каждом шаге: 50, 75, 63.
+binary search
+// O(log(n)) time | O(1) space private fun binarySearch(items: List&amp;lt;Int&amp;gt;, item: Int): Int { // храним границы части списка, в которой выполняется поиск  var low = 0 var high = items.</description>
     </item>
     
   </channel>
