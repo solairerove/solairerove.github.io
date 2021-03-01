@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Mar 2021 14:33:33 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Mar 2021 16:55:11 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Insertion Sort</title>
+      <link>https://solairerove.github.io/posts/insertion-sort/</link>
+      <pubDate>Mon, 01 Mar 2021 16:55:11 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/insertion-sort/</guid>
+      <description>Один из алгоритмов сортировки. На каждом шаге вставляет на свое место элемент в отсортированный подмассив.
+insertion sort
+// O(n^2) time | O(1) space fun insertionSort(arr: MutableList&amp;lt;Int&amp;gt;) { val n = arr.size for (i in 1 until n) { for (j in i downTo 0) { if (j &amp;gt; 0 &amp;amp;&amp;amp; arr[j] &amp;lt; arr[j - 1]) { swap(arr, j, j - 1) } } } } fun swap(arr: MutableList&amp;lt;Int&amp;gt;, i: Int, j: Int) { val temp = arr[i] arr[i] = arr[j] arr[j] = temp } </description>
+    </item>
+    
     <item>
       <title>Bubble Sort</title>
       <link>https://solairerove.github.io/posts/bubble-sort/</link>

@@ -105,6 +105,23 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="https://solairerove.github.io/posts/insertion-sort/" class="link black dim">
+        Insertion Sort
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Один из алгоритмов сортировки. На каждом шаге вставляет на свое место элемент в отсортированный подмассив.
+insertion sort
+// O(n^2) time | O(1) space fun insertionSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (i in 1 until n) { for (j in i downTo 0) { if (j &gt; 0 &amp;&amp; arr[j] &lt; arr[j - 1]) { swap(arr, j, j - 1) } } } } fun swap(arr: MutableList&lt;Int&gt;, i: Int, j: Int) { val temp = arr[i] arr[i] = arr[j] arr[j] = temp } 
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="https://solairerove.github.io/posts/bubble-sort/" class="link black dim">
         Bubble Sort
       </a>
