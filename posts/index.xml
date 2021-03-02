@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Mar 2021 16:55:11 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Mar 2021 11:33:16 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fibonacci</title>
+      <link>https://solairerove.github.io/posts/fibonacci/</link>
+      <pubDate>Tue, 02 Mar 2021 11:33:16 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/fibonacci/</guid>
+      <description>Один из классических рекурсивных алгоритмов. Последовательность чисел, где каждое последующее - сумма двух предыдущих.
+fibonacci
+// O(n) time | O(1) space fun getNthFibonacci(n: Int): Int { val lastTwo = mutableListOf(0, 1) for (cnt in 3..n) { val next = lastTwo.sum() lastTwo[0] = lastTwo[1] lastTwo[1] = next } return if (n &amp;gt; 1) lastTwo[1] else lastTwo[0] } </description>
+    </item>
+    
     <item>
       <title>Insertion Sort</title>
       <link>https://solairerove.github.io/posts/insertion-sort/</link>

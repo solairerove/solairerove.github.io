@@ -105,6 +105,23 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="https://solairerove.github.io/posts/fibonacci/" class="link black dim">
+        Fibonacci
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Один из классических рекурсивных алгоритмов. Последовательность чисел, где каждое последующее - сумма двух предыдущих.
+fibonacci
+// O(n) time | O(1) space fun getNthFibonacci(n: Int): Int { val lastTwo = mutableListOf(0, 1) for (cnt in 3..n) { val next = lastTwo.sum() lastTwo[0] = lastTwo[1] lastTwo[1] = next } return if (n &gt; 1) lastTwo[1] else lastTwo[0] } 
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="https://solairerove.github.io/posts/insertion-sort/" class="link black dim">
         Insertion Sort
       </a>

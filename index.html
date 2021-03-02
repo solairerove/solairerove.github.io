@@ -132,6 +132,32 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://solairerove.github.io/posts/fibonacci/" class="color-inherit dim link">
+            Fibonacci
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Один из классических рекурсивных алгоритмов. Последовательность чисел, где каждое последующее - сумма двух предыдущих.
+fibonacci
+// O(n) time | O(1) space fun getNthFibonacci(n: Int): Int { val lastTwo = mutableListOf(0, 1) for (cnt in 3..n) { val next = lastTwo.sum() lastTwo[0] = lastTwo[1] lastTwo[1] = next } return if (n &gt; 1) lastTwo[1] else lastTwo[0] } 
+        </div>
+          <a href="https://solairerove.github.io/posts/fibonacci/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="https://solairerove.github.io/posts/insertion-sort/" class="color-inherit dim link">
             Insertion Sort
             </a>
@@ -176,38 +202,18 @@ bubble sort
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://solairerove.github.io/posts/selection-sort/" class="color-inherit dim link">
-            Selection Sort
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Один из не эффективных алгоритмов сортировки. На каждом шаге находит минимальный элемент и меняет местами с текущим.
-selection sort
-// O(n^2) time | O(1) space fun selectionSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (i in 0 until n) { var min = i for (j in (i + 1) until n) { if (arr[j] &lt; arr[min]) { min = j } } swap(arr, i, min) } } fun swap(arr: MutableList&lt;Int&gt;, i: Int, j: Int) { val temp = arr[i] arr[i] = arr[j] arr[j] = temp } 
-        </div>
-          <a href="https://solairerove.github.io/posts/selection-sort/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://solairerove.github.io/posts/selection-sort/" class="link black dim">
+              Selection Sort
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://solairerove.github.io/posts/binary-search/" class="link black dim">
