@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Mar 2021 13:00:03 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Mar 2021 17:58:03 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Knapsack Problem</title>
+      <link>https://solairerove.github.io/posts/knapsack-problem/</link>
+      <pubDate>Thu, 04 Mar 2021 17:58:03 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/knapsack-problem/</guid>
+      <description>Формулировка задачи
+knapsack problem
+import java.text.DecimalFormat fun main() { var backPackSize = 50 val items = mutableListOf( Item(worth = 60, volume = 20, worthPerVolume = (60 / 20).toDouble()), Item(worth = 100, volume = 50, worthPerVolume = (100 / 50).toDouble()), Item(worth = 120, volume = 30, worthPerVolume = (120 / 30).toDouble()) ) items.sortByDescending { it.worthPerVolume } var res = 0.0 for (item in items) { if (item.volume &amp;lt; backPackSize) { res += item.</description>
+    </item>
+    
     <item>
       <title>Segments Covering by Unit</title>
       <link>https://solairerove.github.io/posts/segments-covering-by-unit/</link>
