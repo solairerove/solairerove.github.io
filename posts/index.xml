@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Mar 2021 17:58:03 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Mar 2021 18:55:57 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Number Partition</title>
+      <link>https://solairerove.github.io/posts/number-partition/</link>
+      <pubDate>Thu, 04 Mar 2021 18:55:57 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/number-partition/</guid>
+      <description>Формулировка задачи
+number partition
+fun main() { var n = 6 val res = mutableListOf&amp;lt;Int&amp;gt;() for (i in 1..n) { if (n - i &amp;gt;= i + 1) { res.add(i) } else { res.add(n) break } n -= i } print(&amp;#34;${res.size}\n&amp;#34;) res.forEach { print(&amp;#34;$it&amp;#34;) } } </description>
+    </item>
+    
     <item>
       <title>Knapsack Problem</title>
       <link>https://solairerove.github.io/posts/knapsack-problem/</link>
