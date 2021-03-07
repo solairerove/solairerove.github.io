@@ -6,7 +6,18 @@
     <description>Recent content on Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Mar 2021 18:55:57 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Mar 2021 15:55:23 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Naive Huffman Encode</title>
+      <link>https://solairerove.github.io/posts/naive-huffman-encode/</link>
+      <pubDate>Sun, 07 Mar 2021 15:55:23 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/naive-huffman-encode/</guid>
+      <description>Формулировка задачи
+naive huffman encode
+/** * abacabad * 4 14 * a: 0 * b: 10 * c: 110 * d: 111 * 01001100100111 */ fun main() { val s = &amp;#34;abacabad&amp;#34; val letterToFreq = getLetterToFrequency(s = s) val letterWeightStack = getLetterWeightStack(letterToFreq = letterToFreq) val huffmanResult = huffman(letterWeightStack = letterWeightStack) val dictionary = getDictionary(huffmanResult = huffmanResult) val encodedString = encodeString(stringToEncode = s, dictionary = dictionary) println(&amp;#34;${dictionary.keys.size}${encodedString.length}&amp;#34;) dictionary.forEach { println(&amp;#34;${it.key}: ${it.</description>
+    </item>
+    
     <item>
       <title>Number Partition</title>
       <link>https://solairerove.github.io/posts/number-partition/</link>

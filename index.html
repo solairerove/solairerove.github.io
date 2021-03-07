@@ -132,6 +132,32 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://solairerove.github.io/posts/naive-huffman-encode/" class="color-inherit dim link">
+            Naive Huffman Encode
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Формулировка задачи
+naive huffman encode
+/** * abacabad * 4 14 * a: 0 * b: 10 * c: 110 * d: 111 * 01001100100111 */ fun main() { val s = &#34;abacabad&#34; val letterToFreq = getLetterToFrequency(s = s) val letterWeightStack = getLetterWeightStack(letterToFreq = letterToFreq) val huffmanResult = huffman(letterWeightStack = letterWeightStack) val dictionary = getDictionary(huffmanResult = huffmanResult) val encodedString = encodeString(stringToEncode = s, dictionary = dictionary) println(&#34;${dictionary.keys.size}${encodedString.length}&#34;) dictionary.forEach { println(&#34;${it.key}: ${it.
+        </div>
+          <a href="https://solairerove.github.io/posts/naive-huffman-encode/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="https://solairerove.github.io/posts/number-partition/" class="color-inherit dim link">
             Number Partition
             </a>
@@ -176,38 +202,18 @@ import java.text.DecimalFormat fun main() { var backPackSize = 50 val items = mu
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://solairerove.github.io/posts/segments-covering-by-unit/" class="color-inherit dim link">
-            Segments Covering by Unit
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Даны отрезки на прямой. Найти такие точки, которые лежат на всех заданных отрезках. Найденное множество должно быть минимальным по размеру.
-Берем все концы отрезков (как левые, так и правые) и сортируем их. Для каждой точки сохраним номер отрезка. Также каким концом его она является (левым или правым). Учтем, что если есть несколько точек с одной координатой, то сначала будут идти левые концы, потом правые.
-Заведём коллекцию, в которой будут храниться номера отрезков, рассматриваемых в данный момент.
-        </div>
-          <a href="https://solairerove.github.io/posts/segments-covering-by-unit/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://solairerove.github.io/posts/segments-covering-by-unit/" class="link black dim">
+              Segments Covering by Unit
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://solairerove.github.io/posts/palindrome-check/" class="link black dim">
@@ -224,12 +230,6 @@ import java.text.DecimalFormat fun main() { var backPackSize = 50 val items = mu
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://solairerove.github.io/posts/fibonacci/" class="link black dim">
               Fibonacci
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="https://solairerove.github.io/posts/insertion-sort/" class="link black dim">
-              Insertion Sort
             </a>
           </h2>
         
