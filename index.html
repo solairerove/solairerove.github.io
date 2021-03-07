@@ -132,6 +132,32 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://solairerove.github.io/posts/huffman-decode/" class="color-inherit dim link">
+            Huffman Decode
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Формулировка задачи
+huffman decode
+// abacabad fun main() { val dictionary = mapOf( Pair(&#34;0&#34;, &#34;a&#34;), Pair(&#34;10&#34;, &#34;b&#34;), Pair(&#34;110&#34;, &#34;c&#34;), Pair(&#34;111&#34;, &#34;d&#34;) ) val s = &#34;01001100100111&#34; val stringBuilder = StringBuilder() var i = 0 while (i &lt; s.length) { var isCodeFound = false var code = s[i].toString() while (!isCodeFound) { if (dictionary.containsKey(code)) { stringBuilder.append(dictionary[code]) isCodeFound = true } else { code = code.plus(s[++i].toString()) isCodeFound = false } } i++ } print(stringBuilder.
+        </div>
+          <a href="https://solairerove.github.io/posts/huffman-decode/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="https://solairerove.github.io/posts/naive-huffman-encode/" class="color-inherit dim link">
             Naive Huffman Encode
             </a>
@@ -176,38 +202,18 @@ fun main() { var n = 6 val res = mutableListOf&lt;Int&gt;() for (i in 1..n) { if
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://solairerove.github.io/posts/knapsack-problem/" class="color-inherit dim link">
-            Knapsack Problem
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Формулировка задачи
-knapsack problem
-import java.text.DecimalFormat fun main() { var backPackSize = 50 val items = mutableListOf( Item(worth = 60, volume = 20, worthPerVolume = (60 / 20).toDouble()), Item(worth = 100, volume = 50, worthPerVolume = (100 / 50).toDouble()), Item(worth = 120, volume = 30, worthPerVolume = (120 / 30).toDouble()) ) items.sortByDescending { it.worthPerVolume } var res = 0.0 for (item in items) { if (item.volume &lt; backPackSize) { res += item.
-        </div>
-          <a href="https://solairerove.github.io/posts/knapsack-problem/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://solairerove.github.io/posts/knapsack-problem/" class="link black dim">
+              Knapsack Problem
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://solairerove.github.io/posts/segments-covering-by-unit/" class="link black dim">
@@ -224,12 +230,6 @@ import java.text.DecimalFormat fun main() { var backPackSize = 50 val items = mu
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://solairerove.github.io/posts/highest-common-factor/" class="link black dim">
               Highest Common Factor
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="https://solairerove.github.io/posts/fibonacci/" class="link black dim">
-              Fibonacci
             </a>
           </h2>
         

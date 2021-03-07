@@ -105,6 +105,23 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="https://solairerove.github.io/posts/huffman-decode/" class="link black dim">
+        Huffman Decode
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Формулировка задачи
+huffman decode
+// abacabad fun main() { val dictionary = mapOf( Pair(&#34;0&#34;, &#34;a&#34;), Pair(&#34;10&#34;, &#34;b&#34;), Pair(&#34;110&#34;, &#34;c&#34;), Pair(&#34;111&#34;, &#34;d&#34;) ) val s = &#34;01001100100111&#34; val stringBuilder = StringBuilder() var i = 0 while (i &lt; s.length) { var isCodeFound = false var code = s[i].toString() while (!isCodeFound) { if (dictionary.containsKey(code)) { stringBuilder.append(dictionary[code]) isCodeFound = true } else { code = code.plus(s[++i].toString()) isCodeFound = false } } i++ } print(stringBuilder.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="https://solairerove.github.io/posts/naive-huffman-encode/" class="link black dim">
         Naive Huffman Encode
       </a>
@@ -249,23 +266,6 @@ insertion sort
       Один из не эффективных алгоритмов сортировки, кроме случая, когда коллекция обратно отсортирована. На каждом шаге проталкивает самый большой элемент в конец списка.
 bubble sort
 // O(n^2) time | O(1) space fun bubbleSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (i in 0 until n) { for (j in 0 until (n - i - 1)) { if (arr[j + 1] &lt; arr[j]) { swap(arr, j + 1, j) } } } } fun swap(arr: MutableList&lt;Int&gt;, i: Int, j: Int) { val temp = arr[i] arr[i] = arr[j] arr[j] = temp } 
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://solairerove.github.io/posts/selection-sort/" class="link black dim">
-        Selection Sort
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Один из не эффективных алгоритмов сортировки. На каждом шаге находит минимальный элемент и меняет местами с текущим.
-selection sort
-// O(n^2) time | O(1) space fun selectionSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (i in 0 until n) { var min = i for (j in (i + 1) until n) { if (arr[j] &lt; arr[min]) { min = j } } swap(arr, i, min) } } fun swap(arr: MutableList&lt;Int&gt;, i: Int, j: Int) { val temp = arr[i] arr[i] = arr[j] arr[j] = temp } 
     </div>
   </div>
 </div>

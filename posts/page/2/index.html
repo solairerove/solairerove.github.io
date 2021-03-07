@@ -105,6 +105,23 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="https://solairerove.github.io/posts/selection-sort/" class="link black dim">
+        Selection Sort
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Один из не эффективных алгоритмов сортировки. На каждом шаге находит минимальный элемент и меняет местами с текущим.
+selection sort
+// O(n^2) time | O(1) space fun selectionSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (i in 0 until n) { var min = i for (j in (i + 1) until n) { if (arr[j] &lt; arr[min]) { min = j } } swap(arr, i, min) } } fun swap(arr: MutableList&lt;Int&gt;, i: Int, j: Int) { val temp = arr[i] arr[i] = arr[j] arr[j] = temp } 
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="https://solairerove.github.io/posts/binary-search/" class="link black dim">
         Binary Search
       </a>

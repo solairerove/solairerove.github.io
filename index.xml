@@ -6,7 +6,18 @@
     <description>Recent content on Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Mar 2021 15:55:23 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Mar 2021 18:25:44 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Huffman Decode</title>
+      <link>https://solairerove.github.io/posts/huffman-decode/</link>
+      <pubDate>Sun, 07 Mar 2021 18:25:44 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/huffman-decode/</guid>
+      <description>Формулировка задачи
+huffman decode
+// abacabad fun main() { val dictionary = mapOf( Pair(&amp;#34;0&amp;#34;, &amp;#34;a&amp;#34;), Pair(&amp;#34;10&amp;#34;, &amp;#34;b&amp;#34;), Pair(&amp;#34;110&amp;#34;, &amp;#34;c&amp;#34;), Pair(&amp;#34;111&amp;#34;, &amp;#34;d&amp;#34;) ) val s = &amp;#34;01001100100111&amp;#34; val stringBuilder = StringBuilder() var i = 0 while (i &amp;lt; s.length) { var isCodeFound = false var code = s[i].toString() while (!isCodeFound) { if (dictionary.containsKey(code)) { stringBuilder.append(dictionary[code]) isCodeFound = true } else { code = code.plus(s[++i].toString()) isCodeFound = false } } i++ } print(stringBuilder.</description>
+    </item>
+    
     <item>
       <title>Naive Huffman Encode</title>
       <link>https://solairerove.github.io/posts/naive-huffman-encode/</link>
