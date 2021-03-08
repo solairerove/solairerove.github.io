@@ -6,7 +6,20 @@
     <description>Recent content on Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Mar 2021 18:25:44 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Mar 2021 17:27:29 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Minimum Waiting Time</title>
+      <link>https://solairerove.github.io/posts/minimum-waiting-time/</link>
+      <pubDate>Mon, 08 Mar 2021 17:27:29 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/minimum-waiting-time/</guid>
+      <description>Given non-empty array of positive int, that define time to execute.
+Only one query can be executed at time, but in any order.
+Get minimal waiting time to execute all queries.
+Solid step is ascending sort.
+9 6 5 2 3 1 -&amp;gt; 1 2 3 5 6 9 -&amp;gt; 0 + 1 + (1 + 2) + (1 + 2 + 3) + (1 + 2 + 3 + 5) + (1 + 2 + 3 + 5 + 6) = 38</description>
+    </item>
+    
     <item>
       <title>Huffman Decode</title>
       <link>https://solairerove.github.io/posts/huffman-decode/</link>

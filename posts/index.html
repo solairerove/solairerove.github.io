@@ -105,6 +105,25 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="https://solairerove.github.io/posts/minimum-waiting-time/" class="link black dim">
+        Minimum Waiting Time
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Given non-empty array of positive int, that define time to execute.
+Only one query can be executed at time, but in any order.
+Get minimal waiting time to execute all queries.
+Solid step is ascending sort.
+9 6 5 2 3 1 -&gt; 1 2 3 5 6 9 -&gt; 0 + 1 + (1 + 2) + (1 + 2 + 3) + (1 + 2 + 3 + 5) + (1 + 2 + 3 + 5 + 6) = 38
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="https://solairerove.github.io/posts/huffman-decode/" class="link black dim">
         Huffman Decode
       </a>
@@ -249,23 +268,6 @@ fibonacci
       Один из алгоритмов сортировки. На каждом шаге вставляет на свое место элемент в отсортированный подмассив.
 insertion sort
 // O(n^2) time | O(1) space fun insertionSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (i in 1 until n) { for (j in i downTo 0) { if (j &gt; 0 &amp;&amp; arr[j] &lt; arr[j - 1]) { swap(arr, j, j - 1) } } } } fun swap(arr: MutableList&lt;Int&gt;, i: Int, j: Int) { val temp = arr[i] arr[i] = arr[j] arr[j] = temp } 
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://solairerove.github.io/posts/bubble-sort/" class="link black dim">
-        Bubble Sort
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Один из не эффективных алгоритмов сортировки, кроме случая, когда коллекция обратно отсортирована. На каждом шаге проталкивает самый большой элемент в конец списка.
-bubble sort
-// O(n^2) time | O(1) space fun bubbleSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (i in 0 until n) { for (j in 0 until (n - i - 1)) { if (arr[j + 1] &lt; arr[j]) { swap(arr, j + 1, j) } } } } fun swap(arr: MutableList&lt;Int&gt;, i: Int, j: Int) { val temp = arr[i] arr[i] = arr[j] arr[j] = temp } 
     </div>
   </div>
 </div>
