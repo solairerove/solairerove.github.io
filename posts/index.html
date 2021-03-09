@@ -105,6 +105,23 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="https://solairerove.github.io/posts/heap-sort/" class="link black dim">
+        Heap Sort
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      To be continued&hellip;
+heap sort
+// O(nlogn) time | O(1) space fun heapSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (k in n / 2 downTo 1) { sink(arr, k, n) } var k = n while (k &gt; 1) { swap(arr, 1, k--) sink(arr, 1, k) } } fun sink(arr: MutableList&lt;Int&gt;, k: Int, n: Int) { var idx = k while (2 * idx &lt;= n) { var j = 2 * idx if (j &lt; n &amp;&amp; less(arr, j, j + 1)) j++ if (!
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="https://solairerove.github.io/posts/minimum-waiting-time/" class="link black dim">
         Minimum Waiting Time
       </a>
@@ -251,23 +268,6 @@ fun gcd(p: Int, q: Int): Int { if (q == 0) { return p } val r = p % q return gcd
       Один из классических рекурсивных алгоритмов. Последовательность чисел, где каждое последующее - сумма двух предыдущих.
 fibonacci
 // O(n) time | O(1) space fun getNthFibonacci(n: Int): Int { val lastTwo = mutableListOf(0, 1) for (cnt in 3..n) { val next = lastTwo.sum() lastTwo[0] = lastTwo[1] lastTwo[1] = next } return if (n &gt; 1) lastTwo[1] else lastTwo[0] } 
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://solairerove.github.io/posts/insertion-sort/" class="link black dim">
-        Insertion Sort
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Один из алгоритмов сортировки. На каждом шаге вставляет на свое место элемент в отсортированный подмассив.
-insertion sort
-// O(n^2) time | O(1) space fun insertionSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (i in 1 until n) { for (j in i downTo 0) { if (j &gt; 0 &amp;&amp; arr[j] &lt; arr[j - 1]) { swap(arr, j, j - 1) } } } } fun swap(arr: MutableList&lt;Int&gt;, i: Int, j: Int) { val temp = arr[i] arr[i] = arr[j] arr[j] = temp } 
     </div>
   </div>
 </div>
