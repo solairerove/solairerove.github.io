@@ -6,7 +6,20 @@
     <description>Recent content in Posts on Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Mar 2021 17:45:39 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Mar 2021 20:27:42 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Min Heap</title>
+      <link>https://solairerove.github.io/posts/min-heap/</link>
+      <pubDate>Thu, 11 Mar 2021 20:27:42 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/min-heap/</guid>
+      <description>Main methods:
+ build heap sift down sift up insert remove  Node:
+ current node -&amp;gt; i child one -&amp;gt; (2 * i) + 1 child two -&amp;gt; (2 * i) + 2 parent node -&amp;gt; (i - 1) / 2  Transform array to heap (heapify)
+ foreach parent sink  min heap stepik max heap
+class MinHeap(arr: MutableList&amp;lt;Int&amp;gt;) { private val heap = buildHeap(arr) // O(1) time | O(1) space  fun peek(): Int { return heap[0] } // O(log(n)) time | O(1) space  fun remove(): Int { swap(heap, 0, heap.</description>
+    </item>
+    
     <item>
       <title>Heap Sort</title>
       <link>https://solairerove.github.io/posts/heap-sort/</link>

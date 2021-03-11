@@ -132,6 +132,34 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://solairerove.github.io/posts/min-heap/" class="color-inherit dim link">
+            Min Heap
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Main methods:
+ build heap sift down sift up insert remove  Node:
+ current node -&gt; i child one -&gt; (2 * i) + 1 child two -&gt; (2 * i) + 2 parent node -&gt; (i - 1) / 2  Transform array to heap (heapify)
+ foreach parent sink  min heap stepik max heap
+class MinHeap(arr: MutableList&lt;Int&gt;) { private val heap = buildHeap(arr) // O(1) time | O(1) space  fun peek(): Int { return heap[0] } // O(log(n)) time | O(1) space  fun remove(): Int { swap(heap, 0, heap.
+        </div>
+          <a href="https://solairerove.github.io/posts/min-heap/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="https://solairerove.github.io/posts/heap-sort/" class="color-inherit dim link">
             Heap Sort
             </a>
@@ -178,38 +206,18 @@ Solid step is ascending sort.
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://solairerove.github.io/posts/huffman-decode/" class="color-inherit dim link">
-            Huffman Decode
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Формулировка задачи
-huffman decode
-// abacabad fun main() { val dictionary = mapOf( Pair(&#34;0&#34;, &#34;a&#34;), Pair(&#34;10&#34;, &#34;b&#34;), Pair(&#34;110&#34;, &#34;c&#34;), Pair(&#34;111&#34;, &#34;d&#34;) ) val s = &#34;01001100100111&#34; val stringBuilder = StringBuilder() var i = 0 while (i &lt; s.length) { var isCodeFound = false var code = s[i].toString() while (!isCodeFound) { if (dictionary.containsKey(code)) { stringBuilder.append(dictionary[code]) isCodeFound = true } else { code = code.plus(s[++i].toString()) isCodeFound = false } } i++ } print(stringBuilder.
-        </div>
-          <a href="https://solairerove.github.io/posts/huffman-decode/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://solairerove.github.io/posts/huffman-decode/" class="link black dim">
+              Huffman Decode
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://solairerove.github.io/posts/naive-huffman-encode/" class="link black dim">
@@ -226,12 +234,6 @@ huffman decode
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://solairerove.github.io/posts/knapsack-problem/" class="link black dim">
               Knapsack Problem
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="https://solairerove.github.io/posts/segments-covering-by-unit/" class="link black dim">
-              Segments Covering by Unit
             </a>
           </h2>
         
