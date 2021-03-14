@@ -9,7 +9,9 @@
     <meta name="description" content="Main methods:
  build heap sift down sift up insert remove  Node:
  current node -&gt; i child one -&gt; (2 * i) &#43; 1 child two -&gt; (2 * i) &#43; 2 parent node -&gt; (i - 1) / 2  Transform array to heap (heapify)
- foreach parent sink  min heap stepik max heap
+ foreach parent sink  min heap
+Priority Queues
+stepik max heap
 class MinHeap(arr: MutableList&lt;Int&gt;) { private val heap = buildHeap(arr) // O(1) time | O(1) space  fun peek(): Int { return heap[0] } // O(log(n)) time | O(1) space  fun remove(): Int { swap(heap, 0, heap.">
     <meta name="generator" content="Hugo 0.81.0" />
     
@@ -38,7 +40,9 @@ class MinHeap(arr: MutableList&lt;Int&gt;) { private val heap = buildHeap(arr) /
 <meta property="og:description" content="Main methods:
  build heap sift down sift up insert remove  Node:
  current node -&gt; i child one -&gt; (2 * i) &#43; 1 child two -&gt; (2 * i) &#43; 2 parent node -&gt; (i - 1) / 2  Transform array to heap (heapify)
- foreach parent sink  min heap stepik max heap
+ foreach parent sink  min heap
+Priority Queues
+stepik max heap
 class MinHeap(arr: MutableList&lt;Int&gt;) { private val heap = buildHeap(arr) // O(1) time | O(1) space  fun peek(): Int { return heap[0] } // O(log(n)) time | O(1) space  fun remove(): Int { swap(heap, 0, heap." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://solairerove.github.io/posts/min-heap/" /><meta property="article:section" content="posts" />
@@ -49,16 +53,20 @@ class MinHeap(arr: MutableList&lt;Int&gt;) { private val heap = buildHeap(arr) /
 <meta itemprop="description" content="Main methods:
  build heap sift down sift up insert remove  Node:
  current node -&gt; i child one -&gt; (2 * i) &#43; 1 child two -&gt; (2 * i) &#43; 2 parent node -&gt; (i - 1) / 2  Transform array to heap (heapify)
- foreach parent sink  min heap stepik max heap
+ foreach parent sink  min heap
+Priority Queues
+stepik max heap
 class MinHeap(arr: MutableList&lt;Int&gt;) { private val heap = buildHeap(arr) // O(1) time | O(1) space  fun peek(): Int { return heap[0] } // O(log(n)) time | O(1) space  fun remove(): Int { swap(heap, 0, heap."><meta itemprop="datePublished" content="2021-03-11T20:27:42&#43;03:00" />
 <meta itemprop="dateModified" content="2021-03-11T20:27:42&#43;03:00" />
-<meta itemprop="wordCount" content="315">
+<meta itemprop="wordCount" content="299">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Min Heap"/>
 <meta name="twitter:description" content="Main methods:
  build heap sift down sift up insert remove  Node:
  current node -&gt; i child one -&gt; (2 * i) &#43; 1 child two -&gt; (2 * i) &#43; 2 parent node -&gt; (i - 1) / 2  Transform array to heap (heapify)
- foreach parent sink  min heap stepik max heap
+ foreach parent sink  min heap
+Priority Queues
+stepik max heap
 class MinHeap(arr: MutableList&lt;Int&gt;) { private val heap = buildHeap(arr) // O(1) time | O(1) space  fun peek(): Int { return heap[0] } // O(log(n)) time | O(1) space  fun remove(): Int { swap(heap, 0, heap."/>
 
 	
@@ -174,7 +182,8 @@ class MinHeap(arr: MutableList&lt;Int&gt;) { private val heap = buildHeap(arr) /
 <ul>
 <li>foreach parent sink</li>
 </ul>
-<p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/heap/MinHeap.kt">min heap</a>
+<p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/heap/MinHeap.kt">min heap</a><br>
+<a href="https://algs4.cs.princeton.edu/24pq/">Priority Queues</a><br>
 <a href="https://gist.github.com/solairerove/d1c50a0a88f72cab215e0955a27797dd">stepik max heap</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MinHeap</span>(arr: MutableList&lt;Int&gt;) {
 
@@ -189,7 +198,7 @@ class MinHeap(arr: MutableList&lt;Int&gt;) { private val heap = buildHeap(arr) /
 </span><span style="color:#75715e"></span>    <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">remove</span>(): Int {
         swap(heap, <span style="color:#ae81ff">0</span>, heap.size - <span style="color:#ae81ff">1</span>)
         <span style="color:#66d9ef">val</span> min = heap.removeAt(heap.size - <span style="color:#ae81ff">1</span>)
-        siftDown(heap, <span style="color:#ae81ff">0</span>, heap.size - <span style="color:#ae81ff">1</span>)
+        sink(heap, <span style="color:#ae81ff">0</span>, heap.size - <span style="color:#ae81ff">1</span>)
 
         <span style="color:#66d9ef">return</span> min
     }
@@ -197,47 +206,42 @@ class MinHeap(arr: MutableList&lt;Int&gt;) { private val heap = buildHeap(arr) /
     <span style="color:#75715e">// O(log(n)) time | O(1) space
 </span><span style="color:#75715e"></span>    <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">insert</span>(value: Int) {
         heap.add(value)
-        siftUp(heap, heap.size - <span style="color:#ae81ff">1</span>)
+        swim(heap, heap.size - <span style="color:#ae81ff">1</span>)
     }
 
     <span style="color:#75715e">// O(n) time | O(1) space
 </span><span style="color:#75715e"></span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">buildHeap</span>(arr: MutableList&lt;Int&gt;): MutableList&lt;Int&gt; {
         <span style="color:#66d9ef">val</span> parentIdx = (arr.size - <span style="color:#ae81ff">2</span>) / <span style="color:#ae81ff">2</span>
         <span style="color:#66d9ef">for</span> (k <span style="color:#66d9ef">in</span> parentIdx downTo <span style="color:#ae81ff">0</span>) {
-            siftDown(arr, k, arr.size - <span style="color:#ae81ff">1</span>)
+            sink(arr, k, arr.size - <span style="color:#ae81ff">1</span>)
         }
 
         <span style="color:#66d9ef">return</span> arr
     }
 
     <span style="color:#75715e">// O(log(n)) time | O(1) space
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">siftDown</span>(arr: MutableList&lt;Int&gt;, k: Int, n: Int) {
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">sink</span>(arr: MutableList&lt;Int&gt;, k: Int, n: Int) {
         <span style="color:#66d9ef">var</span> idx = k
-        <span style="color:#66d9ef">var</span> childOne = idx * <span style="color:#ae81ff">2</span> + <span style="color:#ae81ff">1</span>
-        <span style="color:#66d9ef">while</span> (childOne <span style="color:#f92672">&lt;=</span> n) {
-            <span style="color:#66d9ef">val</span> childTwo = <span style="color:#66d9ef">if</span> (idx * <span style="color:#ae81ff">2</span> + <span style="color:#ae81ff">2</span> <span style="color:#f92672">&lt;=</span> n) idx * <span style="color:#ae81ff">2</span> + <span style="color:#ae81ff">2</span> <span style="color:#66d9ef">else</span> -<span style="color:#ae81ff">1</span>
-            <span style="color:#66d9ef">val</span> idxToSwap: Int = <span style="color:#66d9ef">if</span> (childTwo <span style="color:#f92672">!=</span> -<span style="color:#ae81ff">1</span> <span style="color:#f92672">&amp;&amp;</span> arr[childTwo] &lt; arr[childOne]) childTwo <span style="color:#66d9ef">else</span> childOne
-
-            <span style="color:#66d9ef">if</span> (arr[idxToSwap] &lt; arr[idx]) {
-                swap(arr, idxToSwap, idx)
-                idx = idxToSwap
-                childOne = idx * <span style="color:#ae81ff">2</span> + <span style="color:#ae81ff">1</span>
-            } <span style="color:#66d9ef">else</span> {
-                <span style="color:#66d9ef">return</span>
-            }
+        <span style="color:#66d9ef">while</span> (idx * <span style="color:#ae81ff">2</span> + <span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;=</span> n) {
+            <span style="color:#66d9ef">var</span> j = idx * <span style="color:#ae81ff">2</span> + <span style="color:#ae81ff">1</span>
+            <span style="color:#66d9ef">if</span> (j &lt; n <span style="color:#f92672">&amp;&amp;</span> less(arr, j, j + <span style="color:#ae81ff">1</span>)) j<span style="color:#f92672">++</span>
+            <span style="color:#66d9ef">if</span> (!less(arr, idx, j)) <span style="color:#66d9ef">break</span>
+            swap(arr, idx, j)
+            idx = j
         }
     }
 
     <span style="color:#75715e">// O(log(n)) time | O(1) space
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">siftUp</span>(arr: MutableList&lt;Int&gt;, k: Int) {
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">swim</span>(arr: MutableList&lt;Int&gt;, k: Int) {
         <span style="color:#66d9ef">var</span> idx = k
-        <span style="color:#66d9ef">var</span> parentIdx = (k - <span style="color:#ae81ff">1</span>) / <span style="color:#ae81ff">2</span>
-
-        <span style="color:#66d9ef">while</span> (idx &gt; <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> heap[idx] &lt; heap[parentIdx]) {
-            swap(arr, idx, parentIdx)
-            idx = parentIdx
-            parentIdx = (idx - <span style="color:#ae81ff">1</span>) / <span style="color:#ae81ff">2</span>
+        <span style="color:#66d9ef">while</span> (idx &gt; <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> less(arr, (idx - <span style="color:#ae81ff">1</span>) / <span style="color:#ae81ff">2</span>, idx)) {
+            swap(arr, (idx - <span style="color:#ae81ff">1</span>) / <span style="color:#ae81ff">2</span>, idx)
+            idx = (idx - <span style="color:#ae81ff">1</span>) / <span style="color:#ae81ff">2</span>
         }
+    }
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">less</span>(arr: MutableList&lt;Int&gt;, i: Int, j: Int): Boolean {
+        <span style="color:#66d9ef">return</span> arr[i] &gt; arr[j]
     }
 
     <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">swap</span>(arr: MutableList&lt;Int&gt;, i: Int, j: Int) {

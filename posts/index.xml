@@ -16,7 +16,9 @@
       <description>Main methods:
  build heap sift down sift up insert remove  Node:
  current node -&amp;gt; i child one -&amp;gt; (2 * i) + 1 child two -&amp;gt; (2 * i) + 2 parent node -&amp;gt; (i - 1) / 2  Transform array to heap (heapify)
- foreach parent sink  min heap stepik max heap
+ foreach parent sink  min heap
+Priority Queues
+stepik max heap
 class MinHeap(arr: MutableList&amp;lt;Int&amp;gt;) { private val heap = buildHeap(arr) // O(1) time | O(1) space  fun peek(): Int { return heap[0] } // O(log(n)) time | O(1) space  fun remove(): Int { swap(heap, 0, heap.</description>
     </item>
     
