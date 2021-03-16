@@ -19,7 +19,7 @@
  foreach parent sink  min heap
 Priority Queues
 stepik max heap
-class MinHeap(arr: MutableList&amp;lt;Int&amp;gt;) { private val heap = buildHeap(arr) // O(1) time | O(1) space  fun peek(): Int { return heap[0] } // O(log(n)) time | O(1) space  fun remove(): Int { swap(heap, 0, heap.</description>
+class MinHeap(arr: MutableList&amp;lt;Int&amp;gt;) { private var heap: MutableList&amp;lt;Int&amp;gt; = arr init { val n = arr.</description>
     </item>
     
     <item>
