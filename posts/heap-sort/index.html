@@ -6,7 +6,7 @@
     
     <title>Heap Sort | Hugo Site</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="To be continued&hellip;
+    <meta name="description" content="build heap from array and n time get min element. (naive heap sort)
 heap sort
 // O(nlogn) time | O(1) space fun heapSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (k in n / 2 downTo 1) { sink(arr, k, n) } var k = n while (k &gt; 1) { swap(arr, 1, k--) sink(arr, 1, k) } } fun sink(arr: MutableList&lt;Int&gt;, k: Int, n: Int) { var idx = k while (2 * idx &lt;= n) { var j = 2 * idx if (j &lt; n &amp;&amp; less(arr, j, j &#43; 1)) j&#43;&#43; if (!">
     <meta name="generator" content="Hugo 0.80.0" />
@@ -33,7 +33,7 @@ heap sort
     
     
     <meta property="og:title" content="Heap Sort" />
-<meta property="og:description" content="To be continued&hellip;
+<meta property="og:description" content="build heap from array and n time get min element. (naive heap sort)
 heap sort
 // O(nlogn) time | O(1) space fun heapSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (k in n / 2 downTo 1) { sink(arr, k, n) } var k = n while (k &gt; 1) { swap(arr, 1, k--) sink(arr, 1, k) } } fun sink(arr: MutableList&lt;Int&gt;, k: Int, n: Int) { var idx = k while (2 * idx &lt;= n) { var j = 2 * idx if (j &lt; n &amp;&amp; less(arr, j, j &#43; 1)) j&#43;&#43; if (!" />
 <meta property="og:type" content="article" />
@@ -41,19 +41,19 @@ heap sort
 <meta property="article:published_time" content="2021-03-09T17:45:39+03:00" />
 <meta property="article:modified_time" content="2021-03-09T17:45:39+03:00" />
 <meta itemprop="name" content="Heap Sort">
-<meta itemprop="description" content="To be continued&hellip;
+<meta itemprop="description" content="build heap from array and n time get min element. (naive heap sort)
 heap sort
 // O(nlogn) time | O(1) space fun heapSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (k in n / 2 downTo 1) { sink(arr, k, n) } var k = n while (k &gt; 1) { swap(arr, 1, k--) sink(arr, 1, k) } } fun sink(arr: MutableList&lt;Int&gt;, k: Int, n: Int) { var idx = k while (2 * idx &lt;= n) { var j = 2 * idx if (j &lt; n &amp;&amp; less(arr, j, j &#43; 1)) j&#43;&#43; if (!">
 <meta itemprop="datePublished" content="2021-03-09T17:45:39+03:00" />
 <meta itemprop="dateModified" content="2021-03-09T17:45:39+03:00" />
-<meta itemprop="wordCount" content="143">
+<meta itemprop="wordCount" content="153">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Heap Sort"/>
-<meta name="twitter:description" content="To be continued&hellip;
+<meta name="twitter:description" content="build heap from array and n time get min element. (naive heap sort)
 heap sort
 // O(nlogn) time | O(1) space fun heapSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (k in n / 2 downTo 1) { sink(arr, k, n) } var k = n while (k &gt; 1) { swap(arr, 1, k--) sink(arr, 1, k) } } fun sink(arr: MutableList&lt;Int&gt;, k: Int, n: Int) { var idx = k while (2 * idx &lt;= n) { var j = 2 * idx if (j &lt; n &amp;&amp; less(arr, j, j &#43; 1)) j&#43;&#43; if (!"/>
 
@@ -151,7 +151,7 @@ heap sort
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>To be continued&hellip;</p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>build heap from array and n time get min element. (naive heap sort)</p>
 <p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/sorting/HeapSort.kt">heap sort</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#75715e">// O(nlogn) time | O(1) space
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">heapSort</span>(arr: MutableList&lt;Int&gt;) {

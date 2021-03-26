@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Mar 2021 20:27:42 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Mar 2021 17:28:02 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Merge Sort</title>
+      <link>https://solairerove.github.io/posts/merge-sort/</link>
+      <pubDate>Fri, 26 Mar 2021 17:28:02 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/merge-sort/</guid>
+      <description>Еще добавлю описание. пока нихуя не помню. Ну тип сплитает массив на подмассивы и потом мержит саблисты.
+merge sort
+// O(nlog(n)) time | O(n) space fun mergeSort(arr: MutableList&amp;lt;Int&amp;gt;) { val n = arr.size val aux = MutableList(n) { i -&amp;gt; i } mergeSort(arr, aux, 0, n - 1) } fun mergeSort(arr: MutableList&amp;lt;Int&amp;gt;, aux: MutableList&amp;lt;Int&amp;gt;, low: Int, high: Int) { if (high &amp;lt;= low) { return } val mid = low + (high - low) / 2 mergeSort(arr, aux, low, mid) mergeSort(arr, aux, mid + 1, high) merge(arr, aux, low, mid, high) } fun merge(arr: MutableList&amp;lt;Int&amp;gt;, aux: MutableList&amp;lt;Int&amp;gt;, low: Int, mid: Int, high: Int) { var i = low var j = mid + 1 for (k in low.</description>
+    </item>
+    
     <item>
       <title>Min Heap</title>
       <link>https://solairerove.github.io/posts/min-heap/</link>
@@ -28,7 +39,7 @@ class MinHeap(arr: MutableList&amp;lt;Int&amp;gt;) { private var heap: MutableLi
       <pubDate>Tue, 09 Mar 2021 17:45:39 +0300</pubDate>
       
       <guid>https://solairerove.github.io/posts/heap-sort/</guid>
-      <description>To be continued&amp;hellip;
+      <description>build heap from array and n time get min element. (naive heap sort)
 heap sort
 // O(nlogn) time | O(1) space fun heapSort(arr: MutableList&amp;lt;Int&amp;gt;) { val n = arr.size for (k in n / 2 downTo 1) { sink(arr, k, n) } var k = n while (k &amp;gt; 1) { swap(arr, 1, k--) sink(arr, 1, k) } } fun sink(arr: MutableList&amp;lt;Int&amp;gt;, k: Int, n: Int) { var idx = k while (2 * idx &amp;lt;= n) { var j = 2 * idx if (j &amp;lt; n &amp;amp;&amp;amp; less(arr, j, j + 1)) j++ if (!</description>
     </item>

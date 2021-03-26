@@ -39,7 +39,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/posts/" />
-<meta property="og:updated_time" content="2021-03-11T20:27:42+03:00" />
+<meta property="og:updated_time" content="2021-03-26T17:28:02+03:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -106,6 +106,23 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="https://solairerove.github.io/posts/merge-sort/" class="link black dim">
+        Merge Sort
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Еще добавлю описание. пока нихуя не помню. Ну тип сплитает массив на подмассивы и потом мержит саблисты.
+merge sort
+// O(nlog(n)) time | O(n) space fun mergeSort(arr: MutableList&lt;Int&gt;) { val n = arr.size val aux = MutableList(n) { i -&gt; i } mergeSort(arr, aux, 0, n - 1) } fun mergeSort(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, high: Int) { if (high &lt;= low) { return } val mid = low + (high - low) / 2 mergeSort(arr, aux, low, mid) mergeSort(arr, aux, mid + 1, high) merge(arr, aux, low, mid, high) } fun merge(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, mid: Int, high: Int) { var i = low var j = mid + 1 for (k in low.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="https://solairerove.github.io/posts/min-heap/" class="link black dim">
         Min Heap
       </a>
@@ -132,7 +149,7 @@ class MinHeap(arr: MutableList&lt;Int&gt;) { private var heap: MutableList&lt;In
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      To be continued&hellip;
+      build heap from array and n time get min element. (naive heap sort)
 heap sort
 // O(nlogn) time | O(1) space fun heapSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (k in n / 2 downTo 1) { sink(arr, k, n) } var k = n while (k &gt; 1) { swap(arr, 1, k--) sink(arr, 1, k) } } fun sink(arr: MutableList&lt;Int&gt;, k: Int, n: Int) { var idx = k while (2 * idx &lt;= n) { var j = 2 * idx if (j &lt; n &amp;&amp; less(arr, j, j + 1)) j++ if (!
     </div>
@@ -256,23 +273,6 @@ import java.text.DecimalFormat fun main() { var backPackSize = 50 val items = mu
       Палиндром - строка, которая одинаково читается в обоих направлениях.
 palindrome check
 // O(n) time | O(1) space fun isPalindrome(s: String): Boolean { for (i in s.indices) { if (s[i] != s[s.length - 1 - i]) { return false } } return true } 
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://solairerove.github.io/posts/highest-common-factor/" class="link black dim">
-        Highest Common Factor
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Рекурсивный вариант алгоритма Евклида для нахождения наибольшего общего делителя.
-gcd
-fun gcd(p: Int, q: Int): Int { if (q == 0) { return p } val r = p % q return gcd(q, r) } 
     </div>
   </div>
 </div>

@@ -39,7 +39,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-03-11T20:27:42+03:00" />
+<meta property="og:updated_time" content="2021-03-26T17:28:02+03:00" />
 <meta itemprop="name" content="Hugo Site">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -133,6 +133,32 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://solairerove.github.io/posts/merge-sort/" class="color-inherit dim link">
+            Merge Sort
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Еще добавлю описание. пока нихуя не помню. Ну тип сплитает массив на подмассивы и потом мержит саблисты.
+merge sort
+// O(nlog(n)) time | O(n) space fun mergeSort(arr: MutableList&lt;Int&gt;) { val n = arr.size val aux = MutableList(n) { i -&gt; i } mergeSort(arr, aux, 0, n - 1) } fun mergeSort(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, high: Int) { if (high &lt;= low) { return } val mid = low + (high - low) / 2 mergeSort(arr, aux, low, mid) mergeSort(arr, aux, mid + 1, high) merge(arr, aux, low, mid, high) } fun merge(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, mid: Int, high: Int) { var i = low var j = mid + 1 for (k in low.
+        </div>
+          <a href="https://solairerove.github.io/posts/merge-sort/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="https://solairerove.github.io/posts/min-heap/" class="color-inherit dim link">
             Min Heap
             </a>
@@ -168,39 +194,11 @@ class MinHeap(arr: MutableList&lt;Int&gt;) { private var heap: MutableList&lt;In
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          To be continued&hellip;
+          build heap from array and n time get min element. (naive heap sort)
 heap sort
 // O(nlogn) time | O(1) space fun heapSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (k in n / 2 downTo 1) { sink(arr, k, n) } var k = n while (k &gt; 1) { swap(arr, 1, k--) sink(arr, 1, k) } } fun sink(arr: MutableList&lt;Int&gt;, k: Int, n: Int) { var idx = k while (2 * idx &lt;= n) { var j = 2 * idx if (j &lt; n &amp;&amp; less(arr, j, j + 1)) j++ if (!
         </div>
           <a href="https://solairerove.github.io/posts/heap-sort/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://solairerove.github.io/posts/minimum-waiting-time/" class="color-inherit dim link">
-            Minimum Waiting Time
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Given non-empty array of positive int, that define time to execute.
-Only one query can be executed at time, but in any order.
-Get minimal waiting time to execute all queries.
-Solid step is ascending sort.
-9 6 5 2 3 1 -&gt; 1 2 3 5 6 9 -&gt; 0 + 1 + (1 + 2) + (1 + 2 + 3) + (1 + 2 + 3 + 5) + (1 + 2 + 3 + 5 + 6) = 38
-        </div>
-          <a href="https://solairerove.github.io/posts/minimum-waiting-time/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
       </div>
     </div>
@@ -217,6 +215,12 @@ Solid step is ascending sort.
         
         
           <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://solairerove.github.io/posts/minimum-waiting-time/" class="link black dim">
+              Minimum Waiting Time
+            </a>
+          </h2>
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://solairerove.github.io/posts/huffman-decode/" class="link black dim">
               Huffman Decode
             </a>
@@ -231,12 +235,6 @@ Solid step is ascending sort.
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://solairerove.github.io/posts/number-partition/" class="link black dim">
               Number Partition
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="https://solairerove.github.io/posts/knapsack-problem/" class="link black dim">
-              Knapsack Problem
             </a>
           </h2>
         
