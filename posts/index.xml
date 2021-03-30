@@ -13,7 +13,11 @@
       <pubDate>Fri, 26 Mar 2021 17:28:02 +0300</pubDate>
       
       <guid>https://solairerove.github.io/posts/merge-sort/</guid>
-      <description>Еще добавлю описание. пока нихуя не помню. Ну тип сплитает массив на подмассивы и потом мержит саблисты.
+      <description>Классический эффективный алгоритм сортировки divide and conquer.
+Разделяем массив на подмассивы до подмассивов размером 1 и
+собираем их в отсортированные подмассивы.
+Почему O(nlog(n)).
+Потому что у нас всего nlog(n) операций, которые сами по себе O(n).
 merge sort
 // O(nlog(n)) time | O(n) space fun mergeSort(arr: MutableList&amp;lt;Int&amp;gt;) { val n = arr.size val aux = MutableList(n) { i -&amp;gt; i } mergeSort(arr, aux, 0, n - 1) } fun mergeSort(arr: MutableList&amp;lt;Int&amp;gt;, aux: MutableList&amp;lt;Int&amp;gt;, low: Int, high: Int) { if (high &amp;lt;= low) { return } val mid = low + (high - low) / 2 mergeSort(arr, aux, low, mid) mergeSort(arr, aux, mid + 1, high) merge(arr, aux, low, mid, high) } fun merge(arr: MutableList&amp;lt;Int&amp;gt;, aux: MutableList&amp;lt;Int&amp;gt;, low: Int, mid: Int, high: Int) { var i = low var j = mid + 1 for (k in low.</description>
     </item>

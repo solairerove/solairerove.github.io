@@ -111,7 +111,11 @@
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Еще добавлю описание. пока нихуя не помню. Ну тип сплитает массив на подмассивы и потом мержит саблисты.
+      Классический эффективный алгоритм сортировки divide and conquer.
+Разделяем массив на подмассивы до подмассивов размером 1 и
+собираем их в отсортированные подмассивы.
+Почему O(nlog(n)).
+Потому что у нас всего nlog(n) операций, которые сами по себе O(n).
 merge sort
 // O(nlog(n)) time | O(n) space fun mergeSort(arr: MutableList&lt;Int&gt;) { val n = arr.size val aux = MutableList(n) { i -&gt; i } mergeSort(arr, aux, 0, n - 1) } fun mergeSort(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, high: Int) { if (high &lt;= low) { return } val mid = low + (high - low) / 2 mergeSort(arr, aux, low, mid) mergeSort(arr, aux, mid + 1, high) merge(arr, aux, low, mid, high) } fun merge(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, mid: Int, high: Int) { var i = low var j = mid + 1 for (k in low.
     </div>
