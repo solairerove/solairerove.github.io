@@ -39,7 +39,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/posts/" />
-<meta property="og:updated_time" content="2021-03-26T17:28:02+03:00" />
+<meta property="og:updated_time" content="2021-03-31T23:10:38+03:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -106,6 +106,24 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="https://solairerove.github.io/posts/inversions/" class="link black dim">
+        Inversions
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Вытекающая задача из сортировки слиянием. \
+3.2 Подсчет инверсий
+inversions
+// O(nlog(n)) time | O(n) space fun count(arr: MutableList&lt;Int&gt;): Long { val n = arr.size val b = MutableList(n) { i -&gt; i } val aux = MutableList(n) { i -&gt; i } for (i in 0 until n) { b[i] = arr[i] } return count(arr, b, aux, 0, n - 1) } fun count(arr: MutableList&lt;Int&gt;, b: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, high: Int): Long { var inversions = 0L if (high &lt;= low) { return 0 } val mid = low + (high - low) / 2 inversions += count(arr, b, aux, low, mid) inversions += count(arr, b, aux, mid + 1, high) inversions += merge(b, aux, low, mid, high) return inversions } fun merge(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, mid: Int, high: Int): Long { var inversions = 0L for (k in low.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="https://solairerove.github.io/posts/merge-sort/" class="link black dim">
         Merge Sort
       </a>
@@ -116,6 +134,7 @@
 собираем их в отсортированные подмассивы.
 Почему O(nlog(n)).
 Потому что у нас всего nlog(n) операций, которые сами по себе O(n).
+princeton mergesort
 merge sort
 // O(nlog(n)) time | O(n) space fun mergeSort(arr: MutableList&lt;Int&gt;) { val n = arr.size val aux = MutableList(n) { i -&gt; i } mergeSort(arr, aux, 0, n - 1) } fun mergeSort(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, high: Int) { if (high &lt;= low) { return } val mid = low + (high - low) / 2 mergeSort(arr, aux, low, mid) mergeSort(arr, aux, mid + 1, high) merge(arr, aux, low, mid, high) } fun merge(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, mid: Int, high: Int) { var i = low var j = mid + 1 for (k in low.
     </div>
@@ -260,23 +279,6 @@ import java.text.DecimalFormat fun main() { var backPackSize = 50 val items = mu
       Даны отрезки на прямой. Найти такие точки, которые лежат на всех заданных отрезках. Найденное множество должно быть минимальным по размеру.
 Берем все концы отрезков (как левые, так и правые) и сортируем их. Для каждой точки сохраним номер отрезка. Также каким концом его она является (левым или правым). Учтем, что если есть несколько точек с одной координатой, то сначала будут идти левые концы, потом правые.
 Заведём коллекцию, в которой будут храниться номера отрезков, рассматриваемых в данный момент.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://solairerove.github.io/posts/palindrome-check/" class="link black dim">
-        Palindrome Check
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Палиндром - строка, которая одинаково читается в обоих направлениях.
-palindrome check
-// O(n) time | O(1) space fun isPalindrome(s: String): Boolean { for (i in s.indices) { if (s[i] != s[s.length - 1 - i]) { return false } } return true } 
     </div>
   </div>
 </div>

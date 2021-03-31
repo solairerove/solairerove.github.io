@@ -11,6 +11,7 @@
 собираем их в отсортированные подмассивы.
 Почему O(nlog(n)).
 Потому что у нас всего nlog(n) операций, которые сами по себе O(n).
+princeton mergesort
 merge sort
 // O(nlog(n)) time | O(n) space fun mergeSort(arr: MutableList&lt;Int&gt;) { val n = arr.size val aux = MutableList(n) { i -&gt; i } mergeSort(arr, aux, 0, n - 1) } fun mergeSort(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, high: Int) { if (high &lt;= low) { return } val mid = low &#43; (high - low) / 2 mergeSort(arr, aux, low, mid) mergeSort(arr, aux, mid &#43; 1, high) merge(arr, aux, low, mid, high) } fun merge(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, mid: Int, high: Int) { var i = low var j = mid &#43; 1 for (k in low.">
     <meta name="generator" content="Hugo 0.80.0" />
@@ -42,6 +43,7 @@ merge sort
 собираем их в отсортированные подмассивы.
 Почему O(nlog(n)).
 Потому что у нас всего nlog(n) операций, которые сами по себе O(n).
+princeton mergesort
 merge sort
 // O(nlog(n)) time | O(n) space fun mergeSort(arr: MutableList&lt;Int&gt;) { val n = arr.size val aux = MutableList(n) { i -&gt; i } mergeSort(arr, aux, 0, n - 1) } fun mergeSort(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, high: Int) { if (high &lt;= low) { return } val mid = low &#43; (high - low) / 2 mergeSort(arr, aux, low, mid) mergeSort(arr, aux, mid &#43; 1, high) merge(arr, aux, low, mid, high) } fun merge(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, mid: Int, high: Int) { var i = low var j = mid &#43; 1 for (k in low." />
 <meta property="og:type" content="article" />
@@ -54,11 +56,12 @@ merge sort
 собираем их в отсортированные подмассивы.
 Почему O(nlog(n)).
 Потому что у нас всего nlog(n) операций, которые сами по себе O(n).
+princeton mergesort
 merge sort
 // O(nlog(n)) time | O(n) space fun mergeSort(arr: MutableList&lt;Int&gt;) { val n = arr.size val aux = MutableList(n) { i -&gt; i } mergeSort(arr, aux, 0, n - 1) } fun mergeSort(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, high: Int) { if (high &lt;= low) { return } val mid = low &#43; (high - low) / 2 mergeSort(arr, aux, low, mid) mergeSort(arr, aux, mid &#43; 1, high) merge(arr, aux, low, mid, high) } fun merge(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, mid: Int, high: Int) { var i = low var j = mid &#43; 1 for (k in low.">
 <meta itemprop="datePublished" content="2021-03-26T17:28:02+03:00" />
 <meta itemprop="dateModified" content="2021-03-26T17:28:02+03:00" />
-<meta itemprop="wordCount" content="177">
+<meta itemprop="wordCount" content="179">
 
 
 
@@ -70,6 +73,7 @@ merge sort
 собираем их в отсортированные подмассивы.
 Почему O(nlog(n)).
 Потому что у нас всего nlog(n) операций, которые сами по себе O(n).
+princeton mergesort
 merge sort
 // O(nlog(n)) time | O(n) space fun mergeSort(arr: MutableList&lt;Int&gt;) { val n = arr.size val aux = MutableList(n) { i -&gt; i } mergeSort(arr, aux, 0, n - 1) } fun mergeSort(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, high: Int) { if (high &lt;= low) { return } val mid = low &#43; (high - low) / 2 mergeSort(arr, aux, low, mid) mergeSort(arr, aux, mid &#43; 1, high) merge(arr, aux, low, mid, high) } fun merge(arr: MutableList&lt;Int&gt;, aux: MutableList&lt;Int&gt;, low: Int, mid: Int, high: Int) { var i = low var j = mid &#43; 1 for (k in low."/>
 
@@ -172,6 +176,7 @@ merge sort
 собираем их в отсортированные подмассивы.</p>
 <p>Почему O(nlog(n)).<br>
 Потому что у нас всего nlog(n) операций, которые сами по себе O(n).</p>
+<p><a href="https://algs4.cs.princeton.edu/22mergesort/">princeton mergesort</a></p>
 <p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/sorting/MergeSort.kt">merge sort</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#75715e">// O(nlog(n)) time | O(n) space
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">mergeSort</span>(arr: MutableList&lt;Int&gt;) {

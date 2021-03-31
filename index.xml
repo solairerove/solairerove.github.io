@@ -6,7 +6,19 @@
     <description>Recent content on Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Mar 2021 17:28:02 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Mar 2021 23:10:38 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inversions</title>
+      <link>https://solairerove.github.io/posts/inversions/</link>
+      <pubDate>Wed, 31 Mar 2021 23:10:38 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/inversions/</guid>
+      <description>Вытекающая задача из сортировки слиянием. \
+3.2 Подсчет инверсий
+inversions
+// O(nlog(n)) time | O(n) space fun count(arr: MutableList&amp;lt;Int&amp;gt;): Long { val n = arr.size val b = MutableList(n) { i -&amp;gt; i } val aux = MutableList(n) { i -&amp;gt; i } for (i in 0 until n) { b[i] = arr[i] } return count(arr, b, aux, 0, n - 1) } fun count(arr: MutableList&amp;lt;Int&amp;gt;, b: MutableList&amp;lt;Int&amp;gt;, aux: MutableList&amp;lt;Int&amp;gt;, low: Int, high: Int): Long { var inversions = 0L if (high &amp;lt;= low) { return 0 } val mid = low + (high - low) / 2 inversions += count(arr, b, aux, low, mid) inversions += count(arr, b, aux, mid + 1, high) inversions += merge(b, aux, low, mid, high) return inversions } fun merge(arr: MutableList&amp;lt;Int&amp;gt;, aux: MutableList&amp;lt;Int&amp;gt;, low: Int, mid: Int, high: Int): Long { var inversions = 0L for (k in low.</description>
+    </item>
+    
     <item>
       <title>Merge Sort</title>
       <link>https://solairerove.github.io/posts/merge-sort/</link>
@@ -18,6 +30,7 @@
 собираем их в отсортированные подмассивы.
 Почему O(nlog(n)).
 Потому что у нас всего nlog(n) операций, которые сами по себе O(n).
+princeton mergesort
 merge sort
 // O(nlog(n)) time | O(n) space fun mergeSort(arr: MutableList&amp;lt;Int&amp;gt;) { val n = arr.size val aux = MutableList(n) { i -&amp;gt; i } mergeSort(arr, aux, 0, n - 1) } fun mergeSort(arr: MutableList&amp;lt;Int&amp;gt;, aux: MutableList&amp;lt;Int&amp;gt;, low: Int, high: Int) { if (high &amp;lt;= low) { return } val mid = low + (high - low) / 2 mergeSort(arr, aux, low, mid) mergeSort(arr, aux, mid + 1, high) merge(arr, aux, low, mid, high) } fun merge(arr: MutableList&amp;lt;Int&amp;gt;, aux: MutableList&amp;lt;Int&amp;gt;, low: Int, mid: Int, high: Int) { var i = low var j = mid + 1 for (k in low.</description>
     </item>
