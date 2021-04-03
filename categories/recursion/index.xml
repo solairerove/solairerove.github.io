@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>recursion on Even - A super concise theme for Hugo</title>
+    <link>https://solairerove.github.io/categories/recursion/</link>
+    <description>Recent content in recursion on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 02 Mar 2021 13:27:30 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/recursion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Highest Common Factor</title>
+      <link>https://solairerove.github.io/post/highest-common-factor/</link>
+      <pubDate>Tue, 02 Mar 2021 13:27:30 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/highest-common-factor/</guid>
+      <description>Рекурсивный вариант алгоритма Евклида для нахождения наибольшего общего делителя.
+gcd
+1 2 3 4 5 6 7 8  fun gcd(p: Int, q: Int): Int { if (q == 0) { return p } val r = p % q return gcd(q, r) }   </description>
+    </item>
+    
+    <item>
+      <title>Fibonacci</title>
+      <link>https://solairerove.github.io/post/fibonacci/</link>
+      <pubDate>Tue, 02 Mar 2021 11:33:16 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/fibonacci/</guid>
+      <description>Один из классических рекурсивных алгоритмов. Последовательность чисел, где каждое последующее - сумма двух предыдущих.
+fibonacci
+1 2 3 4 5 6 7 8 9 10 11 12  // O(n) time | O(1) space fun getNthFibonacci(n: Int): Int { val lastTwo = mutableListOf(0, 1) repeat(n - 2) { val next = lastTwo.sum() lastTwo[0] = lastTwo[1] lastTwo[1] = next } return if (n &amp;gt; 1) lastTwo[1] else lastTwo[0] }   </description>
+    </item>
+    
+  </channel>
+</rss>

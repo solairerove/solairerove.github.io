@@ -1,10 +1,65 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Hugo Site</title>
+    <title>Categories on Even - A super concise theme for Hugo</title>
     <link>https://solairerove.github.io/categories/</link>
-    <description>Recent content in Categories on Hugo Site</description>
+    <description>Recent content in Categories on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://solairerove.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 31 Mar 2021 23:10:38 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sorting</title>
+      <link>https://solairerove.github.io/categories/sorting/</link>
+      <pubDate>Wed, 31 Mar 2021 23:10:38 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/categories/sorting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>heap</title>
+      <link>https://solairerove.github.io/categories/heap/</link>
+      <pubDate>Thu, 11 Mar 2021 20:27:42 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/categories/heap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>greedy</title>
+      <link>https://solairerove.github.io/categories/greedy/</link>
+      <pubDate>Mon, 08 Mar 2021 17:27:29 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/categories/greedy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>strings</title>
+      <link>https://solairerove.github.io/categories/strings/</link>
+      <pubDate>Wed, 03 Mar 2021 16:56:50 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/categories/strings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recursion</title>
+      <link>https://solairerove.github.io/categories/recursion/</link>
+      <pubDate>Tue, 02 Mar 2021 13:27:30 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/categories/recursion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>search</title>
+      <link>https://solairerove.github.io/categories/search/</link>
+      <pubDate>Thu, 25 Feb 2021 17:32:26 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/categories/search/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

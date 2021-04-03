@@ -1,108 +1,192 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml-stylesheet type="text/xsl" href="https://solairerove.github.io/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://solairerove.github.io/categories/</loc>
+    <lastmod>2021-03-31T23:10:38+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
   
   <url>
     <loc>https://solairerove.github.io/</loc>
     <lastmod>2021-03-31T23:10:38+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/inversions/</loc>
+    <loc>https://solairerove.github.io/post/inversions/</loc>
     <lastmod>2021-03-31T23:10:38+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/</loc>
+    <loc>https://solairerove.github.io/post/</loc>
     <lastmod>2021-03-31T23:10:38+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/merge-sort/</loc>
+    <loc>https://solairerove.github.io/categories/sorting/</loc>
+    <lastmod>2021-03-31T23:10:38+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/merge-sort/</loc>
     <lastmod>2021-03-26T17:28:02+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/min-heap/</loc>
+    <loc>https://solairerove.github.io/categories/heap/</loc>
     <lastmod>2021-03-11T20:27:42+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/heap-sort/</loc>
+    <loc>https://solairerove.github.io/post/min-heap/</loc>
+    <lastmod>2021-03-11T20:27:42+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/heap-sort/</loc>
     <lastmod>2021-03-09T17:45:39+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/minimum-waiting-time/</loc>
+    <loc>https://solairerove.github.io/categories/greedy/</loc>
     <lastmod>2021-03-08T17:27:29+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/huffman-decode/</loc>
+    <loc>https://solairerove.github.io/post/minimum-waiting-time/</loc>
+    <lastmod>2021-03-08T17:27:29+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/huffman-decode/</loc>
     <lastmod>2021-03-07T18:25:44+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/naive-huffman-encode/</loc>
+    <loc>https://solairerove.github.io/post/naive-huffman-encode/</loc>
     <lastmod>2021-03-07T15:55:23+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/number-partition/</loc>
+    <loc>https://solairerove.github.io/post/number-partition/</loc>
     <lastmod>2021-03-04T18:55:57+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/knapsack-problem/</loc>
+    <loc>https://solairerove.github.io/post/knapsack-problem/</loc>
     <lastmod>2021-03-04T17:58:03+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/segments-covering-by-unit/</loc>
+    <loc>https://solairerove.github.io/post/segments-covering-by-unit/</loc>
     <lastmod>2021-03-04T13:00:03+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/palindrome-check/</loc>
+    <loc>https://solairerove.github.io/post/palindrome-check/</loc>
     <lastmod>2021-03-03T16:56:50+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/highest-common-factor/</loc>
+    <loc>https://solairerove.github.io/categories/strings/</loc>
+    <lastmod>2021-03-03T16:56:50+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/highest-common-factor/</loc>
     <lastmod>2021-03-02T13:27:30+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/fibonacci/</loc>
+    <loc>https://solairerove.github.io/categories/recursion/</loc>
+    <lastmod>2021-03-02T13:27:30+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/fibonacci/</loc>
     <lastmod>2021-03-02T11:33:16+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/insertion-sort/</loc>
+    <loc>https://solairerove.github.io/post/insertion-sort/</loc>
     <lastmod>2021-03-01T16:55:11+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/bubble-sort/</loc>
+    <loc>https://solairerove.github.io/post/bubble-sort/</loc>
     <lastmod>2021-03-01T14:33:33+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/selection-sort/</loc>
+    <loc>https://solairerove.github.io/post/selection-sort/</loc>
     <lastmod>2021-03-01T13:40:33+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/posts/binary-search/</loc>
+    <loc>https://solairerove.github.io/post/binary-search/</loc>
     <lastmod>2021-02-25T17:32:26+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/categories/</loc>
+    <loc>https://solairerove.github.io/categories/search/</loc>
+    <lastmod>2021-02-25T17:32:26+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
 </urlset>

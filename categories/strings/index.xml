@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>strings on Even - A super concise theme for Hugo</title>
+    <link>https://solairerove.github.io/categories/strings/</link>
+    <description>Recent content in strings on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Mar 2021 16:56:50 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/strings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Palindrome Check</title>
+      <link>https://solairerove.github.io/post/palindrome-check/</link>
+      <pubDate>Wed, 03 Mar 2021 16:56:50 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/palindrome-check/</guid>
+      <description>Палиндром - строка, которая одинаково читается в обоих направлениях.
+palindrome check
+1 2 3 4 5 6 7 8 9  // O(n) time | O(1) space fun isPalindrome(s: String): Boolean { for (i in s.indices) { if (s[i] != s[s.length - 1 - i]) { return false } } return true }   </description>
+    </item>
+    
+  </channel>
+</rss>
