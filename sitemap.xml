@@ -3,34 +3,41 @@
   
   <url>
     <loc>https://solairerove.github.io/categories/</loc>
-    <lastmod>2021-04-05T18:10:55+03:00</lastmod>
+    <lastmod>2021-04-06T20:10:04+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/</loc>
-    <lastmod>2021-04-05T18:10:55+03:00</lastmod>
+    <lastmod>2021-04-06T20:10:04+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/post/</loc>
-    <lastmod>2021-04-05T18:10:55+03:00</lastmod>
+    <lastmod>2021-04-06T20:10:04+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/post/quick-sort/</loc>
-    <lastmod>2021-04-05T18:10:55+03:00</lastmod>
+    <loc>https://solairerove.github.io/post/quick-sort-3-way/</loc>
+    <lastmod>2021-04-06T20:10:04+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/categories/sorting/</loc>
+    <lastmod>2021-04-06T20:10:04+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/quick-sort/</loc>
     <lastmod>2021-04-05T18:10:55+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
