@@ -31,7 +31,7 @@ quick sort 3 way
 a[low]..a[j - 1] &amp;lt;= a[j] &amp;lt;= a[j + 1]..a[high]
 princeton quicksort
 quick sort
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35  // O(nlog(n)) time | O(log(n)) space fun quickSort(arr: MutableList&amp;lt;Int&amp;gt;) { quickSort(arr, 0, arr.</description>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  // O(nlog(n)) time | O(log(n)) space fun quickSort(arr: MutableList&amp;lt;Int&amp;gt;, low: Int = 0, high: Int = arr.</description>
     </item>
     
     <item>
