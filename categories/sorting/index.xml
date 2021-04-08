@@ -6,7 +6,20 @@
     <description>Recent content in sorting on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Apr 2021 20:10:04 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/sorting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Apr 2021 00:11:24 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/sorting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Count Sort</title>
+      <link>https://solairerove.github.io/post/count-sort/</link>
+      <pubDate>Fri, 09 Apr 2021 00:11:24 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/count-sort/</guid>
+      <description>Сортировка подсчетом.
+Считаем количество вхождений каждого элемента.
+Потом куммулятивную сумму и так находим нужную позицию элемента.
+count sort
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  // O(n + m) time | O(n) space fun countSort(arr: MutableList&amp;lt;Int&amp;gt;) { val n = arr.size // find max  var max = arr[0] arr.</description>
+    </item>
+    
     <item>
       <title>Quick Sort 3 Way</title>
       <link>https://solairerove.github.io/post/quick-sort-3-way/</link>
