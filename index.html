@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-04-06T20:10:04+03:00" />
+<meta property="og:updated_time" content="2021-04-08T22:24:47+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,50 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/bisect_left/">Bisect left</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 04-08-2021 </span>
+      <div class="post-category">
+          <a href="/categories/search/"> search </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      binary select left
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  // O(log(n)) time | O(1) space fun biSectLeft(arr: List&lt;Int&gt;, target: Int, lo: Int = 0, hi: Int = arr.size): Int { val n = arr.size if (n == 0) return 0 var low = lo var high = hi if (target &lt; arr[low]) return low if (target &gt; arr[high - 1]) return high while (true) { if (low + 1 == high) { return if (target == arr[low]) low else (low + 1) } val mid = low + (high - low) / 2 when { target &lt;= arr[mid] -&gt; high = mid else -&gt; low = mid } } }   
+    </div>
+    <div class="read-more">
+      <a href="/post/bisect_left/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/bisect_right/">Bisect right</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 04-08-2021 </span>
+      <div class="post-category">
+          <a href="/categories/search/"> search </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      binary select right
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  // O(log(n)) time | O(1) space fun biSectRight(arr: List&lt;Int&gt;, target: Int, lo: Int = 0, hi: Int = arr.size): Int { val n = arr.size if (n == 0) return 0 var low = lo var high = hi if (target &lt; arr[low]) return low if (target &gt; arr[high - 1]) return high while (true) { if (low + 1 == high) { return low + 1 } val mid = low + (high - low) / 2 when { target &lt; arr[mid] -&gt; high = mid else -&gt; low = mid } } }   
+    </div>
+    <div class="read-more">
+      <a href="/post/bisect_right/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/quick-sort-3-way/">Quick Sort 3 Way</a></h1>
@@ -191,61 +235,6 @@ inversions
     </div>
     <div class="read-more">
       <a href="/post/inversions/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/merge-sort/">Merge Sort</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 03-26-2021 </span>
-      <div class="post-category">
-          <a href="/categories/sorting/"> sorting </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Классический эффективный алгоритм сортировки divide and conquer.
-Разделяем массив на подмассивы до подмассивов размером 1 и
-собираем их в отсортированные подмассивы.
-Почему O(nlog(n)).
-Потому что у нас всего nlog(n) операций, которые сами по себе O(n).
-princeton mergesort
-merge sort
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37  // O(nlog(n)) time | O(n) space fun mergeSort(arr: MutableList&lt;Int&gt;) { val n = arr.
-    </div>
-    <div class="read-more">
-      <a href="/post/merge-sort/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/min-heap/">Min Heap</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 03-11-2021 </span>
-      <div class="post-category">
-          <a href="/categories/heap/"> heap </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Main methods:
- build heap sift down sift up insert remove  Node:
- current node -&gt; i child one -&gt; (2 * i) + 1 child two -&gt; (2 * i) + 2 parent node -&gt; (i - 1) / 2  Transform array to heap (heapify)
- foreach parent sink  min heap
-Priority Queues
-stepik max heap
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62  class MinHeap(arr: MutableList&lt;Int&gt;) { private var heap: MutableList&lt;Int&gt; = arr init { val n = arr.
-    </div>
-    <div class="read-more">
-      <a href="/post/min-heap/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

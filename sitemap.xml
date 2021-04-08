@@ -2,22 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://solairerove.github.io/post/bisect_left/</loc>
+    <lastmod>2021-04-08T22:24:47+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://solairerove.github.io/categories/</loc>
-    <lastmod>2021-04-06T20:10:04+03:00</lastmod>
+    <lastmod>2021-04-08T22:24:47+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/</loc>
-    <lastmod>2021-04-06T20:10:04+03:00</lastmod>
+    <lastmod>2021-04-08T22:24:47+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/post/</loc>
-    <lastmod>2021-04-06T20:10:04+03:00</lastmod>
+    <lastmod>2021-04-08T22:24:47+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/categories/search/</loc>
+    <lastmod>2021-04-08T22:24:47+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/bisect_right/</loc>
+    <lastmod>2021-04-08T22:24:43+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -185,13 +206,6 @@
   
   <url>
     <loc>https://solairerove.github.io/post/binary-search/</loc>
-    <lastmod>2021-02-25T17:32:26+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/categories/search/</loc>
     <lastmod>2021-02-25T17:32:26+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
