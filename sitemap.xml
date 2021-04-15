@@ -3,27 +3,41 @@
   
   <url>
     <loc>https://solairerove.github.io/categories/</loc>
-    <lastmod>2021-04-14T23:04:03+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/post/dutch-national-flag/</loc>
-    <lastmod>2021-04-14T23:04:03+03:00</lastmod>
+    <lastmod>2021-04-15T22:56:13+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/</loc>
-    <lastmod>2021-04-14T23:04:03+03:00</lastmod>
+    <lastmod>2021-04-15T22:56:13+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/post/</loc>
+    <lastmod>2021-04-15T22:56:13+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/categories/search/</loc>
+    <lastmod>2021-04-15T22:56:13+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/third-maximum-number/</loc>
+    <lastmod>2021-04-15T22:56:13+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/dutch-national-flag/</loc>
     <lastmod>2021-04-14T23:04:03+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -38,13 +52,6 @@
   
   <url>
     <loc>https://solairerove.github.io/post/quick-select/</loc>
-    <lastmod>2021-04-13T22:01:11+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/categories/search/</loc>
     <lastmod>2021-04-13T22:01:11+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
