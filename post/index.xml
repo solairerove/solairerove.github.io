@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Apr 2021 22:56:13 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Apr 2021 23:26:27 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Search in Matrix</title>
+      <link>https://solairerove.github.io/post/search-in-matrix/</link>
+      <pubDate>Thu, 15 Apr 2021 23:26:27 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/search-in-matrix/</guid>
+      <description>leetcode
+third maximum number
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  // O(n + m) time | O(1) space fun searchInMatrix(matrix: List&amp;lt;List&amp;lt;Int&amp;gt;&amp;gt;, target: Int): List&amp;lt;Int&amp;gt; { var row = 0 var col = matrix[0].size - 1 while (row &amp;lt; matrix.size &amp;amp;&amp;amp; col &amp;gt;= 0) { when { matrix[row][col] &amp;lt; target -&amp;gt; row++ matrix[row][col] &amp;gt; target -&amp;gt; col-- else -&amp;gt; return listOf(row, col) } } return listOf(-1, -1) }   </description>
+    </item>
+    
     <item>
       <title>Third Maximum Number</title>
       <link>https://solairerove.github.io/post/third-maximum-number/</link>
