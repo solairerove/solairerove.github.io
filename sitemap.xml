@@ -3,34 +3,41 @@
   
   <url>
     <loc>https://solairerove.github.io/categories/</loc>
-    <lastmod>2021-04-16T23:51:48+03:00</lastmod>
+    <lastmod>2021-04-19T20:02:54+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/find-first-and-last-position-of-element/</loc>
+    <lastmod>2021-04-19T20:02:54+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/</loc>
-    <lastmod>2021-04-16T23:51:48+03:00</lastmod>
+    <lastmod>2021-04-19T20:02:54+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/post/</loc>
-    <lastmod>2021-04-16T23:51:48+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/post/rotated-binary-search/</loc>
-    <lastmod>2021-04-16T23:51:48+03:00</lastmod>
+    <lastmod>2021-04-19T20:02:54+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/categories/search/</loc>
+    <lastmod>2021-04-19T20:02:54+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/rotated-binary-search/</loc>
     <lastmod>2021-04-16T23:51:48+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
