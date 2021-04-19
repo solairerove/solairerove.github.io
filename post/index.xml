@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Apr 2021 20:02:54 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Apr 2021 22:58:07 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fixed Point</title>
+      <link>https://solairerove.github.io/post/fixed-point/</link>
+      <pubDate>Mon, 19 Apr 2021 22:58:07 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/fixed-point/</guid>
+      <description>1  index == arr[index]   fixed point
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  // O(log(n)) time | O(1) space fun searchFixedPoint(arr: List&amp;lt;Int&amp;gt;): Int { var low = 0 var high = arr.size - 1 while (low &amp;lt;= high) { val mid = low + (high - low) / 2 when { arr[mid] &amp;lt; mid -&amp;gt; low = mid + 1 arr[mid] == mid &amp;amp;&amp;amp; mid == 0 -&amp;gt; return mid arr[mid] == mid &amp;amp;&amp;amp; arr[mid - 1] &amp;lt; mid - 1 -&amp;gt; return mid else -&amp;gt; high = mid - 1 } } return -1 }   </description>
+    </item>
+    
     <item>
       <title>Find First and Last Position of Element in Sorted Array</title>
       <link>https://solairerove.github.io/post/find-first-and-last-position-of-element/</link>

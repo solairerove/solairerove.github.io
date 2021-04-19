@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-04-19T20:02:54+03:00" />
+<meta property="og:updated_time" content="2021-04-19T22:58:07+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,28 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/fixed-point/">Fixed Point</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 04-19-2021 </span>
+      <div class="post-category">
+          <a href="/categories/search/"> search </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      1  index == arr[index]   fixed point
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  // O(log(n)) time | O(1) space fun searchFixedPoint(arr: List&lt;Int&gt;): Int { var low = 0 var high = arr.size - 1 while (low &lt;= high) { val mid = low + (high - low) / 2 when { arr[mid] &lt; mid -&gt; low = mid + 1 arr[mid] == mid &amp;&amp; mid == 0 -&gt; return mid arr[mid] == mid &amp;&amp; arr[mid - 1] &lt; mid - 1 -&gt; return mid else -&gt; high = mid - 1 } } return -1 }   
+    </div>
+    <div class="read-more">
+      <a href="/post/fixed-point/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/find-first-and-last-position-of-element/">Find First and Last Position of Element in Sorted Array</a></h1>
@@ -205,30 +227,6 @@ third maximum number
     </div>
     <div class="read-more">
       <a href="/post/third-maximum-number/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/dutch-national-flag/">Dutch National Flag</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 04-14-2021 </span>
-      <div class="post-category">
-          <a href="/categories/sorting/"> sorting </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Дан массив для сортировки, и массив числе в порядке, в котором нужно отсортировать.
-Есть несколько решений.
- пройтись и посчитать сколько встречается элемент и потом перезаписать выставить за проход первый элемент, за второй выставить третий элемент дейкстра стайл  dutch national flag
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // O(n) time | O(1) space fun sortColors(arr: MutableList&lt;Int&gt;, colors: List&lt;Int&gt;) { var lt = 0 var i = 0 var gt = arr.
-    </div>
-    <div class="read-more">
-      <a href="/post/dutch-national-flag/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
