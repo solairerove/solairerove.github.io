@@ -6,7 +6,18 @@
     <description>Recent content in arrays on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Apr 2021 22:06:31 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/arrays/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Apr 2021 20:20:36 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/arrays/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pivot Index</title>
+      <link>https://solairerove.github.io/post/pivot-index/</link>
+      <pubDate>Tue, 20 Apr 2021 20:20:36 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/pivot-index/</guid>
+      <description>leetcode
+pivot index
+1 2 3 4 5 6 7 8 9 10 11  // O(n) time | O(1) space fun pivotIndex(arr: List&amp;lt;Int&amp;gt;): Int { val total = arr.sum() var sum = 0 for (i in arr.indices) { if (sum * 2 == total - arr[i]) return i sum += arr[i] } return -1 }   </description>
+    </item>
+    
     <item>
       <title>Two Numbers Sum</title>
       <link>https://solairerove.github.io/post/two-numbers-sum/</link>
