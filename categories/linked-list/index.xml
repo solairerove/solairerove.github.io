@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linked list on Headstone lamp - It&#39;s always has been</title>
+    <link>https://solairerove.github.io/categories/linked-list/</link>
+    <description>Recent content in linked list on Headstone lamp - It&#39;s always has been</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 20 Apr 2021 19:47:52 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/linked-list/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reverse Linked List</title>
+      <link>https://solairerove.github.io/post/reverse-linked-list/</link>
+      <pubDate>Tue, 20 Apr 2021 19:47:52 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/reverse-linked-list/</guid>
+      <description>leetcode
+reverse linked list
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  class ListNode(var value: Int) { var next: ListNode? = null } // O(n) time | O(1) space fun reverseList(head: ListNode?): ListNode? { var prev: ListNode? = null var curr: ListNode? = head while (curr != null) { val next = curr.next curr.next = prev prev = curr curr = next } return prev }   </description>
+    </item>
+    
+  </channel>
+</rss>
