@@ -3,14 +3,35 @@
   
   <url>
     <loc>https://solairerove.github.io/categories/</loc>
-    <lastmod>2021-04-20T22:30:02+03:00</lastmod>
+    <lastmod>2021-04-21T22:09:42+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/</loc>
-    <lastmod>2021-04-20T22:30:02+03:00</lastmod>
+    <lastmod>2021-04-21T22:09:42+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/</loc>
+    <lastmod>2021-04-21T22:09:42+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/radix-sort/</loc>
+    <lastmod>2021-04-21T22:09:42+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/categories/sorting/</loc>
+    <lastmod>2021-04-21T22:09:42+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -24,13 +45,6 @@
   
   <url>
     <loc>https://solairerove.github.io/post/merge-k-sorted-arrays/</loc>
-    <lastmod>2021-04-20T22:30:02+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/post/</loc>
     <lastmod>2021-04-20T22:30:02+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -108,13 +122,6 @@
   
   <url>
     <loc>https://solairerove.github.io/post/dutch-national-flag/</loc>
-    <lastmod>2021-04-14T23:04:03+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/categories/sorting/</loc>
     <lastmod>2021-04-14T23:04:03+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
