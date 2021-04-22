@@ -132,8 +132,9 @@
     <div class="post-summary">
       Input: arr = [6, 5, 3, 2, 8, 10, 9], k = 3
 Output: [2, 3, 5, 6, 8, 9, 10]
-merge k sorted arrays min heap
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  // O(nlog(k)) time | O(k) space // n - total elements, k is k fun sortKSortedArrays(arr: MutableList&lt;Int&gt;, k: Int) { val minHeap = MinHeap(arr.slice(0..min(k, arr.size - 1)).toMutableList()) var idx = 0 for (i in k + 1 until arr.
+merge k sorted arrays
+min heap
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  // O(nlog(k)) time | O(k) space // n - total elements, k is k fun sortKSortedArrays(arr: MutableList&lt;Int&gt;, k: Int) { val sliceIdx = if (k + 1 &lt; arr.
     </div>
     <div class="read-more">
       <a href="/post/sort-k-sorted-array/" class="read-more-link">Read more...</a>
