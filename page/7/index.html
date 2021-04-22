@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-04-21T22:09:42+03:00" />
+<meta property="og:updated_time" content="2021-04-22T23:48:43+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,29 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/fibonacci/">Fibonacci</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 03-02-2021 </span>
+      <div class="post-category">
+          <a href="/categories/recursion/"> recursion </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Один из классических рекурсивных алгоритмов. Последовательность чисел, где каждое последующее - сумма двух предыдущих.
+fibonacci
+1 2 3 4 5 6 7 8 9 10 11 12  // O(n) time | O(1) space fun getNthFibonacci(n: Int): Int { val lastTwo = mutableListOf(0, 1) repeat(n - 2) { val next = lastTwo.sum() lastTwo[0] = lastTwo[1] lastTwo[1] = next } return if (n &gt; 1) lastTwo[1] else lastTwo[0] }   
+    </div>
+    <div class="read-more">
+      <a href="/post/fibonacci/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/insertion-sort/">Insertion Sort</a></h1>
