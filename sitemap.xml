@@ -3,27 +3,41 @@
   
   <url>
     <loc>https://solairerove.github.io/categories/</loc>
-    <lastmod>2021-04-22T23:48:43+03:00</lastmod>
+    <lastmod>2021-04-23T17:49:34+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/categories/greedy/</loc>
+    <lastmod>2021-04-23T17:49:34+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/</loc>
-    <lastmod>2021-04-22T23:48:43+03:00</lastmod>
+    <lastmod>2021-04-23T17:49:34+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/categories/heap/</loc>
-    <lastmod>2021-04-22T23:48:43+03:00</lastmod>
+    <loc>https://solairerove.github.io/post/height-checker/</loc>
+    <lastmod>2021-04-23T17:49:34+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/post/</loc>
+    <lastmod>2021-04-23T17:49:34+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/categories/heap/</loc>
     <lastmod>2021-04-22T23:48:43+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -207,13 +221,6 @@
   <url>
     <loc>https://solairerove.github.io/post/heap-sort/</loc>
     <lastmod>2021-03-09T17:45:39+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/categories/greedy/</loc>
-    <lastmod>2021-03-08T17:27:29+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

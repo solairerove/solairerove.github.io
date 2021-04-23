@@ -6,7 +6,20 @@
     <description>Recent content on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 22 Apr 2021 23:48:43 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Apr 2021 17:49:34 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Height Checker</title>
+      <link>https://solairerove.github.io/post/height-checker/</link>
+      <pubDate>Fri, 23 Apr 2021 17:49:34 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/height-checker/</guid>
+      <description>Input: red = [1, 5, 9, 4, 6], blue = [4, 8, 6, 5, 3]
+Output: false
+height checker
+type of leet code
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // O(nlog(n)) time | O(1) space fun heightChecker(red: MutableList&amp;lt;Int&amp;gt;, blue: MutableList&amp;lt;Int&amp;gt;): Boolean { red.sortDescending() blue.sortDescending() val firstRow = if (red[0] &amp;lt; blue[0]) 1 else 0 for (i in 0 until red.</description>
+    </item>
+    
     <item>
       <title>Sort K Sorted Array</title>
       <link>https://solairerove.github.io/post/sort-k-sorted-array/</link>
