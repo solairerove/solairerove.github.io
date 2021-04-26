@@ -6,7 +6,21 @@
     <description>Recent content in greedy on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 23 Apr 2021 17:49:34 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/greedy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Apr 2021 22:21:31 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/greedy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tandem Bicycle</title>
+      <link>https://solairerove.github.io/post/tandem-bicycle/</link>
+      <pubDate>Mon, 26 Apr 2021 22:21:31 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/tandem-bicycle/</guid>
+      <description>Найти максимальную сумму скоростей тандема велосипедистов.
+Input: red = [1, 5, 9, 4, 6], blue = [4, 8, 6, 5, 3]
+Output: 34
+tandem bicycle
+type of leet code
+1 2 3 4 5 6 7 8 9 10 11 12 13  // O(nlog(n)) time | O(1) space fun tandemBicycle(red: MutableList&amp;lt;Int&amp;gt;, blue: MutableList&amp;lt;Int&amp;gt;): Int { red.sort() blue.sort() val n = red.size var total = 0 for (i in 0 until n) { total += max(red[i], blue[n - 1 - i]) } return total }   </description>
+    </item>
+    
     <item>
       <title>Height Checker</title>
       <link>https://solairerove.github.io/post/height-checker/</link>
