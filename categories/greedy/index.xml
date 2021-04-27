@@ -6,7 +6,22 @@
     <description>Recent content in greedy on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Apr 2021 22:21:31 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/greedy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Apr 2021 22:23:32 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/greedy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Task Assignment</title>
+      <link>https://solairerove.github.io/post/task-assignment/</link>
+      <pubDate>Tue, 27 Apr 2021 22:23:32 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/task-assignment/</guid>
+      <description>Find the fastest time to complete all tasks, if worker can proceed only 2 tasks
+k is a number of workers
+tasks is an array of task duration
+Input: tasks = [2, 4, 6, 1, 5, 3], k = 3
+Output: [[3, 2], [0, 4], [5, 1]]
+task assignment
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35  // O(nlog(n)) time | O(n) space fun taskAssignment(tasks: MutableList&amp;lt;Int&amp;gt;, k: Int): List&amp;lt;List&amp;lt;Int&amp;gt;&amp;gt; { val paired = mutableListOf&amp;lt;List&amp;lt;Int&amp;gt;&amp;gt;() val taskDurationToIndices = taskDurationToIndices(tasks) tasks.</description>
+    </item>
+    
     <item>
       <title>Tandem Bicycle</title>
       <link>https://solairerove.github.io/post/tandem-bicycle/</link>
