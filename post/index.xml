@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Apr 2021 22:30:10 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Apr 2021 22:03:49 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shell Sort</title>
+      <link>https://solairerove.github.io/post/shell-sort/</link>
+      <pubDate>Wed, 28 Apr 2021 22:03:49 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/shell-sort/</guid>
+      <description>shell sort
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  // O(nlog(n)) time | O(1) space fun shellSort(arr: MutableList&amp;lt;Int&amp;gt;) { val n = arr.size // 3x+1 increment sequence: 1, 4, 13, 40, 121, 364, 1093,  var h = 1 while (h &amp;lt; n / 3) h = h * 3 + 1 while (h &amp;gt;= 1) { // h-sort  for (i in h until n) { for (j in i downTo h step h) { if (arr[j] &amp;lt; arr[j - h]) { swap(arr, j, j - h) } } } h /= 3 } } fun swap(arr: MutableList&amp;lt;Int&amp;gt;, i: Int, j: Int) { val temp = arr[i] arr[i] = arr[j] arr[j] = temp }   </description>
+    </item>
+    
     <item>
       <title>Valid Starting City</title>
       <link>https://solairerove.github.io/post/valid-starting-city/</link>
