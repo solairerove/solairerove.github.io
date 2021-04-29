@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-04-29T14:39:58+03:00" />
+<meta property="og:updated_time" content="2021-04-29T15:13:22+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,31 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/minimum-waiting-time/">Minimum Waiting Time</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 03-08-2021 </span>
+      <div class="post-category">
+          <a href="/categories/greedy/"> greedy </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Given non-empty array of positive int, that define time to execute.
+Only one query can be executed at time, but in any order.
+Get minimal waiting time to execute all queries.
+Solid step is ascending sort.
+9 6 5 2 3 1 -&gt; 1 2 3 5 6 9 -&gt; 0 + 1 + (1 + 2) + (1 + 2 + 3) + (1 + 2 + 3 + 5) + (1 + 2 + 3 + 5 + 6) = 38
+    </div>
+    <div class="read-more">
+      <a href="/post/minimum-waiting-time/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/huffman-decode/">Huffman Decode</a></h1>
@@ -205,29 +230,6 @@ knapsack problem
     </div>
     <div class="read-more">
       <a href="/post/knapsack-problem/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/segments-covering-by-unit/">Segments Covering by Unit</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 03-04-2021 </span>
-      <div class="post-category">
-          <a href="/categories/greedy/"> greedy </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Даны отрезки на прямой. Найти такие точки, которые лежат на всех заданных отрезках. Найденное множество должно быть минимальным по размеру.
-Берем все концы отрезков (как левые, так и правые) и сортируем их. Для каждой точки сохраним номер отрезка. Также каким концом его она является (левым или правым). Учтем, что если есть несколько точек с одной координатой, то сначала будут идти левые концы, потом правые.
-Заведём коллекцию, в которой будут храниться номера отрезков, рассматриваемых в данный момент.
-    </div>
-    <div class="read-more">
-      <a href="/post/segments-covering-by-unit/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
