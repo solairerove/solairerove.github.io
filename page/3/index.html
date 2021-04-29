@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-04-28T22:03:49+03:00" />
+<meta property="og:updated_time" content="2021-04-29T14:39:58+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,29 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/pivot-index/">Pivot Index</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 04-20-2021 </span>
+      <div class="post-category">
+          <a href="/categories/arrays/"> arrays </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      leetcode
+pivot index
+1 2 3 4 5 6 7 8 9 10 11  // O(n) time | O(1) space fun pivotIndex(arr: List&lt;Int&gt;): Int { val total = arr.sum() var sum = 0 for (i in arr.indices) { if (sum * 2 == total - arr[i]) return i sum += arr[i] } return -1 }   
+    </div>
+    <div class="read-more">
+      <a href="/post/pivot-index/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/reverse-linked-list/">Reverse Linked List</a></h1>
@@ -204,29 +227,6 @@ rotated binary search
     </div>
     <div class="read-more">
       <a href="/post/rotated-binary-search/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/search-in-matrix/">Search in Matrix</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 04-15-2021 </span>
-      <div class="post-category">
-          <a href="/categories/search/"> search </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      leetcode
-third maximum number
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  // O(n + m) time | O(1) space fun searchInMatrix(matrix: List&lt;List&lt;Int&gt;&gt;, target: Int): List&lt;Int&gt; { var row = 0 var col = matrix[0].size - 1 while (row &lt; matrix.size &amp;&amp; col &gt;= 0) { when { matrix[row][col] &lt; target -&gt; row++ matrix[row][col] &gt; target -&gt; col-- else -&gt; return listOf(row, col) } } return listOf(-1, -1) }   
-    </div>
-    <div class="read-more">
-      <a href="/post/search-in-matrix/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

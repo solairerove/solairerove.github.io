@@ -6,7 +6,17 @@
     <description>Recent content on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Apr 2021 22:03:49 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Apr 2021 14:39:58 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Validate Subsequence</title>
+      <link>https://solairerove.github.io/post/validate-subsequence/</link>
+      <pubDate>Thu, 29 Apr 2021 14:39:58 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/validate-subsequence/</guid>
+      <description>validate subsequence
+1 2 3 4 5 6 7 8 9 10 11  // O(n) time | O(1) space fun validateSubsequence(arr: List&amp;lt;Int&amp;gt;, subsequence: List&amp;lt;Int&amp;gt;): Boolean { var seqIdx = 0 for (el in arr) { if (seqIdx == subsequence.size) break if (el == subsequence[seqIdx]) seqIdx++ } return seqIdx == subsequence.size }   </description>
+    </item>
+    
     <item>
       <title>Shell Sort</title>
       <link>https://solairerove.github.io/post/shell-sort/</link>
