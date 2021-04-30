@@ -3,34 +3,41 @@
   
   <url>
     <loc>https://solairerove.github.io/categories/arrays/</loc>
-    <lastmod>2021-04-30T16:06:24+03:00</lastmod>
+    <lastmod>2021-04-30T16:16:13+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/categories/</loc>
-    <lastmod>2021-04-30T16:06:24+03:00</lastmod>
+    <lastmod>2021-04-30T16:16:13+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/</loc>
-    <lastmod>2021-04-30T16:06:24+03:00</lastmod>
+    <lastmod>2021-04-30T16:16:13+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/post/move-element-to-the-end/</loc>
-    <lastmod>2021-04-30T16:06:24+03:00</lastmod>
+    <loc>https://solairerove.github.io/post/monotonic-array/</loc>
+    <lastmod>2021-04-30T16:16:13+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/post/</loc>
+    <lastmod>2021-04-30T16:16:13+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/move-element-to-the-end/</loc>
     <lastmod>2021-04-30T16:06:24+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

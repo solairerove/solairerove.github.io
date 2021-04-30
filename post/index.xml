@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 30 Apr 2021 16:06:24 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Apr 2021 16:16:13 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monotonic Array</title>
+      <link>https://solairerove.github.io/post/monotonic-array/</link>
+      <pubDate>Fri, 30 Apr 2021 16:16:13 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/monotonic-array/</guid>
+      <description>Input: arr = [-10, -9, -4, 0, 1, 2, 3, 5, 9, 11, 12, 14, 17]
+Output: true
+monotonic array
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  // O(n) time | O(1) space fun isMonotonic(arr: List&amp;lt;Int&amp;gt;): Boolean { var isIncreasing = true var isDecreasing = true for (i in 1 until arr.size) { when { arr[i - 1] &amp;lt; arr[i] -&amp;gt; isDecreasing = false arr[i - 1] &amp;gt; arr[i] -&amp;gt; isIncreasing = false } } return isIncreasing || isDecreasing }   </description>
+    </item>
+    
     <item>
       <title>Move Element to the End</title>
       <link>https://solairerove.github.io/post/move-element-to-the-end/</link>
