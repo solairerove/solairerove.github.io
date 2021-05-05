@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-05-04T23:44:48+03:00" />
+<meta property="og:updated_time" content="2021-05-05T13:43:52+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,31 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/quick-sort-3-way/">Quick Sort 3 Way</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 04-06-2021 </span>
+      <div class="post-category">
+          <a href="/categories/sorting/"> sorting </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Вариант быстрой сортировки с трехчастным разбиением для массивов с низкой энтропией.
+a[low]..a[lt - 1] &lt;= a[j] &lt;= a[gt + 1]..a[high] a[lt - 1] = a[j] = a[gt + 1]
+princeton quicksort 3 way
+quick sort 3 way
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  // O(nlog(n)) time | O(log(n)) space fun quickSort(arr: MutableList&lt;Int&gt;, low: Int = 0, high: Int = arr.
+    </div>
+    <div class="read-more">
+      <a href="/post/quick-sort-3-way/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/quick-sort/">Quick Sort</a></h1>
@@ -221,29 +246,6 @@ stepik max heap
     </div>
     <div class="read-more">
       <a href="/post/min-heap/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/heap-sort/">Heap Sort</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 03-09-2021 </span>
-      <div class="post-category">
-          <a href="/categories/sorting/"> sorting </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      build heap from array and n time get min element. (naive heap sort)
-heap sort
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34  // O(nlogn) time | O(1) space fun heapSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (k in n / 2 downTo 1) { sink(arr, k, n) } var k = n while (k &gt; 1) { swap(arr, 1, k--) sink(arr, 1, k) } } fun sink(arr: MutableList&lt;Int&gt;, k: Int, n: Int) { var idx = k while (2 * idx &lt;= n) { var j = 2 * idx if (j &lt; n &amp;&amp; less(arr, j, j + 1)) j++ if (!
-    </div>
-    <div class="read-more">
-      <a href="/post/heap-sort/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
