@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-05-05T13:43:52+03:00" />
+<meta property="og:updated_time" content="2021-05-06T13:40:20+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,30 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/non-constructable-change/">Non Constructable Change</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 05-06-2021 </span>
+      <div class="post-category">
+          <a href="/categories/arrays/"> arrays </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Input: arr = [2, 3, 1, 1, 2, 13]
+Output: 10
+non constructable change
+1 2 3 4 5 6 7 8 9 10 11 12 13  // O(nlog(n)) time | O(1) space fun nonConstructableChange(arr: MutableList&lt;Int&gt;): Int { arr.sort() var change = 0 for (el in arr) { if (el &gt; change + 1) return change + 1 change += el } return change + 1 }   
+    </div>
+    <div class="read-more">
+      <a href="/post/non-constructable-change/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/sort-squared-array/">Sort Squared Array</a></h1>
@@ -208,30 +232,6 @@ spiral traverse
     </div>
     <div class="read-more">
       <a href="/post/spiral-traverse/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/monotonic-array/">Monotonic Array</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 04-30-2021 </span>
-      <div class="post-category">
-          <a href="/categories/arrays/"> arrays </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Input: arr = [-10, -9, -4, 0, 1, 2, 3, 5, 9, 11, 12, 14, 17]
-Output: true
-monotonic array
-1 2 3 4 5 6 7 8 9 10 11 12 13 14  // O(n) time | O(1) space fun isMonotonic(arr: List&lt;Int&gt;): Boolean { var isIncreasing = true var isDecreasing = true for (i in 1 until arr.size) { when { arr[i - 1] &lt; arr[i] -&gt; isDecreasing = false arr[i - 1] &gt; arr[i] -&gt; isIncreasing = false } } return isIncreasing || isDecreasing }   
-    </div>
-    <div class="read-more">
-      <a href="/post/monotonic-array/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

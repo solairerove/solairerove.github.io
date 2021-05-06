@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-05-05T13:43:52+03:00" />
+<meta property="og:updated_time" content="2021-05-06T13:40:20+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,30 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/monotonic-array/">Monotonic Array</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 04-30-2021 </span>
+      <div class="post-category">
+          <a href="/categories/arrays/"> arrays </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Input: arr = [-10, -9, -4, 0, 1, 2, 3, 5, 9, 11, 12, 14, 17]
+Output: true
+monotonic array
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  // O(n) time | O(1) space fun isMonotonic(arr: List&lt;Int&gt;): Boolean { var isIncreasing = true var isDecreasing = true for (i in 1 until arr.size) { when { arr[i - 1] &lt; arr[i] -&gt; isDecreasing = false arr[i - 1] &gt; arr[i] -&gt; isIncreasing = false } } return isIncreasing || isDecreasing }   
+    </div>
+    <div class="read-more">
+      <a href="/post/monotonic-array/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/move-element-to-the-end/">Move Element to the End</a></h1>
@@ -205,31 +229,6 @@ three number sum
     </div>
     <div class="read-more">
       <a href="/post/shell-sort/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/valid-starting-city/">Valid Starting City</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 04-27-2021 </span>
-      <div class="post-category">
-          <a href="/categories/greedy/"> greedy </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Input: distances = [10, 15, 10, 25, 5], fuel = [1, 2, 3, 1, 2], mpg = 5
-Output: 4
-valid starting city
-type of leetcode destination-city
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  // O(n) time | O(1) space fun validStartingCity(distances: List&lt;Int&gt;, fuel: List&lt;Int&gt;, mpg: Int): Int { var currMiles = 0 var idx = 0 var totalMiles = 0 for (i in 1 until distances.
-    </div>
-    <div class="read-more">
-      <a href="/post/valid-starting-city/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

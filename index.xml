@@ -6,7 +6,19 @@
     <description>Recent content on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 May 2021 13:43:52 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 May 2021 13:40:20 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Non Constructable Change</title>
+      <link>https://solairerove.github.io/post/non-constructable-change/</link>
+      <pubDate>Thu, 06 May 2021 13:40:20 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/non-constructable-change/</guid>
+      <description>Input: arr = [2, 3, 1, 1, 2, 13]
+Output: 10
+non constructable change
+1 2 3 4 5 6 7 8 9 10 11 12 13  // O(nlog(n)) time | O(1) space fun nonConstructableChange(arr: MutableList&amp;lt;Int&amp;gt;): Int { arr.sort() var change = 0 for (el in arr) { if (el &amp;gt; change + 1) return change + 1 change += el } return change + 1 }   </description>
+    </item>
+    
     <item>
       <title>Sort Squared Array</title>
       <link>https://solairerove.github.io/post/sort-squared-array/</link>
