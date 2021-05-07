@@ -3,34 +3,41 @@
   
   <url>
     <loc>https://solairerove.github.io/categories/arrays/</loc>
-    <lastmod>2021-05-06T13:40:20+03:00</lastmod>
+    <lastmod>2021-05-07T15:18:41+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/categories/</loc>
-    <lastmod>2021-05-06T13:40:20+03:00</lastmod>
+    <lastmod>2021-05-07T15:18:41+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/</loc>
-    <lastmod>2021-05-06T13:40:20+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/post/non-constructable-change/</loc>
-    <lastmod>2021-05-06T13:40:20+03:00</lastmod>
+    <lastmod>2021-05-07T15:18:41+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/post/</loc>
+    <lastmod>2021-05-07T15:18:41+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/tournament-winner/</loc>
+    <lastmod>2021-05-07T15:18:41+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/non-constructable-change/</loc>
     <lastmod>2021-05-06T13:40:20+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

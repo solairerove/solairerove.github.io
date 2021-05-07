@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-05-06T13:40:20+03:00" />
+<meta property="og:updated_time" content="2021-05-07T15:18:41+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,29 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/naive-huffman-encode/">Naive Huffman Encode</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 03-07-2021 </span>
+      <div class="post-category">
+          <a href="/categories/greedy/"> greedy </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Формулировка задачи
+naive huffman encode
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99  /** * abacabad * 4 14 * a: 0 * b: 10 * c: 110 * d: 111 * 01001100100111 */ fun main() { val s = &#34;abacabad&#34; val letterToFreq = getLetterToFrequency(s = s) val letterWeightStack = getLetterWeightStack(letterToFreq = letterToFreq) val huffmanResult = huffman(letterWeightStack = letterWeightStack) val dictionary = getDictionary(huffmanResult = huffmanResult) val encodedString = encodeString(stringToEncode = s, dictionary = dictionary) println(&#34;${dictionary.
+    </div>
+    <div class="read-more">
+      <a href="/post/naive-huffman-encode/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/number-partition/">Number Partition</a></h1>
@@ -205,29 +228,6 @@ palindrome check
     </div>
     <div class="read-more">
       <a href="/post/palindrome-check/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/highest-common-factor/">Highest Common Factor</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 03-02-2021 </span>
-      <div class="post-category">
-          <a href="/categories/recursion/"> recursion </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Рекурсивный вариант алгоритма Евклида для нахождения наибольшего общего делителя.
-gcd
-1 2 3 4 5 6 7 8  fun gcd(p: Int, q: Int): Int { if (q == 0) { return p } val r = p % q return gcd(q, r) }   
-    </div>
-    <div class="read-more">
-      <a href="/post/highest-common-factor/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
