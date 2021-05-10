@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-05-07T15:18:41+03:00" />
+<meta property="og:updated_time" content="2021-05-10T20:33:20+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,30 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/longest-peak/">Longest Peak</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 05-04-2021 </span>
+      <div class="post-category">
+          <a href="/categories/arrays/"> arrays </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Input: arr = [3, -4, 7, 12, 4, 20, 15, 6, -2, 5, 16, 11, 1]
+Output: 5
+longest peak
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  // O(n) time | O(1) space fun longestPeak(arr: List&lt;Int&gt;): Int { var longestPeakLen = 0 var i = 1 while (i &lt; arr.size - 1) { val isPeak = arr[i] &gt; arr[i - 1] &amp;&amp; arr[i] &gt; arr[i + 1] if (!
+    </div>
+    <div class="read-more">
+      <a href="/post/longest-peak/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/spiral-traverse/">Spiral Traverse</a></h1>
@@ -209,28 +233,6 @@ three number sum
     </div>
     <div class="read-more">
       <a href="/post/three-number-sum/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/validate-subsequence/">Validate Subsequence</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 04-29-2021 </span>
-      <div class="post-category">
-          <a href="/categories/arrays/"> arrays </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      validate subsequence
-1 2 3 4 5 6 7 8 9 10 11  // O(n) time | O(1) space fun validateSubsequence(arr: List&lt;Int&gt;, subsequence: List&lt;Int&gt;): Boolean { var seqIdx = 0 for (el in arr) { if (seqIdx == subsequence.size) break if (el == subsequence[seqIdx]) seqIdx++ } return seqIdx == subsequence.size }   
-    </div>
-    <div class="read-more">
-      <a href="/post/validate-subsequence/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

@@ -6,7 +6,19 @@
     <description>Recent content on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 May 2021 15:18:41 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 May 2021 20:33:20 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Longest Palindrome</title>
+      <link>https://solairerove.github.io/post/longest-palindrome/</link>
+      <pubDate>Mon, 10 May 2021 20:33:20 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/longest-palindrome/</guid>
+      <description>Input: s = &amp;ldquo;arpkqqkpfkpdp&amp;rdquo;
+Output: pkqqkp
+longest palindrome
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  // O(n^2) time | O(n) space fun longestPalindrome(s: String): String { var longest = listOf(0, 1) for (i in 1 until s.length) { val odd = getLongestPalindrome(s, i - 1, i + 1) val even = getLongestPalindrome(s, i - 1, i) val curr = if (odd[1] - odd[0] &amp;gt; even[1] - odd[0]) odd else even longest = if (longest[1] - longest[0] &amp;gt; curr[1] - curr[0]) longest else curr } return s.</description>
+    </item>
+    
     <item>
       <title>Tournament Winner</title>
       <link>https://solairerove.github.io/post/tournament-winner/</link>
