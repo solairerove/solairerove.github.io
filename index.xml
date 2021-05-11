@@ -6,7 +6,19 @@
     <description>Recent content on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 May 2021 20:33:20 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 May 2021 21:08:31 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Group Anagrams</title>
+      <link>https://solairerove.github.io/post/group-anagrams/</link>
+      <pubDate>Tue, 11 May 2021 21:08:31 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/group-anagrams/</guid>
+      <description>Input: [&amp;ldquo;funeral&amp;rdquo;, &amp;ldquo;realfun&amp;rdquo;, &amp;ldquo;debitcard&amp;rdquo;, &amp;ldquo;badcredit&amp;rdquo;, &amp;ldquo;bobmarley&amp;rdquo;, &amp;ldquo;marbleboy&amp;rdquo;]
+Output: [[funeral, realfun], [debitcard, badcredit], [bobmarley, marbleboy]]
+group anagrams
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  // O(w * nlog(n)) time | O(wn) space // w - number of words // n - length of longest word fun groupAnagrams(words: List&amp;lt;String&amp;gt;): List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; { val anagrams = mutableMapOf&amp;lt;String, MutableList&amp;lt;String&amp;gt;&amp;gt;() for (word in words) { val sortedWord = word.</description>
+    </item>
+    
     <item>
       <title>Longest Palindrome</title>
       <link>https://solairerove.github.io/post/longest-palindrome/</link>
