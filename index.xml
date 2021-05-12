@@ -6,7 +6,18 @@
     <description>Recent content on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 May 2021 21:08:31 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 May 2021 21:31:54 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Array of Products</title>
+      <link>https://solairerove.github.io/post/array-of-products/</link>
+      <pubDate>Wed, 12 May 2021 21:31:54 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/array-of-products/</guid>
+      <description>Input: [1, 2, 3, 4, 6]
+Output: [144, 72, 48, 36, 24]
+ array of products  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  // O(n) time | O(n) space fun arrayOfProducts(arr: List&amp;lt;Int&amp;gt;): List&amp;lt;Int&amp;gt; { val n = arr.size val products = MutableList(n) { 1 } var low = 1 for (i in 0 until n) { products[i] = low low *= arr[i] } var high = 1 for (i in n - 1 downTo 0) { products[i] *= high high *= arr[i] } return products }   </description>
+    </item>
+    
     <item>
       <title>Group Anagrams</title>
       <link>https://solairerove.github.io/post/group-anagrams/</link>
