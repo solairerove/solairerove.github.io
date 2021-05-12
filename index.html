@@ -118,6 +118,30 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/merge-overlapping-intervals/">Merge Overlapping Intervals</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 05-14-2021 </span>
+      <div class="post-category">
+          <a href="/categories/arrays/"> arrays </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Input: [[3, 5], [1, 4], [6, 7]]
+Output: [[1, 5], [6, 7]]
+merge overlapping intervals
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  // O(nlog(n)) time | O(n) space fun mergeOverlappingIntervals(intervals: List&lt;List&lt;Int&gt;&gt;): List&lt;List&lt;Int&gt;&gt; { val sorted = intervals.toMutableList() .sortedWith { a, b -&gt; a[0].compareTo(b[0]) } .map { it.toMutableList() } val merged = mutableListOf&lt;MutableList&lt;Int&gt;&gt;() var curr = sorted[0] merged.
+    </div>
+    <div class="read-more">
+      <a href="/post/merge-overlapping-intervals/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/first-duplicate-value/">First Duplicate Value</a></h1>
     <div class="post-meta">
       <span class="post-time"> 05-13-2021 </span>
@@ -208,30 +232,6 @@ longest palindrome
     </div>
     <div class="read-more">
       <a href="/post/longest-palindrome/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/tournament-winner/">Tournament Winner</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 05-07-2021 </span>
-      <div class="post-category">
-          <a href="/categories/arrays/"> arrays </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Input:
-1 2 3 4 5 6 7  val competitions = listOf( listOf(&#34;Kotlin&#34;, &#34;Java&#34;), listOf(&#34;Java&#34;, &#34;Python&#34;), listOf(&#34;Python&#34;, &#34;Kotlin&#34;) ) val results = listOf(1, 0, 0)   Output: Kotlin
-tournament winner
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  // O(n) time | O(k) space // n - number of competitions // k - number of teams fun tournamentWinner(competitions: List&lt;List&lt;String&gt;&gt;, results: List&lt;Int&gt;): String { var winner = &#34;&#34; val teamToScore = mutableMapOf(winner to 0) for (i in competitions.
-    </div>
-    <div class="read-more">
-      <a href="/post/tournament-winner/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
