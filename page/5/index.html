@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.80.0 with theme even" />
+<meta name="generator" content="Hugo 0.81.0 with theme even" />
 
 
 <link rel="canonical" href="https://solairerove.github.io/" />
@@ -37,7 +37,7 @@
 
 
 
-<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link href="/sass/main.min.af7fd1da18d66c2b017df5b4cae508ef44cfcac3fb4c7c7a327fe4f4f9e28b08.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
@@ -45,10 +45,9 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-05-12T21:31:54+03:00" />
+
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
-<meta itemprop="description" content="It&#39;s always has been.">
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="It&#39;s always has been."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Headstone lamp - It&#39;s always has been"/>
 <meta name="twitter:description" content="It&#39;s always has been."/>
 
@@ -117,6 +116,31 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/sort-k-sorted-array/">Sort K Sorted Array</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 04-22-2021 </span>
+      <div class="post-category">
+          <a href="/categories/heap/"> heap </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Input: arr = [6, 5, 3, 2, 8, 10, 9], k = 3
+Output: [2, 3, 5, 6, 8, 9, 10]
+merge k sorted arrays
+min heap
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  // O(nlog(k)) time | O(k) space // n - total elements, k is k fun sortKSortedArrays(arr: MutableList&lt;Int&gt;, k: Int) { val sliceIdx = if (k + 1 &lt; arr.
+    </div>
+    <div class="read-more">
+      <a href="/post/sort-k-sorted-array/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/radix-sort/">Radix Sort</a></h1>
@@ -210,28 +234,6 @@ reverse linked list
   </div>
 </article>
 
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/fixed-point/">Fixed Point</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 04-19-2021 </span>
-      <div class="post-category">
-          <a href="/categories/search/"> search </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      1  index == arr[index]   fixed point
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  // O(log(n)) time | O(1) space fun searchFixedPoint(arr: List&lt;Int&gt;): Int { var low = 0 var high = arr.size - 1 while (low &lt;= high) { val mid = low + (high - low) / 2 when { arr[mid] &lt; mid -&gt; low = mid + 1 arr[mid] == mid &amp;&amp; mid == 0 -&gt; return mid arr[mid] == mid &amp;&amp; arr[mid - 1] &lt; mid - 1 -&gt; return mid else -&gt; high = mid - 1 } } return -1 }   
-    </div>
-    <div class="read-more">
-      <a href="/post/fixed-point/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
     </section>
   
   <nav class="pagination">
@@ -287,7 +289,7 @@ reverse linked list
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
 
 
 

@@ -6,7 +6,20 @@
     <description>Recent content on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 May 2021 21:31:54 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 May 2021 12:40:48 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Duplicate Value</title>
+      <link>https://solairerove.github.io/post/first-duplicate-value/</link>
+      <pubDate>Thu, 13 May 2021 12:40:48 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/first-duplicate-value/</guid>
+      <description>Input: [2, 3, 2, 6, 6, 5, 3, 6]
+Output: 2
+Naive O(n) time | O(n) space solution is to use set and contains check
+first duplicate value
+1 2 3 4 5 6 7 8 9 10  // O(n) time | O(1) space fun firstDuplicateValue(arr: MutableList&amp;lt;Int&amp;gt;): Int { for (el in arr) { val absEl = abs(el) if (arr[absEl - 1] &amp;lt; 0) return absEl arr[absEl - 1] *= -1 } return -1 }   </description>
+    </item>
+    
     <item>
       <title>Array of Products</title>
       <link>https://solairerove.github.io/post/array-of-products/</link>
