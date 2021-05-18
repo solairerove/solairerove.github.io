@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Caesar Cipher Encryptor - Headstone lamp - It&#39;s always has been</title>
+  <title>Run Length Encoding - Headstone lamp - It&#39;s always has been</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,9 +16,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="solairerove" /><meta name="description" content="Input: &amp;ldquo;abc&amp;rdquo;
-Output: &amp;ldquo;cde&amp;rdquo;
- caesar cipher encryptor  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  // O(n) time | O(n) space fun caesarCipherEncryptor(s: String, k: Int): String { val newLetters = mutableListOf&amp;lt;Char&amp;gt;() val key = k % 26 s.forEach { newLetters.add(getNewLetter(it, key)) } return newLetters.joinToString(&amp;#34;&amp;#34;) } fun getNewLetter(letter: Char, key: Int): Char { val newLetterCode = letter.toInt() &#43; key return if (newLetterCode &amp;lt;= 122) { newLetterCode." /><meta name="keywords" content="Headstone, algorithms, data structures" />
+<meta name="author" content="solairerove" /><meta name="description" content="Input: &amp;ldquo;xxxxxxyyyйййй&amp;rdquo;
+Output: &amp;ldquo;6x3y4й&amp;rdquo;
+ run length encoding  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  // O(n) time | O(n) space fun runLengthEncoding(s: String): String { val n = s.length val encoded = mutableListOf&amp;lt;Char&amp;gt;() var len = 1 for (i in 1 until n) { val currChar = s[i] val prevChar = s[i - 1] if (currChar !" /><meta name="keywords" content="Headstone, algorithms, data structures" />
 
 
 
@@ -28,7 +28,7 @@ Output: &amp;ldquo;cde&amp;rdquo;
 <meta name="generator" content="Hugo 0.80.0 with theme even" />
 
 
-<link rel="canonical" href="https://solairerove.github.io/post/caesar-cipher-encryptor/" />
+<link rel="canonical" href="https://solairerove.github.io/post/run-length-encoding/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,30 +41,30 @@ Output: &amp;ldquo;cde&amp;rdquo;
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Caesar Cipher Encryptor" />
-<meta property="og:description" content="Input: &ldquo;abc&rdquo;
-Output: &ldquo;cde&rdquo;
- caesar cipher encryptor  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  // O(n) time | O(n) space fun caesarCipherEncryptor(s: String, k: Int): String { val newLetters = mutableListOf&lt;Char&gt;() val key = k % 26 s.forEach { newLetters.add(getNewLetter(it, key)) } return newLetters.joinToString(&#34;&#34;) } fun getNewLetter(letter: Char, key: Int): Char { val newLetterCode = letter.toInt() &#43; key return if (newLetterCode &lt;= 122) { newLetterCode." />
+<meta property="og:title" content="Run Length Encoding" />
+<meta property="og:description" content="Input: &ldquo;xxxxxxyyyйййй&rdquo;
+Output: &ldquo;6x3y4й&rdquo;
+ run length encoding  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  // O(n) time | O(n) space fun runLengthEncoding(s: String): String { val n = s.length val encoded = mutableListOf&lt;Char&gt;() var len = 1 for (i in 1 until n) { val currChar = s[i] val prevChar = s[i - 1] if (currChar !" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://solairerove.github.io/post/caesar-cipher-encryptor/" />
-<meta property="article:published_time" content="2021-05-17T19:58:00+03:00" />
-<meta property="article:modified_time" content="2021-05-17T19:58:00+03:00" />
-<meta itemprop="name" content="Caesar Cipher Encryptor">
-<meta itemprop="description" content="Input: &ldquo;abc&rdquo;
-Output: &ldquo;cde&rdquo;
- caesar cipher encryptor  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  // O(n) time | O(n) space fun caesarCipherEncryptor(s: String, k: Int): String { val newLetters = mutableListOf&lt;Char&gt;() val key = k % 26 s.forEach { newLetters.add(getNewLetter(it, key)) } return newLetters.joinToString(&#34;&#34;) } fun getNewLetter(letter: Char, key: Int): Char { val newLetterCode = letter.toInt() &#43; key return if (newLetterCode &lt;= 122) { newLetterCode.">
-<meta itemprop="datePublished" content="2021-05-17T19:58:00+03:00" />
-<meta itemprop="dateModified" content="2021-05-17T19:58:00+03:00" />
-<meta itemprop="wordCount" content="79">
+<meta property="og:url" content="https://solairerove.github.io/post/run-length-encoding/" />
+<meta property="article:published_time" content="2021-05-18T20:31:47+03:00" />
+<meta property="article:modified_time" content="2021-05-18T20:31:47+03:00" />
+<meta itemprop="name" content="Run Length Encoding">
+<meta itemprop="description" content="Input: &ldquo;xxxxxxyyyйййй&rdquo;
+Output: &ldquo;6x3y4й&rdquo;
+ run length encoding  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  // O(n) time | O(n) space fun runLengthEncoding(s: String): String { val n = s.length val encoded = mutableListOf&lt;Char&gt;() var len = 1 for (i in 1 until n) { val currChar = s[i] val prevChar = s[i - 1] if (currChar !">
+<meta itemprop="datePublished" content="2021-05-18T20:31:47+03:00" />
+<meta itemprop="dateModified" content="2021-05-18T20:31:47+03:00" />
+<meta itemprop="wordCount" content="96">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Caesar Cipher Encryptor"/>
-<meta name="twitter:description" content="Input: &ldquo;abc&rdquo;
-Output: &ldquo;cde&rdquo;
- caesar cipher encryptor  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  // O(n) time | O(n) space fun caesarCipherEncryptor(s: String, k: Int): String { val newLetters = mutableListOf&lt;Char&gt;() val key = k % 26 s.forEach { newLetters.add(getNewLetter(it, key)) } return newLetters.joinToString(&#34;&#34;) } fun getNewLetter(letter: Char, key: Int): Char { val newLetterCode = letter.toInt() &#43; key return if (newLetterCode &lt;= 122) { newLetterCode."/>
+<meta name="twitter:title" content="Run Length Encoding"/>
+<meta name="twitter:description" content="Input: &ldquo;xxxxxxyyyйййй&rdquo;
+Output: &ldquo;6x3y4й&rdquo;
+ run length encoding  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  // O(n) time | O(n) space fun runLengthEncoding(s: String): String { val n = s.length val encoded = mutableListOf&lt;Char&gt;() var len = 1 for (i in 1 until n) { val currChar = s[i] val prevChar = s[i - 1] if (currChar !"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -133,10 +133,10 @@ Output: &ldquo;cde&rdquo;
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Caesar Cipher Encryptor</h1>
+      <h1 class="post-title">Run Length Encoding</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 05-17-2021 </span>
+        <span class="post-time"> 05-18-2021 </span>
         <div class="post-category">
             <a href="/categories/strings/"> strings </a>
             </div>
@@ -151,10 +151,10 @@ Output: &ldquo;cde&rdquo;
   </div>
 </div>
     <div class="post-content">
-      <p>Input: &ldquo;abc&rdquo;<br>
-Output: &ldquo;cde&rdquo;</p>
+      <p>Input: &ldquo;xxxxxxyyyйййй&rdquo;<br>
+Output: &ldquo;6x3y4й&rdquo;</p>
 <ul>
-<li><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/strings/CaesarCipherEncryptor.kt">caesar cipher encryptor</a></li>
+<li><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/strings/RunLengthEncoding.kt">run length encoding</a></li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -173,22 +173,42 @@ Output: &ldquo;cde&rdquo;</p>
 </span><span class="lnt">13
 </span><span class="lnt">14
 </span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="c1">// O(n) time | O(n) space
-</span><span class="c1"></span><span class="k">fun</span> <span class="nf">caesarCipherEncryptor</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="n">k</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">String</span> <span class="p">{</span>
-    <span class="k">val</span> <span class="py">newLetters</span> <span class="p">=</span> <span class="n">mutableListOf</span><span class="p">&lt;</span><span class="n">Char</span><span class="p">&gt;()</span>
-    <span class="k">val</span> <span class="py">key</span> <span class="p">=</span> <span class="n">k</span> <span class="p">%</span> <span class="m">26</span>
-    <span class="n">s</span><span class="p">.</span><span class="n">forEach</span> <span class="p">{</span> <span class="n">newLetters</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">getNewLetter</span><span class="p">(</span><span class="k">it</span><span class="p">,</span> <span class="n">key</span><span class="p">))</span> <span class="p">}</span>
+</span><span class="c1"></span><span class="k">fun</span> <span class="nf">runLengthEncoding</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="n">String</span><span class="p">):</span> <span class="n">String</span> <span class="p">{</span>
+    <span class="k">val</span> <span class="py">n</span> <span class="p">=</span> <span class="n">s</span><span class="p">.</span><span class="n">length</span>
 
-    <span class="k">return</span> <span class="n">newLetters</span><span class="p">.</span><span class="n">joinToString</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
-<span class="p">}</span>
+    <span class="k">val</span> <span class="py">encoded</span> <span class="p">=</span> <span class="n">mutableListOf</span><span class="p">&lt;</span><span class="n">Char</span><span class="p">&gt;()</span>
+    <span class="k">var</span> <span class="py">len</span> <span class="p">=</span> <span class="m">1</span>
 
-<span class="k">fun</span> <span class="nf">getNewLetter</span><span class="p">(</span><span class="n">letter</span><span class="p">:</span> <span class="n">Char</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">Char</span> <span class="p">{</span>
-    <span class="k">val</span> <span class="py">newLetterCode</span> <span class="p">=</span> <span class="n">letter</span><span class="p">.</span><span class="n">toInt</span><span class="p">()</span> <span class="p">+</span> <span class="n">key</span>
-    <span class="k">return</span> <span class="k">if</span> <span class="p">(</span><span class="n">newLetterCode</span> <span class="o">&lt;=</span> <span class="m">122</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">newLetterCode</span><span class="p">.</span><span class="n">toChar</span><span class="p">()</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">(</span><span class="n">newLetterCode</span> <span class="p">%</span> <span class="m">122</span><span class="p">).</span><span class="n">toChar</span><span class="p">()</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="m">1</span> <span class="n">until</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">val</span> <span class="py">currChar</span> <span class="p">=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="k">val</span> <span class="py">prevChar</span> <span class="p">=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span> <span class="p">-</span> <span class="m">1</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">currChar</span> <span class="o">!=</span> <span class="n">prevChar</span> <span class="o">||</span> <span class="n">len</span> <span class="o">==</span> <span class="m">9</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">encoded</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">len</span><span class="p">.</span><span class="n">toString</span><span class="p">()[</span><span class="m">0</span><span class="p">])</span>
+            <span class="n">encoded</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">prevChar</span><span class="p">)</span>
+            <span class="n">len</span> <span class="p">=</span> <span class="m">0</span>
+        <span class="p">}</span>
+
+        <span class="n">len</span><span class="o">++</span>
+    <span class="p">}</span>
+
+    <span class="n">encoded</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">len</span><span class="p">.</span><span class="n">toString</span><span class="p">()[</span><span class="m">0</span><span class="p">])</span>
+    <span class="n">encoded</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">n</span> <span class="p">-</span> <span class="m">1</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">encoded</span><span class="p">.</span><span class="n">joinToString</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
@@ -203,7 +223,7 @@ Output: &ldquo;cde&rdquo;</p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        05-17-2021
+        05-18-2021
         
     </span>
   </p>
@@ -213,13 +233,9 @@ Output: &ldquo;cde&rdquo;</p>
 <footer class="post-footer">
       
       <nav class="post-nav">
-        <a class="prev" href="/post/run-length-encoding/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Run Length Encoding</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/post/merge-overlapping-intervals/">
-            <span class="next-text nav-default">Merge Overlapping Intervals</span>
+        
+        <a class="next" href="/post/caesar-cipher-encryptor/">
+            <span class="next-text nav-default">Caesar Cipher Encryptor</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
