@@ -6,7 +6,19 @@
     <description>Recent content in strings on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 May 2021 20:31:47 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/strings/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 May 2021 09:09:38 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/strings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generate Document</title>
+      <link>https://solairerove.github.io/post/generate-document/</link>
+      <pubDate>Wed, 19 May 2021 09:09:38 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/generate-document/</guid>
+      <description>Input: chars = &amp;ldquo;abcabc&amp;rdquo;, doc = &amp;ldquo;aabbcc&amp;rdquo;
+Output: true
+generate document
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  // O(n + m) time | O(c) space // n is number of chars // m is document length // c is number of unique chars fun generateDocument(chars: String, doc: String): Boolean { val freq = mutableMapOf&amp;lt;Char, Int&amp;gt;() for (c in chars) { if (c !</description>
+    </item>
+    
     <item>
       <title>Run Length Encoding</title>
       <link>https://solairerove.github.io/post/run-length-encoding/</link>
@@ -26,7 +38,8 @@ Output: &amp;ldquo;6x3y4й&amp;rdquo;
       <guid>https://solairerove.github.io/post/caesar-cipher-encryptor/</guid>
       <description>Input: &amp;ldquo;abc&amp;rdquo;
 Output: &amp;ldquo;cde&amp;rdquo;
- caesar cipher encryptor  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  // O(n) time | O(n) space fun caesarCipherEncryptor(s: String, k: Int): String { val newLetters = mutableListOf&amp;lt;Char&amp;gt;() val key = k % 26 s.forEach { newLetters.add(getNewLetter(it, key)) } return newLetters.joinToString(&amp;#34;&amp;#34;) } fun getNewLetter(letter: Char, key: Int): Char { val newLetterCode = letter.toInt() + key return if (newLetterCode &amp;lt;= 122) { newLetterCode.</description>
+caesar cipher encryptor
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  // O(n) time | O(n) space fun caesarCipherEncryptor(s: String, k: Int): String { val newLetters = mutableListOf&amp;lt;Char&amp;gt;() val key = k % 26 s.forEach { newLetters.add(getNewLetter(it, key)) } return newLetters.joinToString(&amp;#34;&amp;#34;) } fun getNewLetter(letter: Char, key: Int): Char { val newLetterCode = letter.toInt() + key return if (newLetterCode &amp;lt;= 122) { newLetterCode.</description>
     </item>
     
     <item>
