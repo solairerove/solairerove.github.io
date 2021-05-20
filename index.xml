@@ -6,7 +6,19 @@
     <description>Recent content on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 19 May 2021 09:09:38 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 May 2021 23:08:17 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Non Repeating Char Pivot</title>
+      <link>https://solairerove.github.io/post/non-repeating-char-pivot/</link>
+      <pubDate>Thu, 20 May 2021 23:08:17 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/non-repeating-char-pivot/</guid>
+      <description>Input: &amp;ldquo;sptiroksoz&amp;rdquo;
+Output: 1
+non repeating char pivot
+1 2 3 4 5 6 7 8 9 10 11 12  // O(n) time | O(n) space fun nonRepeatingCharPivot(s: String): Int { val freq = mutableMapOf&amp;lt;Char, Int&amp;gt;() s.forEach { freq[it] = freq.getOrDefault(it, 0) + 1 } for (i in s.indices) { if (freq[s[i]] == 1) return i } return -1 }   </description>
+    </item>
+    
     <item>
       <title>Generate Document</title>
       <link>https://solairerove.github.io/post/generate-document/</link>

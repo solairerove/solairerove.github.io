@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-05-19T09:09:38+03:00" />
+<meta property="og:updated_time" content="2021-05-20T23:08:17+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,30 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/non-repeating-char-pivot/">Non Repeating Char Pivot</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 05-20-2021 </span>
+      <div class="post-category">
+          <a href="/categories/strings/"> strings </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Input: &ldquo;sptiroksoz&rdquo;
+Output: 1
+non repeating char pivot
+1 2 3 4 5 6 7 8 9 10 11 12  // O(n) time | O(n) space fun nonRepeatingCharPivot(s: String): Int { val freq = mutableMapOf&lt;Char, Int&gt;() s.forEach { freq[it] = freq.getOrDefault(it, 0) + 1 } for (i in s.indices) { if (freq[s[i]] == 1) return i } return -1 }   
+    </div>
+    <div class="read-more">
+      <a href="/post/non-repeating-char-pivot/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/generate-document/">Generate Document</a></h1>
@@ -208,31 +232,6 @@ merge overlapping intervals
     </div>
     <div class="read-more">
       <a href="/post/merge-overlapping-intervals/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/first-duplicate-value/">First Duplicate Value</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 05-13-2021 </span>
-      <div class="post-category">
-          <a href="/categories/arrays/"> arrays </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Input: [2, 3, 2, 6, 6, 5, 3, 6]
-Output: 2
-Naive O(n) time | O(n) space solution is to use set and contains check
-first duplicate value
-1 2 3 4 5 6 7 8 9 10  // O(n) time | O(1) space fun firstDuplicateValue(arr: MutableList&lt;Int&gt;): Int { for (el in arr) { val absEl = abs(el) if (arr[absEl - 1] &lt; 0) return absEl arr[absEl - 1] *= -1 } return -1 }   
-    </div>
-    <div class="read-more">
-      <a href="/post/first-duplicate-value/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
