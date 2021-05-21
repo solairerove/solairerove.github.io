@@ -3,27 +3,41 @@
   
   <url>
     <loc>https://solairerove.github.io/categories/</loc>
-    <lastmod>2021-05-20T23:08:17+03:00</lastmod>
+    <lastmod>2021-05-21T14:12:31+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/</loc>
-    <lastmod>2021-05-20T23:08:17+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/post/non-repeating-char-pivot/</loc>
-    <lastmod>2021-05-20T23:08:17+03:00</lastmod>
+    <lastmod>2021-05-21T14:12:31+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/post/</loc>
+    <lastmod>2021-05-21T14:12:31+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/product-sum/</loc>
+    <lastmod>2021-05-21T14:12:31+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/categories/recursion/</loc>
+    <lastmod>2021-05-21T14:12:31+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/non-repeating-char-pivot/</loc>
     <lastmod>2021-05-20T23:08:17+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -451,13 +465,6 @@
   
   <url>
     <loc>https://solairerove.github.io/post/highest-common-factor/</loc>
-    <lastmod>2021-03-02T13:27:30+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/categories/recursion/</loc>
     <lastmod>2021-03-02T13:27:30+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-05-20T23:08:17+03:00" />
+<meta property="og:updated_time" content="2021-05-21T14:12:31+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,29 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/highest-common-factor/">Highest Common Factor</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 03-02-2021 </span>
+      <div class="post-category">
+          <a href="/categories/recursion/"> recursion </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Рекурсивный вариант алгоритма Евклида для нахождения наибольшего общего делителя.
+gcd
+1 2 3 4 5 6 7 8  fun gcd(p: Int, q: Int): Int { if (q == 0) { return p } val r = p % q return gcd(q, r) }   
+    </div>
+    <div class="read-more">
+      <a href="/post/highest-common-factor/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/fibonacci/">Fibonacci</a></h1>
@@ -209,30 +232,6 @@ selection sort
   </div>
 </article>
 
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/binary-search/">Binary Search</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 02-25-2021 </span>
-      <div class="post-category">
-          <a href="/categories/search/"> search </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Бинарный поиск - алгоритм, на вход которого подается отсортированный список элементов. Если искомый элемент присутствует, то бинарный поиск возвращает его позицию.
-Предположим, что вы загадали число от 1 до 100. При каждой попытке угадать я буду давать один из трех ответов: много, мало и угадал. Можно перебирать все вариант подряд: 1, 2, 3, 4. А можно исключить сразу половину чисел на каждом шаге: 50, 75, 63.
-binary search
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // O(log(n)) time | O(1) space private fun binarySearch(items: List&lt;Int&gt;, item: Int): Int { // храним границы части списка, в которой выполняется поиск  var low = 0 var high = items.
-    </div>
-    <div class="read-more">
-      <a href="/post/binary-search/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
     </section>
   
   <nav class="pagination">
@@ -240,7 +239,10 @@ binary search
         <i class="iconfont icon-left"></i>
         <span class="prev-text">Prev</span>
       </a>
-    
+    <a class="next" href="/page/13/">
+        <span class="next-text">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
   </nav>
         </div>
         

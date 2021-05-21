@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 May 2021 23:08:17 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 May 2021 14:12:31 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Product Sum</title>
+      <link>https://solairerove.github.io/post/product-sum/</link>
+      <pubDate>Fri, 21 May 2021 14:12:31 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/product-sum/</guid>
+      <description>Input: [1, [2, [3]]]
+Output: 23
+product sum
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // O(n) time | O(d) space // n is total number of elements // d is max depth fun productSum(arr: List&amp;lt;*&amp;gt;): Int { return productSum(arr, 1) } fun productSum(arr: List&amp;lt;*&amp;gt;, multiplier: Int): Int { var sum = 0 for (el in arr) { sum += if (el is List&amp;lt;*&amp;gt;) { productSum(el, multiplier + 1) } else { el as Int } } return sum * multiplier }   </description>
+    </item>
+    
     <item>
       <title>Non Repeating Char Pivot</title>
       <link>https://solairerove.github.io/post/non-repeating-char-pivot/</link>

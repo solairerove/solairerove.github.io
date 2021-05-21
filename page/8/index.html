@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-05-20T23:08:17+03:00" />
+<meta property="og:updated_time" content="2021-05-21T14:12:31+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,29 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/third-maximum-number/">Third Maximum Number</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 04-15-2021 </span>
+      <div class="post-category">
+          <a href="/categories/search/"> search </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      leetcode
+third maximum number
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // O(n) time | O(1) space fun thirdMaximumNumber(arr: List&lt;Int&gt;): Int { val largestNumbers = mutableListOf(Int.MIN_VALUE, Int.MIN_VALUE, Int.MIN_VALUE) for (element in arr) { when { element &gt; largestNumbers[2] -&gt; shift(largestNumbers, element, 2) element &gt; largestNumbers[1] -&gt; shift(largestNumbers, element, 1) element &gt; largestNumbers[0] -&gt; shift(largestNumbers, element, 0) } } return largestNumbers[0] } fun shift(arr: MutableList&lt;Int&gt;, toInsert: Int, position: Int) { for (i in 0 until position + 1) { arr[i] = if (i == position) toInsert else arr[i + 1] } }   
+    </div>
+    <div class="read-more">
+      <a href="/post/third-maximum-number/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/dutch-national-flag/">Dutch National Flag</a></h1>
@@ -209,28 +232,6 @@ count sort
     </div>
     <div class="read-more">
       <a href="/post/count-sort/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/bisect_left/">Bisect left</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 04-08-2021 </span>
-      <div class="post-category">
-          <a href="/categories/search/"> search </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      binary select left
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  // O(log(n)) time | O(1) space fun biSectLeft(arr: List&lt;Int&gt;, target: Int, lo: Int = 0, hi: Int = arr.size): Int { val n = arr.size if (n == 0) return 0 var low = lo var high = hi if (target &lt; arr[low]) return low if (target &gt; arr[high - 1]) return high while (true) { if (low + 1 == high) { return if (target == arr[low]) low else (low + 1) } val mid = low + (high - low) / 2 when { target &lt;= arr[mid] -&gt; high = mid else -&gt; low = mid } } }   
-    </div>
-    <div class="read-more">
-      <a href="/post/bisect_left/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
