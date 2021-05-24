@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-05-21T14:12:31+03:00" />
+<meta property="og:updated_time" content="2021-05-24T20:36:15+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,31 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/count-sort/">Count Sort</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 04-09-2021 </span>
+      <div class="post-category">
+          <a href="/categories/sorting/"> sorting </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Сортировка подсчетом.
+Считаем количество вхождений каждого элемента.
+Потом куммулятивную сумму и так находим нужную позицию элемента.
+count sort
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  // O(n + m) time | O(n) space fun countSort(arr: MutableList&lt;Int&gt;) { val n = arr.size // find max  var max = arr[0] arr.
+    </div>
+    <div class="read-more">
+      <a href="/post/count-sort/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/bisect_left/">Bisect left</a></h1>
@@ -208,33 +233,6 @@ quick sort
     </div>
     <div class="read-more">
       <a href="/post/quick-sort/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/inversions/">Inversions</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 03-31-2021 </span>
-      <div class="post-category">
-          <a href="/categories/sorting/"> sorting </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Вытекающая задача из сортировки слиянием.
-Смысл решения в том, что мы точно знаем, что i меньше j,
-поэтому когда j элемент меньше i, то мы получаем инверсию. \ И раз он меньше, то он будет меньше и всех остальных элементов в части i.
-Именно поэтому mid + 1 - i -&gt; просто длина подмассива.
-3.2 Подсчет инверсий
-inversions
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53  // O(nlog(n)) time | O(n) space fun count(arr: MutableList&lt;Int&gt;): Long { val n = arr.
-    </div>
-    <div class="read-more">
-      <a href="/post/inversions/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

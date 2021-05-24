@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-05-21T14:12:31+03:00" />
+<meta property="og:updated_time" content="2021-05-24T20:36:15+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,30 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/valid-ip-addresses/">Valid IP Addresses</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 05-24-2021 </span>
+      <div class="post-category">
+          <a href="/categories/strings/"> strings </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Input: &ldquo;19216801&rdquo;
+Output: [19.216.80.1, 192.16.80.1, 192.168.0.1]
+valid ip addresses
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37  import kotlin.math.min // O(1) time | O(1) space fun validIPAddresses(s: String): List&lt;String&gt; { val n = s.length val addresses = mutableListOf&lt;String&gt;() for (i in 1 until min(n, 4)) { val parts = mutableListOf(&#34;&#34;, &#34;&#34;, &#34;&#34;, &#34;&#34;) parts[0] = s.
+    </div>
+    <div class="read-more">
+      <a href="/post/valid-ip-addresses/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/product-sum/">Product Sum</a></h1>
@@ -208,30 +232,6 @@ Output: &ldquo;6x3y4й&rdquo;
     </div>
     <div class="read-more">
       <a href="/post/run-length-encoding/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/caesar-cipher-encryptor/">Caesar Cipher Encryptor</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 05-17-2021 </span>
-      <div class="post-category">
-          <a href="/categories/strings/"> strings </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Input: &ldquo;abc&rdquo;
-Output: &ldquo;cde&rdquo;
-caesar cipher encryptor
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  // O(n) time | O(n) space fun caesarCipherEncryptor(s: String, k: Int): String { val newLetters = mutableListOf&lt;Char&gt;() val key = k % 26 s.forEach { newLetters.add(getNewLetter(it, key)) } return newLetters.joinToString(&#34;&#34;) } fun getNewLetter(letter: Char, key: Int): Char { val newLetterCode = letter.toInt() + key return if (newLetterCode &lt;= 122) { newLetterCode.
-    </div>
-    <div class="read-more">
-      <a href="/post/caesar-cipher-encryptor/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
