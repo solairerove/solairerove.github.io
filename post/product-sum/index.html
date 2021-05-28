@@ -26,7 +26,7 @@ product sum
 
 
 
-<meta name="generator" content="Hugo 0.81.0 with theme even" />
+<meta name="generator" content="Hugo 0.80.0 with theme even" />
 
 
 <link rel="canonical" href="https://solairerove.github.io/post/product-sum/" />
@@ -38,7 +38,7 @@ product sum
 
 
 
-<link href="/sass/main.min.af7fd1da18d66c2b017df5b4cae508ef44cfcac3fb4c7c7a327fe4f4f9e28b08.css" rel="stylesheet">
+<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
@@ -48,18 +48,22 @@ Output: 23
 product sum
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // O(n) time | O(d) space // n is total number of elements // d is max depth fun productSum(arr: List&lt;*&gt;): Int { return productSum(arr, 1) } fun productSum(arr: List&lt;*&gt;, multiplier: Int): Int { var sum = 0 for (el in arr) { sum &#43;= if (el is List&lt;*&gt;) { productSum(el, multiplier &#43; 1) } else { el as Int } } return sum * multiplier }   " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://solairerove.github.io/post/product-sum/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-05-21T14:12:31&#43;03:00" />
-<meta property="article:modified_time" content="2021-05-21T14:12:31&#43;03:00" />
-
+<meta property="og:url" content="https://solairerove.github.io/post/product-sum/" />
+<meta property="article:published_time" content="2021-05-21T14:12:31+03:00" />
+<meta property="article:modified_time" content="2021-05-21T14:12:31+03:00" />
 <meta itemprop="name" content="Product Sum">
 <meta itemprop="description" content="Input: [1, [2, [3]]]
 Output: 23
 product sum
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // O(n) time | O(d) space // n is total number of elements // d is max depth fun productSum(arr: List&lt;*&gt;): Int { return productSum(arr, 1) } fun productSum(arr: List&lt;*&gt;, multiplier: Int): Int { var sum = 0 for (el in arr) { sum &#43;= if (el is List&lt;*&gt;) { productSum(el, multiplier &#43; 1) } else { el as Int } } return sum * multiplier }   "><meta itemprop="datePublished" content="2021-05-21T14:12:31&#43;03:00" />
-<meta itemprop="dateModified" content="2021-05-21T14:12:31&#43;03:00" />
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // O(n) time | O(d) space // n is total number of elements // d is max depth fun productSum(arr: List&lt;*&gt;): Int { return productSum(arr, 1) } fun productSum(arr: List&lt;*&gt;, multiplier: Int): Int { var sum = 0 for (el in arr) { sum &#43;= if (el is List&lt;*&gt;) { productSum(el, multiplier &#43; 1) } else { el as Int } } return sum * multiplier }   ">
+<meta itemprop="datePublished" content="2021-05-21T14:12:31+03:00" />
+<meta itemprop="dateModified" content="2021-05-21T14:12:31+03:00" />
 <meta itemprop="wordCount" content="95">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Product Sum"/>
 <meta name="twitter:description" content="Input: [1, [2, [3]]]
 Output: 23
@@ -281,7 +285,7 @@ Output: 23</p>
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
 
 
 

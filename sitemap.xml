@@ -2,21 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://solairerove.github.io/categories/arrays/</loc>
-    <lastmod>2021-05-27T19:45:49+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://solairerove.github.io/categories/</loc>
-    <lastmod>2021-05-27T19:45:49+03:00</lastmod>
+    <lastmod>2021-05-28T17:56:39+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/</loc>
+    <lastmod>2021-05-28T17:56:39+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/longest-substring-without-duplication/</loc>
+    <lastmod>2021-05-28T17:56:39+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/</loc>
+    <lastmod>2021-05-28T17:56:39+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/categories/strings/</loc>
+    <lastmod>2021-05-28T17:56:39+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/categories/arrays/</loc>
     <lastmod>2021-05-27T19:45:49+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -30,21 +51,7 @@
   </url>
   
   <url>
-    <loc>https://solairerove.github.io/post/</loc>
-    <lastmod>2021-05-27T19:45:49+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://solairerove.github.io/post/minimum-chars-for-words/</loc>
-    <lastmod>2021-05-26T18:44:10+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/categories/strings/</loc>
     <lastmod>2021-05-26T18:44:10+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
