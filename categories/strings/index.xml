@@ -6,7 +6,19 @@
     <description>Recent content in strings on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 May 2021 17:56:39 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/strings/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jun 2021 21:25:18 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/strings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>To Binary String</title>
+      <link>https://solairerove.github.io/post/to-binary-string/</link>
+      <pubDate>Tue, 01 Jun 2021 21:25:18 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/to-binary-string/</guid>
+      <description>Input: &amp;ldquo;10&amp;rdquo;
+Output: &amp;ldquo;1010&amp;rdquo;
+to binary string
+1 2 3 4 5 6 7 8 9 10 11  // O(n) time | O(n) space fun toBinaryString(n: Int): String { val stringBuilder = StringBuilder() var idx = n while (idx &amp;gt; 0) { stringBuilder.insert(0, idx % 2) idx /= 2 } return stringBuilder.toString() }   </description>
+    </item>
+    
     <item>
       <title>Longest Substring Without Duplication</title>
       <link>https://solairerove.github.io/post/longest-substring-without-duplication/</link>

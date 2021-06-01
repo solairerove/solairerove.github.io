@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Lru Cache With Capacity - Headstone lamp - It&#39;s always has been</title>
+  <title>To Binary String - Headstone lamp - It&#39;s always has been</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,8 +16,10 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="solairerove" /><meta name="description" content="lru cache with capacity
-1 2 3 4 5 6 7 8 9 10 11 12 13  open class LRUCacheWithCapacity&amp;lt;K, V&amp;gt;( private val capacity: Int, loadFactor: Float = 0.75F, accessOrder: Boolean = true ) : LinkedHashMap&amp;lt;K, V&amp;gt;( capacity, loadFactor, accessOrder ) { override fun removeEldestEntry(eldest: MutableMap.MutableEntry&amp;lt;K, V&amp;gt;?): Boolean { return this.size &amp;gt; capacity } }   " /><meta name="keywords" content="Headstone, algorithms, data structures" />
+<meta name="author" content="solairerove" /><meta name="description" content="Input: &amp;ldquo;10&amp;rdquo;
+Output: &amp;ldquo;1010&amp;rdquo;
+to binary string
+1 2 3 4 5 6 7 8 9 10 11  // O(n) time | O(n) space fun toBinaryString(n: Int): String { val stringBuilder = StringBuilder() var idx = n while (idx &amp;gt; 0) { stringBuilder.insert(0, idx % 2) idx /= 2 } return stringBuilder.toString() }   " /><meta name="keywords" content="Headstone, algorithms, data structures" />
 
 
 
@@ -27,7 +29,7 @@
 <meta name="generator" content="Hugo 0.80.0 with theme even" />
 
 
-<link rel="canonical" href="https://solairerove.github.io/post/lru-cache-with-capacity/" />
+<link rel="canonical" href="https://solairerove.github.io/post/to-binary-string/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -40,27 +42,33 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Lru Cache With Capacity" />
-<meta property="og:description" content="lru cache with capacity
-1 2 3 4 5 6 7 8 9 10 11 12 13  open class LRUCacheWithCapacity&lt;K, V&gt;( private val capacity: Int, loadFactor: Float = 0.75F, accessOrder: Boolean = true ) : LinkedHashMap&lt;K, V&gt;( capacity, loadFactor, accessOrder ) { override fun removeEldestEntry(eldest: MutableMap.MutableEntry&lt;K, V&gt;?): Boolean { return this.size &gt; capacity } }   " />
+<meta property="og:title" content="To Binary String" />
+<meta property="og:description" content="Input: &ldquo;10&rdquo;
+Output: &ldquo;1010&rdquo;
+to binary string
+1 2 3 4 5 6 7 8 9 10 11  // O(n) time | O(n) space fun toBinaryString(n: Int): String { val stringBuilder = StringBuilder() var idx = n while (idx &gt; 0) { stringBuilder.insert(0, idx % 2) idx /= 2 } return stringBuilder.toString() }   " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://solairerove.github.io/post/lru-cache-with-capacity/" />
-<meta property="article:published_time" content="2021-05-31T19:43:41+03:00" />
-<meta property="article:modified_time" content="2021-05-31T19:43:41+03:00" />
-<meta itemprop="name" content="Lru Cache With Capacity">
-<meta itemprop="description" content="lru cache with capacity
-1 2 3 4 5 6 7 8 9 10 11 12 13  open class LRUCacheWithCapacity&lt;K, V&gt;( private val capacity: Int, loadFactor: Float = 0.75F, accessOrder: Boolean = true ) : LinkedHashMap&lt;K, V&gt;( capacity, loadFactor, accessOrder ) { override fun removeEldestEntry(eldest: MutableMap.MutableEntry&lt;K, V&gt;?): Boolean { return this.size &gt; capacity } }   ">
-<meta itemprop="datePublished" content="2021-05-31T19:43:41+03:00" />
-<meta itemprop="dateModified" content="2021-05-31T19:43:41+03:00" />
-<meta itemprop="wordCount" content="55">
+<meta property="og:url" content="https://solairerove.github.io/post/to-binary-string/" />
+<meta property="article:published_time" content="2021-06-01T21:25:18+03:00" />
+<meta property="article:modified_time" content="2021-06-01T21:25:18+03:00" />
+<meta itemprop="name" content="To Binary String">
+<meta itemprop="description" content="Input: &ldquo;10&rdquo;
+Output: &ldquo;1010&rdquo;
+to binary string
+1 2 3 4 5 6 7 8 9 10 11  // O(n) time | O(n) space fun toBinaryString(n: Int): String { val stringBuilder = StringBuilder() var idx = n while (idx &gt; 0) { stringBuilder.insert(0, idx % 2) idx /= 2 } return stringBuilder.toString() }   ">
+<meta itemprop="datePublished" content="2021-06-01T21:25:18+03:00" />
+<meta itemprop="dateModified" content="2021-06-01T21:25:18+03:00" />
+<meta itemprop="wordCount" content="53">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Lru Cache With Capacity"/>
-<meta name="twitter:description" content="lru cache with capacity
-1 2 3 4 5 6 7 8 9 10 11 12 13  open class LRUCacheWithCapacity&lt;K, V&gt;( private val capacity: Int, loadFactor: Float = 0.75F, accessOrder: Boolean = true ) : LinkedHashMap&lt;K, V&gt;( capacity, loadFactor, accessOrder ) { override fun removeEldestEntry(eldest: MutableMap.MutableEntry&lt;K, V&gt;?): Boolean { return this.size &gt; capacity } }   "/>
+<meta name="twitter:title" content="To Binary String"/>
+<meta name="twitter:description" content="Input: &ldquo;10&rdquo;
+Output: &ldquo;1010&rdquo;
+to binary string
+1 2 3 4 5 6 7 8 9 10 11  // O(n) time | O(n) space fun toBinaryString(n: Int): String { val stringBuilder = StringBuilder() var idx = n while (idx &gt; 0) { stringBuilder.insert(0, idx % 2) idx /= 2 } return stringBuilder.toString() }   "/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -129,12 +137,12 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Lru Cache With Capacity</h1>
+      <h1 class="post-title">To Binary String</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 05-31-2021 </span>
+        <span class="post-time"> 06-01-2021 </span>
         <div class="post-category">
-            <a href="/categories/map/"> map </a>
+            <a href="/categories/strings/"> strings </a>
             </div>
         
       </div>
@@ -147,7 +155,9 @@
   </div>
 </div>
     <div class="post-content">
-      <p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/map/LRUCacheWithCapacity.kt">lru cache with capacity</a></p>
+      <p>Input: &ldquo;10&rdquo;<br>
+Output: &ldquo;1010&rdquo;</p>
+<p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/strings/ToBinaryString.kt">to binary string</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -161,22 +171,18 @@
 </span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="k">open</span> <span class="k">class</span> <span class="nc">LRUCacheWithCapacity</span><span class="p">&lt;</span><span class="n">K</span><span class="p">,</span> <span class="n">V</span><span class="p">&gt;(</span>
-    <span class="k">private</span> <span class="k">val</span> <span class="py">capacity</span><span class="p">:</span> <span class="n">Int</span><span class="p">,</span>
-    <span class="n">loadFactor</span><span class="p">:</span> <span class="n">Float</span> <span class="p">=</span> <span class="m">0.75F</span><span class="p">,</span>
-    <span class="n">accessOrder</span><span class="p">:</span> <span class="n">Boolean</span> <span class="p">=</span> <span class="k">true</span>
-<span class="p">)</span> <span class="p">:</span> <span class="n">LinkedHashMap</span><span class="p">&lt;</span><span class="n">K</span><span class="p">,</span> <span class="n">V</span><span class="p">&gt;(</span>
-    <span class="n">capacity</span><span class="p">,</span>
-    <span class="n">loadFactor</span><span class="p">,</span>
-    <span class="n">accessOrder</span>
-<span class="p">)</span> <span class="p">{</span>
-    <span class="k">override</span> <span class="k">fun</span> <span class="nf">removeEldestEntry</span><span class="p">(</span><span class="n">eldest</span><span class="p">:</span> <span class="n">MutableMap</span><span class="p">.</span><span class="n">MutableEntry</span><span class="p">&lt;</span><span class="n">K</span><span class="p">,</span> <span class="n">V</span><span class="p">&gt;?):</span> <span class="n">Boolean</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="n">size</span> <span class="p">&gt;</span> <span class="n">capacity</span>
+<pre class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="c1">// O(n) time | O(n) space
+</span><span class="c1"></span><span class="k">fun</span> <span class="nf">toBinaryString</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">String</span> <span class="p">{</span>
+    <span class="k">val</span> <span class="py">stringBuilder</span> <span class="p">=</span> <span class="n">StringBuilder</span><span class="p">()</span>
+    <span class="k">var</span> <span class="py">idx</span> <span class="p">=</span> <span class="n">n</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">idx</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">stringBuilder</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="n">idx</span> <span class="p">%</span> <span class="m">2</span><span class="p">)</span>
+        <span class="n">idx</span> <span class="o">/=</span> <span class="m">2</span>
     <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">stringBuilder</span><span class="p">.</span><span class="n">toString</span><span class="p">()</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
@@ -191,7 +197,7 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        05-31-2021
+        06-01-2021
         
     </span>
   </p>
@@ -201,13 +207,9 @@
 <footer class="post-footer">
       
       <nav class="post-nav">
-        <a class="prev" href="/post/to-binary-string/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">To Binary String</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/post/longest-substring-without-duplication/">
-            <span class="next-text nav-default">Longest Substring Without Duplication</span>
+        
+        <a class="next" href="/post/lru-cache-with-capacity/">
+            <span class="next-text nav-default">Lru Cache With Capacity</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

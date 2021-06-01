@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-05-31T19:43:41+03:00" />
+<meta property="og:updated_time" content="2021-06-01T21:25:18+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,29 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/run-length-encoding/">Run Length Encoding</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 05-18-2021 </span>
+      <div class="post-category">
+          <a href="/categories/strings/"> strings </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Input: &ldquo;xxxxxxyyyйййй&rdquo;
+Output: &ldquo;6x3y4й&rdquo;
+ run length encoding  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  // O(n) time | O(n) space fun runLengthEncoding(s: String): String { val n = s.length val encoded = mutableListOf&lt;Char&gt;() var len = 1 for (i in 1 until n) { val currChar = s[i] val prevChar = s[i - 1] if (currChar !
+    </div>
+    <div class="read-more">
+      <a href="/post/run-length-encoding/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/caesar-cipher-encryptor/">Caesar Cipher Encryptor</a></h1>
@@ -210,30 +233,6 @@ array of products
     </div>
     <div class="read-more">
       <a href="/post/array-of-products/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/group-anagrams/">Group Anagrams</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 05-11-2021 </span>
-      <div class="post-category">
-          <a href="/categories/strings/"> strings </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Input: [&ldquo;funeral&rdquo;, &ldquo;realfun&rdquo;, &ldquo;debitcard&rdquo;, &ldquo;badcredit&rdquo;, &ldquo;bobmarley&rdquo;, &ldquo;marbleboy&rdquo;]
-Output: [[funeral, realfun], [debitcard, badcredit], [bobmarley, marbleboy]]
-group anagrams
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  // O(w * nlog(n)) time | O(wn) space // w - number of words // n - length of longest word fun groupAnagrams(words: List&lt;String&gt;): List&lt;List&lt;String&gt;&gt; { val anagrams = mutableMapOf&lt;String, MutableList&lt;String&gt;&gt;() for (word in words) { val sortedWord = word.
-    </div>
-    <div class="read-more">
-      <a href="/post/group-anagrams/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
