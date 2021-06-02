@@ -6,7 +6,19 @@
     <description>Recent content in linked list on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Apr 2021 19:47:52 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/linked-list/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Jun 2021 20:04:39 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/linked-list/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Remove Duplicates From Linked List</title>
+      <link>https://solairerove.github.io/post/remove-duplicates-from-linked-list/</link>
+      <pubDate>Wed, 02 Jun 2021 20:04:39 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/remove-duplicates-from-linked-list/</guid>
+      <description>Input: [1, 1, 1, 2, 2, 3]
+Output: [1, 2, 3]
+remove duplicates from linked list
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  class ListNode(var value: Int) { var next: ListNode? = null } // O(n) time | O(1) space fun removeDuplicatesFromLinkedList(linkedList: ListNode): ListNode { var curr: ListNode? = linkedList while (curr != null) { var next = curr.</description>
+    </item>
+    
     <item>
       <title>Reverse Linked List</title>
       <link>https://solairerove.github.io/post/reverse-linked-list/</link>

@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-06-01T21:25:18+03:00" />
+<meta property="og:updated_time" content="2021-06-02T20:04:39+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,30 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/generate-document/">Generate Document</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 05-19-2021 </span>
+      <div class="post-category">
+          <a href="/categories/strings/"> strings </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Input: chars = &ldquo;abcabc&rdquo;, doc = &ldquo;aabbcc&rdquo;
+Output: true
+generate document
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  // O(n + m) time | O(c) space // n is number of chars // m is document length // c is number of unique chars fun generateDocument(chars: String, doc: String): Boolean { val freq = mutableMapOf&lt;Char, Int&gt;() for (c in chars) { if (c !
+    </div>
+    <div class="read-more">
+      <a href="/post/generate-document/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/run-length-encoding/">Run Length Encoding</a></h1>
@@ -209,30 +233,6 @@ first duplicate value
     </div>
     <div class="read-more">
       <a href="/post/first-duplicate-value/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/array-of-products/">Array of Products</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 05-12-2021 </span>
-      <div class="post-category">
-          <a href="/categories/arrays/"> arrays </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Input: [1, 2, 3, 4, 6]
-Output: [144, 72, 48, 36, 24]
-array of products
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  // O(n) time | O(n) space fun arrayOfProducts(arr: List&lt;Int&gt;): List&lt;Int&gt; { val n = arr.size val products = MutableList(n) { 1 } var low = 1 for (i in 0 until n) { products[i] = low low *= arr[i] } var high = 1 for (i in n - 1 downTo 0) { products[i] *= high high *= arr[i] } return products }   
-    </div>
-    <div class="read-more">
-      <a href="/post/array-of-products/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
