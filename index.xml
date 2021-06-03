@@ -6,7 +6,19 @@
     <description>Recent content on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Jun 2021 20:04:39 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Jun 2021 20:08:24 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Remove K Node From End</title>
+      <link>https://solairerove.github.io/post/remove-k-node-from-end/</link>
+      <pubDate>Thu, 03 Jun 2021 20:08:24 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/remove-k-node-from-end/</guid>
+      <description>Input: [1, 1, 1, 2, 2, 3], 2
+Output: [1, 1, 1, 2, 3]
+remove k node from end
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  class ListNode(var value: Int) { var next: ListNode? = null } // O(n) time | O(1) space fun removeKNodeFromEnd(head: ListNode, k: Int) { var cnt = 1 var first = head var second: ListNode?</description>
+    </item>
+    
     <item>
       <title>Remove Duplicates From Linked List</title>
       <link>https://solairerove.github.io/post/remove-duplicates-from-linked-list/</link>
