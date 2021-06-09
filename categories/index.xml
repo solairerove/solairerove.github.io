@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Jun 2021 14:49:38 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Jun 2021 17:31:41 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linked list</title>
+      <link>https://solairerove.github.io/categories/linked-list/</link>
+      <pubDate>Wed, 09 Jun 2021 17:31:41 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/categories/linked-list/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>stack</title>
       <link>https://solairerove.github.io/categories/stack/</link>
@@ -22,15 +31,6 @@
       <pubDate>Mon, 07 Jun 2021 19:42:59 +0300</pubDate>
       
       <guid>https://solairerove.github.io/categories/recursion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linked list</title>
-      <link>https://solairerove.github.io/categories/linked-list/</link>
-      <pubDate>Thu, 03 Jun 2021 20:08:24 +0300</pubDate>
-      
-      <guid>https://solairerove.github.io/categories/linked-list/</guid>
       <description></description>
     </item>
     

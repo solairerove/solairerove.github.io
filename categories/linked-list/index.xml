@@ -6,7 +6,19 @@
     <description>Recent content in linked list on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Jun 2021 20:08:24 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/linked-list/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Jun 2021 17:31:41 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/linked-list/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Find Loop</title>
+      <link>https://solairerove.github.io/post/find-loop/</link>
+      <pubDate>Wed, 09 Jun 2021 17:31:41 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/find-loop/</guid>
+      <description>Input:
+1 2 3  1 -&amp;gt; 2 -&amp;gt; 3 | | 5 &amp;lt;- 4   Output: 2
+find loop
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  class ListNode(var value: Int) { var next: ListNode? = null } // O(n) time | O(1) space fun findLoop(head: ListNode?): ListNode? { var first = head?.next var second = first?</description>
+    </item>
+    
     <item>
       <title>Remove K Node From End</title>
       <link>https://solairerove.github.io/post/remove-k-node-from-end/</link>
