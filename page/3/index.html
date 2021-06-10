@@ -118,6 +118,30 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/kadane/">Kadane</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 05-27-2021 </span>
+      <div class="post-category">
+          <a href="/categories/arrays/"> arrays </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Input: [12, 11, -16, -14, -15, -9, 5, -20, 3, 7, -7]
+Output: 23
+kadane
+1 2 3 4 5 6 7 8 9 10 11 12  // O(n) time | O(1) space fun kadane(arr: List&lt;Int&gt;): Int { var curr = arr[0] var max = arr[0] for (i in 1 until arr.size) { curr = max(arr[i], curr + arr[i]) max = max(curr, max) } return max }   
+    </div>
+    <div class="read-more">
+      <a href="/post/kadane/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/minimum-chars-for-words/">Minimum Chars for Words</a></h1>
     <div class="post-meta">
       <span class="post-time"> 05-26-2021 </span>
@@ -208,30 +232,6 @@ product sum
     </div>
     <div class="read-more">
       <a href="/post/product-sum/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/non-repeating-char-pivot/">Non Repeating Char Pivot</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 05-20-2021 </span>
-      <div class="post-category">
-          <a href="/categories/strings/"> strings </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Input: &ldquo;sptiroksoz&rdquo;
-Output: 1
-non repeating char pivot
-1 2 3 4 5 6 7 8 9 10 11 12  // O(n) time | O(n) space fun nonRepeatingCharPivot(s: String): Int { val freq = mutableMapOf&lt;Char, Int&gt;() s.forEach { freq[it] = freq.getOrDefault(it, 0) + 1 } for (i in s.indices) { if (freq[s[i]] == 1) return i } return -1 }   
-    </div>
-    <div class="read-more">
-      <a href="/post/non-repeating-char-pivot/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
