@@ -6,7 +6,18 @@
     <description>Recent content on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Jun 2021 18:08:37 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Jun 2021 16:53:53 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sum of Linked Lists</title>
+      <link>https://solairerove.github.io/post/sum-of-linked-lists/</link>
+      <pubDate>Fri, 11 Jun 2021 16:53:53 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/sum-of-linked-lists/</guid>
+      <description>Input: [1 2 3 4 5 6] [7 8 9 10] Output: [8 0 3 5 6 6]
+sum of linked lists
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  class ListNode(var value: Int) { var next: ListNode? = null } // O(max(n + m)) time | O(max(n + m)) space fun sumOfLinkedLists(headFirst: ListNode, headSecond: ListNode): ListNode { val newHead = ListNode(0) var curr = newHead var carry = 0 var nodeOne: ListNode?</description>
+    </item>
+    
     <item>
       <title>Merge Linked Lists</title>
       <link>https://solairerove.github.io/post/merge-linked-lists/</link>
