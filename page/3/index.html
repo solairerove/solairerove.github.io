@@ -45,7 +45,7 @@
 <meta property="og:description" content="It&#39;s always has been." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://solairerove.github.io/" />
-<meta property="og:updated_time" content="2021-06-14T21:34:18+03:00" />
+<meta property="og:updated_time" content="2021-06-15T21:24:36+03:00" />
 <meta itemprop="name" content="Headstone lamp - It&#39;s always has been">
 <meta itemprop="description" content="It&#39;s always has been.">
 <meta name="twitter:card" content="summary"/>
@@ -117,6 +117,30 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/to-binary-string/">To Binary String</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 06-01-2021 </span>
+      <div class="post-category">
+          <a href="/categories/strings/"> strings </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Input: &ldquo;10&rdquo;
+Output: &ldquo;1010&rdquo;
+to binary string
+1 2 3 4 5 6 7 8 9 10 11  // O(n) time | O(n) space fun toBinaryString(n: Int): String { val stringBuilder = StringBuilder() var idx = n while (idx &gt; 0) { stringBuilder.insert(0, idx % 2) idx /= 2 } return stringBuilder.toString() }   
+    </div>
+    <div class="read-more">
+      <a href="/post/to-binary-string/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/lru-cache-with-capacity/">Lru Cache With Capacity</a></h1>
@@ -207,30 +231,6 @@ minimum chars for words
     </div>
     <div class="read-more">
       <a href="/post/minimum-chars-for-words/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/reverse-words-in-string/">Reverse Words in String</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 05-25-2021 </span>
-      <div class="post-category">
-          <a href="/categories/strings/"> strings </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Input: &ldquo;anything. do to free we&rsquo;re that everything lost we&rsquo;ve after only It&rsquo;s&rdquo;
-Output: &ldquo;It&rsquo;s only after we&rsquo;ve lost everything that we&rsquo;re free to do anything.&rdquo; \
-reverse words in string
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34  // O(n) time | O(n) space fun reverseWordsInString(s: String): String { val chars = s.
-    </div>
-    <div class="read-more">
-      <a href="/post/reverse-words-in-string/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
