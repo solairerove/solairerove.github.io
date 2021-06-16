@@ -6,7 +6,19 @@
     <description>Recent content on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Jun 2021 21:24:36 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Jun 2021 14:45:29 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shift Linked List</title>
+      <link>https://solairerove.github.io/post/shift-linked-list/</link>
+      <pubDate>Wed, 16 Jun 2021 14:45:29 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/shift-linked-list/</guid>
+      <description>Input: [1, 2, 3, 4, 5], 2
+Output: [4, 5, 1, 2, 3]
+shift linked list
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  open class ListNode(var value: Int) { var next: ListNode? = null } // O(n) time | O(1) space fun shiftLinkedList(head: ListNode, k: Int): ListNode { var length = 1 var tail = head while (tail.</description>
+    </item>
+    
     <item>
       <title>Linked List</title>
       <link>https://solairerove.github.io/post/linked-list/</link>

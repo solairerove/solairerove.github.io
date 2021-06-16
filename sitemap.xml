@@ -3,34 +3,41 @@
   
   <url>
     <loc>https://solairerove.github.io/categories/</loc>
-    <lastmod>2021-06-15T21:24:36+03:00</lastmod>
+    <lastmod>2021-06-16T14:45:29+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/</loc>
-    <lastmod>2021-06-15T21:24:36+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/post/linked-list/</loc>
-    <lastmod>2021-06-15T21:24:36+03:00</lastmod>
+    <lastmod>2021-06-16T14:45:29+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/categories/linked-list/</loc>
-    <lastmod>2021-06-15T21:24:36+03:00</lastmod>
+    <lastmod>2021-06-16T14:45:29+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/post/</loc>
+    <lastmod>2021-06-16T14:45:29+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/shift-linked-list/</loc>
+    <lastmod>2021-06-16T14:45:29+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/linked-list/</loc>
     <lastmod>2021-06-15T21:24:36+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
