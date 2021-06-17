@@ -6,7 +6,19 @@
     <description>Recent content in arrays on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 May 2021 19:45:49 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/arrays/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Jun 2021 19:07:12 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/arrays/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Min Rewards</title>
+      <link>https://solairerove.github.io/post/min-rewards/</link>
+      <pubDate>Thu, 17 Jun 2021 19:07:12 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/min-rewards/</guid>
+      <description>Input: [9, 2, 3, 1, 8, 4, 7]
+Output: 11
+min rewards
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  // O(n) time | O(n) space fun minRewards(scores: List&amp;lt;Int&amp;gt;): Int { val n = scores.size val rewards = MutableList(n) { 1 } for (i in 1 until n) { if (scores[i] &amp;gt; scores[i - 1]) { rewards[i] = rewards[i - 1] + 1 } } for (i in n - 2 downTo 0) { if (scores[i] &amp;gt; scores[i + 1]) { rewards[i] = max(rewards[i], rewards[i + 1] + 1) } } return rewards.</description>
+    </item>
+    
     <item>
       <title>Kadane</title>
       <link>https://solairerove.github.io/post/kadane/</link>
