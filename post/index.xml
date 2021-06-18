@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Jun 2021 19:07:12 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Jun 2021 15:18:35 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Largest Range</title>
+      <link>https://solairerove.github.io/post/largest-range/</link>
+      <pubDate>Fri, 18 Jun 2021 15:18:35 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/largest-range/</guid>
+      <description>Input: [1, 9, 10, 12, 14, 16, 11, 17, 13, 3]
+Output: [9, 14]
+largest range
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34  // O(n) time | O(n) space fun largestRange(arr: List&amp;lt;Int&amp;gt;): List&amp;lt;Int&amp;gt; { var range = listOf(arr[0], arr[0]) var length = 0 val nums = mutableMapOf&amp;lt;Int, Boolean&amp;gt;() arr.</description>
+    </item>
+    
     <item>
       <title>Min Rewards</title>
       <link>https://solairerove.github.io/post/min-rewards/</link>
