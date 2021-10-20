@@ -16,16 +16,16 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="solairerove" /><meta name="description" content="Рекурсивный вариант алгоритма Евклида для нахождения наибольшего общего делителя.
+<meta name="author" content="solairerove" /><meta name="description" content="Алгоритм Евклида для нахождения наибольшего общего делителя.
 gcd
-1 2 3 4 5 6 7 8  fun gcd(p: Int, q: Int): Int { if (q == 0) { return p } val r = p % q return gcd(q, r) }   " /><meta name="keywords" content="Headstone, algorithms, data structures" />
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  fun gcd(p: Int, q: Int): Int { if (q == 0) { return p } val r = p % q return gcd(q, r) } private fun iterativeGcd(p: Int, q: Int): Int { var a = p var b = q while (b !" /><meta name="keywords" content="Headstone, algorithms, data structures" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.81.0 with theme even" />
+<meta name="generator" content="Hugo 0.88.1 with theme even" />
 
 
 <link rel="canonical" href="https://solairerove.github.io/post/highest-common-factor/" />
@@ -37,30 +37,30 @@ gcd
 
 
 
-<link href="/sass/main.min.af7fd1da18d66c2b017df5b4cae508ef44cfcac3fb4c7c7a327fe4f4f9e28b08.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Highest Common Factor" />
-<meta property="og:description" content="Рекурсивный вариант алгоритма Евклида для нахождения наибольшего общего делителя.
+<meta property="og:description" content="Алгоритм Евклида для нахождения наибольшего общего делителя.
 gcd
-1 2 3 4 5 6 7 8  fun gcd(p: Int, q: Int): Int { if (q == 0) { return p } val r = p % q return gcd(q, r) }   " />
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  fun gcd(p: Int, q: Int): Int { if (q == 0) { return p } val r = p % q return gcd(q, r) } private fun iterativeGcd(p: Int, q: Int): Int { var a = p var b = q while (b !" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://solairerove.github.io/post/highest-common-factor/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-03-02T13:27:30&#43;03:00" />
-<meta property="article:modified_time" content="2021-03-02T13:27:30&#43;03:00" />
+<meta property="article:published_time" content="2021-03-02T13:27:30+03:00" />
+<meta property="article:modified_time" content="2021-03-02T13:27:30+03:00" />
 
 <meta itemprop="name" content="Highest Common Factor">
-<meta itemprop="description" content="Рекурсивный вариант алгоритма Евклида для нахождения наибольшего общего делителя.
+<meta itemprop="description" content="Алгоритм Евклида для нахождения наибольшего общего делителя.
 gcd
-1 2 3 4 5 6 7 8  fun gcd(p: Int, q: Int): Int { if (q == 0) { return p } val r = p % q return gcd(q, r) }   "><meta itemprop="datePublished" content="2021-03-02T13:27:30&#43;03:00" />
-<meta itemprop="dateModified" content="2021-03-02T13:27:30&#43;03:00" />
-<meta itemprop="wordCount" content="43">
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  fun gcd(p: Int, q: Int): Int { if (q == 0) { return p } val r = p % q return gcd(q, r) } private fun iterativeGcd(p: Int, q: Int): Int { var a = p var b = q while (b !"><meta itemprop="datePublished" content="2021-03-02T13:27:30+03:00" />
+<meta itemprop="dateModified" content="2021-03-02T13:27:30+03:00" />
+<meta itemprop="wordCount" content="90">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Highest Common Factor"/>
-<meta name="twitter:description" content="Рекурсивный вариант алгоритма Евклида для нахождения наибольшего общего делителя.
+<meta name="twitter:description" content="Алгоритм Евклида для нахождения наибольшего общего делителя.
 gcd
-1 2 3 4 5 6 7 8  fun gcd(p: Int, q: Int): Int { if (q == 0) { return p } val r = p % q return gcd(q, r) }   "/>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  fun gcd(p: Int, q: Int): Int { if (q == 0) { return p } val r = p % q return gcd(q, r) } private fun iterativeGcd(p: Int, q: Int): Int { var a = p var b = q while (b !"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -147,27 +147,51 @@ gcd
   </div>
 </div>
     <div class="post-content">
-      <p>Рекурсивный вариант алгоритма Евклида для нахождения наибольшего общего делителя.</p>
+      <p>Алгоритм Евклида для нахождения наибольшего общего делителя.</p>
 <p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/recursion/HighestCommonFactor.kt">gcd</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="k">fun</span> <span class="nf">gcd</span><span class="p">(</span><span class="n">p</span><span class="p">:</span> <span class="n">Int</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">Int</span> <span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="k">fun</span> <span class="nf">gcd</span><span class="p">(</span><span class="n">p</span><span class="p">:</span> <span class="n">Int</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">Int</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">q</span> <span class="o">==</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">return</span> <span class="n">p</span>
     <span class="p">}</span>
 
     <span class="k">val</span> <span class="py">r</span> <span class="p">=</span> <span class="n">p</span> <span class="p">%</span> <span class="n">q</span>
     <span class="k">return</span> <span class="n">gcd</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">private</span> <span class="k">fun</span> <span class="nf">iterativeGcd</span><span class="p">(</span><span class="n">p</span><span class="p">:</span> <span class="n">Int</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">Int</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="py">a</span> <span class="p">=</span> <span class="n">p</span>
+    <span class="k">var</span> <span class="py">b</span> <span class="p">=</span> <span class="n">q</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">b</span> <span class="o">!=</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">val</span> <span class="py">r</span> <span class="p">=</span> <span class="n">a</span> <span class="p">%</span> <span class="n">b</span>
+        <span class="n">a</span> <span class="p">=</span> <span class="n">b</span>
+        <span class="n">b</span> <span class="p">=</span> <span class="n">r</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">a</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>

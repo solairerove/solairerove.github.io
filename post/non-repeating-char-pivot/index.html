@@ -26,7 +26,7 @@ non repeating char pivot
 
 
 
-<meta name="generator" content="Hugo 0.81.0 with theme even" />
+<meta name="generator" content="Hugo 0.88.1 with theme even" />
 
 
 <link rel="canonical" href="https://solairerove.github.io/post/non-repeating-char-pivot/" />
@@ -38,7 +38,7 @@ non repeating char pivot
 
 
 
-<link href="/sass/main.min.af7fd1da18d66c2b017df5b4cae508ef44cfcac3fb4c7c7a327fe4f4f9e28b08.css" rel="stylesheet">
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
@@ -49,15 +49,15 @@ non repeating char pivot
 1 2 3 4 5 6 7 8 9 10 11 12  // O(n) time | O(n) space fun nonRepeatingCharPivot(s: String): Int { val freq = mutableMapOf&lt;Char, Int&gt;() s.forEach { freq[it] = freq.getOrDefault(it, 0) &#43; 1 } for (i in s.indices) { if (freq[s[i]] == 1) return i } return -1 }   " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://solairerove.github.io/post/non-repeating-char-pivot/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-05-20T23:08:17&#43;03:00" />
-<meta property="article:modified_time" content="2021-05-20T23:08:17&#43;03:00" />
+<meta property="article:published_time" content="2021-05-20T23:08:17+03:00" />
+<meta property="article:modified_time" content="2021-05-20T23:08:17+03:00" />
 
 <meta itemprop="name" content="Non Repeating Char Pivot">
 <meta itemprop="description" content="Input: &ldquo;sptiroksoz&rdquo;
 Output: 1
 non repeating char pivot
-1 2 3 4 5 6 7 8 9 10 11 12  // O(n) time | O(n) space fun nonRepeatingCharPivot(s: String): Int { val freq = mutableMapOf&lt;Char, Int&gt;() s.forEach { freq[it] = freq.getOrDefault(it, 0) &#43; 1 } for (i in s.indices) { if (freq[s[i]] == 1) return i } return -1 }   "><meta itemprop="datePublished" content="2021-05-20T23:08:17&#43;03:00" />
-<meta itemprop="dateModified" content="2021-05-20T23:08:17&#43;03:00" />
+1 2 3 4 5 6 7 8 9 10 11 12  // O(n) time | O(n) space fun nonRepeatingCharPivot(s: String): Int { val freq = mutableMapOf&lt;Char, Int&gt;() s.forEach { freq[it] = freq.getOrDefault(it, 0) &#43; 1 } for (i in s.indices) { if (freq[s[i]] == 1) return i } return -1 }   "><meta itemprop="datePublished" content="2021-05-20T23:08:17+03:00" />
+<meta itemprop="dateModified" content="2021-05-20T23:08:17+03:00" />
 <meta itemprop="wordCount" content="60">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Non Repeating Char Pivot"/>
@@ -156,7 +156,7 @@ Output: 1</p>
 <p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/strings/NonRepeatingCharPivot.kt">non repeating char pivot</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -170,7 +170,7 @@ Output: 1</p>
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="c1">// O(n) time | O(n) space
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="c1">// O(n) time | O(n) space
 </span><span class="c1"></span><span class="k">fun</span> <span class="nf">nonRepeatingCharPivot</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="n">String</span><span class="p">):</span> <span class="n">Int</span> <span class="p">{</span>
     <span class="k">val</span> <span class="py">freq</span> <span class="p">=</span> <span class="n">mutableMapOf</span><span class="p">&lt;</span><span class="n">Char</span><span class="p">,</span> <span class="n">Int</span><span class="p">&gt;()</span>
 
