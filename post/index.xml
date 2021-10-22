@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Jul 2021 16:28:46 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Oct 2021 14:30:19 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Find the Closest Value in Bst</title>
+      <link>https://solairerove.github.io/post/find-the-closest-value-in-bst/</link>
+      <pubDate>Fri, 22 Oct 2021 14:30:19 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/find-the-closest-value-in-bst/</guid>
+      <description>14 / \ 7 21 /\ /\ 3 8 15 25  Input: 16
+Output: 15
+find the closest value
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } // O(log(n)) time | O(1) space // worst O(n) time | O(1) space fun findTheClosestValueInBst(tree: BST, target: Int): Int { return findTheClosestValueInBst(tree, target, tree.</description>
+    </item>
+    
     <item>
       <title>Number of Islands</title>
       <link>https://solairerove.github.io/post/number-of-islands/</link>
