@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Find the Closest Value in Bst - Headstone lamp - It&#39;s always has been</title>
+  <title>Validate BST - Headstone lamp - It&#39;s always has been</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,13 +16,13 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="solairerove" /><meta name="description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Input: 16
-Output: 15
-find the closest value
-Iterate through tree. Find the closest value to target.
-The closest is the smallest delta result,
-so it can be represented as abs(target - value) &amp;lt; abs(target - closest)
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  open class BST(var value: Int) { var left: BST?" /><meta name="keywords" content="Headstone, algorithms, data structures" />
+<meta name="author" content="solairerove" /><meta name="description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Output: true
+validate bst
+https://algs4.cs.princeton.edu/32bst/BST.java.html#isBST
+Recursive version of isBST method.
+BST is valid:
+ if value greater to every left node values if value less than every right node values  So for recursive solution is possible to make expression where
+ max value is current node value for left branches min value is current node value for right branches  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  open class BST(var value: Int) { var left: BST?" /><meta name="keywords" content="Headstone, algorithms, data structures" />
 
 
 
@@ -32,7 +32,7 @@ so it can be represented as abs(target - value) &amp;lt; abs(target - closest)
 <meta name="generator" content="Hugo 0.88.1 with theme even" />
 
 
-<link rel="canonical" href="https://solairerove.github.io/post/find-the-closest-value-in-bst/" />
+<link rel="canonical" href="https://solairerove.github.io/post/validate-bst/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -45,38 +45,38 @@ so it can be represented as abs(target - value) &amp;lt; abs(target - closest)
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Find the Closest Value in Bst" />
-<meta property="og:description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Input: 16
-Output: 15
-find the closest value
-Iterate through tree. Find the closest value to target.
-The closest is the smallest delta result,
-so it can be represented as abs(target - value) &lt; abs(target - closest)
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  open class BST(var value: Int) { var left: BST?" />
+<meta property="og:title" content="Validate BST" />
+<meta property="og:description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Output: true
+validate bst
+https://algs4.cs.princeton.edu/32bst/BST.java.html#isBST
+Recursive version of isBST method.
+BST is valid:
+ if value greater to every left node values if value less than every right node values  So for recursive solution is possible to make expression where
+ max value is current node value for left branches min value is current node value for right branches  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  open class BST(var value: Int) { var left: BST?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://solairerove.github.io/post/find-the-closest-value-in-bst/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-10-22T14:30:19+03:00" />
-<meta property="article:modified_time" content="2021-10-22T14:30:19+03:00" />
+<meta property="og:url" content="https://solairerove.github.io/post/validate-bst/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-10-25T13:29:01+03:00" />
+<meta property="article:modified_time" content="2021-10-25T13:29:01+03:00" />
 
-<meta itemprop="name" content="Find the Closest Value in Bst">
-<meta itemprop="description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Input: 16
-Output: 15
-find the closest value
-Iterate through tree. Find the closest value to target.
-The closest is the smallest delta result,
-so it can be represented as abs(target - value) &lt; abs(target - closest)
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  open class BST(var value: Int) { var left: BST?"><meta itemprop="datePublished" content="2021-10-22T14:30:19+03:00" />
-<meta itemprop="dateModified" content="2021-10-22T14:30:19+03:00" />
-<meta itemprop="wordCount" content="155">
+<meta itemprop="name" content="Validate BST">
+<meta itemprop="description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Output: true
+validate bst
+https://algs4.cs.princeton.edu/32bst/BST.java.html#isBST
+Recursive version of isBST method.
+BST is valid:
+ if value greater to every left node values if value less than every right node values  So for recursive solution is possible to make expression where
+ max value is current node value for left branches min value is current node value for right branches  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  open class BST(var value: Int) { var left: BST?"><meta itemprop="datePublished" content="2021-10-25T13:29:01+03:00" />
+<meta itemprop="dateModified" content="2021-10-25T13:29:01+03:00" />
+<meta itemprop="wordCount" content="167">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Find the Closest Value in Bst"/>
-<meta name="twitter:description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Input: 16
-Output: 15
-find the closest value
-Iterate through tree. Find the closest value to target.
-The closest is the smallest delta result,
-so it can be represented as abs(target - value) &lt; abs(target - closest)
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  open class BST(var value: Int) { var left: BST?"/>
+<meta name="twitter:title" content="Validate BST"/>
+<meta name="twitter:description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Output: true
+validate bst
+https://algs4.cs.princeton.edu/32bst/BST.java.html#isBST
+Recursive version of isBST method.
+BST is valid:
+ if value greater to every left node values if value less than every right node values  So for recursive solution is possible to make expression where
+ max value is current node value for left branches min value is current node value for right branches  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  open class BST(var value: Int) { var left: BST?"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -145,10 +145,10 @@ so it can be represented as abs(target - value) &lt; abs(target - closest)
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Find the Closest Value in Bst</h1>
+      <h1 class="post-title">Validate BST</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 10-22-2021 </span>
+        <span class="post-time"> 10-25-2021 </span>
         <div class="post-category">
             <a href="/categories/binary-search-tree/"> binary search tree </a>
             </div>
@@ -169,12 +169,20 @@ so it can be represented as abs(target - value) &lt; abs(target - closest)
  /\   /\
 3  8 15 25
 </code></pre>
-<p>Input: 16<br>
-Output: 15</p>
-<p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/binary_search_tree/FIndTheClosestValue.kt">find the closest value</a></p>
-<p>Iterate through tree. Find the closest value to target.<br>
-The closest is the smallest delta result,<br>
-so it can be represented as <code>abs(target - value) &lt; abs(target - closest)</code></p>
+<p>Output: true</p>
+<p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/binary_search_tree/ValidateBST.kt">validate bst</a><br>
+<a href="https://algs4.cs.princeton.edu/32bst/BST.java.html">https://algs4.cs.princeton.edu/32bst/BST.java.html#isBST</a></p>
+<p>Recursive version of <code>isBST</code> method.<br>
+BST is valid:</p>
+<ul>
+<li>if value greater to every left node values</li>
+<li>if value less than every right node values</li>
+</ul>
+<p>So for recursive solution is possible to make expression where</p>
+<ul>
+<li>max value is current node value for left branches</li>
+<li>min value is current node value for right branches</li>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -193,13 +201,6 @@ so it can be represented as <code>abs(target - value) &lt; abs(target - closest)
 </span><span class="lnt">14
 </span><span class="lnt">15
 </span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="k">open</span> <span class="k">class</span> <span class="nc">BST</span><span class="p">(</span><span class="k">var</span> <span class="py">value</span><span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">{</span>
@@ -207,23 +208,16 @@ so it can be represented as <code>abs(target - value) &lt; abs(target - closest)
     <span class="k">var</span> <span class="py">right</span><span class="p">:</span> <span class="n">BST</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
 <span class="p">}</span>
 
-<span class="c1">// O(log(n)) time | O(1) space
-</span><span class="c1">// worst O(n) time | O(1) space
-</span><span class="c1"></span><span class="k">fun</span> <span class="nf">findTheClosestValueInBst</span><span class="p">(</span><span class="n">tree</span><span class="p">:</span> <span class="n">BST</span><span class="p">?,</span> <span class="n">target</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">Int</span> <span class="p">{</span>
-    <span class="k">var</span> <span class="py">closest</span> <span class="p">=</span> <span class="n">tree</span><span class="o">!!</span><span class="p">.</span><span class="n">value</span>
-    <span class="k">var</span> <span class="py">node</span> <span class="p">=</span> <span class="n">tree</span>
+<span class="c1">// O(n) time | O(d) space
+</span><span class="c1"></span><span class="k">fun</span> <span class="nf">validateBST</span><span class="p">(</span><span class="n">tree</span><span class="p">:</span> <span class="n">BSTNode</span><span class="p">):</span> <span class="n">Boolean</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">isBST</span><span class="p">(</span><span class="n">node</span> <span class="p">=</span> <span class="n">tree</span><span class="p">,</span> <span class="n">min</span> <span class="p">=</span> <span class="n">Int</span><span class="p">.</span><span class="n">MIN_VALUE</span><span class="p">,</span> <span class="n">max</span> <span class="p">=</span> <span class="n">Int</span><span class="p">.</span><span class="n">MAX_VALUE</span><span class="p">)</span>
+<span class="p">}</span>
 
-    <span class="k">inner</span><span class="err">@</span> <span class="k">while</span> <span class="p">(</span><span class="n">node</span> <span class="o">!=</span> <span class="k">null</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">abs</span><span class="p">(</span><span class="n">target</span> <span class="p">-</span> <span class="n">node</span><span class="p">.</span><span class="n">value</span><span class="p">)</span> <span class="p">&lt;</span> <span class="n">abs</span><span class="p">(</span><span class="n">target</span> <span class="p">-</span> <span class="n">closest</span><span class="p">))</span> <span class="n">closest</span> <span class="p">=</span> <span class="n">node</span><span class="p">.</span><span class="n">value</span>
-
-        <span class="n">node</span> <span class="p">=</span> <span class="k">when</span> <span class="p">{</span>
-            <span class="n">target</span> <span class="p">&lt;</span> <span class="n">node</span><span class="p">.</span><span class="n">value</span> <span class="o">-&gt;</span> <span class="n">node</span><span class="p">.</span><span class="n">left</span>
-            <span class="n">target</span> <span class="p">&gt;</span> <span class="n">node</span><span class="p">.</span><span class="n">value</span> <span class="o">-&gt;</span> <span class="n">node</span><span class="p">.</span><span class="n">right</span>
-            <span class="k">else</span> <span class="o">-&gt;</span> <span class="k">break</span><span class="nd">@inner</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-
-    <span class="k">return</span> <span class="n">closest</span>
+<span class="k">fun</span> <span class="nf">isBST</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">BSTNode</span><span class="p">?,</span> <span class="n">min</span><span class="p">:</span> <span class="n">Int</span><span class="p">?,</span> <span class="n">max</span><span class="p">:</span> <span class="n">Int</span><span class="p">?):</span> <span class="n">Boolean</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">node</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="k">true</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">min</span> <span class="o">!=</span> <span class="k">null</span> <span class="o">&amp;&amp;</span> <span class="n">node</span><span class="p">.</span><span class="n">value</span> <span class="p">&lt;</span> <span class="n">min</span><span class="p">)</span> <span class="k">return</span> <span class="k">false</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">max</span> <span class="o">!=</span> <span class="k">null</span> <span class="o">&amp;&amp;</span> <span class="n">node</span><span class="p">.</span><span class="n">value</span> <span class="o">&gt;=</span> <span class="n">max</span><span class="p">)</span> <span class="k">return</span> <span class="k">false</span>
+    <span class="k">return</span> <span class="n">isBST</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">min</span><span class="p">,</span> <span class="n">node</span><span class="p">.</span><span class="n">value</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">isBST</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">node</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="n">max</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
@@ -238,7 +232,7 @@ so it can be represented as <code>abs(target - value) &lt; abs(target - closest)
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        10-22-2021
+        10-25-2021
         
     </span>
   </p>
@@ -248,13 +242,9 @@ so it can be represented as <code>abs(target - value) &lt; abs(target - closest)
 <footer class="post-footer">
       
       <nav class="post-nav">
-        <a class="prev" href="/post/validate-bst/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Validate BST</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/post/number-of-islands/">
-            <span class="next-text nav-default">Number of Islands</span>
+        
+        <a class="next" href="/post/find-the-closest-value-in-bst/">
+            <span class="next-text nav-default">Find the Closest Value in Bst</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

@@ -6,7 +6,22 @@
     <description>Recent content in Posts on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 Oct 2021 14:30:19 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Oct 2021 13:29:01 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Validate BST</title>
+      <link>https://solairerove.github.io/post/validate-bst/</link>
+      <pubDate>Mon, 25 Oct 2021 13:29:01 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/validate-bst/</guid>
+      <description>14 / \ 7 21 /\ /\ 3 8 15 25  Output: true
+validate bst
+https://algs4.cs.princeton.edu/32bst/BST.java.html#isBST
+Recursive version of isBST method.
+BST is valid:
+ if value greater to every left node values if value less than every right node values  So for recursive solution is possible to make expression where
+ max value is current node value for left branches min value is current node value for right branches  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  open class BST(var value: Int) { var left: BST?</description>
+    </item>
+    
     <item>
       <title>Find the Closest Value in Bst</title>
       <link>https://solairerove.github.io/post/find-the-closest-value-in-bst/</link>

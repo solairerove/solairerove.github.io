@@ -118,6 +118,28 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/quick-select/">Quick Select</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 04-13-2021 </span>
+      <div class="post-category">
+          <a href="/categories/search/"> search </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      quick select
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39  // O(n) time | O(1) space fun quickSelect(arr: MutableList&lt;Int&gt;, k: Int): Int { var low = 0 var high = arr.size - 1 while (low &lt; high) { val j = partition(arr, low, high) when { j &lt; k -&gt; low = j + 1 j &gt; k -&gt; high = j - 1 else -&gt; return arr[j] } } return arr[low] } fun partition(arr: MutableList&lt;Int&gt;, low: Int, high: Int): Int { var i = low var j = high + 1 val v = arr[low] while (true) { while (arr[++i] &lt; v) if (i == high) break while (v &lt; arr[--j]) if (j == low) break if (j &lt;= i) break swap(arr, i, j) } swap(arr, low, j) return j } fun swap(arr: MutableList&lt;Int&gt;, i: Int, j: Int) { val temp = arr[i] arr[i] = arr[j] arr[j] = temp }   
+    </div>
+    <div class="read-more">
+      <a href="/post/quick-select/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/two-numbers-sum/">Two Numbers Sum</a></h1>
     <div class="post-meta">
       <span class="post-time"> 04-12-2021 </span>
@@ -206,31 +228,6 @@ count sort
     </div>
     <div class="read-more">
       <a href="/post/bisect_right/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/quick-sort-3-way/">Quick Sort 3 Way</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 04-06-2021 </span>
-      <div class="post-category">
-          <a href="/categories/sorting/"> sorting </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Вариант быстрой сортировки с трехчастным разбиением для массивов с низкой энтропией.
-a[low]..a[lt - 1] &lt;= a[j] &lt;= a[gt + 1]..a[high] a[lt - 1] = a[j] = a[gt + 1]
-princeton quicksort 3 way
-quick sort 3 way
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  // O(nlog(n)) time | O(log(n)) space fun quickSort(arr: MutableList&lt;Int&gt;, low: Int = 0, high: Int = arr.
-    </div>
-    <div class="read-more">
-      <a href="/post/quick-sort-3-way/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

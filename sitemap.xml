@@ -3,34 +3,41 @@
   
   <url>
     <loc>https://solairerove.github.io/categories/binary-search-tree/</loc>
-    <lastmod>2021-10-22T14:30:19+03:00</lastmod>
+    <lastmod>2021-10-25T13:29:01+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/categories/</loc>
-    <lastmod>2021-10-22T14:30:19+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/post/find-the-closest-value-in-bst/</loc>
-    <lastmod>2021-10-22T14:30:19+03:00</lastmod>
+    <lastmod>2021-10-25T13:29:01+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/</loc>
-    <lastmod>2021-10-22T14:30:19+03:00</lastmod>
+    <lastmod>2021-10-25T13:29:01+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/post/</loc>
+    <lastmod>2021-10-25T13:29:01+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/validate-bst/</loc>
+    <lastmod>2021-10-25T13:29:01+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/find-the-closest-value-in-bst/</loc>
     <lastmod>2021-10-22T14:30:19+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
