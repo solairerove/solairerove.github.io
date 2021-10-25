@@ -118,6 +118,30 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/remove-k-node-from-end/">Remove K Node From End</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 06-03-2021 </span>
+      <div class="post-category">
+          <a href="/categories/linked-list/"> linked list </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Input: [1, 1, 1, 2, 2, 3], 2
+Output: [1, 1, 1, 2, 3]
+remove k node from end
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  class ListNode(var value: Int) { var next: ListNode? = null } // O(n) time | O(1) space fun removeKNodeFromEnd(head: ListNode, k: Int) { var cnt = 1 var first = head var second: ListNode?
+    </div>
+    <div class="read-more">
+      <a href="/post/remove-k-node-from-end/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/remove-duplicates-from-linked-list/">Remove Duplicates From Linked List</a></h1>
     <div class="post-meta">
       <span class="post-time"> 06-02-2021 </span>
@@ -206,30 +230,6 @@ longest substring without duplication
     </div>
     <div class="read-more">
       <a href="/post/longest-substring-without-duplication/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/kadane/">Kadane</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 05-27-2021 </span>
-      <div class="post-category">
-          <a href="/categories/arrays/"> arrays </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Input: [12, 11, -16, -14, -15, -9, 5, -20, 3, 7, -7]
-Output: 23
-kadane
-1 2 3 4 5 6 7 8 9 10 11 12  // O(n) time | O(1) space fun kadane(arr: List&lt;Int&gt;): Int { var curr = arr[0] var max = arr[0] for (i in 1 until arr.size) { curr = max(arr[i], curr + arr[i]) max = max(curr, max) } return max }   
-    </div>
-    <div class="read-more">
-      <a href="/post/kadane/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

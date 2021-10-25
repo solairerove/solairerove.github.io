@@ -6,7 +6,20 @@
     <description>Recent content in binary search tree on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 Oct 2021 13:29:01 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/binary-search-tree/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Oct 2021 13:53:31 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/binary-search-tree/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Traverse Bst</title>
+      <link>https://solairerove.github.io/post/traverse-bst/</link>
+      <pubDate>Mon, 25 Oct 2021 13:53:31 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/traverse-bst/</guid>
+      <description>14 / \ 7 21 /\ /\ 3 8 15 25  Output:
+in order: [3, 7, 8, 14, 15, 21, 25] pre order: [14, 7, 3, 8, 21, 15, 25] post order: [3, 8, 7, 15, 25, 21, 14]
+traverse bst
+No clue why
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34  open class BST(var value: Int) { var left: BST?</description>
+    </item>
+    
     <item>
       <title>Validate BST</title>
       <link>https://solairerove.github.io/post/validate-bst/</link>
