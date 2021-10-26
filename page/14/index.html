@@ -118,6 +118,31 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/two-numbers-sum/">Two Numbers Sum</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 04-12-2021 </span>
+      <div class="post-category">
+          <a href="/categories/arrays/"> arrays </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Дан массив. Вернуть массив из элементов, сумма которых равна заданной. \
+ Наивный подход на n^2 пересуммировать все возможные элементы. \ Линейная сложность с помощью мапы или сета. \ Константную память можно получить,
+если отсортировать массив,
+и почти как в бинарном поиске обновлять верхний и нижний индексы  two number sum
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33  // O(n) time | O(n) space fun twoNumberSumSet(arr: MutableList&lt;Int&gt;, targetSum: Int): List&lt;Int&gt; { val numbers = hashSetOf&lt;Int&gt;() for (a in arr) { val potential = targetSum - a if (numbers.
+    </div>
+    <div class="read-more">
+      <a href="/post/two-numbers-sum/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/count-sort/">Count Sort</a></h1>
     <div class="post-meta">
       <span class="post-time"> 04-09-2021 </span>
@@ -206,32 +231,6 @@ quick sort 3 way
     </div>
     <div class="read-more">
       <a href="/post/quick-sort-3-way/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/quick-sort/">Quick Sort</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 04-05-2021 </span>
-      <div class="post-category">
-          <a href="/categories/sorting/"> sorting </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Классический эффективный алгоритм сортировки divide and conquer.
-Разбиваем массив и независимо сортируем подмассивы. \
-a[low]..a[j - 1] &lt;= a[j] &lt;= a[j + 1]..a[high]
-princeton quicksort
-quick sort
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  // O(nlog(n)) time | O(log(n)) space fun quickSort(arr: MutableList&lt;Int&gt;, low: Int = 0, high: Int = arr.
-    </div>
-    <div class="read-more">
-      <a href="/post/quick-sort/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
