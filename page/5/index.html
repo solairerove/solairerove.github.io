@@ -118,6 +118,30 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/longest-substring-without-duplication/">Longest Substring Without Duplication</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 05-28-2021 </span>
+      <div class="post-category">
+          <a href="/categories/strings/"> strings </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Input: &ldquo;qvfwpccitm&rdquo;
+Output: &ldquo;qvfwpc&rdquo; \
+longest substring without duplication
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // O(n) time | O(n) space fun longestSubstringWithoutDuplication(s: String): String { val charToLastIdx = mutableMapOf&lt;Char, Int&gt;() var longest = Pair(0, 1) var low = 0 for (i in s.indices) { val char = s[i] if (char in charToLastIdx) { low = max(low, charToLastIdx[char]!
+    </div>
+    <div class="read-more">
+      <a href="/post/longest-substring-without-duplication/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/kadane/">Kadane</a></h1>
     <div class="post-meta">
       <span class="post-time"> 05-27-2021 </span>
@@ -208,30 +232,6 @@ valid ip addresses
     </div>
     <div class="read-more">
       <a href="/post/valid-ip-addresses/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/product-sum/">Product Sum</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 05-21-2021 </span>
-      <div class="post-category">
-          <a href="/categories/recursion/"> recursion </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Input: [1, [2, [3]]]
-Output: 23
-product sum
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // O(n) time | O(d) space // n is total number of elements // d is max depth fun productSum(arr: List&lt;*&gt;): Int { return productSum(arr, 1) } fun productSum(arr: List&lt;*&gt;, multiplier: Int): Int { var sum = 0 for (el in arr) { sum += if (el is List&lt;*&gt;) { productSum(el, multiplier + 1) } else { el as Int } } return sum * multiplier }   
-    </div>
-    <div class="read-more">
-      <a href="/post/product-sum/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

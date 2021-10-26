@@ -118,6 +118,29 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/reverse-linked-list/">Reverse Linked List</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 04-20-2021 </span>
+      <div class="post-category">
+          <a href="/categories/linked-list/"> linked list </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      leetcode
+reverse linked list
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  class ListNode(var value: Int) { var next: ListNode? = null } // O(n) time | O(1) space fun reverseList(head: ListNode?): ListNode? { var prev: ListNode? = null var curr: ListNode? = head while (curr != null) { val next = curr.next curr.next = prev prev = curr curr = next } return prev }   
+    </div>
+    <div class="read-more">
+      <a href="/post/reverse-linked-list/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/fixed-point/">Fixed Point</a></h1>
     <div class="post-meta">
       <span class="post-time"> 04-19-2021 </span>
@@ -203,29 +226,6 @@ third maximum number
     </div>
     <div class="read-more">
       <a href="/post/search-in-matrix/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/third-maximum-number/">Third Maximum Number</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 04-15-2021 </span>
-      <div class="post-category">
-          <a href="/categories/search/"> search </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      leetcode
-third maximum number
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // O(n) time | O(1) space fun thirdMaximumNumber(arr: List&lt;Int&gt;): Int { val largestNumbers = mutableListOf(Int.MIN_VALUE, Int.MIN_VALUE, Int.MIN_VALUE) for (element in arr) { when { element &gt; largestNumbers[2] -&gt; shift(largestNumbers, element, 2) element &gt; largestNumbers[1] -&gt; shift(largestNumbers, element, 1) element &gt; largestNumbers[0] -&gt; shift(largestNumbers, element, 0) } } return largestNumbers[0] } fun shift(arr: MutableList&lt;Int&gt;, toInsert: Int, position: Int) { for (i in 0 until position + 1) { arr[i] = if (i == position) toInsert else arr[i + 1] } }   
-    </div>
-    <div class="read-more">
-      <a href="/post/third-maximum-number/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

@@ -6,7 +6,21 @@
     <description>Recent content in Posts on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 Oct 2021 13:53:31 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Oct 2021 11:19:53 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Find Kth Largest Element in a BST</title>
+      <link>https://solairerove.github.io/post/find-kth-largest-element-in-a-bst/</link>
+      <pubDate>Tue, 26 Oct 2021 11:19:53 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/find-kth-largest-element-in-a-bst/</guid>
+      <description>14 / \ 7 21 /\ /\ 3 8 15 25  Input: 2 Output: 21
+Input: 4 Output: 14
+find kth largest element in a bst
+leetcode
+Make in order tree traversal, so kth largest will be arr.size - k
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  open class BST(var value: Int) { var left: BST?</description>
+    </item>
+    
     <item>
       <title>Traverse Bst</title>
       <link>https://solairerove.github.io/post/traverse-bst/</link>
