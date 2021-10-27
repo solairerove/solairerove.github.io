@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Maximum Path Sum - Headstone lamp - It&#39;s always has been</title>
+  <title>Diameter of Binary Tree - Headstone lamp - It&#39;s always has been</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,12 +16,11 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="solairerove" /><meta name="description" content="3 / \ 7 8 / \ / \ 14 15 21 25  Output: 58 (15 &#43; 7 &#43; 3 &#43; 8 &#43; 25)
-max path sum
-leetcode
-A path from start to end, goes up on the tree for 0 or more steps,
-then goes down for 0 or more steps. Once it goes down, it can&amp;rsquo;t go up.
-Each path has a highest node, which is also the lowest common ancestor of all other nodes on the path." /><meta name="keywords" content="Headstone, algorithms, data structures" />
+<meta name="author" content="solairerove" /><meta name="description" content="Given the root of a binary tree, return the length of the diameter of the tree.
+The diameter of a binary tree is the length of the longest path between any two nodes in a tree.
+This path may or may not pass through the root.
+The length of a path between two nodes is represented by the number of edges between them.
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Output: 3" /><meta name="keywords" content="Headstone, algorithms, data structures" />
 
 
 
@@ -31,7 +30,7 @@ Each path has a highest node, which is also the lowest common ancestor of all ot
 <meta name="generator" content="Hugo 0.88.1 with theme even" />
 
 
-<link rel="canonical" href="https://solairerove.github.io/post/maximum-path-sum/" />
+<link rel="canonical" href="https://solairerove.github.io/post/diameter-of-binary-tree/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -44,35 +43,32 @@ Each path has a highest node, which is also the lowest common ancestor of all ot
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Maximum Path Sum" />
-<meta property="og:description" content="3 / \ 7 8 / \ / \ 14 15 21 25  Output: 58 (15 &#43; 7 &#43; 3 &#43; 8 &#43; 25)
-max path sum
-leetcode
-A path from start to end, goes up on the tree for 0 or more steps,
-then goes down for 0 or more steps. Once it goes down, it can&rsquo;t go up.
-Each path has a highest node, which is also the lowest common ancestor of all other nodes on the path." />
+<meta property="og:title" content="Diameter of Binary Tree" />
+<meta property="og:description" content="Given the root of a binary tree, return the length of the diameter of the tree.
+The diameter of a binary tree is the length of the longest path between any two nodes in a tree.
+This path may or may not pass through the root.
+The length of a path between two nodes is represented by the number of edges between them.
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Output: 3" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://solairerove.github.io/post/maximum-path-sum/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-10-26T18:25:00+03:00" />
-<meta property="article:modified_time" content="2021-10-26T18:25:00+03:00" />
+<meta property="og:url" content="https://solairerove.github.io/post/diameter-of-binary-tree/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-10-27T12:00:34+03:00" />
+<meta property="article:modified_time" content="2021-10-27T12:00:34+03:00" />
 
-<meta itemprop="name" content="Maximum Path Sum">
-<meta itemprop="description" content="3 / \ 7 8 / \ / \ 14 15 21 25  Output: 58 (15 &#43; 7 &#43; 3 &#43; 8 &#43; 25)
-max path sum
-leetcode
-A path from start to end, goes up on the tree for 0 or more steps,
-then goes down for 0 or more steps. Once it goes down, it can&rsquo;t go up.
-Each path has a highest node, which is also the lowest common ancestor of all other nodes on the path."><meta itemprop="datePublished" content="2021-10-26T18:25:00+03:00" />
-<meta itemprop="dateModified" content="2021-10-26T18:25:00+03:00" />
-<meta itemprop="wordCount" content="211">
+<meta itemprop="name" content="Diameter of Binary Tree">
+<meta itemprop="description" content="Given the root of a binary tree, return the length of the diameter of the tree.
+The diameter of a binary tree is the length of the longest path between any two nodes in a tree.
+This path may or may not pass through the root.
+The length of a path between two nodes is represented by the number of edges between them.
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Output: 3"><meta itemprop="datePublished" content="2021-10-27T12:00:34+03:00" />
+<meta itemprop="dateModified" content="2021-10-27T12:00:34+03:00" />
+<meta itemprop="wordCount" content="203">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Maximum Path Sum"/>
-<meta name="twitter:description" content="3 / \ 7 8 / \ / \ 14 15 21 25  Output: 58 (15 &#43; 7 &#43; 3 &#43; 8 &#43; 25)
-max path sum
-leetcode
-A path from start to end, goes up on the tree for 0 or more steps,
-then goes down for 0 or more steps. Once it goes down, it can&rsquo;t go up.
-Each path has a highest node, which is also the lowest common ancestor of all other nodes on the path."/>
+<meta name="twitter:title" content="Diameter of Binary Tree"/>
+<meta name="twitter:description" content="Given the root of a binary tree, return the length of the diameter of the tree.
+The diameter of a binary tree is the length of the longest path between any two nodes in a tree.
+This path may or may not pass through the root.
+The length of a path between two nodes is represented by the number of edges between them.
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Output: 3"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -141,10 +137,10 @@ Each path has a highest node, which is also the lowest common ancestor of all ot
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Maximum Path Sum</h1>
+      <h1 class="post-title">Diameter of Binary Tree</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 10-26-2021 </span>
+        <span class="post-time"> 10-27-2021 </span>
         <div class="post-category">
             <a href="/categories/binary-tree/"> binary tree </a>
             </div>
@@ -159,20 +155,20 @@ Each path has a highest node, which is also the lowest common ancestor of all ot
   </div>
 </div>
     <div class="post-content">
-      <pre><code>     3
+      <p>Given the root of a binary tree, return the length of the diameter of the tree.<br>
+The diameter of a binary tree is the length of the longest path between any two nodes in a tree.<br>
+This path may or may not pass through the root.<br>
+The length of a path between two nodes is represented by the number of edges between them.</p>
+<pre><code>     3
    /   \
   7     8
  / \   / \
 14 15 21 25
 </code></pre>
-<p>Output: 58 (15 + 7 + 3 + 8 + 25)</p>
-<p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/binary_tree/MaximumPathSum.kt">max path sum</a><br>
-<a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/">leetcode</a></p>
-<p>A path from start to end, goes up on the tree for 0 or more steps,<br>
-then goes down for 0 or more steps. Once it goes down, it can&rsquo;t go up.<br>
-Each path has a highest node, which is also the lowest common ancestor of all other nodes on the path.<br>
-A recursive method maxPathDown(TreeNode node) (1) computes the maximum path sum with highest node is the input node,<br>
-update maximum if necessary (2) returns the maximum sum of the path that can be extended to input node&rsquo;s parent.</p>
+<p>Output: 3</p>
+<p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/binary_tree/DiameterOfBinaryTree.kt">diameter of binary tree</a><br>
+<a href="https://leetcode.com/problems/diameter-of-binary-tree/">leetcode</a></p>
+<p>No clue</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -196,6 +192,10 @@ update maximum if necessary (2) returns the maximum sum of the path that can be 
 </span><span class="lnt">19
 </span><span class="lnt">20
 </span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="k">class</span> <span class="nc">TreeNode</span><span class="p">(</span><span class="k">var</span> <span class="py">value</span><span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">{</span>
@@ -203,21 +203,25 @@ update maximum if necessary (2) returns the maximum sum of the path that can be 
     <span class="k">var</span> <span class="py">right</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
 <span class="p">}</span>
 
-<span class="k">var</span> <span class="py">maxValue</span> <span class="p">=</span> <span class="m">0</span>
+<span class="k">data</span> <span class="k">class</span> <span class="nc">TreeInfo</span><span class="p">(</span><span class="k">val</span> <span class="py">diameter</span><span class="p">:</span> <span class="n">Int</span><span class="p">,</span> <span class="k">val</span> <span class="py">height</span><span class="p">:</span> <span class="n">Int</span><span class="p">)</span>
 
-<span class="c1">// O(n) space | O(log(n))
-</span><span class="c1"></span><span class="k">fun</span> <span class="nf">maxPathSum</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">?):</span> <span class="n">Int</span> <span class="p">{</span>
-    <span class="n">maxValue</span> <span class="p">=</span> <span class="n">Int</span><span class="p">.</span><span class="n">MIN_VALUE</span>
-    <span class="n">maxPathDown</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">maxValue</span>
+<span class="c1">// O(n) time | O(h) space
+</span><span class="c1"></span><span class="k">fun</span> <span class="nf">binaryTreeDiameter</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">?):</span> <span class="n">Int</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">getTreeInfo</span><span class="p">(</span><span class="n">node</span><span class="p">).</span><span class="n">diameter</span>
 <span class="p">}</span>
 
-<span class="k">fun</span> <span class="nf">maxPathDown</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">?):</span> <span class="n">Int</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">node</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="m">0</span>
-    <span class="k">val</span> <span class="py">left</span> <span class="p">=</span> <span class="n">max</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="n">maxPathDown</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">left</span><span class="p">))</span>
-    <span class="k">val</span> <span class="py">right</span> <span class="p">=</span> <span class="n">max</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="n">maxPathDown</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">right</span><span class="p">))</span>
-    <span class="n">maxValue</span> <span class="p">=</span> <span class="n">max</span><span class="p">(</span><span class="n">maxValue</span><span class="p">,</span> <span class="n">left</span> <span class="p">+</span> <span class="n">right</span> <span class="p">+</span> <span class="n">node</span><span class="p">.</span><span class="n">value</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">max</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">)</span> <span class="p">+</span> <span class="n">node</span><span class="p">.</span><span class="n">value</span>
+<span class="k">fun</span> <span class="nf">getTreeInfo</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">?):</span> <span class="n">TreeInfo</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">node</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="n">TreeInfo</span><span class="p">(</span><span class="n">diameter</span> <span class="p">=</span> <span class="m">0</span><span class="p">,</span> <span class="n">height</span> <span class="p">=</span> <span class="m">0</span><span class="p">)</span>
+
+    <span class="k">val</span> <span class="py">left</span> <span class="p">=</span> <span class="n">getTreeInfo</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">left</span><span class="p">)</span>
+    <span class="k">val</span> <span class="py">right</span> <span class="p">=</span> <span class="n">getTreeInfo</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">right</span><span class="p">)</span>
+
+    <span class="k">val</span> <span class="py">longestHeight</span> <span class="p">=</span> <span class="n">left</span><span class="p">.</span><span class="n">height</span> <span class="p">+</span> <span class="n">right</span><span class="p">.</span><span class="n">height</span>
+    <span class="k">val</span> <span class="py">maxDiameter</span> <span class="p">=</span> <span class="n">max</span><span class="p">(</span><span class="n">left</span><span class="p">.</span><span class="n">diameter</span><span class="p">,</span> <span class="n">right</span><span class="p">.</span><span class="n">diameter</span><span class="p">)</span>
+    <span class="k">val</span> <span class="py">currDiameter</span> <span class="p">=</span> <span class="n">max</span><span class="p">(</span><span class="n">longestHeight</span><span class="p">,</span> <span class="n">maxDiameter</span><span class="p">)</span>
+    <span class="k">val</span> <span class="py">currHeight</span> <span class="p">=</span> <span class="m">1</span> <span class="p">+</span> <span class="n">max</span><span class="p">(</span><span class="n">left</span><span class="p">.</span><span class="n">height</span><span class="p">,</span> <span class="n">right</span><span class="p">.</span><span class="n">height</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">TreeInfo</span><span class="p">(</span><span class="n">diameter</span> <span class="p">=</span> <span class="n">currDiameter</span><span class="p">,</span> <span class="n">height</span> <span class="p">=</span> <span class="n">currHeight</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
@@ -232,7 +236,7 @@ update maximum if necessary (2) returns the maximum sum of the path that can be 
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        10-26-2021
+        10-27-2021
         
     </span>
   </p>
@@ -242,13 +246,9 @@ update maximum if necessary (2) returns the maximum sum of the path that can be 
 <footer class="post-footer">
       
       <nav class="post-nav">
-        <a class="prev" href="/post/diameter-of-binary-tree/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Diameter of Binary Tree</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/post/invert-binary-tree/">
-            <span class="next-text nav-default">Invert Binary Tree</span>
+        
+        <a class="next" href="/post/maximum-path-sum/">
+            <span class="next-text nav-default">Maximum Path Sum</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
