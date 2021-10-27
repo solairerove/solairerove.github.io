@@ -6,7 +6,20 @@
     <description>Recent content in binary search tree on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 26 Oct 2021 11:19:53 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/binary-search-tree/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Oct 2021 17:33:24 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/categories/binary-search-tree/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Construct Bst From Preorder Traversal</title>
+      <link>https://solairerove.github.io/post/construct-bst-from-preorder-traversal/</link>
+      <pubDate>Wed, 27 Oct 2021 17:33:24 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/construct-bst-from-preorder-traversal/</guid>
+      <description>Output:
+ 14 / \ 7 21 /\ /\ 3 8 15 25  Input: [14, 7, 3, 8, 21, 15, 25]
+construct bst from preorder traversal
+leetcode
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } private var i = 0 // O(n) time | O(n) space fun bstFromPreorder(preorder: List&amp;lt;Int&amp;gt;): BSTNode?</description>
+    </item>
+    
     <item>
       <title>Find Kth Largest Element in a BST</title>
       <link>https://solairerove.github.io/post/find-kth-largest-element-in-a-bst/</link>

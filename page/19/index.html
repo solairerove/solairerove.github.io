@@ -118,6 +118,29 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/insertion-sort/">Insertion Sort</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 03-01-2021 </span>
+      <div class="post-category">
+          <a href="/categories/sorting/"> sorting </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Один из алгоритмов сортировки. На каждом шаге вставляет на свое место элемент в отсортированный подмассив.
+insertion sort
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  // O(n^2) time | O(1) space fun insertionSort(arr: MutableList&lt;Int&gt;) { val n = arr.size for (i in 1 until n) { for (j in i downTo 0) { if (j &gt; 0 &amp;&amp; arr[j] &lt; arr[j - 1]) { swap(arr, j, j - 1) } } } } fun swap(arr: MutableList&lt;Int&gt;, i: Int, j: Int) { val temp = arr[i] arr[i] = arr[j] arr[j] = temp }   
+    </div>
+    <div class="read-more">
+      <a href="/post/insertion-sort/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/bubble-sort/">Bubble Sort</a></h1>
     <div class="post-meta">
       <span class="post-time"> 03-01-2021 </span>
