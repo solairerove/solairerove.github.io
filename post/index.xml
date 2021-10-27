@@ -6,7 +6,21 @@
     <description>Recent content in Posts on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 27 Oct 2021 12:00:34 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Oct 2021 13:49:10 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inorder Successor</title>
+      <link>https://solairerove.github.io/post/inorder-successor/</link>
+      <pubDate>Wed, 27 Oct 2021 13:49:10 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/inorder-successor/</guid>
+      <description>In Binary Tree, Inorder successor of a node is the next node in Inorder traversal of the Binary Tree
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Input: 7 Output: 15
+inorder successor
+leetcode
+No clue
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  class TreeNode(var value: Int) { var left: TreeNode?</description>
+    </item>
+    
     <item>
       <title>Diameter of Binary Tree</title>
       <link>https://solairerove.github.io/post/diameter-of-binary-tree/</link>

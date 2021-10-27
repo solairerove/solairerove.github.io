@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Diameter of Binary Tree - Headstone lamp - It&#39;s always has been</title>
+  <title>Inorder Successor - Headstone lamp - It&#39;s always has been</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,11 +16,12 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="solairerove" /><meta name="description" content="Given the root of a binary tree, return the length of the diameter of the tree.
-The diameter of a binary tree is the length of the longest path between any two nodes in a tree.
-This path may or may not pass through the root.
-The length of a path between two nodes is represented by the number of edges between them.
- 3 / \ 7 8 / \ / \ 14 15 21 25  Output: 3" /><meta name="keywords" content="Headstone, algorithms, data structures" />
+<meta name="author" content="solairerove" /><meta name="description" content="In Binary Tree, Inorder successor of a node is the next node in Inorder traversal of the Binary Tree
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Input: 7 Output: 15
+inorder successor
+leetcode
+No clue
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  class TreeNode(var value: Int) { var left: TreeNode?" /><meta name="keywords" content="Headstone, algorithms, data structures" />
 
 
 
@@ -30,7 +31,7 @@ The length of a path between two nodes is represented by the number of edges bet
 <meta name="generator" content="Hugo 0.88.1 with theme even" />
 
 
-<link rel="canonical" href="https://solairerove.github.io/post/diameter-of-binary-tree/" />
+<link rel="canonical" href="https://solairerove.github.io/post/inorder-successor/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -43,32 +44,35 @@ The length of a path between two nodes is represented by the number of edges bet
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Diameter of Binary Tree" />
-<meta property="og:description" content="Given the root of a binary tree, return the length of the diameter of the tree.
-The diameter of a binary tree is the length of the longest path between any two nodes in a tree.
-This path may or may not pass through the root.
-The length of a path between two nodes is represented by the number of edges between them.
- 3 / \ 7 8 / \ / \ 14 15 21 25  Output: 3" />
+<meta property="og:title" content="Inorder Successor" />
+<meta property="og:description" content="In Binary Tree, Inorder successor of a node is the next node in Inorder traversal of the Binary Tree
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Input: 7 Output: 15
+inorder successor
+leetcode
+No clue
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  class TreeNode(var value: Int) { var left: TreeNode?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://solairerove.github.io/post/diameter-of-binary-tree/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-10-27T12:00:34+03:00" />
-<meta property="article:modified_time" content="2021-10-27T12:00:34+03:00" />
+<meta property="og:url" content="https://solairerove.github.io/post/inorder-successor/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-10-27T13:49:10+03:00" />
+<meta property="article:modified_time" content="2021-10-27T13:49:10+03:00" />
 
-<meta itemprop="name" content="Diameter of Binary Tree">
-<meta itemprop="description" content="Given the root of a binary tree, return the length of the diameter of the tree.
-The diameter of a binary tree is the length of the longest path between any two nodes in a tree.
-This path may or may not pass through the root.
-The length of a path between two nodes is represented by the number of edges between them.
- 3 / \ 7 8 / \ / \ 14 15 21 25  Output: 3"><meta itemprop="datePublished" content="2021-10-27T12:00:34+03:00" />
-<meta itemprop="dateModified" content="2021-10-27T12:00:34+03:00" />
-<meta itemprop="wordCount" content="203">
+<meta itemprop="name" content="Inorder Successor">
+<meta itemprop="description" content="In Binary Tree, Inorder successor of a node is the next node in Inorder traversal of the Binary Tree
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Input: 7 Output: 15
+inorder successor
+leetcode
+No clue
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  class TreeNode(var value: Int) { var left: TreeNode?"><meta itemprop="datePublished" content="2021-10-27T13:49:10+03:00" />
+<meta itemprop="dateModified" content="2021-10-27T13:49:10+03:00" />
+<meta itemprop="wordCount" content="158">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Diameter of Binary Tree"/>
-<meta name="twitter:description" content="Given the root of a binary tree, return the length of the diameter of the tree.
-The diameter of a binary tree is the length of the longest path between any two nodes in a tree.
-This path may or may not pass through the root.
-The length of a path between two nodes is represented by the number of edges between them.
- 3 / \ 7 8 / \ / \ 14 15 21 25  Output: 3"/>
+<meta name="twitter:title" content="Inorder Successor"/>
+<meta name="twitter:description" content="In Binary Tree, Inorder successor of a node is the next node in Inorder traversal of the Binary Tree
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Input: 7 Output: 15
+inorder successor
+leetcode
+No clue
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  class TreeNode(var value: Int) { var left: TreeNode?"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -137,7 +141,7 @@ The length of a path between two nodes is represented by the number of edges bet
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Diameter of Binary Tree</h1>
+      <h1 class="post-title">Inorder Successor</h1>
 
       <div class="post-meta">
         <span class="post-time"> 10-27-2021 </span>
@@ -155,19 +159,17 @@ The length of a path between two nodes is represented by the number of edges bet
   </div>
 </div>
     <div class="post-content">
-      <p>Given the root of a binary tree, return the length of the diameter of the tree.<br>
-The diameter of a binary tree is the length of the longest path between any two nodes in a tree.<br>
-This path may or may not pass through the root.<br>
-The length of a path between two nodes is represented by the number of edges between them.</p>
+      <p>In Binary Tree, Inorder successor of a node is the next node in Inorder traversal of the Binary Tree</p>
 <pre><code>     3
    /   \
   7     8
  / \   / \
 14 15 21 25
 </code></pre>
-<p>Output: 3</p>
-<p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/binary_tree/DiameterOfBinaryTree.kt">diameter of binary tree</a><br>
-<a href="https://leetcode.com/problems/diameter-of-binary-tree/">leetcode</a></p>
+<p>Input: 7
+Output: 15</p>
+<p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/binary_tree/InorderSuccessor.kt">inorder successor</a><br>
+<a href="https://leetcode.com/problems/inorder-successor-in-bst/">leetcode</a></p>
 <p>No clue</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -196,32 +198,42 @@ The length of a path between two nodes is represented by the number of edges bet
 </span><span class="lnt">23
 </span><span class="lnt">24
 </span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="k">class</span> <span class="nc">TreeNode</span><span class="p">(</span><span class="k">var</span> <span class="py">value</span><span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">var</span> <span class="py">left</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
     <span class="k">var</span> <span class="py">right</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+    <span class="k">val</span> <span class="py">parent</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
 <span class="p">}</span>
 
-<span class="k">data</span> <span class="k">class</span> <span class="nc">TreeInfo</span><span class="p">(</span><span class="k">val</span> <span class="py">diameter</span><span class="p">:</span> <span class="n">Int</span><span class="p">,</span> <span class="k">val</span> <span class="py">height</span><span class="p">:</span> <span class="n">Int</span><span class="p">)</span>
+<span class="c1">// O(h) time | O(1) space
+</span><span class="c1"></span><span class="k">fun</span> <span class="nf">inorderSuccessor</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">):</span> <span class="n">TreeNode</span><span class="p">?</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">right</span> <span class="o">!=</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="n">getLeftmostLeaf</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">right</span><span class="o">!!</span><span class="p">)</span>
 
-<span class="c1">// O(n) time | O(h) space
-</span><span class="c1"></span><span class="k">fun</span> <span class="nf">binaryTreeDiameter</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">?):</span> <span class="n">Int</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">getTreeInfo</span><span class="p">(</span><span class="n">node</span><span class="p">).</span><span class="n">diameter</span>
+    <span class="k">return</span> <span class="n">getRightmostParent</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
 <span class="p">}</span>
 
-<span class="k">fun</span> <span class="nf">getTreeInfo</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">?):</span> <span class="n">TreeInfo</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">node</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="n">TreeInfo</span><span class="p">(</span><span class="n">diameter</span> <span class="p">=</span> <span class="m">0</span><span class="p">,</span> <span class="n">height</span> <span class="p">=</span> <span class="m">0</span><span class="p">)</span>
+<span class="k">fun</span> <span class="nf">getLeftmostLeaf</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">):</span> <span class="n">TreeNode</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="py">curr</span> <span class="p">=</span> <span class="n">node</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">curr</span><span class="p">.</span><span class="n">left</span> <span class="o">!=</span> <span class="k">null</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">curr</span> <span class="p">=</span> <span class="n">curr</span><span class="p">.</span><span class="n">left</span><span class="o">!!</span>
+    <span class="p">}</span>
 
-    <span class="k">val</span> <span class="py">left</span> <span class="p">=</span> <span class="n">getTreeInfo</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">left</span><span class="p">)</span>
-    <span class="k">val</span> <span class="py">right</span> <span class="p">=</span> <span class="n">getTreeInfo</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">right</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">curr</span>
+<span class="p">}</span>
 
-    <span class="k">val</span> <span class="py">longestHeight</span> <span class="p">=</span> <span class="n">left</span><span class="p">.</span><span class="n">height</span> <span class="p">+</span> <span class="n">right</span><span class="p">.</span><span class="n">height</span>
-    <span class="k">val</span> <span class="py">maxDiameter</span> <span class="p">=</span> <span class="n">max</span><span class="p">(</span><span class="n">left</span><span class="p">.</span><span class="n">diameter</span><span class="p">,</span> <span class="n">right</span><span class="p">.</span><span class="n">diameter</span><span class="p">)</span>
-    <span class="k">val</span> <span class="py">currDiameter</span> <span class="p">=</span> <span class="n">max</span><span class="p">(</span><span class="n">longestHeight</span><span class="p">,</span> <span class="n">maxDiameter</span><span class="p">)</span>
-    <span class="k">val</span> <span class="py">currHeight</span> <span class="p">=</span> <span class="m">1</span> <span class="p">+</span> <span class="n">max</span><span class="p">(</span><span class="n">left</span><span class="p">.</span><span class="n">height</span><span class="p">,</span> <span class="n">right</span><span class="p">.</span><span class="n">height</span><span class="p">)</span>
+<span class="k">fun</span> <span class="nf">getRightmostParent</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">):</span> <span class="n">TreeNode</span><span class="p">?</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="py">curr</span> <span class="p">=</span> <span class="n">node</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">curr</span><span class="p">.</span><span class="n">parent</span> <span class="o">!=</span> <span class="k">null</span> <span class="o">&amp;&amp;</span> <span class="n">curr</span><span class="p">.</span><span class="n">parent</span><span class="o">!!</span><span class="p">.</span><span class="n">right</span> <span class="o">==</span> <span class="n">curr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">curr</span> <span class="p">=</span> <span class="n">curr</span><span class="p">.</span><span class="n">parent</span><span class="o">!!</span>
+    <span class="p">}</span>
 
-    <span class="k">return</span> <span class="n">TreeInfo</span><span class="p">(</span><span class="n">diameter</span> <span class="p">=</span> <span class="n">currDiameter</span><span class="p">,</span> <span class="n">height</span> <span class="p">=</span> <span class="n">currHeight</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">curr</span><span class="p">.</span><span class="n">parent</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
@@ -246,13 +258,9 @@ The length of a path between two nodes is represented by the number of edges bet
 <footer class="post-footer">
       
       <nav class="post-nav">
-        <a class="prev" href="/post/inorder-successor/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Inorder Successor</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/post/maximum-path-sum/">
-            <span class="next-text nav-default">Maximum Path Sum</span>
+        
+        <a class="next" href="/post/diameter-of-binary-tree/">
+            <span class="next-text nav-default">Diameter of Binary Tree</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
