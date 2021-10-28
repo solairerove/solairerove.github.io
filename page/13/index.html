@@ -118,6 +118,31 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/sort-k-sorted-array/">Sort K Sorted Array</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 04-22-2021 </span>
+      <div class="post-category">
+          <a href="/categories/heap/"> heap </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Input: arr = [6, 5, 3, 2, 8, 10, 9], k = 3
+Output: [2, 3, 5, 6, 8, 9, 10]
+merge k sorted arrays
+min heap
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  // O(nlog(k)) time | O(k) space // n - total elements, k is k fun sortKSortedArrays(arr: MutableList&lt;Int&gt;, k: Int) { val sliceIdx = if (k + 1 &lt; arr.
+    </div>
+    <div class="read-more">
+      <a href="/post/sort-k-sorted-array/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/radix-sort/">Radix Sort</a></h1>
     <div class="post-meta">
       <span class="post-time"> 04-21-2021 </span>
@@ -205,28 +230,6 @@ reverse linked list
     </div>
     <div class="read-more">
       <a href="/post/reverse-linked-list/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/fixed-point/">Fixed Point</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 04-19-2021 </span>
-      <div class="post-category">
-          <a href="/categories/search/"> search </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      1  index == arr[index]   fixed point
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  // O(log(n)) time | O(1) space fun searchFixedPoint(arr: List&lt;Int&gt;): Int { var low = 0 var high = arr.size - 1 while (low &lt;= high) { val mid = low + (high - low) / 2 when { arr[mid] &lt; mid -&gt; low = mid + 1 arr[mid] == mid &amp;&amp; mid == 0 -&gt; return mid arr[mid] == mid &amp;&amp; arr[mid - 1] &lt; mid - 1 -&gt; return mid else -&gt; high = mid - 1 } } return -1 }   
-    </div>
-    <div class="read-more">
-      <a href="/post/fixed-point/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
