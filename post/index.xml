@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 28 Oct 2021 18:16:14 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Oct 2021 16:28:14 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sum of Node Depths</title>
+      <link>https://solairerove.github.io/post/sum-of-node-depths/</link>
+      <pubDate>Fri, 29 Oct 2021 16:28:14 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/sum-of-node-depths/</guid>
+      <description>3 / \ 7 8 / \ / \ 14 15 21 25  Output: 14
+sum of node depths
+1 2 3 4 5 6 7 8 9 10 11 12  class TreeNode(var value: Int) { var left: TreeNode? = null var right: TreeNode? = null } // O(n) time | O(h) space fun sumOfNodeDepths(node: TreeNode?, depth: Int = 0): Int { if (node == null) return 0 val depthSum = (depth * (depth + 1)) / 2 return depthSum + sumOfNodeDepths(node.</description>
+    </item>
+    
     <item>
       <title>Flatten Binary Tree to Linked List</title>
       <link>https://solairerove.github.io/post/flatten-binary-tree-to-linked-list/</link>
