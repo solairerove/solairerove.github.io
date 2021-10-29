@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 29 Oct 2021 16:28:14 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Oct 2021 17:46:36 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sequential Symbol Table</title>
+      <link>https://solairerove.github.io/post/sequential-symbol-table/</link>
+      <pubDate>Fri, 29 Oct 2021 17:46:36 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/sequential-symbol-table/</guid>
+      <description>Символьная таблица для последовательного поиска в неупорядоченном массиве.
+sequential st
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29  class SequentialSearchST&amp;lt;Key, Value&amp;gt; { private var first: Node? = null inner class Node(val key: Key, var value: Value?, val next: Node?) fun get(key: Key): Value? { var x = first while (x !</description>
+    </item>
+    
     <item>
       <title>Sum of Node Depths</title>
       <link>https://solairerove.github.io/post/sum-of-node-depths/</link>
