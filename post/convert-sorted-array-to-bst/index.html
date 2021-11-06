@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Product Sum - Headstone lamp - It&#39;s always has been</title>
+  <title>Convert Sorted Array to BST - Headstone lamp - It&#39;s always has been</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,10 +16,10 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="solairerove" /><meta name="description" content="Input: [1, [2, [3]]]
-Output: 23
-product sum
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // O(n) time | O(d) space // n is total number of elements // d is max depth fun productSum(arr: List&amp;lt;*&amp;gt;): Int { return productSum(arr, 1) } fun productSum(arr: List&amp;lt;*&amp;gt;, multiplier: Int): Int { var sum = 0 for (el in arr) { sum &#43;= if (el is List&amp;lt;*&amp;gt;) { productSum(el, multiplier &#43; 1) } else { el as Int } } return sum * multiplier }   " /><meta name="keywords" content="Headstone, algorithms, data structures" />
+<meta name="author" content="solairerove" /><meta name="description" content="Output:
+ 0 / \ -3 9 / / -10 5  Input: [-10, -3, 0, 5, 9]
+convert sorted array to bst leetcode
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } // O(n) time | O(n) space fun sortedArrayToBST(arr: IntArray, low: Int = 0, high: Int = arr." /><meta name="keywords" content="Headstone, algorithms, data structures" />
 
 
 
@@ -29,7 +29,7 @@ product sum
 <meta name="generator" content="Hugo 0.89.1 with theme even" />
 
 
-<link rel="canonical" href="https://solairerove.github.io/post/product-sum/" />
+<link rel="canonical" href="https://solairerove.github.io/post/convert-sorted-array-to-bst/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -42,29 +42,29 @@ product sum
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Product Sum" />
-<meta property="og:description" content="Input: [1, [2, [3]]]
-Output: 23
-product sum
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // O(n) time | O(d) space // n is total number of elements // d is max depth fun productSum(arr: List&lt;*&gt;): Int { return productSum(arr, 1) } fun productSum(arr: List&lt;*&gt;, multiplier: Int): Int { var sum = 0 for (el in arr) { sum &#43;= if (el is List&lt;*&gt;) { productSum(el, multiplier &#43; 1) } else { el as Int } } return sum * multiplier }   " />
+<meta property="og:title" content="Convert Sorted Array to BST" />
+<meta property="og:description" content="Output:
+ 0 / \ -3 9 / / -10 5  Input: [-10, -3, 0, 5, 9]
+convert sorted array to bst leetcode
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } // O(n) time | O(n) space fun sortedArrayToBST(arr: IntArray, low: Int = 0, high: Int = arr." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://solairerove.github.io/post/product-sum/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-05-21T14:12:31+03:00" />
-<meta property="article:modified_time" content="2021-05-21T14:12:31+03:00" />
+<meta property="og:url" content="https://solairerove.github.io/post/convert-sorted-array-to-bst/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-11-06T13:06:30+03:00" />
+<meta property="article:modified_time" content="2021-11-06T13:06:30+03:00" />
 
-<meta itemprop="name" content="Product Sum">
-<meta itemprop="description" content="Input: [1, [2, [3]]]
-Output: 23
-product sum
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // O(n) time | O(d) space // n is total number of elements // d is max depth fun productSum(arr: List&lt;*&gt;): Int { return productSum(arr, 1) } fun productSum(arr: List&lt;*&gt;, multiplier: Int): Int { var sum = 0 for (el in arr) { sum &#43;= if (el is List&lt;*&gt;) { productSum(el, multiplier &#43; 1) } else { el as Int } } return sum * multiplier }   "><meta itemprop="datePublished" content="2021-05-21T14:12:31+03:00" />
-<meta itemprop="dateModified" content="2021-05-21T14:12:31+03:00" />
-<meta itemprop="wordCount" content="95">
+<meta itemprop="name" content="Convert Sorted Array to BST">
+<meta itemprop="description" content="Output:
+ 0 / \ -3 9 / / -10 5  Input: [-10, -3, 0, 5, 9]
+convert sorted array to bst leetcode
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } // O(n) time | O(n) space fun sortedArrayToBST(arr: IntArray, low: Int = 0, high: Int = arr."><meta itemprop="datePublished" content="2021-11-06T13:06:30+03:00" />
+<meta itemprop="dateModified" content="2021-11-06T13:06:30+03:00" />
+<meta itemprop="wordCount" content="110">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Product Sum"/>
-<meta name="twitter:description" content="Input: [1, [2, [3]]]
-Output: 23
-product sum
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  // O(n) time | O(d) space // n is total number of elements // d is max depth fun productSum(arr: List&lt;*&gt;): Int { return productSum(arr, 1) } fun productSum(arr: List&lt;*&gt;, multiplier: Int): Int { var sum = 0 for (el in arr) { sum &#43;= if (el is List&lt;*&gt;) { productSum(el, multiplier &#43; 1) } else { el as Int } } return sum * multiplier }   "/>
+<meta name="twitter:title" content="Convert Sorted Array to BST"/>
+<meta name="twitter:description" content="Output:
+ 0 / \ -3 9 / / -10 5  Input: [-10, -3, 0, 5, 9]
+convert sorted array to bst leetcode
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } // O(n) time | O(n) space fun sortedArrayToBST(arr: IntArray, low: Int = 0, high: Int = arr."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -133,12 +133,12 @@ product sum
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Product Sum</h1>
+      <h1 class="post-title">Convert Sorted Array to BST</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 05-21-2021 </span>
+        <span class="post-time"> 11-06-2021 </span>
         <div class="post-category">
-            <a href="/categories/recursion/"> recursion </a>
+            <a href="/categories/binary-search-tree/"> binary search tree </a>
             </div>
         
       </div>
@@ -151,9 +151,16 @@ product sum
   </div>
 </div>
     <div class="post-content">
-      <p>Input: [1, [2, [3]]]<br>
-Output: 23</p>
-<p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/recursion/ProductSum.kt">product sum</a></p>
+      <p>Output:</p>
+<pre><code>    0
+   / \
+  -3  9
+ /    /
+-10  5 
+</code></pre>
+<p>Input: [-10, -3, 0, 5, 9]</p>
+<p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/binary_search_tree/ConvertSortedArrayToBST.kt">convert sorted array to bst</a>
+<a href="https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/">leetcode</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -171,32 +178,22 @@ Output: 23</p>
 </span><span class="lnt">13
 </span><span class="lnt">14
 </span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="c1">// O(n) time | O(d) space
-</span><span class="c1">// n is total number of elements
-</span><span class="c1">// d is max depth
-</span><span class="c1"></span><span class="k">fun</span> <span class="nf">productSum</span><span class="p">(</span><span class="n">arr</span><span class="p">:</span> <span class="n">List</span><span class="p">&lt;*&gt;):</span> <span class="n">Int</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">productSum</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="m">1</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="k">open</span> <span class="k">class</span> <span class="nc">BST</span><span class="p">(</span><span class="k">var</span> <span class="py">value</span><span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="py">left</span><span class="p">:</span> <span class="n">BST</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+    <span class="k">var</span> <span class="py">right</span><span class="p">:</span> <span class="n">BST</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
 <span class="p">}</span>
 
-<span class="k">fun</span> <span class="nf">productSum</span><span class="p">(</span><span class="n">arr</span><span class="p">:</span> <span class="n">List</span><span class="p">&lt;*&gt;,</span> <span class="n">multiplier</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">Int</span> <span class="p">{</span>
-    <span class="k">var</span> <span class="py">sum</span> <span class="p">=</span> <span class="m">0</span>
+<span class="c1">// O(n) time | O(n) space
+</span><span class="c1"></span><span class="k">fun</span> <span class="nf">sortedArrayToBST</span><span class="p">(</span><span class="n">arr</span><span class="p">:</span> <span class="n">IntArray</span><span class="p">,</span> <span class="n">low</span><span class="p">:</span> <span class="n">Int</span> <span class="p">=</span> <span class="m">0</span><span class="p">,</span> <span class="n">high</span><span class="p">:</span> <span class="n">Int</span> <span class="p">=</span> <span class="n">arr</span><span class="p">.</span><span class="n">size</span><span class="p">):</span> <span class="n">BSTNode</span><span class="p">?</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">high</span> <span class="p">&lt;</span> <span class="n">low</span><span class="p">)</span> <span class="k">return</span> <span class="k">null</span>
 
-    <span class="k">for</span> <span class="p">(</span><span class="n">el</span> <span class="k">in</span> <span class="n">arr</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">sum</span> <span class="o">+=</span> <span class="k">if</span> <span class="p">(</span><span class="n">el</span> <span class="k">is</span> <span class="n">List</span><span class="p">&lt;*&gt;)</span> <span class="p">{</span>
-            <span class="n">productSum</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="n">multiplier</span> <span class="p">+</span> <span class="m">1</span><span class="p">)</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="n">el</span> <span class="k">as</span> <span class="n">Int</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-
-    <span class="k">return</span> <span class="n">sum</span> <span class="p">*</span> <span class="n">multiplier</span>
+    <span class="k">val</span> <span class="py">mid</span> <span class="p">=</span> <span class="n">low</span> <span class="p">+</span> <span class="p">(</span><span class="n">high</span> <span class="p">-</span> <span class="n">low</span><span class="p">)</span> <span class="p">/</span> <span class="m">2</span>
+    <span class="k">val</span> <span class="py">bst</span> <span class="p">=</span> <span class="n">BSTNode</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">])</span>
+    <span class="n">bst</span><span class="p">.</span><span class="n">left</span> <span class="p">=</span> <span class="n">sortedArrayToBST</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">mid</span> <span class="p">-</span> <span class="m">1</span><span class="p">)</span>
+    <span class="n">bst</span><span class="p">.</span><span class="n">right</span> <span class="p">=</span> <span class="n">sortedArrayToBST</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">mid</span> <span class="p">+</span> <span class="m">1</span><span class="p">,</span> <span class="n">high</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">bst</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
@@ -211,7 +208,7 @@ Output: 23</p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        05-21-2021
+        11-06-2021
         
     </span>
   </p>
@@ -221,13 +218,9 @@ Output: 23</p>
 <footer class="post-footer">
       
       <nav class="post-nav">
-        <a class="prev" href="/post/valid-ip-addresses/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Valid IP Addresses</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/post/non-repeating-char-pivot/">
-            <span class="next-text nav-default">Non Repeating Char Pivot</span>
+        
+        <a class="next" href="/post/binary-search-symbol-table/">
+            <span class="next-text nav-default">Binary Search Symbol Table</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Nov 2021 14:42:40 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Nov 2021 13:06:30 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Convert Sorted Array to BST</title>
+      <link>https://solairerove.github.io/post/convert-sorted-array-to-bst/</link>
+      <pubDate>Sat, 06 Nov 2021 13:06:30 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/convert-sorted-array-to-bst/</guid>
+      <description>Output:
+ 0 / \ -3 9 / / -10 5  Input: [-10, -3, 0, 5, 9]
+convert sorted array to bst leetcode
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } // O(n) time | O(n) space fun sortedArrayToBST(arr: IntArray, low: Int = 0, high: Int = arr.</description>
+    </item>
+    
     <item>
       <title>Binary Search Symbol Table</title>
       <link>https://solairerove.github.io/post/binary-search-symbol-table/</link>
