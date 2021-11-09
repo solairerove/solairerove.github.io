@@ -16,9 +16,10 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="solairerove" /><meta name="description" content="Дерево бинарного поиска.
-bst
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166  class BST&amp;lt;Key : Comparable&amp;lt;Key&amp;gt;, Value&amp;gt; { private var root: Node?" /><meta name="keywords" content="Headstone, algorithms, data structures" />
+<meta name="author" content="solairerove" /><meta name="description" content="Дерево бинарного поиска. Бинарное дерево, в котором каждый узел содержит клю и связанное с ним значение. Удоавлетворяет условию, что ключ в любом узле больше ключей во всех узлах левого поддерева
+и меньше ключей во всех узлах правого поддерева этого узла.
+Методы: \
+ size(): Int максимально простой, возвращает 0 для нулевой ссылки и n для любой ненулевой get(key: Key): Value? рекурсивный поиск по узлам. put(key: Key, value: Value): Unit рекурсивный поиск по узлам и перезапись существующего значения" /><meta name="keywords" content="Headstone, algorithms, data structures" />
 
 
 
@@ -42,25 +43,28 @@ bst
 
 
 <meta property="og:title" content="BST" />
-<meta property="og:description" content="Дерево бинарного поиска.
-bst
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166  class BST&lt;Key : Comparable&lt;Key&gt;, Value&gt; { private var root: Node?" />
+<meta property="og:description" content="Дерево бинарного поиска. Бинарное дерево, в котором каждый узел содержит клю и связанное с ним значение. Удоавлетворяет условию, что ключ в любом узле больше ключей во всех узлах левого поддерева
+и меньше ключей во всех узлах правого поддерева этого узла.
+Методы: \
+ size(): Int максимально простой, возвращает 0 для нулевой ссылки и n для любой ненулевой get(key: Key): Value? рекурсивный поиск по узлам. put(key: Key, value: Value): Unit рекурсивный поиск по узлам и перезапись существующего значения" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://solairerove.github.io/post/bst/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-11-09T12:25:02+03:00" />
 <meta property="article:modified_time" content="2021-11-09T12:25:02+03:00" />
 
 <meta itemprop="name" content="BST">
-<meta itemprop="description" content="Дерево бинарного поиска.
-bst
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166  class BST&lt;Key : Comparable&lt;Key&gt;, Value&gt; { private var root: Node?"><meta itemprop="datePublished" content="2021-11-09T12:25:02+03:00" />
+<meta itemprop="description" content="Дерево бинарного поиска. Бинарное дерево, в котором каждый узел содержит клю и связанное с ним значение. Удоавлетворяет условию, что ключ в любом узле больше ключей во всех узлах левого поддерева
+и меньше ключей во всех узлах правого поддерева этого узла.
+Методы: \
+ size(): Int максимально простой, возвращает 0 для нулевой ссылки и n для любой ненулевой get(key: Key): Value? рекурсивный поиск по узлам. put(key: Key, value: Value): Unit рекурсивный поиск по узлам и перезапись существующего значения"><meta itemprop="datePublished" content="2021-11-09T12:25:02+03:00" />
 <meta itemprop="dateModified" content="2021-11-09T12:25:02+03:00" />
-<meta itemprop="wordCount" content="779">
+<meta itemprop="wordCount" content="1081">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="BST"/>
-<meta name="twitter:description" content="Дерево бинарного поиска.
-bst
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166  class BST&lt;Key : Comparable&lt;Key&gt;, Value&gt; { private var root: Node?"/>
+<meta name="twitter:description" content="Дерево бинарного поиска. Бинарное дерево, в котором каждый узел содержит клю и связанное с ним значение. Удоавлетворяет условию, что ключ в любом узле больше ключей во всех узлах левого поддерева
+и меньше ключей во всех узлах правого поддерева этого узла.
+Методы: \
+ size(): Int максимально простой, возвращает 0 для нулевой ссылки и n для любой ненулевой get(key: Key): Value? рекурсивный поиск по узлам. put(key: Key, value: Value): Unit рекурсивный поиск по узлам и перезапись существующего значения"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -147,7 +151,34 @@ bst
   </div>
 </div>
     <div class="post-content">
-      <p>Дерево бинарного поиска.</p>
+      <p>Дерево бинарного поиска.
+Бинарное дерево, в котором каждый узел содержит клю и связанное с ним значение.
+Удоавлетворяет условию, что ключ в любом узле больше ключей во всех узлах левого поддерева<br>
+и меньше ключей во всех узлах правого поддерева этого узла.</p>
+<p>Методы: \</p>
+<ul>
+<li><code>size(): Int</code> максимально простой, возвращает 0 для нулевой ссылки и <code>n</code> для любой ненулевой</li>
+<li><code>get(key: Key): Value?</code> рекурсивный поиск по узлам.</li>
+<li><code>put(key: Key, value: Value): Unit</code> рекурсивный поиск по узлам и перезапись существующего значения<br>
+или же создание нового узла.</li>
+<li><code>min(): Key</code> переход по левым узлам до упора</li>
+<li><code>max(): Key</code> переход по правым узлам до упора</li>
+<li><code>floor(key: Key): Key</code> нижняя опора. наибольший ключ меньше заданного(по факту наименьший правый узел)</li>
+<li><code>ceiling(key: Key): Key</code> верхняя опора. наименьший ключ больше заданного</li>
+<li><code>rank(key: Key): Int</code> возвращает количество ключей строго меньше заданного<br>
+основная идея состоит в <code>cmp &gt; 0 -&gt; rank(key, x.right) + size(x.left) + 1</code></li>
+<li><code>select(k: Int): Key</code> возвращет ключ, ранг которого равен заданному значение<br>
+основная идеия состоит в <code>t &lt; k -&gt; select(x.right, k - t - 1)</code> так как любой узел можно считать корнем поддерева</li>
+<li><code>deleteMin(): Unit</code> проходим по левой стороне, пока не встретим узел с нулевой левой ссылкой.<br>
+заменяем ссылку на этот узел его правой ссылкой</li>
+<li><code>delete(key: Key): Unit</code> удаление по методу Т. Хиббарда<br>
+сохраняем ссылку на удаляемый узел<br>
+заносим минимальный ключ с правого поддерева<br>
+в правую ссылку удаляем преемника<br>
+перебиваем левую ссылку</li>
+<li><code>print(): Unit</code> обычный рекурсивный inorder traverse</li>
+<li><code>keys(): Iterable&lt;Key&gt;</code> тоже самое только с учетом диапазона</li>
+</ul>
 <p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/symbol_table/BST.kt">bst</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -317,173 +348,203 @@ bst
 </span><span class="lnt">164
 </span><span class="lnt">165
 </span><span class="lnt">166
+</span><span class="lnt">167
+</span><span class="lnt">168
+</span><span class="lnt">169
+</span><span class="lnt">170
+</span><span class="lnt">171
+</span><span class="lnt">172
+</span><span class="lnt">173
+</span><span class="lnt">174
+</span><span class="lnt">175
+</span><span class="lnt">176
+</span><span class="lnt">177
+</span><span class="lnt">178
+</span><span class="lnt">179
+</span><span class="lnt">180
+</span><span class="lnt">181
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="k">class</span> <span class="nc">BST</span><span class="p">&lt;</span><span class="n">Key</span> <span class="p">:</span> <span class="n">Comparable</span><span class="p">&lt;</span><span class="n">Key</span><span class="p">&gt;,</span> <span class="n">Value</span><span class="p">&gt;</span> <span class="p">{</span>
-    <span class="k">private</span> <span class="k">var</span> <span class="py">root</span><span class="p">:</span> <span class="n">Node</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+   <span class="k">private</span> <span class="k">var</span> <span class="py">root</span><span class="p">:</span> <span class="n">Node</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
 
-    <span class="k">inner</span> <span class="k">class</span> <span class="nc">Node</span><span class="p">(</span><span class="k">var</span> <span class="py">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Value</span><span class="p">,</span> <span class="k">var</span> <span class="py">n</span><span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">var</span> <span class="py">value</span><span class="p">:</span> <span class="n">Value</span><span class="p">?</span> <span class="p">=</span> <span class="n">value</span>
-        <span class="k">var</span> <span class="py">right</span><span class="p">:</span> <span class="n">Node</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
-        <span class="k">var</span> <span class="py">left</span><span class="p">:</span> <span class="n">Node</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
-    <span class="p">}</span>
+   <span class="k">inner</span> <span class="k">class</span> <span class="nc">Node</span><span class="p">(</span><span class="k">var</span> <span class="py">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Value</span><span class="p">,</span> <span class="k">var</span> <span class="py">n</span><span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">var</span> <span class="py">value</span><span class="p">:</span> <span class="n">Value</span><span class="p">?</span> <span class="p">=</span> <span class="n">value</span>
+      <span class="k">var</span> <span class="py">right</span><span class="p">:</span> <span class="n">Node</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+      <span class="k">var</span> <span class="py">left</span><span class="p">:</span> <span class="n">Node</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+   <span class="p">}</span>
 
-    <span class="k">fun</span> <span class="nf">size</span><span class="p">():</span> <span class="n">Int</span> <span class="p">=</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span> <span class="p">=</span> <span class="n">root</span><span class="p">)</span>
+   <span class="k">fun</span> <span class="nf">size</span><span class="p">():</span> <span class="n">Int</span> <span class="p">=</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span> <span class="p">=</span> <span class="n">root</span><span class="p">)</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">size</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?):</span> <span class="n">Int</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="m">0</span>
-        <span class="k">return</span> <span class="n">x</span><span class="p">.</span><span class="n">n</span>
-    <span class="p">}</span>
+   <span class="k">private</span> <span class="k">fun</span> <span class="nf">size</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?):</span> <span class="n">Int</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="m">0</span>
+      <span class="k">return</span> <span class="n">x</span><span class="p">.</span><span class="n">n</span>
+   <span class="p">}</span>
 
-    <span class="k">fun</span> <span class="nf">get</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Value</span><span class="p">?</span> <span class="p">=</span> <span class="k">get</span><span class="p">(</span><span class="n">x</span> <span class="p">=</span> <span class="n">root</span><span class="p">,</span> <span class="n">key</span> <span class="p">=</span> <span class="n">key</span><span class="p">)</span>
+   <span class="k">fun</span> <span class="nf">get</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Value</span><span class="p">?</span> <span class="p">=</span> <span class="k">get</span><span class="p">(</span><span class="n">x</span> <span class="p">=</span> <span class="n">root</span><span class="p">,</span> <span class="n">key</span> <span class="p">=</span> <span class="n">key</span><span class="p">)</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">get</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?,</span> <span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Value</span><span class="p">?</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="k">null</span>
+   <span class="k">private</span> <span class="k">fun</span> <span class="nf">get</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?,</span> <span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Value</span><span class="p">?</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="k">null</span>
 
-        <span class="k">val</span> <span class="py">cmp</span> <span class="p">=</span> <span class="n">key</span><span class="p">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
-        <span class="k">return</span> <span class="k">when</span> <span class="p">{</span>
-            <span class="n">cmp</span> <span class="p">&lt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="k">get</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
-            <span class="n">cmp</span> <span class="p">&gt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="k">get</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
-            <span class="k">else</span> <span class="o">-&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">value</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
+      <span class="k">val</span> <span class="py">cmp</span> <span class="p">=</span> <span class="n">key</span><span class="p">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
+      <span class="k">return</span> <span class="k">when</span> <span class="p">{</span>
+         <span class="n">cmp</span> <span class="p">&lt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="k">get</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+         <span class="n">cmp</span> <span class="p">&gt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="k">get</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+         <span class="k">else</span> <span class="o">-&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">value</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
 
-    <span class="k">fun</span> <span class="nf">put</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Value</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">root</span> <span class="p">=</span> <span class="n">put</span><span class="p">(</span><span class="n">x</span> <span class="p">=</span> <span class="n">root</span><span class="p">,</span> <span class="n">key</span> <span class="p">=</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="p">=</span> <span class="n">value</span><span class="p">)</span>
-    <span class="p">}</span>
+   <span class="k">fun</span> <span class="nf">put</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Value</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">root</span> <span class="p">=</span> <span class="n">put</span><span class="p">(</span><span class="n">x</span> <span class="p">=</span> <span class="n">root</span><span class="p">,</span> <span class="n">key</span> <span class="p">=</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="p">=</span> <span class="n">value</span><span class="p">)</span>
+   <span class="p">}</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">put</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?,</span> <span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Value</span><span class="p">):</span> <span class="n">Node</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="n">Node</span><span class="p">(</span><span class="n">key</span> <span class="p">=</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="p">=</span> <span class="n">value</span><span class="p">,</span> <span class="n">n</span> <span class="p">=</span> <span class="m">1</span><span class="p">)</span>
+   <span class="k">private</span> <span class="k">fun</span> <span class="nf">put</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?,</span> <span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Value</span><span class="p">):</span> <span class="n">Node</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="n">Node</span><span class="p">(</span><span class="n">key</span> <span class="p">=</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="p">=</span> <span class="n">value</span><span class="p">,</span> <span class="n">n</span> <span class="p">=</span> <span class="m">1</span><span class="p">)</span>
 
-        <span class="k">val</span> <span class="py">cmp</span> <span class="p">=</span> <span class="n">key</span><span class="p">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
-        <span class="k">when</span> <span class="p">{</span>
-            <span class="n">cmp</span> <span class="p">&lt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">left</span> <span class="p">=</span> <span class="n">put</span><span class="p">(</span><span class="n">x</span> <span class="p">=</span> <span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">key</span> <span class="p">=</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="p">=</span> <span class="n">value</span><span class="p">)</span>
-            <span class="n">cmp</span> <span class="p">&gt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">right</span> <span class="p">=</span> <span class="n">put</span><span class="p">(</span><span class="n">x</span> <span class="p">=</span> <span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">key</span> <span class="p">=</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="p">=</span> <span class="n">value</span><span class="p">)</span>
-            <span class="k">else</span> <span class="o">-&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="n">value</span>
-        <span class="p">}</span>
-        <span class="n">x</span><span class="p">.</span><span class="n">n</span> <span class="p">=</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span> <span class="p">+</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">)</span> <span class="p">+</span> <span class="m">1</span>
+      <span class="k">val</span> <span class="py">cmp</span> <span class="p">=</span> <span class="n">key</span><span class="p">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
+      <span class="k">when</span> <span class="p">{</span>
+         <span class="n">cmp</span> <span class="p">&lt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">left</span> <span class="p">=</span> <span class="n">put</span><span class="p">(</span><span class="n">x</span> <span class="p">=</span> <span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">key</span> <span class="p">=</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="p">=</span> <span class="n">value</span><span class="p">)</span>
+         <span class="n">cmp</span> <span class="p">&gt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">right</span> <span class="p">=</span> <span class="n">put</span><span class="p">(</span><span class="n">x</span> <span class="p">=</span> <span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">key</span> <span class="p">=</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="p">=</span> <span class="n">value</span><span class="p">)</span>
+         <span class="k">else</span> <span class="o">-&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">value</span> <span class="p">=</span> <span class="n">value</span>
+      <span class="p">}</span>
+      <span class="n">x</span><span class="p">.</span><span class="n">n</span> <span class="p">=</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span> <span class="p">+</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">)</span> <span class="p">+</span> <span class="m">1</span>
 
-        <span class="k">return</span> <span class="n">x</span>
-    <span class="p">}</span>
+      <span class="k">return</span> <span class="n">x</span>
+   <span class="p">}</span>
 
-    <span class="k">fun</span> <span class="nf">min</span><span class="p">():</span> <span class="n">Key</span> <span class="p">=</span> <span class="n">min</span><span class="p">(</span><span class="n">root</span><span class="o">!!</span><span class="p">)</span><span class="o">!!</span><span class="p">.</span><span class="n">key</span>
+   <span class="k">fun</span> <span class="nf">min</span><span class="p">():</span> <span class="n">Key</span> <span class="p">=</span> <span class="n">min</span><span class="p">(</span><span class="n">root</span><span class="o">!!</span><span class="p">).</span><span class="n">key</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">min</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">):</span> <span class="n">Node</span><span class="p">?</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="n">x</span>
-        <span class="k">return</span> <span class="n">min</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="o">!!</span><span class="p">)</span>
-    <span class="p">}</span>
+   <span class="k">private</span> <span class="k">fun</span> <span class="nf">min</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">):</span> <span class="n">Node</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="n">x</span>
+      <span class="k">return</span> <span class="n">min</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="o">!!</span><span class="p">)</span>
+   <span class="p">}</span>
 
-    <span class="k">fun</span> <span class="nf">max</span><span class="p">():</span> <span class="n">Key</span> <span class="p">=</span> <span class="n">max</span><span class="p">(</span><span class="n">root</span><span class="o">!!</span><span class="p">)</span><span class="o">!!</span><span class="p">.</span><span class="n">key</span>
+   <span class="k">fun</span> <span class="nf">max</span><span class="p">():</span> <span class="n">Key</span> <span class="p">=</span> <span class="n">max</span><span class="p">(</span><span class="n">root</span><span class="o">!!</span><span class="p">).</span><span class="n">key</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">max</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">):</span> <span class="n">Node</span><span class="p">?</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="n">x</span>
-        <span class="k">return</span> <span class="n">max</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="o">!!</span><span class="p">)</span>
-    <span class="p">}</span>
+   <span class="k">private</span> <span class="k">fun</span> <span class="nf">max</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">):</span> <span class="n">Node</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="n">x</span>
+      <span class="k">return</span> <span class="n">max</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="o">!!</span><span class="p">)</span>
+   <span class="p">}</span>
 
-    <span class="k">fun</span> <span class="nf">floor</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Key</span><span class="p">?</span> <span class="p">{</span>
-        <span class="k">val</span> <span class="py">x</span> <span class="p">=</span> <span class="n">floor</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span> <span class="o">?:</span> <span class="k">return</span> <span class="k">null</span>
-        <span class="k">return</span> <span class="n">x</span><span class="p">.</span><span class="n">key</span>
-    <span class="p">}</span>
+   <span class="k">fun</span> <span class="nf">floor</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Key</span><span class="p">?</span> <span class="p">{</span>
+      <span class="k">val</span> <span class="py">x</span> <span class="p">=</span> <span class="n">floor</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span> <span class="o">?:</span> <span class="k">return</span> <span class="k">null</span>
+      <span class="k">return</span> <span class="n">x</span><span class="p">.</span><span class="n">key</span>
+   <span class="p">}</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">floor</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?,</span> <span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Node</span><span class="p">?</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="k">null</span>
+   <span class="k">private</span> <span class="k">fun</span> <span class="nf">floor</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?,</span> <span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Node</span><span class="p">?</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="k">null</span>
 
-        <span class="k">val</span> <span class="py">cmp</span> <span class="p">=</span> <span class="n">key</span><span class="p">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">cmp</span> <span class="o">==</span> <span class="m">0</span><span class="p">)</span> <span class="k">return</span> <span class="n">x</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">cmp</span> <span class="p">&lt;</span> <span class="m">0</span><span class="p">)</span> <span class="k">return</span> <span class="n">floor</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+      <span class="k">val</span> <span class="py">cmp</span> <span class="p">=</span> <span class="n">key</span><span class="p">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">cmp</span> <span class="o">==</span> <span class="m">0</span><span class="p">)</span> <span class="k">return</span> <span class="n">x</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">cmp</span> <span class="p">&lt;</span> <span class="m">0</span><span class="p">)</span> <span class="k">return</span> <span class="n">floor</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
 
-        <span class="k">return</span> <span class="n">floor</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span> <span class="o">?:</span> <span class="n">x</span>
-    <span class="p">}</span>
+      <span class="k">return</span> <span class="n">floor</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span> <span class="o">?:</span> <span class="n">x</span>
+   <span class="p">}</span>
 
-    <span class="k">fun</span> <span class="nf">select</span><span class="p">(</span><span class="n">k</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">Key</span><span class="p">?</span> <span class="p">=</span> <span class="n">select</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span><span class="o">?.</span><span class="n">key</span>
+   <span class="k">fun</span> <span class="nf">ceiling</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Key</span><span class="p">?</span> <span class="p">{</span>
+      <span class="k">val</span> <span class="py">x</span> <span class="p">=</span> <span class="n">ceiling</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span> <span class="o">?:</span> <span class="k">return</span> <span class="k">null</span>
+      <span class="k">return</span> <span class="n">x</span><span class="p">.</span><span class="n">key</span>
+   <span class="p">}</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">select</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?,</span> <span class="n">k</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">Node</span><span class="p">?</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="k">null</span>
+   <span class="k">private</span> <span class="k">fun</span> <span class="nf">ceiling</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?,</span> <span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Node</span><span class="p">?</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="k">null</span>
 
-        <span class="k">val</span> <span class="py">t</span> <span class="p">=</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span>
-        <span class="k">return</span> <span class="k">when</span> <span class="p">{</span>
-            <span class="n">t</span> <span class="p">&gt;</span> <span class="n">k</span> <span class="o">-&gt;</span> <span class="n">select</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
-            <span class="n">t</span> <span class="p">&lt;</span> <span class="n">k</span> <span class="o">-&gt;</span> <span class="n">select</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">k</span> <span class="p">-</span> <span class="n">t</span> <span class="p">-</span> <span class="m">1</span><span class="p">)</span>
-            <span class="k">else</span> <span class="o">-&gt;</span> <span class="n">x</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
+      <span class="k">val</span> <span class="py">cmp</span> <span class="p">=</span> <span class="n">key</span><span class="p">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">cmp</span> <span class="o">==</span> <span class="m">0</span><span class="p">)</span> <span class="k">return</span> <span class="n">x</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">cmp</span> <span class="p">&lt;</span> <span class="m">0</span><span class="p">)</span> <span class="k">return</span> <span class="n">ceiling</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span> <span class="o">?:</span> <span class="n">x</span>
 
-    <span class="k">fun</span> <span class="nf">rank</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Int</span> <span class="p">=</span> <span class="n">rank</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">root</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">floor</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+   <span class="p">}</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">rank</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?):</span> <span class="n">Int</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="m">0</span>
+   <span class="k">fun</span> <span class="nf">rank</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Int</span> <span class="p">=</span> <span class="n">rank</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">root</span><span class="p">)</span>
 
-        <span class="k">val</span> <span class="py">cmp</span> <span class="p">=</span> <span class="n">key</span><span class="p">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
-        <span class="k">return</span> <span class="k">when</span> <span class="p">{</span>
-            <span class="n">cmp</span> <span class="p">&lt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="n">rank</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span>
-            <span class="n">cmp</span> <span class="p">&gt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="n">rank</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">)</span> <span class="p">+</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span> <span class="p">+</span> <span class="m">1</span>
-            <span class="k">else</span> <span class="o">-&gt;</span> <span class="k">return</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
+   <span class="k">private</span> <span class="k">fun</span> <span class="nf">rank</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?):</span> <span class="n">Int</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="m">0</span>
 
-    <span class="k">fun</span> <span class="nf">deleteMin</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">root</span> <span class="p">=</span> <span class="n">deleteMin</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
-    <span class="p">}</span>
+      <span class="k">val</span> <span class="py">cmp</span> <span class="p">=</span> <span class="n">key</span><span class="p">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
+      <span class="k">return</span> <span class="k">when</span> <span class="p">{</span>
+         <span class="n">cmp</span> <span class="p">&lt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="n">rank</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span>
+         <span class="n">cmp</span> <span class="p">&gt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="n">rank</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">)</span> <span class="p">+</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span> <span class="p">+</span> <span class="m">1</span>
+         <span class="k">else</span> <span class="o">-&gt;</span> <span class="k">return</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">deleteMin</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?):</span> <span class="n">Node</span><span class="p">?</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="o">?.</span><span class="n">left</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="n">x</span><span class="o">?.</span><span class="n">right</span>
-        <span class="n">x</span><span class="p">.</span><span class="n">left</span> <span class="p">=</span> <span class="n">deleteMin</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span>
-        <span class="n">x</span><span class="p">.</span><span class="n">n</span> <span class="p">=</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span> <span class="p">+</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">)</span> <span class="p">+</span> <span class="m">1</span>
-        <span class="k">return</span> <span class="n">x</span>
-    <span class="p">}</span>
+   <span class="k">fun</span> <span class="nf">select</span><span class="p">(</span><span class="n">k</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">Key</span><span class="p">?</span> <span class="p">=</span> <span class="n">select</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span><span class="o">?.</span><span class="n">key</span>
 
-    <span class="k">fun</span> <span class="nf">delete</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">root</span> <span class="p">=</span> <span class="n">delete</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
-    <span class="p">}</span>
+   <span class="k">private</span> <span class="k">fun</span> <span class="nf">select</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?,</span> <span class="n">k</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">Node</span><span class="p">?</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="k">null</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">delete</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">Node</span><span class="p">?,</span> <span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Node</span><span class="p">?</span> <span class="p">{</span>
-        <span class="k">var</span> <span class="py">x</span> <span class="p">=</span> <span class="n">node</span> <span class="o">?:</span> <span class="k">return</span> <span class="k">null</span>
+      <span class="k">val</span> <span class="py">t</span> <span class="p">=</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span>
+      <span class="k">return</span> <span class="k">when</span> <span class="p">{</span>
+         <span class="n">t</span> <span class="p">&gt;</span> <span class="n">k</span> <span class="o">-&gt;</span> <span class="n">select</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+         <span class="n">t</span> <span class="p">&lt;</span> <span class="n">k</span> <span class="o">-&gt;</span> <span class="n">select</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">k</span> <span class="p">-</span> <span class="n">t</span> <span class="p">-</span> <span class="m">1</span><span class="p">)</span>
+         <span class="k">else</span> <span class="o">-&gt;</span> <span class="n">x</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
 
-        <span class="k">val</span> <span class="py">cmp</span> <span class="p">=</span> <span class="n">key</span><span class="p">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
-        <span class="k">when</span> <span class="p">{</span>
-            <span class="n">cmp</span> <span class="p">&lt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">left</span> <span class="p">=</span> <span class="n">delete</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
-            <span class="n">cmp</span> <span class="p">&gt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">right</span> <span class="p">=</span> <span class="n">delete</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
-            <span class="k">else</span> <span class="o">-&gt;</span> <span class="p">{</span>
-                <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="n">x</span><span class="p">.</span><span class="n">left</span>
-                <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="n">x</span><span class="p">.</span><span class="n">right</span>
+   <span class="k">fun</span> <span class="nf">deleteMin</span><span class="p">()</span> <span class="p">{</span>
+      <span class="n">root</span> <span class="p">=</span> <span class="n">deleteMin</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+   <span class="p">}</span>
 
-                <span class="k">val</span> <span class="py">t</span><span class="p">:</span> <span class="n">Node</span> <span class="p">=</span> <span class="n">x</span>
-                <span class="n">x</span> <span class="p">=</span> <span class="n">min</span><span class="p">(</span><span class="n">t</span><span class="p">.</span><span class="n">right</span><span class="o">!!</span><span class="p">)</span><span class="o">!!</span>
-                <span class="n">x</span><span class="p">.</span><span class="n">right</span> <span class="p">=</span> <span class="n">deleteMin</span><span class="p">(</span><span class="n">t</span><span class="p">.</span><span class="n">right</span><span class="p">)</span>
-                <span class="n">x</span><span class="p">.</span><span class="n">left</span> <span class="p">=</span> <span class="n">t</span><span class="p">.</span><span class="n">left</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-        <span class="n">x</span><span class="p">.</span><span class="n">n</span> <span class="p">=</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span> <span class="p">+</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">)</span> <span class="p">+</span> <span class="m">1</span>
-        <span class="k">return</span> <span class="n">x</span>
-    <span class="p">}</span>
+   <span class="k">private</span> <span class="k">fun</span> <span class="nf">deleteMin</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?):</span> <span class="n">Node</span><span class="p">?</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="o">?.</span><span class="n">left</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="n">x</span><span class="o">?.</span><span class="n">right</span>
+      <span class="n">x</span><span class="p">.</span><span class="n">left</span> <span class="p">=</span> <span class="n">deleteMin</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span>
+      <span class="n">x</span><span class="p">.</span><span class="n">n</span> <span class="p">=</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span> <span class="p">+</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">)</span> <span class="p">+</span> <span class="m">1</span>
+      <span class="k">return</span> <span class="n">x</span>
+   <span class="p">}</span>
 
-    <span class="k">fun</span> <span class="nf">print</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">print</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
-    <span class="p">}</span>
+   <span class="k">fun</span> <span class="nf">delete</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">root</span> <span class="p">=</span> <span class="n">delete</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+   <span class="p">}</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">print</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?)</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span>
-        <span class="n">print</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span>
-        <span class="n">println</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
-        <span class="n">print</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">)</span>
-    <span class="p">}</span>
+   <span class="k">private</span> <span class="k">fun</span> <span class="nf">delete</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">Node</span><span class="p">?,</span> <span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Node</span><span class="p">?</span> <span class="p">{</span>
+      <span class="k">var</span> <span class="py">x</span> <span class="p">=</span> <span class="n">node</span> <span class="o">?:</span> <span class="k">return</span> <span class="k">null</span>
 
-    <span class="k">fun</span> <span class="nf">keys</span><span class="p">():</span> <span class="n">Iterable</span><span class="p">&lt;</span><span class="n">Key</span><span class="p">&gt;</span> <span class="p">=</span> <span class="n">keys</span><span class="p">(</span><span class="n">min</span><span class="p">(),</span> <span class="n">max</span><span class="p">())</span>
+      <span class="k">val</span> <span class="py">cmp</span> <span class="p">=</span> <span class="n">key</span><span class="p">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
+      <span class="k">when</span> <span class="p">{</span>
+         <span class="n">cmp</span> <span class="p">&lt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">left</span> <span class="p">=</span> <span class="n">delete</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+         <span class="n">cmp</span> <span class="p">&gt;</span> <span class="m">0</span> <span class="o">-&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">right</span> <span class="p">=</span> <span class="n">delete</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+         <span class="k">else</span> <span class="o">-&gt;</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="n">x</span><span class="p">.</span><span class="n">left</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span> <span class="n">x</span><span class="p">.</span><span class="n">right</span>
 
-    <span class="k">fun</span> <span class="nf">keys</span><span class="p">(</span><span class="n">low</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">high</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Iterable</span><span class="p">&lt;</span><span class="n">Key</span><span class="p">&gt;</span> <span class="p">{</span>
-        <span class="k">val</span> <span class="py">queue</span> <span class="p">=</span> <span class="n">LinkedList</span><span class="p">&lt;</span><span class="n">Key</span><span class="p">&gt;()</span>
-        <span class="n">keys</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">queue</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">queue</span>
-    <span class="p">}</span>
+            <span class="k">val</span> <span class="py">t</span><span class="p">:</span> <span class="n">Node</span> <span class="p">=</span> <span class="n">x</span>
+            <span class="n">x</span> <span class="p">=</span> <span class="n">min</span><span class="p">(</span><span class="n">t</span><span class="p">.</span><span class="n">right</span><span class="o">!!</span><span class="p">)</span><span class="o">!!</span>
+            <span class="n">x</span><span class="p">.</span><span class="n">right</span> <span class="p">=</span> <span class="n">deleteMin</span><span class="p">(</span><span class="n">t</span><span class="p">.</span><span class="n">right</span><span class="p">)</span>
+            <span class="n">x</span><span class="p">.</span><span class="n">left</span> <span class="p">=</span> <span class="n">t</span><span class="p">.</span><span class="n">left</span>
+         <span class="p">}</span>
+      <span class="p">}</span>
+      <span class="n">x</span><span class="p">.</span><span class="n">n</span> <span class="p">=</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span> <span class="p">+</span> <span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">)</span> <span class="p">+</span> <span class="m">1</span>
+      <span class="k">return</span> <span class="n">x</span>
+   <span class="p">}</span>
 
-    <span class="k">private</span> <span class="k">fun</span> <span class="nf">keys</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?,</span> <span class="n">queue</span><span class="p">:</span> <span class="n">Queue</span><span class="p">&lt;</span><span class="n">Key</span><span class="p">&gt;,</span> <span class="n">low</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">high</span><span class="p">:</span> <span class="n">Key</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span>
-        <span class="k">val</span> <span class="py">cmpLow</span> <span class="p">=</span> <span class="n">low</span><span class="p">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
-        <span class="k">val</span> <span class="py">cmpHigh</span> <span class="p">=</span> <span class="n">high</span><span class="p">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">cmpLow</span> <span class="p">&lt;</span> <span class="m">0</span><span class="p">)</span> <span class="n">keys</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">queue</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">)</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">cmpLow</span> <span class="o">&lt;=</span> <span class="m">0</span> <span class="o">&amp;&amp;</span> <span class="n">cmpHigh</span> <span class="o">&gt;=</span> <span class="m">0</span><span class="p">)</span> <span class="n">queue</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">cmpHigh</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="n">keys</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">queue</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">)</span>
-    <span class="p">}</span>
+   <span class="k">fun</span> <span class="nf">print</span><span class="p">()</span> <span class="p">{</span>
+      <span class="n">print</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+   <span class="p">}</span>
+
+   <span class="k">private</span> <span class="k">fun</span> <span class="nf">print</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span>
+      <span class="n">print</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">)</span>
+      <span class="n">println</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
+      <span class="n">print</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">)</span>
+   <span class="p">}</span>
+
+   <span class="k">fun</span> <span class="nf">keys</span><span class="p">():</span> <span class="n">Iterable</span><span class="p">&lt;</span><span class="n">Key</span><span class="p">&gt;</span> <span class="p">=</span> <span class="n">keys</span><span class="p">(</span><span class="n">min</span><span class="p">(),</span> <span class="n">max</span><span class="p">())</span>
+
+   <span class="k">fun</span> <span class="nf">keys</span><span class="p">(</span><span class="n">low</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">high</span><span class="p">:</span> <span class="n">Key</span><span class="p">):</span> <span class="n">Iterable</span><span class="p">&lt;</span><span class="n">Key</span><span class="p">&gt;</span> <span class="p">{</span>
+      <span class="k">val</span> <span class="py">queue</span> <span class="p">=</span> <span class="n">LinkedList</span><span class="p">&lt;</span><span class="n">Key</span><span class="p">&gt;()</span>
+      <span class="n">keys</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">queue</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">queue</span>
+   <span class="p">}</span>
+
+   <span class="k">private</span> <span class="k">fun</span> <span class="nf">keys</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Node</span><span class="p">?,</span> <span class="n">queue</span><span class="p">:</span> <span class="n">Queue</span><span class="p">&lt;</span><span class="n">Key</span><span class="p">&gt;,</span> <span class="n">low</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">high</span><span class="p">:</span> <span class="n">Key</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="k">null</span><span class="p">)</span> <span class="k">return</span>
+      <span class="k">val</span> <span class="py">cmpLow</span> <span class="p">=</span> <span class="n">low</span><span class="p">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
+      <span class="k">val</span> <span class="py">cmpHigh</span> <span class="p">=</span> <span class="n">high</span><span class="p">.</span><span class="n">compareTo</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">cmpLow</span> <span class="p">&lt;</span> <span class="m">0</span><span class="p">)</span> <span class="n">keys</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">queue</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">)</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">cmpLow</span> <span class="o">&lt;=</span> <span class="m">0</span> <span class="o">&amp;&amp;</span> <span class="n">cmpHigh</span> <span class="o">&gt;=</span> <span class="m">0</span><span class="p">)</span> <span class="n">queue</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">key</span><span class="p">)</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">cmpHigh</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="n">keys</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">queue</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">)</span>
+   <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
