@@ -19,6 +19,7 @@
 <meta name="author" content="solairerove" /><meta name="description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Input: 16
 Output: 15
 find the closest value
+leetcode
 Iterate through tree. Find the closest value to target.
 The closest is the smallest delta result,
 so it can be represented as abs(target - value) &amp;lt; abs(target - closest)
@@ -49,6 +50,7 @@ so it can be represented as abs(target - value) &amp;lt; abs(target - closest)
 <meta property="og:description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Input: 16
 Output: 15
 find the closest value
+leetcode
 Iterate through tree. Find the closest value to target.
 The closest is the smallest delta result,
 so it can be represented as abs(target - value) &lt; abs(target - closest)
@@ -62,17 +64,19 @@ so it can be represented as abs(target - value) &lt; abs(target - closest)
 <meta itemprop="description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Input: 16
 Output: 15
 find the closest value
+leetcode
 Iterate through tree. Find the closest value to target.
 The closest is the smallest delta result,
 so it can be represented as abs(target - value) &lt; abs(target - closest)
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  open class BST(var value: Int) { var left: BST?"><meta itemprop="datePublished" content="2021-10-22T14:30:19+03:00" />
 <meta itemprop="dateModified" content="2021-10-22T14:30:19+03:00" />
-<meta itemprop="wordCount" content="155">
+<meta itemprop="wordCount" content="161">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Find the Closest Value in Bst"/>
 <meta name="twitter:description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Input: 16
 Output: 15
 find the closest value
+leetcode
 Iterate through tree. Find the closest value to target.
 The closest is the smallest delta result,
 so it can be represented as abs(target - value) &lt; abs(target - closest)
@@ -171,7 +175,8 @@ so it can be represented as abs(target - value) &lt; abs(target - closest)
 </code></pre>
 <p>Input: 16<br>
 Output: 15</p>
-<p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/binary_search_tree/FIndTheClosestValue.kt">find the closest value</a></p>
+<p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/binary_search_tree/FIndTheClosestValue.kt">find the closest value</a><br>
+<a href="https://leetcode.com/problems/closest-binary-search-tree-value/">leetcode</a></p>
 <p>Iterate through tree. Find the closest value to target.<br>
 The closest is the smallest delta result,<br>
 so it can be represented as <code>abs(target - value) &lt; abs(target - closest)</code></p>
@@ -208,8 +213,8 @@ so it can be represented as <code>abs(target - value) &lt; abs(target - closest)
 <span class="p">}</span>
 
 <span class="c1">// O(log(n)) time | O(1) space
-</span><span class="c1">// worst O(n) time | O(1) space
-</span><span class="c1"></span><span class="k">fun</span> <span class="nf">findTheClosestValueInBst</span><span class="p">(</span><span class="n">tree</span><span class="p">:</span> <span class="n">BST</span><span class="p">?,</span> <span class="n">target</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">Int</span> <span class="p">{</span>
+</span><span class="c1">// worst O(n) time | O(1) space if bst has one branch
+</span><span class="c1"></span><span class="k">fun</span> <span class="nf">findTheClosestValueInBst</span><span class="p">(</span><span class="n">tree</span><span class="p">:</span> <span class="n">BSTNode</span><span class="p">?,</span> <span class="n">target</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">Int</span> <span class="p">{</span>
     <span class="k">var</span> <span class="py">closest</span> <span class="p">=</span> <span class="n">tree</span><span class="o">!!</span><span class="p">.</span><span class="n">value</span>
     <span class="k">var</span> <span class="py">node</span> <span class="p">=</span> <span class="n">tree</span>
 

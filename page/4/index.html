@@ -186,7 +186,7 @@ https://algs4.cs.princeton.edu/32bst/BST.java.html#isBST
 Recursive version of isBST method.
 BST is valid:
  if value greater to every left node values if value less than every right node values  So for recursive solution is possible to make expression where
- max value is current node value for left branches min value is current node value for right branches  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  open class BST(var value: Int) { var left: BST?
+ max value is current node value for left branches min value is current node value for right branches  1 2 3 4 5 6 7 8 9 10 11 12  open class BST(var value: Int) { var left: BST?
     </div>
     <div class="read-more">
       <a href="/post/validate-bst/" class="read-more-link">Read more...</a>
@@ -210,6 +210,7 @@ BST is valid:
       14 / \ 7 21 /\ /\ 3 8 15 25  Input: 16
 Output: 15
 find the closest value
+leetcode
 Iterate through tree. Find the closest value to target.
 The closest is the smallest delta result,
 so it can be represented as abs(target - value) &lt; abs(target - closest)
