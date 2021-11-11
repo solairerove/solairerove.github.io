@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Find Kth Largest Element in a BST - Headstone lamp - It&#39;s always has been</title>
+  <title>Binary Tree Inorder Traversal - Headstone lamp - It&#39;s always has been</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,12 +16,12 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="solairerove" /><meta name="description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Input: 2 Output: 21
-Input: 4 Output: 14
-find kth largest element in a bst
+<meta name="author" content="solairerove" /><meta name="description" content="Given the root of a binary tree, return the inorder traversal of its nodes&#39; values.
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Output: [14, 7, 15, 3, 21, 8, 25]
+inorder traversal
 leetcode
-Make in order tree traversal, so kth largest will be arr.size - k
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  open class BST(var value: Int) { var left: BST?" /><meta name="keywords" content="Headstone, algorithms, data structures" />
+No clue
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  class TreeNode(var value: Int) { var left: TreeNode? = null var right: TreeNode?" /><meta name="keywords" content="Headstone, algorithms, data structures" />
 
 
 
@@ -31,7 +31,7 @@ Make in order tree traversal, so kth largest will be arr.size - k
 <meta name="generator" content="Hugo 0.89.1 with theme even" />
 
 
-<link rel="canonical" href="https://solairerove.github.io/post/find-kth-largest-element-in-a-bst/" />
+<link rel="canonical" href="https://solairerove.github.io/post/inorder-traversal/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -44,35 +44,35 @@ Make in order tree traversal, so kth largest will be arr.size - k
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Find Kth Largest Element in a BST" />
-<meta property="og:description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Input: 2 Output: 21
-Input: 4 Output: 14
-find kth largest element in a bst
+<meta property="og:title" content="Binary Tree Inorder Traversal" />
+<meta property="og:description" content="Given the root of a binary tree, return the inorder traversal of its nodes&#39; values.
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Output: [14, 7, 15, 3, 21, 8, 25]
+inorder traversal
 leetcode
-Make in order tree traversal, so kth largest will be arr.size - k
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  open class BST(var value: Int) { var left: BST?" />
+No clue
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  class TreeNode(var value: Int) { var left: TreeNode? = null var right: TreeNode?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://solairerove.github.io/post/find-kth-largest-element-in-a-bst/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-10-26T11:19:53+03:00" />
-<meta property="article:modified_time" content="2021-10-26T11:19:53+03:00" />
+<meta property="og:url" content="https://solairerove.github.io/post/inorder-traversal/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-11-11T11:48:23+03:00" />
+<meta property="article:modified_time" content="2021-11-11T11:48:23+03:00" />
 
-<meta itemprop="name" content="Find Kth Largest Element in a BST">
-<meta itemprop="description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Input: 2 Output: 21
-Input: 4 Output: 14
-find kth largest element in a bst
+<meta itemprop="name" content="Binary Tree Inorder Traversal">
+<meta itemprop="description" content="Given the root of a binary tree, return the inorder traversal of its nodes&#39; values.
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Output: [14, 7, 15, 3, 21, 8, 25]
+inorder traversal
 leetcode
-Make in order tree traversal, so kth largest will be arr.size - k
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  open class BST(var value: Int) { var left: BST?"><meta itemprop="datePublished" content="2021-10-26T11:19:53+03:00" />
-<meta itemprop="dateModified" content="2021-10-26T11:19:53+03:00" />
-<meta itemprop="wordCount" content="125">
+No clue
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  class TreeNode(var value: Int) { var left: TreeNode? = null var right: TreeNode?"><meta itemprop="datePublished" content="2021-11-11T11:48:23+03:00" />
+<meta itemprop="dateModified" content="2021-11-11T11:48:23+03:00" />
+<meta itemprop="wordCount" content="106">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Find Kth Largest Element in a BST"/>
-<meta name="twitter:description" content="14 / \ 7 21 /\ /\ 3 8 15 25  Input: 2 Output: 21
-Input: 4 Output: 14
-find kth largest element in a bst
+<meta name="twitter:title" content="Binary Tree Inorder Traversal"/>
+<meta name="twitter:description" content="Given the root of a binary tree, return the inorder traversal of its nodes&#39; values.
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Output: [14, 7, 15, 3, 21, 8, 25]
+inorder traversal
 leetcode
-Make in order tree traversal, so kth largest will be arr.size - k
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  open class BST(var value: Int) { var left: BST?"/>
+No clue
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  class TreeNode(var value: Int) { var left: TreeNode? = null var right: TreeNode?"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -141,12 +141,12 @@ Make in order tree traversal, so kth largest will be arr.size - k
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Find Kth Largest Element in a BST</h1>
+      <h1 class="post-title">Binary Tree Inorder Traversal</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 10-26-2021 </span>
+        <span class="post-time"> 11-11-2021 </span>
         <div class="post-category">
-            <a href="/categories/binary-search-tree/"> binary search tree </a>
+            <a href="/categories/binary-tree/"> binary tree </a>
             </div>
         
       </div>
@@ -159,19 +159,17 @@ Make in order tree traversal, so kth largest will be arr.size - k
   </div>
 </div>
     <div class="post-content">
-      <pre><code>    14
-   /  \
-  7   21
- /\   /\
-3  8 15 25
+      <p>Given the root of a binary tree, return the inorder traversal of its nodes' values.</p>
+<pre><code>     3
+   /   \
+  7     8
+ / \   / \
+14 15 21 25
 </code></pre>
-<p>Input: 2
-Output: 21</p>
-<p>Input: 4
-Output: 14</p>
-<p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/binary_search_tree/FindKthLargestElementInABST.kt">find kth largest element in a bst</a><br>
-<a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst/">leetcode</a></p>
-<p>Make in order tree traversal, so kth largest will be <code>arr.size - k</code></p>
+<p>Output: [14, 7, 15, 3, 21, 8, 25]</p>
+<p><a href="https://github.com/solairerove/algs4-leprosorium/blob/master/src/main/kotlin/com/github/solairerove/algs4/leprosorium/binary_tree/InorderTraversal.kt">inorder traversal</a><br>
+<a href="https://leetcode.com/problems/binary-tree-inorder-traversal/">leetcode</a></p>
+<p>No clue</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -189,32 +187,22 @@ Output: 14</p>
 </span><span class="lnt">13
 </span><span class="lnt">14
 </span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="k">open</span> <span class="k">class</span> <span class="nc">BST</span><span class="p">(</span><span class="k">var</span> <span class="py">value</span><span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">var</span> <span class="py">left</span><span class="p">:</span> <span class="n">BST</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
-    <span class="k">var</span> <span class="py">right</span><span class="p">:</span> <span class="n">BST</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+<pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="k">class</span> <span class="nc">TreeNode</span><span class="p">(</span><span class="k">var</span> <span class="py">value</span><span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="py">left</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+    <span class="k">var</span> <span class="py">right</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+    <span class="k">val</span> <span class="py">parent</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
 <span class="p">}</span>
 
 <span class="c1">// O(n) time | O(n) space
-</span><span class="c1"></span><span class="k">fun</span> <span class="nf">findKLargestValue</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">BSTNode</span><span class="p">,</span> <span class="n">k</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">Int</span> <span class="p">{</span>
-    <span class="k">val</span> <span class="py">arr</span> <span class="p">=</span> <span class="n">mutableListOf</span><span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;()</span>
-    <span class="n">inOrderTraversal</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">arr</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">arr</span><span class="p">[</span><span class="n">arr</span><span class="p">.</span><span class="n">size</span> <span class="p">-</span> <span class="n">k</span><span class="p">]</span>
-<span class="p">}</span>
-
-<span class="c1">// O(n) time | O(n) space
-</span><span class="c1"></span><span class="k">fun</span> <span class="nf">inOrderTraversal</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">BSTNode</span><span class="p">?,</span> <span class="n">arr</span><span class="p">:</span> <span class="n">MutableList</span><span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">node</span> <span class="o">!=</span> <span class="k">null</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">inOrderTraversal</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">arr</span><span class="p">)</span>
-        <span class="n">arr</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">value</span><span class="p">)</span>
-        <span class="n">inOrderTraversal</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">arr</span><span class="p">)</span>
+</span><span class="c1"></span><span class="k">fun</span> <span class="nf">inorderTraversal</span><span class="p">(</span><span class="n">root</span><span class="p">:</span> <span class="n">TreeNode</span><span class="p">?,</span> <span class="n">arr</span><span class="p">:</span> <span class="n">MutableList</span><span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;</span> <span class="p">=</span> <span class="n">mutableListOf</span><span class="p">()):</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">root</span> <span class="o">!=</span> <span class="k">null</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">inorderTraversal</span><span class="p">(</span><span class="n">root</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">arr</span><span class="p">)</span>
+        <span class="n">arr</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">root</span><span class="p">.</span><span class="n">value</span><span class="p">)</span>
+        <span class="n">inorderTraversal</span><span class="p">(</span><span class="n">root</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">arr</span><span class="p">)</span>
     <span class="p">}</span>
+    <span class="k">return</span> <span class="n">arr</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
@@ -229,7 +217,7 @@ Output: 14</p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        10-26-2021
+        11-11-2021
         
     </span>
   </p>
@@ -239,13 +227,13 @@ Output: 14</p>
 <footer class="post-footer">
       
       <nav class="post-nav">
-        <a class="prev" href="/post/branch-sums/">
+        <a class="prev" href="/post/preorder-traversal/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Branch Sums</span>
+            <span class="prev-text nav-default">Binary Tree Preorder Traversal</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        <a class="next" href="/post/validate-bst/">
-            <span class="next-text nav-default">Validate BST</span>
+        <a class="next" href="/post/bst/">
+            <span class="next-text nav-default">BST</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

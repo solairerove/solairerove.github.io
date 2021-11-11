@@ -2,28 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://solairerove.github.io/post/bst/</loc>
-    <lastmod>2021-11-09T12:25:02+03:00</lastmod>
+    <loc>https://solairerove.github.io/categories/binary-tree/</loc>
+    <lastmod>2021-11-11T11:55:00+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/postorder-traversal/</loc>
+    <lastmod>2021-11-11T11:55:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/categories/</loc>
-    <lastmod>2021-11-09T12:25:02+03:00</lastmod>
+    <lastmod>2021-11-11T11:55:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/</loc>
-    <lastmod>2021-11-09T12:25:02+03:00</lastmod>
+    <lastmod>2021-11-11T11:55:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/post/</loc>
+    <lastmod>2021-11-11T11:55:00+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/preorder-traversal/</loc>
+    <lastmod>2021-11-11T11:50:53+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/inorder-traversal/</loc>
+    <lastmod>2021-11-11T11:48:23+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/bst/</loc>
     <lastmod>2021-11-09T12:25:02+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -67,13 +95,6 @@
   <url>
     <loc>https://solairerove.github.io/post/sequential-symbol-table/</loc>
     <lastmod>2021-10-29T17:46:36+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/categories/binary-tree/</loc>
-    <lastmod>2021-10-29T16:28:14+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -151,13 +172,6 @@
   <url>
     <loc>https://solairerove.github.io/post/find-kth-largest-element-in-a-bst/</loc>
     <lastmod>2021-10-26T11:19:53+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/post/traverse-bst/</loc>
-    <lastmod>2021-10-25T13:53:31+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

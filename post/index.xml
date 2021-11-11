@@ -6,7 +6,49 @@
     <description>Recent content in Posts on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Nov 2021 12:25:02 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Nov 2021 11:55:00 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Binary Tree Postorder Traversal</title>
+      <link>https://solairerove.github.io/post/postorder-traversal/</link>
+      <pubDate>Thu, 11 Nov 2021 11:55:00 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/postorder-traversal/</guid>
+      <description>Given the root of a binary tree, return the postorder traversal of its nodes&#39; values.
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Output: [14, 15, 7, 21, 25, 8, 3]
+postorder traversal
+leetcode
+No clue
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  class TreeNode(var value: Int) { var left: TreeNode? = null var right: TreeNode?</description>
+    </item>
+    
+    <item>
+      <title>Binary Tree Preorder Traversal</title>
+      <link>https://solairerove.github.io/post/preorder-traversal/</link>
+      <pubDate>Thu, 11 Nov 2021 11:50:53 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/preorder-traversal/</guid>
+      <description>Given the root of a binary tree, return the preorder traversal of its nodes&#39; values.
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Output: [3, 7, 14, 15, 8, 21, 25]
+preorder traversal
+leetcode
+No clue
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  class TreeNode(var value: Int) { var left: TreeNode? = null var right: TreeNode?</description>
+    </item>
+    
+    <item>
+      <title>Binary Tree Inorder Traversal</title>
+      <link>https://solairerove.github.io/post/inorder-traversal/</link>
+      <pubDate>Thu, 11 Nov 2021 11:48:23 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/inorder-traversal/</guid>
+      <description>Given the root of a binary tree, return the inorder traversal of its nodes&#39; values.
+ 3 / \ 7 8 / \ / \ 14 15 21 25  Output: [14, 7, 15, 3, 21, 8, 25]
+inorder traversal
+leetcode
+No clue
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  class TreeNode(var value: Int) { var left: TreeNode? = null var right: TreeNode?</description>
+    </item>
+    
     <item>
       <title>BST</title>
       <link>https://solairerove.github.io/post/bst/</link>
@@ -213,19 +255,6 @@ Make in order tree traversal, so kth largest will be arr.size - k
     </item>
     
     <item>
-      <title>Traverse Bst</title>
-      <link>https://solairerove.github.io/post/traverse-bst/</link>
-      <pubDate>Mon, 25 Oct 2021 13:53:31 +0300</pubDate>
-      
-      <guid>https://solairerove.github.io/post/traverse-bst/</guid>
-      <description>14 / \ 7 21 /\ /\ 3 8 15 25  Output:
-in order: [3, 7, 8, 14, 15, 21, 25] pre order: [14, 7, 3, 8, 21, 15, 25] post order: [3, 8, 7, 15, 25, 21, 14]
-traverse bst
-No clue why
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34  open class BST(var value: Int) { var left: BST?</description>
-    </item>
-    
-    <item>
       <title>Validate BST</title>
       <link>https://solairerove.github.io/post/validate-bst/</link>
       <pubDate>Mon, 25 Oct 2021 13:29:01 +0300</pubDate>
@@ -233,7 +262,7 @@ No clue why
       <guid>https://solairerove.github.io/post/validate-bst/</guid>
       <description>14 / \ 7 21 /\ /\ 3 8 15 25  Output: true
 validate bst
-https://algs4.cs.princeton.edu/32bst/BST.java.html#isBST
+https://algs4.cs.princeton.edu/32bst/BST.java.html#isBST leetcode
 Recursive version of isBST method.
 BST is valid:
  if value greater to every left node values if value less than every right node values  So for recursive solution is possible to make expression where
