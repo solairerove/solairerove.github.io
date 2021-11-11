@@ -2,21 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://solairerove.github.io/categories/binary-search-tree/</loc>
-    <lastmod>2021-11-11T14:17:20+03:00</lastmod>
+    <loc>https://solairerove.github.io/categories/binary-tree/</loc>
+    <lastmod>2021-11-11T15:54:19+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/categories/</loc>
-    <lastmod>2021-11-11T14:17:20+03:00</lastmod>
+    <lastmod>2021-11-11T15:54:19+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://solairerove.github.io/</loc>
+    <lastmod>2021-11-11T15:54:19+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/</loc>
+    <lastmod>2021-11-11T15:54:19+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/post/same-tree/</loc>
+    <lastmod>2021-11-11T15:54:19+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://solairerove.github.io/categories/binary-search-tree/</loc>
     <lastmod>2021-11-11T14:17:20+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -25,20 +46,6 @@
   <url>
     <loc>https://solairerove.github.io/post/kth-smallest-element/</loc>
     <lastmod>2021-11-11T14:17:20+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/post/</loc>
-    <lastmod>2021-11-11T14:17:20+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://solairerove.github.io/categories/binary-tree/</loc>
-    <lastmod>2021-11-11T11:55:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

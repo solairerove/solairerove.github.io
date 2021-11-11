@@ -118,6 +118,30 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/bst/">BST</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 11-09-2021 </span>
+      <div class="post-category">
+          <a href="/categories/symbol-table/"> symbol table </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Дерево бинарного поиска. Бинарное дерево, в котором каждый узел содержит клю и связанное с ним значение. Удоавлетворяет условию, что ключ в любом узле больше ключей во всех узлах левого поддерева
+и меньше ключей во всех узлах правого поддерева этого узла.
+Методы: \
+ size(): Int максимально простой, возвращает 0 для нулевой ссылки и n для любой ненулевой get(key: Key): Value? рекурсивный поиск по узлам. put(key: Key, value: Value): Unit рекурсивный поиск по узлам и перезапись существующего значения
+    </div>
+    <div class="read-more">
+      <a href="/post/bst/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/same-bsts/">Same Bst</a></h1>
     <div class="post-meta">
       <span class="post-time"> 11-08-2021 </span>
@@ -205,29 +229,6 @@ sequential st
     </div>
     <div class="read-more">
       <a href="/post/sequential-symbol-table/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/sum-of-node-depths/">Sum of Node Depths</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 10-29-2021 </span>
-      <div class="post-category">
-          <a href="/categories/binary-tree/"> binary tree </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      3 / \ 7 8 / \ / \ 14 15 21 25  Output: 14
-sum of node depths
-1 2 3 4 5 6 7 8 9 10 11 12  class TreeNode(var value: Int) { var left: TreeNode? = null var right: TreeNode? = null } // O(n) time | O(h) space fun sumOfNodeDepths(node: TreeNode?, depth: Int = 0): Int { if (node == null) return 0 val depthSum = (depth * (depth + 1)) / 2 return depthSum + sumOfNodeDepths(node.
-    </div>
-    <div class="read-more">
-      <a href="/post/sum-of-node-depths/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

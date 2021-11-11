@@ -6,7 +6,20 @@
     <description>Recent content in Posts on Headstone lamp - It&#39;s always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Nov 2021 14:17:20 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Nov 2021 15:54:19 +0300</lastBuildDate><atom:link href="https://solairerove.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Same Tree</title>
+      <link>https://solairerove.github.io/post/same-tree/</link>
+      <pubDate>Thu, 11 Nov 2021 15:54:19 +0300</pubDate>
+      
+      <guid>https://solairerove.github.io/post/same-tree/</guid>
+      <description>Given the roots of two binary trees p and q, write a function to check if they are the same or not.
+Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
+same tree
+leetcode
+1 2 3 4 5 6 7 8 9 10 11 12  class TreeNode(var value: Int) { var left: TreeNode? = null var right: TreeNode? = null } // O(n) time | O(n) space fun isSameTree(p: TreeNode?</description>
+    </item>
+    
     <item>
       <title>Kth Smallest Element in a BST</title>
       <link>https://solairerove.github.io/post/kth-smallest-element/</link>
