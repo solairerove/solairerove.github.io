@@ -55,7 +55,7 @@ convert sorted array to bst leetcode
  14 / \ 7 21 /\ /\ 3 8 15 25  Input: [14, 7, 3, 8, 21, 15, 25]
 construct bst from preorder traversal
 leetcode
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } private var i = 0 // O(n) time | O(n) space fun bstFromPreorder(preorder: List&amp;lt;Int&amp;gt;): BSTNode?</description>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } // O(n) time | O(n) space var i = 0 fun bstFromPreorder(preorder: IntArray, bound: Int = Int.</description>
     </item>
     
     <item>

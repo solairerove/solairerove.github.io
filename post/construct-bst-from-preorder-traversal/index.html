@@ -20,7 +20,7 @@
  14 / \ 7 21 /\ /\ 3 8 15 25  Input: [14, 7, 3, 8, 21, 15, 25]
 construct bst from preorder traversal
 leetcode
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } private var i = 0 // O(n) time | O(n) space fun bstFromPreorder(preorder: List&amp;lt;Int&amp;gt;): BSTNode?" /><meta name="keywords" content="Headstone, algorithms, data structures" />
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } // O(n) time | O(n) space var i = 0 fun bstFromPreorder(preorder: IntArray, bound: Int = Int." /><meta name="keywords" content="Headstone, algorithms, data structures" />
 
 
 
@@ -48,7 +48,7 @@ leetcode
  14 / \ 7 21 /\ /\ 3 8 15 25  Input: [14, 7, 3, 8, 21, 15, 25]
 construct bst from preorder traversal
 leetcode
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } private var i = 0 // O(n) time | O(n) space fun bstFromPreorder(preorder: List&lt;Int&gt;): BSTNode?" />
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } // O(n) time | O(n) space var i = 0 fun bstFromPreorder(preorder: IntArray, bound: Int = Int." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://solairerove.github.io/post/construct-bst-from-preorder-traversal/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-10-27T17:33:24+03:00" />
@@ -59,16 +59,16 @@ leetcode
  14 / \ 7 21 /\ /\ 3 8 15 25  Input: [14, 7, 3, 8, 21, 15, 25]
 construct bst from preorder traversal
 leetcode
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } private var i = 0 // O(n) time | O(n) space fun bstFromPreorder(preorder: List&lt;Int&gt;): BSTNode?"><meta itemprop="datePublished" content="2021-10-27T17:33:24+03:00" />
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } // O(n) time | O(n) space var i = 0 fun bstFromPreorder(preorder: IntArray, bound: Int = Int."><meta itemprop="datePublished" content="2021-10-27T17:33:24+03:00" />
 <meta itemprop="dateModified" content="2021-10-27T17:33:24+03:00" />
-<meta itemprop="wordCount" content="117">
+<meta itemprop="wordCount" content="101">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Construct Bst From Preorder Traversal"/>
 <meta name="twitter:description" content="Output:
  14 / \ 7 21 /\ /\ 3 8 15 25  Input: [14, 7, 3, 8, 21, 15, 25]
 construct bst from preorder traversal
 leetcode
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } private var i = 0 // O(n) time | O(n) space fun bstFromPreorder(preorder: List&lt;Int&gt;): BSTNode?"/>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  open class BST(var value: Int) { var left: BST? = null var right: BST? = null } // O(n) time | O(n) space var i = 0 fun bstFromPreorder(preorder: IntArray, bound: Int = Int."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -181,11 +181,6 @@ leetcode
 </span><span class="lnt">12
 </span><span class="lnt">13
 </span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-kotlin" data-lang="kotlin"><span class="k">open</span> <span class="k">class</span> <span class="nc">BST</span><span class="p">(</span><span class="k">var</span> <span class="py">value</span><span class="p">:</span> <span class="n">Int</span><span class="p">)</span> <span class="p">{</span>
@@ -193,18 +188,13 @@ leetcode
     <span class="k">var</span> <span class="py">right</span><span class="p">:</span> <span class="n">BST</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
 <span class="p">}</span>
 
-<span class="k">private</span> <span class="k">var</span> <span class="py">i</span> <span class="p">=</span> <span class="m">0</span>
-
 <span class="c1">// O(n) time | O(n) space
-</span><span class="c1"></span><span class="k">fun</span> <span class="nf">bstFromPreorder</span><span class="p">(</span><span class="n">preorder</span><span class="p">:</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;):</span> <span class="n">BSTNode</span><span class="p">?</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">constructBST</span><span class="p">(</span><span class="n">preorder</span><span class="p">)</span>
-<span class="p">}</span>
-
-<span class="k">fun</span> <span class="nf">constructBST</span><span class="p">(</span><span class="n">preorder</span><span class="p">:</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Int</span><span class="p">&gt;,</span> <span class="n">bound</span><span class="p">:</span> <span class="n">Int</span> <span class="p">=</span> <span class="n">Int</span><span class="p">.</span><span class="n">MAX_VALUE</span><span class="p">):</span> <span class="n">BSTNode</span><span class="p">?</span> <span class="p">{</span>
+</span><span class="c1"></span><span class="k">var</span> <span class="py">i</span> <span class="p">=</span> <span class="m">0</span>
+<span class="k">fun</span> <span class="nf">bstFromPreorder</span><span class="p">(</span><span class="n">preorder</span><span class="p">:</span> <span class="n">IntArray</span><span class="p">,</span> <span class="n">bound</span><span class="p">:</span> <span class="n">Int</span> <span class="p">=</span> <span class="n">Int</span><span class="p">.</span><span class="n">MAX_VALUE</span><span class="p">):</span> <span class="n">BSTNode</span><span class="p">?</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="n">preorder</span><span class="p">.</span><span class="n">size</span> <span class="o">||</span> <span class="n">preorder</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">&gt;</span> <span class="n">bound</span><span class="p">)</span> <span class="k">return</span> <span class="k">null</span>
-    <span class="k">val</span> <span class="py">root</span> <span class="p">=</span> <span class="n">BSTNode</span><span class="p">(</span><span class="n">value</span> <span class="p">=</span> <span class="n">preorder</span><span class="p">[</span><span class="n">i</span><span class="o">++</span><span class="p">])</span>
-    <span class="n">root</span><span class="p">.</span><span class="n">left</span> <span class="p">=</span> <span class="n">constructBST</span><span class="p">(</span><span class="n">preorder</span><span class="p">,</span> <span class="n">root</span><span class="p">.</span><span class="n">value</span><span class="p">)</span>
-    <span class="n">root</span><span class="p">.</span><span class="n">right</span> <span class="p">=</span> <span class="n">constructBST</span><span class="p">(</span><span class="n">preorder</span><span class="p">,</span> <span class="n">bound</span><span class="p">)</span>
+    <span class="k">val</span> <span class="py">root</span> <span class="p">=</span> <span class="n">BSTNode</span><span class="p">(</span><span class="n">preorder</span><span class="p">[</span><span class="n">i</span><span class="o">++</span><span class="p">])</span>
+    <span class="n">root</span><span class="p">.</span><span class="n">left</span> <span class="p">=</span> <span class="n">bstFromPreorder</span><span class="p">(</span><span class="n">preorder</span><span class="p">,</span> <span class="n">root</span><span class="p">.</span><span class="n">value</span><span class="p">)</span>
+    <span class="n">root</span><span class="p">.</span><span class="n">right</span> <span class="p">=</span> <span class="n">bstFromPreorder</span><span class="p">(</span><span class="n">preorder</span><span class="p">,</span> <span class="n">bound</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">root</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
