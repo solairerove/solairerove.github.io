@@ -118,6 +118,33 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/kth-smallest-element/">Kth Smallest Element in a BST</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 11-11-2021 </span>
+      <div class="post-category">
+          <a href="/categories/binary-search-tree/"> binary search tree </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Given the root of a binary search tree, and an integer k,
+return the kth smallest value (1-indexed) of all the values of the nodes in the tree.
+ 14 / \ 7 21 /\ /\ 3 8 15 25  Input: 2 Output: 7
+kth smallest element
+leetcode
+Make inorder tree traversal, so kth largest will be arr[k - 1]
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  open class BST(var value: Int) { var left: BST?
+    </div>
+    <div class="read-more">
+      <a href="/post/kth-smallest-element/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/postorder-traversal/">Binary Tree Postorder Traversal</a></h1>
     <div class="post-meta">
       <span class="post-time"> 11-11-2021 </span>
@@ -214,29 +241,6 @@ No clue
     </div>
     <div class="read-more">
       <a href="/post/bst/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/same-bsts/">Same Bst</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 11-08-2021 </span>
-      <div class="post-category">
-          <a href="/categories/binary-search-tree/"> binary search tree </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Input: [1, 2, 3] [1, 2, 3] Output: true
-same bsts
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43  // O(nˆ2) time | O(d) space // n is number of nodes // d is depth fun sameBsts( arrOne: List&lt;Int&gt;, arrTwo: List&lt;Int&gt;, idxOne: Int = 0, idxTwo: Int = 0, min: Int = Int.
-    </div>
-    <div class="read-more">
-      <a href="/post/same-bsts/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
