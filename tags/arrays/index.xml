@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Headstone lamp - Always has been</title>
-    <link>https://solairerove.github.io/</link>
-    <description>Recent content on Headstone lamp - Always has been</description>
+    <title>arrays on Headstone lamp - Always has been</title>
+    <link>https://solairerove.github.io/tags/arrays/</link>
+    <description>Recent content in arrays on Headstone lamp - Always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Mon, 20 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/arrays/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>11. Container With Most Water</title>
       <link>https://solairerove.github.io/posts/container_with_most_water/</link>
