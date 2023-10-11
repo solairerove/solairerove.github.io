@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>grind-169 on Headstone lamp - Always has been</title>
+    <link>https://solairerove.github.io/tags/grind-169/</link>
+    <description>Recent content in grind-169 on Headstone lamp - Always has been</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© solairerove</copyright>
+    <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/grind-169/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>876. Middle of the Linked List</title>
+      <link>https://solairerove.github.io/posts/middle_of_the_linked_list/</link>
+      <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/middle_of_the_linked_list/</guid>
+      <description># O(n) time || O(1) space def middle_node(self, head: Optional[ListNode]) -&amp;gt; Optional[ListNode]: if not head.next: return head slow = fast = head while fast and fast.next: slow, fast = slow.next, fast.next.next return slow fast pointer traverse two times faster than slow, so when fast is done, slow is in middle of lined list</description>
+    </item>
+    
+  </channel>
+</rss>
