@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>medium on Headstone lamp - Always has been</title>
+    <link>https://solairerove.github.io/tags/medium/</link>
+    <description>Recent content in medium on Headstone lamp - Always has been</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© solairerove</copyright>
+    <lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2. Add Two Numbers</title>
+      <link>https://solairerove.github.io/posts/add_two_numbers/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/add_two_numbers/</guid>
+      <description># O(max(n, m)) time || O(1) space def add_two_numbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -&amp;gt; Optional[ListNode]: sentinel = ListNode() prev = sentinel hold = 0 while l1 or l2: curr_sum = 0 if l1: curr_sum, l1 = curr_sum + l1.val, l1.next if l2: curr_sum, l2 = curr_sum + l2.val, l2.next curr_sum += hold prev.next, hold = ListNode(curr_sum % 10), curr_sum // 10 prev = prev.next if hold: prev.next = ListNode(hold) return sentinel.</description>
+    </item>
+    
+    <item>
+      <title>11. Container With Most Water</title>
+      <link>https://solairerove.github.io/posts/container_with_most_water/</link>
+      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/container_with_most_water/</guid>
+      <description># O(n) time || O(1) space def max_area(self, height: List[int]) -&amp;gt; int: area, low, high = 0, 0, len(height) - 1 while low &amp;lt; high: area = max(area, min(height[low], height[high]) * (high - low)) if height[low] &amp;lt;= height[high]: low += 1 else: high -= 1 return area </description>
+    </item>
+    
+  </channel>
+</rss>

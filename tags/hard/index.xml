@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hard on Headstone lamp - Always has been</title>
+    <link>https://solairerove.github.io/tags/hard/</link>
+    <description>Recent content in hard on Headstone lamp - Always has been</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© solairerove</copyright>
+    <lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/hard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>23. Merge k Sorted Lists</title>
+      <link>https://solairerove.github.io/posts/merge_k_sorted_lists/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/merge_k_sorted_lists/</guid>
+      <description># O(n * log(k)) time | O(1) space # n - is total number of nodes # k - is number of linked lists def merge_k_lists(self, lists: List[Optional[ListNode]]) -&amp;gt; Optional[ListNode]: if not lists: return None if len(lists) == 1: return lists[0] interval = 1 while interval &amp;lt; len(lists): for i in range(0, len(lists) - interval, interval * 2): lists[i] = self.merge(lists[i], lists[i + interval]) interval *= 2 return lists[0] # 21.</description>
+    </item>
+    
+  </channel>
+</rss>

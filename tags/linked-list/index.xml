@@ -36,6 +36,15 @@
     </item>
     
     <item>
+      <title>23. Merge k Sorted Lists</title>
+      <link>https://solairerove.github.io/posts/merge_k_sorted_lists/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/merge_k_sorted_lists/</guid>
+      <description># O(n * log(k)) time | O(1) space # n - is total number of nodes # k - is number of linked lists def merge_k_lists(self, lists: List[Optional[ListNode]]) -&amp;gt; Optional[ListNode]: if not lists: return None if len(lists) == 1: return lists[0] interval = 1 while interval &amp;lt; len(lists): for i in range(0, len(lists) - interval, interval * 2): lists[i] = self.merge(lists[i], lists[i + interval]) interval *= 2 return lists[0] # 21.</description>
+    </item>
+    
+    <item>
       <title>876. Middle of the Linked List</title>
       <link>https://solairerove.github.io/posts/middle_of_the_linked_list/</link>
       <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>

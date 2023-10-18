@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>grind-169 on Headstone lamp - Always has been</title>
-    <link>https://solairerove.github.io/tags/grind-169/</link>
-    <description>Recent content in grind-169 on Headstone lamp - Always has been</description>
+    <title>easy on Headstone lamp - Always has been</title>
+    <link>https://solairerove.github.io/tags/easy/</link>
+    <description>Recent content in easy on Headstone lamp - Always has been</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/grind-169/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/easy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>141. Linked List Cycle</title>
       <link>https://solairerove.github.io/posts/linked_list_cycle/</link>
@@ -18,30 +18,12 @@
     </item>
     
     <item>
-      <title>2. Add Two Numbers</title>
-      <link>https://solairerove.github.io/posts/add_two_numbers/</link>
-      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://solairerove.github.io/posts/add_two_numbers/</guid>
-      <description># O(max(n, m)) time || O(1) space def add_two_numbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -&amp;gt; Optional[ListNode]: sentinel = ListNode() prev = sentinel hold = 0 while l1 or l2: curr_sum = 0 if l1: curr_sum, l1 = curr_sum + l1.val, l1.next if l2: curr_sum, l2 = curr_sum + l2.val, l2.next curr_sum += hold prev.next, hold = ListNode(curr_sum % 10), curr_sum // 10 prev = prev.next if hold: prev.next = ListNode(hold) return sentinel.</description>
-    </item>
-    
-    <item>
       <title>206. Reverse Linked List</title>
       <link>https://solairerove.github.io/posts/reverse_linked_list/</link>
       <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/posts/reverse_linked_list/</guid>
       <description># O(n) time || O(1) space def reverse_list(self, head: Optional[ListNode]) -&amp;gt; Optional[ListNode]: prev, curr = None, head while curr: curr.next, prev, curr = prev, curr, curr.next return prev traverse linked list using curr pointer. relink curr.next to prev each step on iteration. return the prev as head of reversed list</description>
-    </item>
-    
-    <item>
-      <title>23. Merge k Sorted Lists</title>
-      <link>https://solairerove.github.io/posts/merge_k_sorted_lists/</link>
-      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://solairerove.github.io/posts/merge_k_sorted_lists/</guid>
-      <description># O(n * log(k)) time | O(1) space # n - is total number of nodes # k - is number of linked lists def merge_k_lists(self, lists: List[Optional[ListNode]]) -&amp;gt; Optional[ListNode]: if not lists: return None if len(lists) == 1: return lists[0] interval = 1 while interval &amp;lt; len(lists): for i in range(0, len(lists) - interval, interval * 2): lists[i] = self.merge(lists[i], lists[i + interval]) interval *= 2 return lists[0] # 21.</description>
     </item>
     
     <item>
