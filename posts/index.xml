@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>206. Reverse Linked List</title>
+      <link>https://solairerove.github.io/posts/reverse_linked_list/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/reverse_linked_list/</guid>
+      <description># O(n) time || O(1) space def reverse_list(self, head: Optional[ListNode]) -&amp;gt; Optional[ListNode]: prev, curr = None, head while curr: curr.next, prev, curr = prev, curr, curr.next return prev traverse linked list using curr pointer. relink curr.next to prev each step on iteration. return the prev as head of reversed list</description>
+    </item>
+    
     <item>
       <title>876. Middle of the Linked List</title>
       <link>https://solairerove.github.io/posts/middle_of_the_linked_list/</link>
