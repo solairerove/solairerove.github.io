@@ -9,6 +9,15 @@
     <copyright>© solairerove</copyright>
     <lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>141. Linked List Cycle</title>
+      <link>https://solairerove.github.io/posts/linked_list_cycle/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/linked_list_cycle/</guid>
+      <description># O(n) time || O(1) space def has_cycle(self, head: Optional[ListNode]) -&amp;gt; bool: slow = fast = head while fast and fast.next: slow, fast = slow.next, fast.next.next if slow == fast: return True return False Floyd&#39;s Cycle Finding Algorithm by considering two pointers at different speed. The slow pointer moves one step at a time while the fast pointer moves two steps at a time.</description>
+    </item>
+    
+    <item>
       <title>2. Add Two Numbers</title>
       <link>https://solairerove.github.io/posts/add_two_numbers/</link>
       <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
