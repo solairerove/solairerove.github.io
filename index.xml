@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Headstone lamp - Always has been</title>
+    <title>Headstone lamp - leetcode grind</title>
     <link>https://solairerove.github.io/</link>
-    <description>Recent content on Headstone lamp - Always has been</description>
+    <description>Recent content on Headstone lamp - leetcode grind</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>844. Backspace String Compare</title>
+      <link>https://solairerove.github.io/posts/backspace_string_compare/</link>
+      <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/backspace_string_compare/</guid>
+      <description># O(n + m) time || O(1) space def backspace_compare_two_pointers(self, s: str, t: str) -&amp;gt; bool: def trim(to_trim): skip = 0 for c in reversed(to_trim): if c == &amp;#39;#&amp;#39;: skip += 1 elif skip: skip -= 1 else: yield c return all(a == b for a, b in itertools.zip_longest(trim(s), trim(t))) # O(n + m) time || O(n + m) space def backspace_compare_stack(self, s: str, t: str) -&amp;gt; bool: def trim(line): stack = [] for c in line: if c !</description>
+    </item>
+    
     <item>
       <title>141. Linked List Cycle</title>
       <link>https://solairerove.github.io/posts/linked_list_cycle/</link>

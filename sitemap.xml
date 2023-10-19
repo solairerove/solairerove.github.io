@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://solairerove.github.io/posts/backspace_string_compare/</loc>
+    <lastmod>2023-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/tags/arrays/</loc>
+    <lastmod>2023-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/tags/easy/</loc>
+    <lastmod>2023-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/</loc>
+    <lastmod>2023-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/posts/</loc>
+    <lastmod>2023-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/tags/</loc>
+    <lastmod>2023-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/tags/two-pointers/</loc>
+    <lastmod>2023-10-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://solairerove.github.io/posts/linked_list_cycle/</loc>
     <lastmod>2023-10-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,16 +35,7 @@
     <loc>https://solairerove.github.io/posts/merge_k_sorted_lists/</loc>
     <lastmod>2023-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://solairerove.github.io/tags/easy/</loc>
-    <lastmod>2023-10-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/tags/grind-169/</loc>
-    <lastmod>2023-10-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://solairerove.github.io/tags/hard/</loc>
-    <lastmod>2023-10-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/</loc>
     <lastmod>2023-10-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/tags/linked-list/</loc>
@@ -32,22 +44,10 @@
     <loc>https://solairerove.github.io/tags/medium/</loc>
     <lastmod>2023-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://solairerove.github.io/posts/</loc>
-    <lastmod>2023-10-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/tags/</loc>
-    <lastmod>2023-10-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://solairerove.github.io/posts/middle_of_the_linked_list/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/posts/container_with_most_water/</loc>
-    <lastmod>2023-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/tags/arrays/</loc>
-    <lastmod>2023-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/tags/two-pointers/</loc>
     <lastmod>2023-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/categories/</loc>
