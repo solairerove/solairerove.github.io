@@ -36,6 +36,15 @@
     </item>
     
     <item>
+      <title>704. Binary Search</title>
+      <link>https://solairerove.github.io/posts/binary_search/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/binary_search/</guid>
+      <description># O(log(n)) time || O(1) space def search(self, nums: List[int], target: int) -&amp;gt; int: low, high = 0, len(nums) - 1 while low &amp;lt;= high: mid = low + (high - low) // 2 if target == nums[mid]: return mid elif target &amp;lt; nums[mid]: high = mid - 1 else: low = mid + 1 return -1 classic default binary search. have two pointers as search border. decrease search borders two times on each iteration like you&amp;rsquo;re trying to find word in dictionary book.</description>
+    </item>
+    
+    <item>
       <title>876. Middle of the Linked List</title>
       <link>https://solairerove.github.io/posts/middle_of_the_linked_list/</link>
       <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
