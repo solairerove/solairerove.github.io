@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>74. Search a 2D Matrix</title>
+      <link>https://solairerove.github.io/posts/search_a_2d_matrix/</link>
+      <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/search_a_2d_matrix/</guid>
+      <description># O(log(m * n)) time || O(1) space def search_matrix(self, matrix: List[List[int]], target: int) -&amp;gt; bool: rows, cols = len(matrix), len(matrix[0]) low, high = 0, rows * cols - 1 while low &amp;lt;= high: mid = low + (high - low) // 2 mid_row, mid_col = divmod(mid, cols) if target == matrix[mid_row][mid_col]: return True elif target &amp;lt; matrix[mid_row][mid_col]: high = mid - 1 else: low = mid + 1 return False to get midpoint in the matrix, we use the divmod function with mid and cols</description>
+    </item>
+    
     <item>
       <title>2. Add Two Numbers</title>
       <link>https://solairerove.github.io/posts/add_two_numbers/</link>

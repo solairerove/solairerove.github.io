@@ -35,5 +35,14 @@
       <description># O(log(n)) time || O(1) space def search(self, nums: List[int], target: int) -&amp;gt; int: low, high = 0, len(nums) - 1 while low &amp;lt;= high: mid = low + (high - low) // 2 if target == nums[mid]: return mid elif target &amp;lt; nums[mid]: high = mid - 1 else: low = mid + 1 return -1 classic default binary search. have two pointers as search border. decrease search borders two times on each iteration like you&amp;rsquo;re trying to find word in dictionary book.</description>
     </item>
     
+    <item>
+      <title>74. Search a 2D Matrix</title>
+      <link>https://solairerove.github.io/posts/search_a_2d_matrix/</link>
+      <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/search_a_2d_matrix/</guid>
+      <description># O(log(m * n)) time || O(1) space def search_matrix(self, matrix: List[List[int]], target: int) -&amp;gt; bool: rows, cols = len(matrix), len(matrix[0]) low, high = 0, rows * cols - 1 while low &amp;lt;= high: mid = low + (high - low) // 2 mid_row, mid_col = divmod(mid, cols) if target == matrix[mid_row][mid_col]: return True elif target &amp;lt; matrix[mid_row][mid_col]: high = mid - 1 else: low = mid + 1 return False to get midpoint in the matrix, we use the divmod function with mid and cols</description>
+    </item>
+    
   </channel>
 </rss>
