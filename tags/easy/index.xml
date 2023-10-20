@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>704. Binary Search</title>
+      <link>https://solairerove.github.io/posts/binary_search/</link>
+      <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/binary_search/</guid>
+      <description># O(log(n)) time || O(1) space def search(self, nums: List[int], target: int) -&amp;gt; int: low, high = 0, len(nums) - 1 while low &amp;lt;= high: mid = low + (high - low) // 2 if target == nums[mid]: return mid elif target &amp;lt; nums[mid]: high = mid - 1 else: low = mid + 1 return -1 classic default binary search. have two pointers as search border. decrease search borders two times on each iteration like you&amp;rsquo;re trying to find word in dictionary book.</description>
+    </item>
+    
     <item>
       <title>844. Backspace String Compare</title>
       <link>https://solairerove.github.io/posts/backspace_string_compare/</link>
@@ -33,15 +42,6 @@
       
       <guid>https://solairerove.github.io/posts/reverse_linked_list/</guid>
       <description># O(n) time || O(1) space def reverse_list(self, head: Optional[ListNode]) -&amp;gt; Optional[ListNode]: prev, curr = None, head while curr: curr.next, prev, curr = prev, curr, curr.next return prev traverse linked list using curr pointer. relink curr.next to prev each step on iteration. return the prev as head of reversed list</description>
-    </item>
-    
-    <item>
-      <title>704. Binary Search</title>
-      <link>https://solairerove.github.io/posts/binary_search/</link>
-      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://solairerove.github.io/posts/binary_search/</guid>
-      <description># O(log(n)) time || O(1) space def search(self, nums: List[int], target: int) -&amp;gt; int: low, high = 0, len(nums) - 1 while low &amp;lt;= high: mid = low + (high - low) // 2 if target == nums[mid]: return mid elif target &amp;lt; nums[mid]: high = mid - 1 else: low = mid + 1 return -1 classic default binary search. have two pointers as search border. decrease search borders two times on each iteration like you&amp;rsquo;re trying to find word in dictionary book.</description>
     </item>
     
     <item>
