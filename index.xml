@@ -9,6 +9,15 @@
     <copyright>© solairerove</copyright>
     <lastBuildDate>Fri, 20 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>278. First Bad Version</title>
+      <link>https://solairerove.github.io/posts/first_bad_version/</link>
+      <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/first_bad_version/</guid>
+      <description># The isBadVersion API is already defined for you. # def isBadVersion(version: int) -&amp;gt; bool: # O(log(n)) time || O(1) space def first_bad_version(self, n: int) -&amp;gt; int: low, high = 1, n while low &amp;lt;= high: mid = low + (high - low) // 2 if isBadVersion(mid): high = mid - 1 else: low = mid + 1 return low you can use binary search to decrease count of api calls.</description>
+    </item>
+    
+    <item>
       <title>704. Binary Search</title>
       <link>https://solairerove.github.io/posts/binary_search/</link>
       <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
