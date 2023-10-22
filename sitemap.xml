@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://solairerove.github.io/posts/search_in_rotated_sorted_array/</loc>
+    <lastmod>2023-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/tags/binary-search/</loc>
+    <lastmod>2023-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/</loc>
+    <lastmod>2023-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/tags/medium/</loc>
+    <lastmod>2023-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/posts/</loc>
+    <lastmod>2023-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/tags/</loc>
+    <lastmod>2023-10-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://solairerove.github.io/posts/first_bad_version/</loc>
     <lastmod>2023-10-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,22 +32,7 @@
     <loc>https://solairerove.github.io/posts/search_a_2d_matrix/</loc>
     <lastmod>2023-10-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://solairerove.github.io/tags/binary-search/</loc>
-    <lastmod>2023-10-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://solairerove.github.io/tags/easy/</loc>
-    <lastmod>2023-10-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/</loc>
-    <lastmod>2023-10-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/tags/medium/</loc>
-    <lastmod>2023-10-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/posts/</loc>
-    <lastmod>2023-10-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/tags/</loc>
     <lastmod>2023-10-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/posts/backspace_string_compare/</loc>
