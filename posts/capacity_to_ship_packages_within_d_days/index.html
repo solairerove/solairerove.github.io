@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>1011. Capacity To Ship Packages Within D Days - Headstone lamp - leetcode grind</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="the low is max weight, the high is sum of weights, use bs" />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="1011. Capacity To Ship Packages Within D Days" />
+<meta property="og:description" content="the low is max weight, the high is sum of weights, use bs" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://solairerove.github.io/posts/capacity_to_ship_packages_within_d_days/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-10-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-10-23T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="1011. Capacity To Ship Packages Within D Days"/>
+<meta name="twitter:description" content="the low is max weight, the high is sum of weights, use bs"/>
+<script src="https://solairerove.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://solairerove.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://solairerove.github.io/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://solairerove.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css" media="(prefers-color-scheme: dark)"  />
+	
+
+	
+	
+		<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+	
+		
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']],
+				displayMath: [['$$','$$'], ['\[','\]']],
+				processEscapes: true,
+				processEnvironments: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+				TeX: { equationNumbers: { autoNumber: "AMS" },
+						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
+			}
+		});
+		</script>
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+		
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://solairerove.github.io/">Headstone lamp - leetcode grind</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/tags">Tags</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">1011. Capacity To Ship Packages Within D Days</h1>
+			<div class="meta">Posted on Oct 23, 2023</div>
+		</div>
+		
+
+		<section class="body">
+			<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n * log(n)) time || O(1) space</span>
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">ship_within_days</span>(self, weights: List[<span style="color:#a2f">int</span>], days: <span style="color:#a2f">int</span>) <span style="color:#666">-&gt;</span> <span style="color:#a2f">int</span>:
+</span></span><span style="display:flex;"><span>    low, high <span style="color:#666">=</span> <span style="color:#a2f">max</span>(weights), <span style="color:#a2f">sum</span>(weights)
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">while</span> low <span style="color:#666">&lt;=</span> high:
+</span></span><span style="display:flex;"><span>        mid <span style="color:#666">=</span> low <span style="color:#666">+</span> (high <span style="color:#666">-</span> low) <span style="color:#666">//</span> <span style="color:#666">2</span>
+</span></span><span style="display:flex;"><span>        days_required, curr_weight <span style="color:#666">=</span> <span style="color:#666">1</span>, <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">for</span> weight <span style="color:#a2f;font-weight:bold">in</span> weights:
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">if</span> curr_weight <span style="color:#666">+</span> weight <span style="color:#666">&lt;=</span> mid:
+</span></span><span style="display:flex;"><span>                curr_weight <span style="color:#666">+=</span> weight
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>                days_required, curr_weight <span style="color:#666">=</span> days_required <span style="color:#666">+</span> <span style="color:#666">1</span>, weight
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> days_required <span style="color:#666">&lt;=</span> days:
+</span></span><span style="display:flex;"><span>            high <span style="color:#666">=</span> mid <span style="color:#666">-</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>            low <span style="color:#666">=</span> mid <span style="color:#666">+</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> low
+</span></span></code></pre></div><p>Determine the search space: <br>
+The minimum possible weight capacity of the ship would be the maximum weight among all the packages, <br>
+and the maximum possible weight capacity of the ship would be the sum of all the package weights.</p>
+<p>Use binary search: <br>
+Set the lower bound of the binary search as the maximum package weight <br>
+and the upper bound as the sum of all the package weights.</p>
+<p>While the lower bound is less than or equal to the upper bound, perform the following steps:</p>
+<pre><code>a. Calculate the mid weight capacity of the ship by taking the average of the lower and upper bounds: 
+    mid = (lower_bound + upper_bound) // 2
+
+b. Simulate the shipment process: 
+    Create variables to track the number of days and the current weight being shipped. 
+    Iterate through the list of weights and for each weight: 
+
+    If the current weight + weight of the package is less than or equal to the mid capacity, 
+    add the package to the current shipment weight.
+    If the current weight + weight of the package exceeds the mid capacity, 
+    increment the number of days and reset the current shipment weight to the weight of the current package. 
+
+c. Compare the number of days with the given days parameter. 
+
+    If the number of days is less than or equal to the given days, 
+    it means the weight capacity is sufficient. So, update the upper bound to mid - 1. 
+    If the number of days is greater than the given days, 
+    it means the weight capacity is not sufficient. So, update the lower bound to mid + 1.
+</code></pre>
+<p>Return the least weight capacity: <br>
+Once the binary search is complete (lower_bound &gt; upper_bound), <br>
+return the lower bound value as the least weight capacity that will result in all packages being shipped within days.</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/binary-search">binary-search</a></li>
+					
+					<li><a href="/tags/medium">medium</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/solairerove" rel="me" title="GitHub"><i data-feather="github"></i></a>
+    <a class="border"></a></div>
+  <div class="footer-info">
+    2023  © solairerove |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>

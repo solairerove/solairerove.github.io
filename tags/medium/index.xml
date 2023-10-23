@@ -9,6 +9,15 @@
     <copyright>© solairerove</copyright>
     <lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>1011. Capacity To Ship Packages Within D Days</title>
+      <link>https://solairerove.github.io/posts/capacity_to_ship_packages_within_d_days/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/capacity_to_ship_packages_within_d_days/</guid>
+      <description># O(n * log(n)) time || O(1) space def ship_within_days(self, weights: List[int], days: int) -&amp;gt; int: low, high = max(weights), sum(weights) while low &amp;lt;= high: mid = low + (high - low) // 2 days_required, curr_weight = 1, 0 for weight in weights: if curr_weight + weight &amp;lt;= mid: curr_weight += weight else: days_required, curr_weight = days_required + 1, weight if days_required &amp;lt;= days: high = mid - 1 else: low = mid + 1 return low Determine the search space: The minimum possible weight capacity of the ship would be the maximum weight among all the packages, and the maximum possible weight capacity of the ship would be the sum of all the package weights.</description>
+    </item>
+    
+    <item>
       <title>875. Koko Eating Bananas</title>
       <link>https://solairerove.github.io/posts/koko_eating_bananas/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
