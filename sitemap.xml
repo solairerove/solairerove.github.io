@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://solairerove.github.io/posts/two_sum/</loc>
+    <lastmod>2023-10-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://solairerove.github.io/posts/capacity_to_ship_packages_within_d_days/</loc>
     <lastmod>2023-10-23T00:00:00+00:00</lastmod>
   </url><url>
