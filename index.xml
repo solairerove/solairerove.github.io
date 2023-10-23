@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Sun, 22 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>875. Koko Eating Bananas</title>
+      <link>https://solairerove.github.io/posts/koko_eating_bananas/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/koko_eating_bananas/</guid>
+      <description># O(n * log(max(p)) time || O(1) space def min_eating_speed(self, piles: List[int], h: int) -&amp;gt; int: low, high = 1, max(piles) while low &amp;lt; high: hours, mid = 0, low + (high - low) // 2 if sum((math.ceil(pile / mid)) for pile in piles) &amp;lt;= h: high = mid else: low = mid + 1 return high if the current speed is workable, the minimum workable speed should be on its left inclusively.</description>
+    </item>
+    
     <item>
       <title>153. Find Minimum in Rotated Sorted Array</title>
       <link>https://solairerove.github.io/posts/find_minimum_in_rotated_sorted_array/</link>
