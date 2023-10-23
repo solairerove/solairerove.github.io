@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Fri, 20 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>136. Single Number</title>
+      <link>https://solairerove.github.io/posts/single_number/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/single_number/</guid>
+      <description># O(n) time || O(1) space def single_number(self, nums: List[int]) -&amp;gt; int: res = 0 for n in nums: res ^= n return res To find the element that appears only once in the array with a linear runtime complexity and constant extra space, you can utilize the XOR operator.
+Here&amp;rsquo;s the algorithm to solve the problem:
+Initialize a variable unique to 0. Iterate through each element in the array nums.</description>
+    </item>
+    
     <item>
       <title>278. First Bad Version</title>
       <link>https://solairerove.github.io/posts/first_bad_version/</link>
