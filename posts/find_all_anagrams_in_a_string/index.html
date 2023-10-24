@@ -132,7 +132,7 @@
 <li>Iterate from <code>i = len(p)</code> to <code>len(s)</code>. For each <code>i</code>:
 <ul>
 <li>Compare the two frequency tables. If they are the same, the current window is an anagram of <code>p</code>, so append <code>i - len(p)</code> to result.</li>
-<li>Slide the window: decrement the count of the character that is left behind <code>(s[i - len(p)])</code> and increment the count of the new character <code>(s[i])</code>.</li>
+<li>Slide the window: decrement the count of the character that is left behind <code>s[i - len(p)]</code> and increment the count of the new character <code>s[i]</code>.</li>
 </ul>
 </li>
 </ul>
