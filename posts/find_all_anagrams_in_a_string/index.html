@@ -117,22 +117,22 @@
 </span></span></code></pre></div><ol>
 <li>Initialization:
 <ul>
-<li>First, set up two lists of size 26 (assuming lowercase English letters) to act as frequency tables for p and the current window in s.</li>
-<li>Initialize a list result to store the starting indices of the anagrams in s.</li>
+<li>First, set up two lists of size 26 (assuming lowercase English letters) to act as frequency tables for <code>p</code> and the current window in <code>s</code>.</li>
+<li>Initialize a list result to store the starting indices of the anagrams in <code>s</code>.</li>
 </ul>
 </li>
 <li>Setup:
 <ul>
-<li>Count the frequency of each character in p and store it in the frequency table for p.</li>
-<li>Count the frequency of characters in the initial window of s (i.e., the first len(p) characters) and store it in the frequency table for s.</li>
+<li>Count the frequency of each character in <code>p</code> and store it in the frequency table for <code>p</code>.</li>
+<li>Count the frequency of characters in the initial window of <code>s</code> (i.e., the first <code>len(p)</code> characters) and store it in the frequency table for <code>s</code>.</li>
 </ul>
 </li>
 <li>Sliding Window:
 <ul>
-<li>Iterate from i = len(p) to len(s). For each i:
+<li>Iterate from <code>i = len(p)</code> to <code>len(s)</code>. For each <code>i</code>:
 <ul>
-<li>Compare the two frequency tables. If they are the same, the current window is an anagram of p, so append i - len(p) to result.</li>
-<li>Slide the window: decrement the count of the character that is left behind (s[i - len(p)]) and increment the count of the new character (s[i]).</li>
+<li>Compare the two frequency tables. If they are the same, the current window is an anagram of <code>p</code>, so append <code>i - len(p)</code> to result.</li>
+<li>Slide the window: decrement the count of the character that is left behind <code>(s[i - len(p)])</code> and increment the count of the new character <code>(s[i])</code>.</li>
 </ul>
 </li>
 </ul>
