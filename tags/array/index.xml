@@ -27,6 +27,15 @@
     </item>
     
     <item>
+      <title>242. Valid Anagram</title>
+      <link>https://solairerove.github.io/posts/valid_anagram/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/valid_anagram/</guid>
+      <description># O(n) time || O(1) space def is_anagram(self, s: str, t: str) -&amp;gt; bool: if len(s) != len(t): return False cnt = [0] * 26 for i in range(len(s)): cnt[ord(s[i]) - ord(&amp;#39;a&amp;#39;)] += 1 cnt[ord(t[i]) - ord(&amp;#39;a&amp;#39;)] -= 1 return max(cnt) == 0 # O(n) time || O(n) space def is_anagram_counter(self, s: str, t: str) -&amp;gt; bool: return collections.Counter(s) == collections.Counter(t) Efficient method is to count the occurrences of each character in both strings and then compare the counts.</description>
+    </item>
+    
+    <item>
       <title>49. Group Anagrams</title>
       <link>https://solairerove.github.io/posts/group_anagrams/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
