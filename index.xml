@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>15. 3Sum</title>
+      <link>https://solairerove.github.io/posts/three_sum/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/three_sum/</guid>
+      <description># O(n^2) time || O(1) space def three_sum(self, nums: List[int]) -&amp;gt; List[List[int]]: nums.sort() triplets = [] for i in range(len(nums) - 2): if i &amp;gt; 0 and nums[i] == nums[i - 1]: continue low, high = i + 1, len(nums) - 1 while low &amp;lt; high: sum_ = nums[i] + nums[low] + nums[high] if sum_ == 0: triplets.append([nums[i], nums[low], nums[high]]) low, high = low + 1, high - 1 while low &amp;lt; high and nums[low] == nums[low - 1]: low += 1 while low &amp;lt; high and nums[high] == nums[high + 1]: high -= 1 elif sum_ &amp;lt; 0: low += 1 else: high -= 1 return triplets You can solve this problem using a sorting-based approach combined with the two-pointer technique.</description>
+    </item>
+    
     <item>
       <title>1. Two Sum</title>
       <link>https://solairerove.github.io/posts/two_sum/</link>
