@@ -27,6 +27,15 @@
     </item>
     
     <item>
+      <title>49. Group Anagrams</title>
+      <link>https://solairerove.github.io/posts/group_anagrams/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/group_anagrams/</guid>
+      <description># O(w * n * log(n)) time || O(wn) space def group_anagrams(self, strs: List[str]) -&amp;gt; List[List[str]]: dic = collections.defaultdict(list) for s in strs: dic[tuple(sorted(s))].append(s) return list(dic.values()) # O(n * m) time || O(n * m) space, # m - number of strings # n - average number of letters def group_anagrams_count_approach(self, strs: List[str]) -&amp;gt; List[List[str]]: def get_key(s): cnt = [0] * 26 for c in s: cnt[ord(c) - ord(&amp;#39;a&amp;#39;)] += 1 return tuple(cnt) dic = collections.</description>
+    </item>
+    
+    <item>
       <title>1. Two Sum</title>
       <link>https://solairerove.github.io/posts/two_sum/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
