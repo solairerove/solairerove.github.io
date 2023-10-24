@@ -23,7 +23,7 @@
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/posts/longest_palindrome/</guid>
-      <description># O(n) time | O(1) space def longest_palindrome(self, s: str) -&amp;gt; int: odds = sum(v % 2 for v in collections.Counter(s).values()) return len(s) - odds + bool(odds) Count Occurrences: Counter(s) provides the counts of each character. \ Calculate Odds: We determine how many characters have an odd count. \ Result: The potential length of the palindrome is len(s) - odds, but if there&amp;rsquo;s any character with an odd count (bool(odds) will be True for any positive odd value), we can use one of them as the center of the palindrome.</description>
+      <description># O(n) time | O(1) space def longest_palindrome(self, s: str) -&amp;gt; int: odds = sum(v % 2 for v in collections.Counter(s).values()) return len(s) - odds + bool(odds) Count Occurrences: Counter(s) provides the counts of each character. Calculate Odds: We determine how many characters have an odd count. Result: The potential length of the palindrome is len(s) - odds, but if there&amp;rsquo;s any character with an odd count (bool(odds) will be True for any positive odd value), we can use one of them as the center of the palindrome.</description>
     </item>
     
     <item>

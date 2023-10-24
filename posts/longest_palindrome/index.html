@@ -99,11 +99,12 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> <span style="color:#a2f">len</span>(s) <span style="color:#666">-</span> odds <span style="color:#666">+</span> <span style="color:#a2f">bool</span>(odds)
 </span></span></code></pre></div><ol>
-<li>Count Occurrences: Counter(s) provides the counts of each character. \</li>
-<li>Calculate Odds: We determine how many characters have an odd count. \</li>
-<li>Result: The potential length of the palindrome is len(s) - odds, <br>
-but if there&rsquo;s any character with an odd count (bool(odds) will be True for any positive odd value), <br>
-we can use one of them as the center of the palindrome. Hence we add 1 if odds is non-zero.</li>
+<li>Count Occurrences: Counter(s) provides the counts of each character.</li>
+<li>Calculate Odds: We determine how many characters have an odd count.</li>
+<li>Result: The potential length of the palindrome is len(s) - odds,
+but if there&rsquo;s any character with an odd count (bool(odds) will be True
+for any positive odd value), we can use one of them as the center of the palindrome.
+Hence we add 1 if odds is non-zero.</li>
 </ol>
 
 		</section>

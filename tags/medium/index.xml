@@ -27,6 +27,15 @@
     </item>
     
     <item>
+      <title>438. Find All Anagrams in a String</title>
+      <link>https://solairerove.github.io/posts/find_all_anagrams_in_a_string/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/find_all_anagrams_in_a_string/</guid>
+      <description># O(n) time | O(1) space def find_anagrams(self, s: str, p: str) -&amp;gt; List[int]: s_cnt, p_cnt = [0] * 26, [0] * 26 for c in s[:len(p)]: s_cnt[ord(c) - ord(&amp;#39;a&amp;#39;)] += 1 for c in p: p_cnt[ord(c) - ord(&amp;#39;a&amp;#39;)] += 1 res = [] if s_cnt == p_cnt: res.append(0) for i in range(len(p), len(s)): s_cnt[ord(s[i]) - ord(&amp;#39;a&amp;#39;)] += 1 s_cnt[ord(s[i - len(p)]) - ord(&amp;#39;a&amp;#39;)] -= 1 if s_cnt == p_cnt: res.</description>
+    </item>
+    
+    <item>
       <title>49. Group Anagrams</title>
       <link>https://solairerove.github.io/posts/group_anagrams/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
