@@ -108,9 +108,9 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> <span style="color:#a2f">all</span>(a <span style="color:#666">==</span> b <span style="color:#a2f;font-weight:bold">for</span> a, b <span style="color:#a2f;font-weight:bold">in</span> itertools<span style="color:#666">.</span>zip_longest(trim(s), trim(t)))
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n + m) time || O(n + m) space</span>
 </span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">backspace_compare_stack</span>(self, s: <span style="color:#a2f">str</span>, t: <span style="color:#a2f">str</span>) <span style="color:#666">-&gt;</span> <span style="color:#a2f">bool</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">trim</span>(line):
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">trim</span>(to_trim):
 </span></span><span style="display:flex;"><span>        stack <span style="color:#666">=</span> []
-</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">for</span> c <span style="color:#a2f;font-weight:bold">in</span> line:
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">for</span> c <span style="color:#a2f;font-weight:bold">in</span> to_trim:
 </span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">if</span> c <span style="color:#666">!=</span> <span style="color:#b44">&#39;#&#39;</span>:
 </span></span><span style="display:flex;"><span>                stack<span style="color:#666">.</span>append(c)
 </span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">elif</span> stack:
@@ -132,9 +132,11 @@ compare each symbol from two strings using above method.</p>
 			<nav class="nav tags">
 				<ul class="tags">
 					
+					<li><a href="/tags/arrays">arrays</a></li>
+					
 					<li><a href="/tags/two-pointers">two-pointers</a></li>
 					
-					<li><a href="/tags/arrays">arrays</a></li>
+					<li><a href="/tags/stack">stack</a></li>
 					
 					<li><a href="/tags/easy">easy</a></li>
 					

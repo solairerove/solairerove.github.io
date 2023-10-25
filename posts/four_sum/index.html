@@ -96,21 +96,21 @@
 			<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n^3) time || O(1) space</span>
 </span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">four_sum</span>(self, nums: List[<span style="color:#a2f">int</span>], target: <span style="color:#a2f">int</span>) <span style="color:#666">-&gt;</span> List[List[<span style="color:#a2f">int</span>]]:
 </span></span><span style="display:flex;"><span>    nums<span style="color:#666">.</span>sort()
-</span></span><span style="display:flex;"><span>    res, n <span style="color:#666">=</span> [], <span style="color:#a2f">len</span>(nums)
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(n <span style="color:#666">-</span> <span style="color:#666">3</span>):
+</span></span><span style="display:flex;"><span>    quadruplets <span style="color:#666">=</span> []
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(<span style="color:#a2f">len</span>(nums) <span style="color:#666">-</span> <span style="color:#666">3</span>):
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> i <span style="color:#666">&gt;</span> <span style="color:#666">0</span> <span style="color:#a2f;font-weight:bold">and</span> nums[i] <span style="color:#666">==</span> nums[i <span style="color:#666">-</span> <span style="color:#666">1</span>]:
 </span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">continue</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">for</span> j <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(i <span style="color:#666">+</span> <span style="color:#666">1</span>, n <span style="color:#666">-</span> <span style="color:#666">2</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">for</span> j <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(i <span style="color:#666">+</span> <span style="color:#666">1</span>, <span style="color:#a2f">len</span>(nums) <span style="color:#666">-</span> <span style="color:#666">2</span>):
 </span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">if</span> j <span style="color:#666">&gt;</span> i <span style="color:#666">+</span> <span style="color:#666">1</span> <span style="color:#a2f;font-weight:bold">and</span> nums[j] <span style="color:#666">==</span> nums[j <span style="color:#666">-</span> <span style="color:#666">1</span>]:
 </span></span><span style="display:flex;"><span>                <span style="color:#a2f;font-weight:bold">continue</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            low, high <span style="color:#666">=</span> j <span style="color:#666">+</span> <span style="color:#666">1</span>, n <span style="color:#666">-</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>            low, high <span style="color:#666">=</span> j <span style="color:#666">+</span> <span style="color:#666">1</span>, <span style="color:#a2f">len</span>(nums) <span style="color:#666">-</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">while</span> low <span style="color:#666">&lt;</span> high:
 </span></span><span style="display:flex;"><span>                sum_ <span style="color:#666">=</span> nums[i] <span style="color:#666">+</span> nums[j] <span style="color:#666">+</span> nums[low] <span style="color:#666">+</span> nums[high]
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>                <span style="color:#a2f;font-weight:bold">if</span> sum_ <span style="color:#666">==</span> target:
-</span></span><span style="display:flex;"><span>                    res<span style="color:#666">.</span>append([nums[i], nums[j], nums[low], nums[high]])
+</span></span><span style="display:flex;"><span>                    quadruplets<span style="color:#666">.</span>append([nums[i], nums[j], nums[low], nums[high]])
 </span></span><span style="display:flex;"><span>                    low, high <span style="color:#666">=</span> low <span style="color:#666">+</span> <span style="color:#666">1</span>, high <span style="color:#666">-</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>                    <span style="color:#a2f;font-weight:bold">while</span> low <span style="color:#666">&lt;</span> high <span style="color:#a2f;font-weight:bold">and</span> nums[low] <span style="color:#666">==</span> nums[low <span style="color:#666">-</span> <span style="color:#666">1</span>]:
@@ -124,9 +124,8 @@
 </span></span><span style="display:flex;"><span>                <span style="color:#a2f;font-weight:bold">else</span>:
 </span></span><span style="display:flex;"><span>                    high <span style="color:#666">-=</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> res
-</span></span></code></pre></div><p>To solve this problem, you can use a similar approach to the one used for the 3Sum problem <br>
-but with an additional layer of nested loops. Here&rsquo;s a general approach:</p>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> quadruplets
+</span></span></code></pre></div><p>To solve this problem, you can use a similar approach to the one used for the 3Sum problem but with an additional layer of nested loops. Here&rsquo;s a general approach:</p>
 <pre><code>Sort the array: This helps in skipping over duplicate values and in using the two-pointer technique.
 
 Nested loops: Use two nested loops to fix two numbers, 
@@ -139,11 +138,8 @@ one starting from the next of the second loop and the other from the end of the 
 Move the pointers based on the sum comparison with the target.
 </code></pre>
 <p>Wrapping Up
-After the while loop, we return to our nested for loops and try the next pair of i and j. <br>
-Once all loops are complete, we return the result.</p>
-<p>In summary, the core idea is to fix the first two numbers using nested loops and <br>
-then find the other two numbers using the two-pointer approach. <br>
-The conditions inside the loops ensure we don&rsquo;t get duplicate quadruplets.</p>
+After the while loop, we return to our nested for loops and try the next pair of i and j. Once all loops are complete, we return the result.</p>
+<p>In summary, the core idea is to fix the first two numbers using nested loops and then find the other two numbers using the two-pointer approach. The conditions inside the loops ensure we don&rsquo;t get duplicate quadruplets.</p>
 
 		</section>
 

@@ -14,7 +14,7 @@
       <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/posts/backspace_string_compare/</guid>
-      <description># O(n + m) time || O(1) space def backspace_compare_two_pointers(self, s: str, t: str) -&amp;gt; bool: def trim(to_trim): skip = 0 for c in reversed(to_trim): if c == &amp;#39;#&amp;#39;: skip += 1 elif skip: skip -= 1 else: yield c return all(a == b for a, b in itertools.zip_longest(trim(s), trim(t))) # O(n + m) time || O(n + m) space def backspace_compare_stack(self, s: str, t: str) -&amp;gt; bool: def trim(line): stack = [] for c in line: if c !</description>
+      <description># O(n + m) time || O(1) space def backspace_compare_two_pointers(self, s: str, t: str) -&amp;gt; bool: def trim(to_trim): skip = 0 for c in reversed(to_trim): if c == &amp;#39;#&amp;#39;: skip += 1 elif skip: skip -= 1 else: yield c return all(a == b for a, b in itertools.zip_longest(trim(s), trim(t))) # O(n + m) time || O(n + m) space def backspace_compare_stack(self, s: str, t: str) -&amp;gt; bool: def trim(to_trim): stack = [] for c in to_trim: if c !</description>
     </item>
     
     <item>
