@@ -97,18 +97,15 @@
 </span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">min_eating_speed</span>(self, piles: List[<span style="color:#a2f">int</span>], h: <span style="color:#a2f">int</span>) <span style="color:#666">-&gt;</span> <span style="color:#a2f">int</span>:
 </span></span><span style="display:flex;"><span>    low, high <span style="color:#666">=</span> <span style="color:#666">1</span>, <span style="color:#a2f">max</span>(piles)
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">while</span> low <span style="color:#666">&lt;</span> high:
-</span></span><span style="display:flex;"><span>        hours, mid <span style="color:#666">=</span> <span style="color:#666">0</span>, low <span style="color:#666">+</span> (high <span style="color:#666">-</span> low) <span style="color:#666">//</span> <span style="color:#666">2</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> <span style="color:#a2f">sum</span>((math<span style="color:#666">.</span>ceil(pile <span style="color:#666">/</span> mid)) <span style="color:#a2f;font-weight:bold">for</span> pile <span style="color:#a2f;font-weight:bold">in</span> piles) <span style="color:#666">&lt;=</span> h:
+</span></span><span style="display:flex;"><span>        mid <span style="color:#666">=</span> low <span style="color:#666">+</span> (high <span style="color:#666">-</span> low) <span style="color:#666">//</span> <span style="color:#666">2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> <span style="color:#a2f">sum</span>(math<span style="color:#666">.</span>ceil(pile <span style="color:#666">/</span> mid) <span style="color:#a2f;font-weight:bold">for</span> pile <span style="color:#a2f;font-weight:bold">in</span> piles) <span style="color:#666">&lt;=</span> h:
 </span></span><span style="display:flex;"><span>            high <span style="color:#666">=</span> mid
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">else</span>:
 </span></span><span style="display:flex;"><span>            low <span style="color:#666">=</span> mid <span style="color:#666">+</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> high
-</span></span></code></pre></div><p>if the current speed is workable, the minimum workable speed should be on its left inclusively. <br>
-if the current speed is not workable, that is, too slow to finish the eating task, <br>
-then the minimum workable speed should be on its right exclusively.</p>
-<p>therefore, we can use binary search to locate the boundary that separates workable speeds and unworkable speeds, <br>
-to get the minimum workable speed.</p>
+</span></span></code></pre></div><p>if the current speed is workable, the minimum workable speed should be on its left inclusively. if the current speed is not workable, that is, too slow to finish the eating task, then the minimum workable speed should be on its right exclusively.</p>
+<p>therefore, we can use binary search to locate the boundary that separates workable speeds and unworkable speeds, to get the minimum workable speed.</p>
 <p>find current speed by traversing piles, adjust border depends on speed.</p>
 
 		</section>
