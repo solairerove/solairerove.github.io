@@ -18,6 +18,15 @@
     </item>
     
     <item>
+      <title>977. Squares of a Sorted Array</title>
+      <link>https://solairerove.github.io/posts/squares_of_a_sorted_array/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/squares_of_a_sorted_array/</guid>
+      <description># O(n) time || O(1) space def sorted_squares(self, nums: List[int]) -&amp;gt; List[int]: n = len(nums) res = [0] * n low, high, pos = 0, n - 1, n - 1 while low &amp;lt;= high: if abs(nums[low]) &amp;gt; abs(nums[high]): res[pos] = nums[low] * nums[low] low += 1 else: res[pos] = nums[high] * nums[high] high -= 1 pos -= 1 return res Given that the array is sorted in non-decreasing order, the negative numbers will be on the left side and the positive numbers on the right.</description>
+    </item>
+    
+    <item>
       <title>15. 3Sum</title>
       <link>https://solairerove.github.io/posts/three_sum/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
