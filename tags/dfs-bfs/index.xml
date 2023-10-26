@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dfs-bfs on Headstone lamp - leetcode grind</title>
+    <link>https://solairerove.github.io/tags/dfs-bfs/</link>
+    <description>Recent content in dfs-bfs on Headstone lamp - leetcode grind</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© solairerove</copyright>
+    <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/dfs-bfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>200. Number of Islands</title>
+      <link>https://solairerove.github.io/posts/number_of_islands/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/number_of_islands/</guid>
+      <description># O(n * m) time || O(n * m) space def num_islands_dfs(self, grid: List[List[str]]) -&amp;gt; int: if not grid: return 0 n, m = len(grid), len(grid[0]) def dfs(i, j): if 0 &amp;lt;= i &amp;lt; n and 0 &amp;lt;= j &amp;lt; m and grid[i][j] == &amp;#34;1&amp;#34;: grid[i][j] = &amp;#34;0&amp;#34; dfs(i - 1, j) dfs(i + 1, j) dfs(i, j - 1) dfs(i, j + 1) res = 0 for i in range(n): for j in range(m): if grid[i][j] == &amp;#34;1&amp;#34;: res += 1 dfs(i, j) return res # O(n * m) time || O(n * m) space def num_islands_dfs_shorter(self, grid: List[List[str]]) -&amp;gt; int: if not grid: return 0 n, m = len(grid), len(grid[0]) def dfs(i, j): if 0 &amp;lt;= i &amp;lt; n and 0 &amp;lt;= j &amp;lt; m and grid[i][j] == &amp;#34;1&amp;#34;: grid[i][j] = &amp;#34;0&amp;#34; list(map(dfs, [i - 1, i + 1, i, i], [j, j, j - 1, j + 1])) res = 0 for i in range(n): for j in range(m): if grid[i][j] == &amp;#34;1&amp;#34;: res += 1 dfs(i, j) return res # O(n * m) time || O(min(n, m)) space def num_islands_bfs(self, grid: List[List[str]]) -&amp;gt; int: if not grid: return 0 n, m = len(grid), len(grid[0]) res = 0 directions = [(-1, 0), (1, 0), (0, -1), (0, 1)] def bfs(i, j): dq = collections.</description>
+    </item>
+    
+    <item>
+      <title>301. Remove Invalid Parentheses</title>
+      <link>https://solairerove.github.io/posts/remove_invalid_parentheses/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/remove_invalid_parentheses/</guid>
+      <description># O(n) time || O(n) space def remove_invalid_parentheses(self, s: str) -&amp;gt; List[str]: def is_valid(string): cnt = 0 for c in string: if c == &amp;#39;(&amp;#39;: cnt += 1 elif c == &amp;#39;)&amp;#39;: cnt -= 1 if cnt &amp;lt; 0: return False return cnt == 0 stack, visited, found, res = [s], {s}, False, [] while stack and not found: curr_level = [] for curr_str in stack: if is_valid(curr_str): found = True res.</description>
+    </item>
+    
+  </channel>
+</rss>

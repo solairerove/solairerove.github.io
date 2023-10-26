@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/hard/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/hard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>301. Remove Invalid Parentheses</title>
+      <link>https://solairerove.github.io/posts/remove_invalid_parentheses/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/remove_invalid_parentheses/</guid>
+      <description># O(n) time || O(n) space def remove_invalid_parentheses(self, s: str) -&amp;gt; List[str]: def is_valid(string): cnt = 0 for c in string: if c == &amp;#39;(&amp;#39;: cnt += 1 elif c == &amp;#39;)&amp;#39;: cnt -= 1 if cnt &amp;lt; 0: return False return cnt == 0 stack, visited, found, res = [s], {s}, False, [] while stack and not found: curr_level = [] for curr_str in stack: if is_valid(curr_str): found = True res.</description>
+    </item>
+    
     <item>
       <title>23. Merge k Sorted Lists</title>
       <link>https://solairerove.github.io/posts/merge_k_sorted_lists/</link>
