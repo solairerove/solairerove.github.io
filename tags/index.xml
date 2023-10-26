@@ -7,22 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>array</title>
-      <link>https://solairerove.github.io/tags/array/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <title>arrays</title>
+      <link>https://solairerove.github.io/tags/arrays/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://solairerove.github.io/tags/array/</guid>
+      <guid>https://solairerove.github.io/tags/arrays/</guid>
       <description></description>
     </item>
     
     <item>
       <title>easy</title>
       <link>https://solairerove.github.io/tags/easy/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/tags/easy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stack</title>
+      <link>https://solairerove.github.io/tags/stack/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/tags/stack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>array</title>
+      <link>https://solairerove.github.io/tags/array/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/tags/array/</guid>
       <description></description>
     </item>
     
@@ -59,24 +77,6 @@
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>arrays</title>
-      <link>https://solairerove.github.io/tags/arrays/</link>
-      <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://solairerove.github.io/tags/arrays/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>stack</title>
-      <link>https://solairerove.github.io/tags/stack/</link>
-      <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://solairerove.github.io/tags/stack/</guid>
       <description></description>
     </item>
     

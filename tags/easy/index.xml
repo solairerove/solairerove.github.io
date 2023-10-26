@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>20. Valid Parentheses</title>
+      <link>https://solairerove.github.io/posts/valid_parentheses/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/valid_parentheses/</guid>
+      <description># O(n) time || O(n) space def is_valid(self, s: str) -&amp;gt; bool: close_to_open, stack = {&amp;#34;)&amp;#34;: &amp;#34;(&amp;#34;, &amp;#34;]&amp;#34;: &amp;#34;[&amp;#34;, &amp;#34;}&amp;#34;: &amp;#34;{&amp;#34;}, [] for c in s: if c not in close_to_open: stack.append(c) elif stack: if stack.pop() != close_to_open[c]: return False else: return False return not stack Initialize an empty stack. Traverse the string character by character. For each character: If it&amp;rsquo;s an open bracket (&amp;rsquo;(&amp;rsquo;, &amp;lsquo;{&amp;rsquo;, or &amp;lsquo;[&amp;rsquo;), push it onto the stack.</description>
+    </item>
+    
     <item>
       <title>242. Valid Anagram</title>
       <link>https://solairerove.github.io/posts/valid_anagram/</link>
