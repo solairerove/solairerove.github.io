@@ -26,43 +26,8 @@
 
 	
 	
-		<script type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-		</script>
-	
-		
-		<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-			tex2jax: {
-				inlineMath: [['$','$'], ['\\(','\\)']],
-				displayMath: [['$$','$$'], ['\[','\]']],
-				processEscapes: true,
-				processEnvironments: true,
-				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-				TeX: { equationNumbers: { autoNumber: "AMS" },
-						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
-			}
-		});
-		</script>
-	
 
 	
-	
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
-		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
-		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
-		
-		
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-					renderMathInElement(document.body, {
-							delimiters: [
-									{left: "$$", right: "$$", display: true},
-									{left: "$", right: "$", display: false}
-							]
-					});
-			});
-			</script>
 	
 	
 	
@@ -163,17 +128,17 @@ for every close parenthesis. The string is valid if the counter never goes negat
 </span></span></code></pre></div><p>We&rsquo;re creating a new string (newStr) by removing the character at index j from the current string (currentStr).</p>
 <p>Let&rsquo;s break it down:</p>
 <ol>
-<li>currentStr[:j]: This slices the string from the beginning up to, but not including, index j. It takes all characters
+<li><code>currentStr[:j]</code>: This slices the string from the beginning up to, but not including, index j. It takes all characters
 before the j-th character.</li>
-<li>currentStr[j+1:]: This slices the string from the position after j till the end. So, it takes all characters after the
+<li><code>currentStr[j+1:]</code>: This slices the string from the position after j till the end. So, it takes all characters after the
 j-th character.
 By concatenating these two slices together, we essentially remove the character at index j.</li>
 </ol>
 <h4 id="example">Example:</h4>
 <p>Suppose currentStr = &ldquo;abcde&rdquo; and j = 2.</p>
 <ol>
-<li>currentStr[:j] would be &ldquo;ab&rdquo;</li>
-<li>currentStr[j+1:] would be &ldquo;de&rdquo;
+<li><code>currentStr[:j]</code> would be &ldquo;ab&rdquo;</li>
+<li><code>currentStr[j+1:]</code> would be &ldquo;de&rdquo;
 When you concatenate them: &ldquo;ab&rdquo; + &ldquo;de&rdquo; = &ldquo;abde&rdquo;.</li>
 </ol>
 <p>As you can see, the character at index 2 (which is &ldquo;c&rdquo;) has been removed from the original string.</p>
