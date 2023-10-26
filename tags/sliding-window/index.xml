@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sliding-window on Headstone lamp - leetcode grind</title>
+    <link>https://solairerove.github.io/tags/sliding-window/</link>
+    <description>Recent content in sliding-window on Headstone lamp - leetcode grind</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© solairerove</copyright>
+    <lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/sliding-window/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>438. Find All Anagrams in a String</title>
+      <link>https://solairerove.github.io/posts/find_all_anagrams_in_a_string/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/find_all_anagrams_in_a_string/</guid>
+      <description># O(n) time | O(1) space def find_anagrams(self, s: str, p: str) -&amp;gt; List[int]: s_cnt, p_cnt = [0] * 26, [0] * 26 for c in s[:len(p)]: s_cnt[ord(c) - ord(&amp;#39;a&amp;#39;)] += 1 for c in p: p_cnt[ord(c) - ord(&amp;#39;a&amp;#39;)] += 1 res = [] if s_cnt == p_cnt: res.append(0) for i in range(len(p), len(s)): s_cnt[ord(s[i]) - ord(&amp;#39;a&amp;#39;)] += 1 s_cnt[ord(s[i - len(p)]) - ord(&amp;#39;a&amp;#39;)] -= 1 if s_cnt == p_cnt: res.</description>
+    </item>
+    
+  </channel>
+</rss>
