@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5. Longest Palindromic Substring</title>
+      <link>https://solairerove.github.io/posts/longest_palindromic_substring/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/longest_palindromic_substring/</guid>
+      <description># O(n^2) time || O(1) space def longest_palindrome(self, s: str) -&amp;gt; str: def get_palindrome_from(low, high): while low &amp;gt;= 0 and high &amp;lt; len(s) and s[low] == s[high]: low, high = low - 1, high + 1 return s[low + 1: high] return max([get_palindrome_from(i, j) for i in range(len(s)) for j in (i, i + 1)], key=len) This problem can be solved using several methods. A common approach is to expand around the center.</description>
+    </item>
+    
     <item>
       <title>200. Number of Islands</title>
       <link>https://solairerove.github.io/posts/number_of_islands/</link>
