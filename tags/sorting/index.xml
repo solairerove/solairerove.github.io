@@ -14,7 +14,16 @@
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/posts/meeting_rooms/</guid>
-      <description># O(n * log(n)) time || O(1) space def can_attend_meetings(self, intervals: List[List[int]]) -&amp;gt; bool: intervals.sort(key=lambda x: x[0]) for i in range(1, len(intervals)): if intervals[i][0] &amp;lt; intervals[i - 1][1]: return False return True # O(n * log(n)) time || O(1) space def can_attend_meetings_shorter(self, intervals: List[List[int]]) -&amp;gt; bool: intervals.sort(key=lambda x: x[0]) return all(intervals[i][0] &amp;gt;= intervals[i - 1][1] for i in range(1, len(intervals))) To determine whether a person can attend all meetings, we need to ensure that no two meetings overlap.</description>
+      <description># O(n * log(n)) time || O(n) space def can_attend_meetings(self, intervals: List[List[int]]) -&amp;gt; bool: intervals.sort(key=lambda x: x[0]) for i in range(1, len(intervals)): if intervals[i][0] &amp;lt; intervals[i - 1][1]: return False return True # O(n * log(n)) time || O(n) space def can_attend_meetings_shorter(self, intervals: List[List[int]]) -&amp;gt; bool: intervals.sort(key=lambda x: x[0]) return all(intervals[i][0] &amp;gt;= intervals[i - 1][1] for i in range(1, len(intervals))) To determine whether a person can attend all meetings, we need to ensure that no two meetings overlap.</description>
+    </item>
+    
+    <item>
+      <title>253. Meeting Rooms II</title>
+      <link>https://solairerove.github.io/posts/meeting_rooms_ii/</link>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/meeting_rooms_ii/</guid>
+      <description># O(n * log(n)) time || O(n) space def min_meeting_rooms(self, intervals: List[List[int]]) -&amp;gt; int: start_times = sorted([i[0] for i in intervals]) end_times = sorted([i[1] for i in intervals]) res = 0 start, end = 0, 0 while start &amp;lt; len(intervals): if start_times[start] &amp;gt;= end_times[end]: res, end = res - 1, end + 1 res, start = res + 1, start + 1 return res To solve this problem, we can think of the start and end times of the intervals as events.</description>
     </item>
     
   </channel>

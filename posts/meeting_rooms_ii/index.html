@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>253. Meeting Rooms II - Headstone lamp - leetcode grind</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="sort both start times and end times, determine at any given time how many rooms are in use." />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="253. Meeting Rooms II" />
+<meta property="og:description" content="sort both start times and end times, determine at any given time how many rooms are in use." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://solairerove.github.io/posts/meeting_rooms_ii/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-10-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-10-30T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="253. Meeting Rooms II"/>
+<meta name="twitter:description" content="sort both start times and end times, determine at any given time how many rooms are in use."/>
+<script src="https://solairerove.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://solairerove.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://solairerove.github.io/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://solairerove.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css" media="(prefers-color-scheme: dark)"  />
+	
+
+	
+	
+
+	
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://solairerove.github.io/">Headstone lamp - leetcode grind</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/tags">Tags</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">253. Meeting Rooms II</h1>
+			<div class="meta">Posted on Oct 30, 2023</div>
+		</div>
+		
+
+		<section class="body">
+			<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n * log(n)) time || O(n) space</span>
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">min_meeting_rooms</span>(self, intervals: List[List[<span style="color:#a2f">int</span>]]) <span style="color:#666">-&gt;</span> <span style="color:#a2f">int</span>:
+</span></span><span style="display:flex;"><span>    start_times <span style="color:#666">=</span> <span style="color:#a2f">sorted</span>([i[<span style="color:#666">0</span>] <span style="color:#a2f;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> intervals])
+</span></span><span style="display:flex;"><span>    end_times <span style="color:#666">=</span> <span style="color:#a2f">sorted</span>([i[<span style="color:#666">1</span>] <span style="color:#a2f;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> intervals])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    res <span style="color:#666">=</span> <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>    start, end <span style="color:#666">=</span> <span style="color:#666">0</span>, <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">while</span> start <span style="color:#666">&lt;</span> <span style="color:#a2f">len</span>(intervals):
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> start_times[start] <span style="color:#666">&gt;=</span> end_times[end]:
+</span></span><span style="display:flex;"><span>            res, end <span style="color:#666">=</span> res <span style="color:#666">-</span> <span style="color:#666">1</span>, end <span style="color:#666">+</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        res, start <span style="color:#666">=</span> res <span style="color:#666">+</span> <span style="color:#666">1</span>, start <span style="color:#666">+</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> res
+</span></span></code></pre></div><p>To solve this problem, we can think of the start and end times of the intervals as events. For every start time, we need
+a new room, and for every end time, a room gets freed up. We&rsquo;ll sort both start times and end times, then we can just
+iterate through both lists to determine at any given time how many rooms are in use.</p>
+<p>Here&rsquo;s the step-by-step approach:</p>
+<ol>
+<li>Separate out the start times and end times and sort them individually.</li>
+<li>Use two pointers to traverse both the start times and the end times.</li>
+<li>When the current start time is less than the current end time, it means a new meeting has started, and we haven&rsquo;t yet
+finished the previous one, so we need a new room.</li>
+<li>Move the pointer for the start times forward.</li>
+<li>If the current start time is greater than or equal to the current end time, it means a meeting has ended by the time
+the current meeting starts. So, we can use the same room for this meeting. Move the pointer for the end times
+forward.</li>
+<li>Keep track of the number of rooms in use at any given time and update the maximum rooms used.</li>
+</ol>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/arrays">arrays</a></li>
+					
+					<li><a href="/tags/sorting">sorting</a></li>
+					
+					<li><a href="/tags/medium">medium</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/solairerove" rel="me" title="GitHub"><i data-feather="github"></i></a>
+    <a class="border"></a></div>
+  <div class="footer-info">
+    2023  © solairerove |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>

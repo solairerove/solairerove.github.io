@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>253. Meeting Rooms II</title>
+      <link>https://solairerove.github.io/posts/meeting_rooms_ii/</link>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/meeting_rooms_ii/</guid>
+      <description># O(n * log(n)) time || O(n) space def min_meeting_rooms(self, intervals: List[List[int]]) -&amp;gt; int: start_times = sorted([i[0] for i in intervals]) end_times = sorted([i[1] for i in intervals]) res = 0 start, end = 0, 0 while start &amp;lt; len(intervals): if start_times[start] &amp;gt;= end_times[end]: res, end = res - 1, end + 1 res, start = res + 1, start + 1 return res To solve this problem, we can think of the start and end times of the intervals as events.</description>
+    </item>
+    
     <item>
       <title>5. Longest Palindromic Substring</title>
       <link>https://solairerove.github.io/posts/longest_palindromic_substring/</link>
