@@ -14,7 +14,7 @@
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/posts/longest_palindromic_substring/</guid>
-      <description># O(n^2) time || O(1) space def longest_palindrome(self, s: str) -&amp;gt; str: def get_palindrome_from(low, high): while low &amp;gt;= 0 and high &amp;lt; len(s) and s[low] == s[high]: low, high = low - 1, high + 1 return s[low + 1: high] return max([get_palindrome_from(i, j) for i in range(len(s)) for j in (i, i + 1)], key=len) This problem can be solved using several methods. A common approach is to expand around the center.</description>
+      <description># O(n^2) time || O(1) space def longest_palindrome(self, s: str) -&amp;gt; str: def expand(i, j): while i &amp;gt;= 0 and j &amp;lt; len(s) and s[i] == s[j]: i, j = i - 1, j + 1 return s[i + 1: j] return max([expand(i, j) for i in range(len(s)) for j in (i, i + 1)], key=len) This problem can be solved using several methods. A common approach is to expand around the center.</description>
     </item>
     
     <item>
