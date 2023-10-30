@@ -94,7 +94,7 @@ forward.</li>
 </span></span><span style="display:flex;"><span>    heap <span style="color:#666">=</span> []
 </span></span><span style="display:flex;"><span>    heapq<span style="color:#666">.</span>heappush(heap, intervals[<span style="color:#666">0</span>][<span style="color:#666">1</span>])
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> interval <span style="color:#a2f;font-weight:bold">in</span> intervals[<span style="color:#666">1</span>:]:
-</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> heap[<span style="color:#666">0</span>] <span style="color:#666">&lt;=</span> interval[<span style="color:#666">0</span>]:
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> interval[<span style="color:#666">0</span>] <span style="color:#666">&gt;=</span> heap[<span style="color:#666">0</span>]:
 </span></span><span style="display:flex;"><span>            heapq<span style="color:#666">.</span>heappop(heap)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        heapq<span style="color:#666">.</span>heappush(heap, interval[<span style="color:#666">1</span>])
