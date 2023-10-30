@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>greedy on Headstone lamp - leetcode grind</title>
+    <link>https://solairerove.github.io/tags/greedy/</link>
+    <description>Recent content in greedy on Headstone lamp - leetcode grind</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© solairerove</copyright>
+    <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/greedy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>435. Non-overlapping Intervals</title>
+      <link>https://solairerove.github.io/posts/non_overlapping_intervals/</link>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/non_overlapping_intervals/</guid>
+      <description># O(n * log(n)) time || O(n) space def erase_overlap_intervals(self, intervals: List[List[int]]) -&amp;gt; int: intervals.sort(key=lambda x: x[1]) end, res = intervals[0][1], 0 for interval in intervals[1:]: if interval[0] &amp;gt;= end: end = interval[1] else: res += 1 return res To solve this problem, we can take a greedy approach. The intuition is that if we choose intervals that end early, it gives us more room for subsequent intervals to fit without overlapping.</description>
+    </item>
+    
+  </channel>
+</rss>
