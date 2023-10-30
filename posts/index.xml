@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>252. Meeting Rooms</title>
+      <link>https://solairerove.github.io/posts/meeting_rooms/</link>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/meeting_rooms/</guid>
+      <description># O(n * log(n)) time || O(1) space def can_attend_meetings(self, intervals: List[List[int]]) -&amp;gt; bool: intervals.sort(key=lambda x: x[0]) for i in range(1, len(intervals)): if intervals[i][0] &amp;lt; intervals[i - 1][1]: return False return True # O(n * log(n)) time || O(1) space def can_attend_meetings_shorter(self, intervals: List[List[int]]) -&amp;gt; bool: intervals.sort(key=lambda x: x[0]) return all(intervals[i][0] &amp;gt;= intervals[i - 1][1] for i in range(1, len(intervals))) To determine whether a person can attend all meetings, we need to ensure that no two meetings overlap.</description>
+    </item>
+    
     <item>
       <title>5. Longest Palindromic Substring</title>
       <link>https://solairerove.github.io/posts/longest_palindromic_substring/</link>

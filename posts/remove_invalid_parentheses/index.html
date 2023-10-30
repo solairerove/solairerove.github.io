@@ -2,17 +2,17 @@
 <html><head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>301. Remove Invalid Parentheses - Headstone lamp - leetcode grind</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="# O(n * 2 ^ n) time || O(2 ^ n) space def remove_invalid_parentheses(self, s: str) -&gt; List[str]: def is_valid(string): cnt = 0 for c in string: if c == &#39;(&#39;: cnt &#43;= 1 elif c == &#39;)&#39;: cnt -= 1 if cnt &lt; 0: return False return cnt == 0 res = [] dq, visited, found = collections.deque([s]), {str}, False while dq: curr_str = dq.popleft() if curr_str not in visited: visited." />
+	<meta name="description" content="bfs using to find first valid string by currentStr[:j] &#43; currentStr[j &#43; 1:]" />
 	<meta property="og:image" content=""/>
 	<meta property="og:title" content="301. Remove Invalid Parentheses" />
-<meta property="og:description" content="# O(n * 2 ^ n) time || O(2 ^ n) space def remove_invalid_parentheses(self, s: str) -&gt; List[str]: def is_valid(string): cnt = 0 for c in string: if c == &#39;(&#39;: cnt &#43;= 1 elif c == &#39;)&#39;: cnt -= 1 if cnt &lt; 0: return False return cnt == 0 res = [] dq, visited, found = collections.deque([s]), {str}, False while dq: curr_str = dq.popleft() if curr_str not in visited: visited." />
+<meta property="og:description" content="bfs using to find first valid string by currentStr[:j] &#43; currentStr[j &#43; 1:]" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://solairerove.github.io/posts/remove_invalid_parentheses/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-10-26T00:00:00+00:00" />
 <meta property="article:modified_time" content="2023-10-26T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="301. Remove Invalid Parentheses"/>
-<meta name="twitter:description" content="# O(n * 2 ^ n) time || O(2 ^ n) space def remove_invalid_parentheses(self, s: str) -&gt; List[str]: def is_valid(string): cnt = 0 for c in string: if c == &#39;(&#39;: cnt &#43;= 1 elif c == &#39;)&#39;: cnt -= 1 if cnt &lt; 0: return False return cnt == 0 res = [] dq, visited, found = collections.deque([s]), {str}, False while dq: curr_str = dq.popleft() if curr_str not in visited: visited."/>
+<meta name="twitter:description" content="bfs using to find first valid string by currentStr[:j] &#43; currentStr[j &#43; 1:]"/>
 <script src="https://solairerove.github.io/js/feather.min.js"></script>
 	
 	
