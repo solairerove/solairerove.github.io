@@ -32,7 +32,7 @@
       <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/posts/non_overlapping_intervals/</guid>
-      <description># O(n * log(n)) time || O(n) space def erase_overlap_intervals(self, intervals: List[List[int]]) -&amp;gt; int: intervals.sort(key=lambda x: x[1]) end, res = intervals[0][1], 0 for interval in intervals[1:]: if interval[0] &amp;gt;= end: end = interval[1] else: res += 1 return res To solve this problem, we can take a greedy approach. The intuition is that if we choose intervals that end early, it gives us more room for subsequent intervals to fit without overlapping.</description>
+      <description># O(n * log(n)) time || O(log(n)) space def erase_overlap_intervals(self, intervals: List[List[int]]) -&amp;gt; int: intervals.sort(key=lambda x: x[1]) res = 0 end = intervals[0][1] for interval in intervals[1:]: if interval[0] &amp;lt; end: res += 1 else: end = interval[1] return res To solve this problem, we can take a greedy approach. The intuition is that if we choose intervals that end early, it gives us more room for subsequent intervals to fit without overlapping.</description>
     </item>
     
     <item>
