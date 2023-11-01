@@ -88,36 +88,34 @@ greater than the pivot come after it (also in no particular order).</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n) time || O(n) space</span>
 </span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">top_k_frequent_quickselect</span>(self, nums: List[<span style="color:#a2f">int</span>], k: <span style="color:#a2f">int</span>) <span style="color:#666">-&gt;</span> List[<span style="color:#a2f">int</span>]:
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">partition</span>(arr, low, high):
+</span></span><span style="display:flex;"><span>        pivot <span style="color:#666">=</span> arr[high][<span style="color:#666">1</span>]
+</span></span><span style="display:flex;"><span>        i <span style="color:#666">=</span> low
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">for</span> j <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(low, high):
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">if</span> arr[j][<span style="color:#666">1</span>] <span style="color:#666">&gt;</span> pivot:
+</span></span><span style="display:flex;"><span>                arr[i], arr[j] <span style="color:#666">=</span> arr[j], arr[i]
+</span></span><span style="display:flex;"><span>                i <span style="color:#666">+=</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        arr[i], arr[high] <span style="color:#666">=</span> arr[high], arr[i]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">return</span> i
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">quickselect</span>(arr, low, high):
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> low <span style="color:#666">==</span> high:
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">return</span> arr[low]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        i <span style="color:#666">=</span> partition(arr, low, high)
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> k <span style="color:#666">==</span> i:
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">return</span> arr[k]
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">elif</span> k <span style="color:#666">&lt;</span> i:
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">return</span> quickselect(arr, low, i <span style="color:#666">-</span> <span style="color:#666">1</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">return</span> quickselect(arr, i <span style="color:#666">+</span> <span style="color:#666">1</span>, high)
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    unique <span style="color:#666">=</span> <span style="color:#a2f">list</span>(collections<span style="color:#666">.</span>Counter(nums)<span style="color:#666">.</span>items())  <span style="color:#080;font-style:italic"># (number, frequency) pairs list</span>
-</span></span><span style="display:flex;"><span>    quickselect(self, unique, <span style="color:#666">0</span>, <span style="color:#a2f">len</span>(unique) <span style="color:#666">-</span> <span style="color:#666">1</span>, k <span style="color:#666">-</span> <span style="color:#666">1</span>)
+</span></span><span style="display:flex;"><span>    quickselect(unique, <span style="color:#666">0</span>, <span style="color:#a2f">len</span>(unique) <span style="color:#666">-</span> <span style="color:#666">1</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> [pair[<span style="color:#666">0</span>] <span style="color:#a2f;font-weight:bold">for</span> pair <span style="color:#a2f;font-weight:bold">in</span> unique[:k]]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">quickselect</span>(self, arr, low, high, k):
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">if</span> low <span style="color:#666">==</span> high:
-</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">return</span> arr[low]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    i <span style="color:#666">=</span> partition(self, arr, low, high)
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">if</span> k <span style="color:#666">==</span> i:
-</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">return</span> arr[k]
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">elif</span> k <span style="color:#666">&lt;</span> i:
-</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">return</span> quickselect(self, arr, low, i <span style="color:#666">-</span> <span style="color:#666">1</span>, k)
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">else</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">return</span> quickselect(self, arr, i <span style="color:#666">+</span> <span style="color:#666">1</span>, high, k)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">partition</span>(self, arr, low, high):
-</span></span><span style="display:flex;"><span>    pivot <span style="color:#666">=</span> arr[high][<span style="color:#666">1</span>]
-</span></span><span style="display:flex;"><span>    i <span style="color:#666">=</span> low
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> j <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(low, high):
-</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> arr[j][<span style="color:#666">1</span>] <span style="color:#666">&gt;</span> pivot:
-</span></span><span style="display:flex;"><span>            arr[i], arr[j] <span style="color:#666">=</span> arr[j], arr[i]
-</span></span><span style="display:flex;"><span>            i <span style="color:#666">+=</span> <span style="color:#666">1</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    arr[i], arr[high] <span style="color:#666">=</span> arr[high], arr[i]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> i
 </span></span></code></pre></div><p>Use a bucket sort-like approach which has an average case time complexity of O(n), where n is the length of the nums
 list. The idea is to:</p>
 <ol>
