@@ -91,13 +91,12 @@ greater than the pivot come after it (also in no particular order).</li>
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">if</span> <span style="color:#a2f">len</span>(nums) <span style="color:#666">==</span> k:
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">return</span> nums
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    freq_dict <span style="color:#666">=</span> collections<span style="color:#666">.</span>Counter(nums)
-</span></span><span style="display:flex;"><span>    unique_items <span style="color:#666">=</span> <span style="color:#a2f">list</span>(freq_dict<span style="color:#666">.</span>items())
+</span></span><span style="display:flex;"><span>    cnt <span style="color:#666">=</span> collections<span style="color:#666">.</span>Counter(nums)
+</span></span><span style="display:flex;"><span>    unique <span style="color:#666">=</span> <span style="color:#a2f">list</span>(cnt<span style="color:#666">.</span>items())  <span style="color:#080;font-style:italic"># (number, frequency) pairs list</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    kth_pair <span style="color:#666">=</span> quickselect(self, unique_items, <span style="color:#666">0</span>, <span style="color:#a2f">len</span>(unique_items) <span style="color:#666">-</span> <span style="color:#666">1</span>, k <span style="color:#666">-</span> <span style="color:#666">1</span>)
-</span></span><span style="display:flex;"><span>    kth_freq <span style="color:#666">=</span> kth_pair[<span style="color:#666">1</span>]
+</span></span><span style="display:flex;"><span>    kth_freq <span style="color:#666">=</span> quickselect(self, unique, <span style="color:#666">0</span>, <span style="color:#a2f">len</span>(unique) <span style="color:#666">-</span> <span style="color:#666">1</span>, k <span style="color:#666">-</span> <span style="color:#666">1</span>)[<span style="color:#666">1</span>]  <span style="color:#080;font-style:italic"># kth pair</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> [item[<span style="color:#666">0</span>] <span style="color:#a2f;font-weight:bold">for</span> item <span style="color:#a2f;font-weight:bold">in</span> unique_items <span style="color:#a2f;font-weight:bold">if</span> item[<span style="color:#666">1</span>] <span style="color:#666">&gt;=</span> kth_freq]
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> [item[<span style="color:#666">0</span>] <span style="color:#a2f;font-weight:bold">for</span> item <span style="color:#a2f;font-weight:bold">in</span> unique <span style="color:#a2f;font-weight:bold">if</span> item[<span style="color:#666">1</span>] <span style="color:#666">&gt;=</span> kth_freq]
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">quickselect</span>(self, arr, low, high, k):
