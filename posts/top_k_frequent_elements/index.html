@@ -2,20 +2,20 @@
 <html><head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>347. Top K Frequent Elements - Headstone lamp - leetcode grind</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Use a bucket sort-like approach which has an average case time complexity of O(n), where n is the length of the nums list. The idea is to:
-Use a frequency dictionary to count the occurrence of each number. Create a list of buckets where the index of each bucket corresponds to the frequency of the elements. For instance, buckets[3] will contain all elements that appear three times in nums. Iterate through the buckets in reverse (from high frequency to low) to get the top k frequent numbers." />
+	<meta name="description" content="Quickselect Explained: Quickselect is a cousin of the quicksort algorithm. The idea behind quickselect is to find the k-th smallest (or largest) element without having to sort the entire list.
+Steps of Quickselect: Choose a &lsquo;pivot&rsquo; element from the list and partition the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. Reorder the list so that all elements less than the pivot come before (in no particular order) and all elements greater than the pivot come after it (also in no particular order)." />
 	<meta property="og:image" content=""/>
 	<meta property="og:title" content="347. Top K Frequent Elements" />
-<meta property="og:description" content="Use a bucket sort-like approach which has an average case time complexity of O(n), where n is the length of the nums list. The idea is to:
-Use a frequency dictionary to count the occurrence of each number. Create a list of buckets where the index of each bucket corresponds to the frequency of the elements. For instance, buckets[3] will contain all elements that appear three times in nums. Iterate through the buckets in reverse (from high frequency to low) to get the top k frequent numbers." />
+<meta property="og:description" content="Quickselect Explained: Quickselect is a cousin of the quicksort algorithm. The idea behind quickselect is to find the k-th smallest (or largest) element without having to sort the entire list.
+Steps of Quickselect: Choose a &lsquo;pivot&rsquo; element from the list and partition the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. Reorder the list so that all elements less than the pivot come before (in no particular order) and all elements greater than the pivot come after it (also in no particular order)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://solairerove.github.io/posts/top_k_frequent_elements/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-11-01T00:00:00+00:00" />
 <meta property="article:modified_time" content="2023-11-01T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="347. Top K Frequent Elements"/>
-<meta name="twitter:description" content="Use a bucket sort-like approach which has an average case time complexity of O(n), where n is the length of the nums list. The idea is to:
-Use a frequency dictionary to count the occurrence of each number. Create a list of buckets where the index of each bucket corresponds to the frequency of the elements. For instance, buckets[3] will contain all elements that appear three times in nums. Iterate through the buckets in reverse (from high frequency to low) to get the top k frequent numbers."/>
+<meta name="twitter:description" content="Quickselect Explained: Quickselect is a cousin of the quicksort algorithm. The idea behind quickselect is to find the k-th smallest (or largest) element without having to sort the entire list.
+Steps of Quickselect: Choose a &lsquo;pivot&rsquo; element from the list and partition the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. Reorder the list so that all elements less than the pivot come before (in no particular order) and all elements greater than the pivot come after it (also in no particular order)."/>
 <script src="https://solairerove.github.io/js/feather.min.js"></script>
 	
 	
@@ -61,7 +61,70 @@ Use a frequency dictionary to count the occurrence of each number. Create a list
 		
 
 		<section class="body">
-			<p>Use a bucket sort-like approach which has an average case time complexity of O(n), where n is the length of the nums
+			<h3 id="quickselect-explained">Quickselect Explained:</h3>
+<p>Quickselect is a cousin of the quicksort algorithm. The idea behind quickselect is to find the k-th smallest (or
+largest) element without having to sort the entire list.</p>
+<h4 id="steps-of-quickselect">Steps of Quickselect:</h4>
+<ol>
+<li>Choose a &lsquo;pivot&rsquo; element from the list and partition the other elements into two sub-arrays, according to whether
+they are less than or greater than the pivot.</li>
+<li>Reorder the list so that all elements less than the pivot come before (in no particular order) and all elements
+greater than the pivot come after it (also in no particular order).</li>
+<li>The &lsquo;pivot&rsquo; is now in its final sorted position.</li>
+<li>Compare the k-th index with the index of the pivot:
+<ul>
+<li>If they are the same, we found our k-th element.</li>
+<li>If the k-th index is less than the pivot index, repeat the process with the left sub-array.</li>
+<li>If the k-th index is greater than the pivot index, repeat the process with the right sub-array.</li>
+</ul>
+</li>
+</ol>
+<h3 id="application-to-the-problem">Application to the Problem:</h3>
+<ol>
+<li>Create a frequency dictionary for the numbers.</li>
+<li>Convert the dictionary into a list of pairs.</li>
+<li>Use quickselect to find the k-th most frequent pair.</li>
+<li>Return numbers with frequencies that are greater than or equal to the k-th pair&rsquo;s frequency.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n) time || O(n) space</span>
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">top_k_frequent_quickselect</span>(self, nums: List[<span style="color:#a2f">int</span>], k: <span style="color:#a2f">int</span>) <span style="color:#666">-&gt;</span> List[<span style="color:#a2f">int</span>]:
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">if</span> <span style="color:#a2f">len</span>(nums) <span style="color:#666">==</span> k:
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">return</span> nums
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    freq_dict <span style="color:#666">=</span> collections<span style="color:#666">.</span>Counter(nums)
+</span></span><span style="display:flex;"><span>    unique_items <span style="color:#666">=</span> <span style="color:#a2f">list</span>(freq_dict<span style="color:#666">.</span>items())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    kth_pair <span style="color:#666">=</span> quickselect(self, unique_items, <span style="color:#666">0</span>, <span style="color:#a2f">len</span>(unique_items) <span style="color:#666">-</span> <span style="color:#666">1</span>, k <span style="color:#666">-</span> <span style="color:#666">1</span>)
+</span></span><span style="display:flex;"><span>    kth_freq <span style="color:#666">=</span> kth_pair[<span style="color:#666">1</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> [item[<span style="color:#666">0</span>] <span style="color:#a2f;font-weight:bold">for</span> item <span style="color:#a2f;font-weight:bold">in</span> unique_items <span style="color:#a2f;font-weight:bold">if</span> item[<span style="color:#666">1</span>] <span style="color:#666">&gt;=</span> kth_freq]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">quickselect</span>(self, arr, low, high, k):
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">if</span> low <span style="color:#666">==</span> high:
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">return</span> arr[low]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    pivot_idx <span style="color:#666">=</span> partition(self, arr, low, high)
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">if</span> k <span style="color:#666">==</span> pivot_idx:
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">return</span> arr[k]
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">elif</span> k <span style="color:#666">&lt;</span> pivot_idx:
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">return</span> quickselect(self, arr, low, pivot_idx <span style="color:#666">-</span> <span style="color:#666">1</span>, k)
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">return</span> quickselect(self, arr, pivot_idx <span style="color:#666">+</span> <span style="color:#666">1</span>, high, k)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">partition</span>(self, arr, low, high):
+</span></span><span style="display:flex;"><span>    pivot <span style="color:#666">=</span> arr[high][<span style="color:#666">1</span>]
+</span></span><span style="display:flex;"><span>    i <span style="color:#666">=</span> low
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> j <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(low, high):
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> arr[j][<span style="color:#666">1</span>] <span style="color:#666">&gt;</span> pivot:
+</span></span><span style="display:flex;"><span>            arr[i], arr[j] <span style="color:#666">=</span> arr[j], arr[i]
+</span></span><span style="display:flex;"><span>            i <span style="color:#666">+=</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    arr[i], arr[high] <span style="color:#666">=</span> arr[high], arr[i]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> i
+</span></span></code></pre></div><p>Use a bucket sort-like approach which has an average case time complexity of O(n), where n is the length of the nums
 list. The idea is to:</p>
 <ol>
 <li>Use a frequency dictionary to count the occurrence of each number.</li>

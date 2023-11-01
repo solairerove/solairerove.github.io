@@ -14,8 +14,8 @@
       <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/posts/top_k_frequent_elements/</guid>
-      <description>Use a bucket sort-like approach which has an average case time complexity of O(n), where n is the length of the nums list. The idea is to:
-Use a frequency dictionary to count the occurrence of each number. Create a list of buckets where the index of each bucket corresponds to the frequency of the elements. For instance, buckets[3] will contain all elements that appear three times in nums. Iterate through the buckets in reverse (from high frequency to low) to get the top k frequent numbers.</description>
+      <description>Quickselect Explained: Quickselect is a cousin of the quicksort algorithm. The idea behind quickselect is to find the k-th smallest (or largest) element without having to sort the entire list.
+Steps of Quickselect: Choose a &amp;lsquo;pivot&amp;rsquo; element from the list and partition the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. Reorder the list so that all elements less than the pivot come before (in no particular order) and all elements greater than the pivot come after it (also in no particular order).</description>
     </item>
     
     <item>
