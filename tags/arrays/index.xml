@@ -14,7 +14,7 @@
       <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/posts/top_k_frequent_elements/</guid>
-      <description>calculate how frequent you can see num in arr create frequency array where index is frequency and value is arr of keys traverse from end to start and append to res don&amp;rsquo;t use this solution during interview # O(n) time || O(n) space def top_k_frequent_linear(self, nums: List[int], k: int) -&amp;gt; List[int]: if k == len(nums): return nums cnt = collections.Counter(nums) freq = [[] for _ in range(len(nums) + 1)] for key, val in cnt.</description>
+      <description>use Python&amp;rsquo;s heapq library to obtain the top k frequent numbers in O(nlogk) time. # O(n * log(k)) time || O(n + k) space def top_k_frequent_heap(self, nums: List[int], k: int) -&amp;gt; List[int]: if len(nums) == k: return nums cnt = collections.Counter(nums) return heapq.nlargest(k, cnt.keys(), key=cnt.get) calculate how frequent you can see num in arr create frequency array where index is frequency and value is arr of keys traverse from end to start and append to res don&amp;rsquo;t use this solution during interview # O(n) time || O(n) space def top_k_frequent_linear(self, nums: List[int], k: int) -&amp;gt; List[int]: if k == len(nums): return nums cnt = collections.</description>
     </item>
     
     <item>
