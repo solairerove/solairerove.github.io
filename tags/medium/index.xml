@@ -15,7 +15,8 @@
       
       <guid>https://solairerove.github.io/posts/kth_largest_element_in_an_array/</guid>
       <description>Use Python&amp;rsquo;s heapq library to obtain the k largest number in O(nlogk) time.
-# O(n * log(k)) time || O(k) space def find_kth_largest_heap(self, nums: List[int], k: int) -&amp;gt; int: return heapq.nlargest(k, nums)[-1] </description>
+# O(n * log(k)) time || O(k) space def find_kth_largest_heap(self, nums: List[int], k: int) -&amp;gt; int: return heapq.nlargest(k, nums)[-1] Quickselect with optimisations. Works very slow on leetcode cases. Maybe median of medians will help.
+# O(max(n, n^2) time || O(1) space def find_kth_largest_quickselect(self, nums: List[int], k: int) -&amp;gt; int: return quickselect(nums, 0, len(nums) - 1, len(nums) - k) # nums[len(nums) - k] def quickselect(arr, low, high, k): if low == high: return arr[low] pivot_idx = random.</description>
     </item>
     
     <item>
