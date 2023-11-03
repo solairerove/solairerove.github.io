@@ -14,7 +14,7 @@
       <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/posts/sort_colors/</guid>
-      <description># O(n) time || O(1) space def sort_colors(self, nums: List[int]) -&amp;gt; None: lt, i, gt = 0, 0, len(nums) - 1 while i &amp;lt;= gt: if nums[i] == 0: nums[lt], nums[i] = nums[i], nums[lt] lt, i = lt + 1, i + 1 elif nums[i] == 2: nums[gt], nums[i] = nums[i], nums[gt] gt -= 1 else: i += 1 This is the famous &amp;ldquo;Dutch National Flag&amp;rdquo; problem. One common way to solve this problem is using a three-pointer approach.</description>
+      <description># O(n) time || O(1) space def sort_colors(self, nums: List[int]) -&amp;gt; None: lt, i, gt = 0, 0, len(nums) - 1 while i &amp;lt;= gt: if nums[i] == 0: nums[i], nums[lt] = nums[lt], nums[i] i, lt = i + 1, lt + 1 elif nums[i] == 2: nums[i], nums[gt] = nums[gt], nums[i] gt -= 1 else: i += 1 This is the famous &amp;ldquo;Dutch National Flag&amp;rdquo; problem. One common way to solve this problem is using a three-pointer approach.</description>
     </item>
     
     <item>
