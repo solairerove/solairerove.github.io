@@ -72,8 +72,7 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">if</span> low <span style="color:#666">==</span> high:
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">return</span> arr[low]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    pivot_idx <span style="color:#666">=</span> random<span style="color:#666">.</span>randint(low, high)
-</span></span><span style="display:flex;"><span>    lt, gt <span style="color:#666">=</span> partition(arr, low, high, pivot_idx)
+</span></span><span style="display:flex;"><span>    lt, gt <span style="color:#666">=</span> partition(arr, low, high, random<span style="color:#666">.</span>randint(low, high))
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">if</span> k <span style="color:#666">&lt;</span> lt:
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">return</span> quickselect(arr, low, lt <span style="color:#666">-</span> <span style="color:#666">1</span>, k)
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">elif</span> k <span style="color:#666">&lt;=</span> gt:
@@ -82,15 +81,15 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">return</span> quickselect(arr, gt <span style="color:#666">+</span> <span style="color:#666">1</span>, high, k)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">partition</span>(arr, low, high, pivot_idx):
-</span></span><span style="display:flex;"><span>    pivot <span style="color:#666">=</span> arr[pivot_idx]
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">partition</span>(arr, low, high, idx):
+</span></span><span style="display:flex;"><span>    pivot <span style="color:#666">=</span> arr[idx]
 </span></span><span style="display:flex;"><span>    lt, i, gt <span style="color:#666">=</span> low, low, high
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">while</span> i <span style="color:#666">&lt;=</span> gt:
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> arr[i] <span style="color:#666">&lt;</span> pivot:
-</span></span><span style="display:flex;"><span>            arr[lt], arr[i] <span style="color:#666">=</span> arr[i], arr[lt]
-</span></span><span style="display:flex;"><span>            lt, i <span style="color:#666">=</span> lt <span style="color:#666">+</span> <span style="color:#666">1</span>, i <span style="color:#666">+</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>            arr[i], arr[lt] <span style="color:#666">=</span> arr[lt], arr[i]
+</span></span><span style="display:flex;"><span>            i, lt <span style="color:#666">=</span> i <span style="color:#666">+</span> <span style="color:#666">1</span>, lt <span style="color:#666">+</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">elif</span> arr[i] <span style="color:#666">&gt;</span> pivot:
-</span></span><span style="display:flex;"><span>            arr[gt], arr[i] <span style="color:#666">=</span> arr[i], arr[gt]
+</span></span><span style="display:flex;"><span>            arr[i], arr[gt] <span style="color:#666">=</span> arr[gt], arr[i]
 </span></span><span style="display:flex;"><span>            gt <span style="color:#666">-=</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">else</span>:
 </span></span><span style="display:flex;"><span>            i <span style="color:#666">+=</span> <span style="color:#666">1</span>
