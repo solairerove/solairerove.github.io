@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Thu, 02 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>692. Top K Frequent Words</title>
+      <link>https://solairerove.github.io/posts/top_k_frequent_words/</link>
+      <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/top_k_frequent_words/</guid>
+      <description>sorting to obtain the top k frequent words in O(n + m * log(m)) time.
+# O(n + m * log(m)) time || O(m) space # n is number of words in list # m is number of unique words # k is number of top freq words def top_k_frequent_sorting(self, words: List[str], k: int) -&amp;gt; List[str]: cnt = collections.Counter(words) return sorted(cnt, key=lambda word: (-cnt[word], word))[:k] heapq library to obtain the top k frequent words in O(n + k * log(m)) time.</description>
+    </item>
+    
     <item>
       <title>1985. Find the Kth Largest Integer in the Array</title>
       <link>https://solairerove.github.io/posts/find_the_kth_largest_integer_in_the_array/</link>

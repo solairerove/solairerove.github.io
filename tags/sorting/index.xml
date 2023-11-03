@@ -7,7 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/sorting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/sorting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>692. Top K Frequent Words</title>
+      <link>https://solairerove.github.io/posts/top_k_frequent_words/</link>
+      <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/top_k_frequent_words/</guid>
+      <description>sorting to obtain the top k frequent words in O(n + m * log(m)) time.
+# O(n + m * log(m)) time || O(m) space # n is number of words in list # m is number of unique words # k is number of top freq words def top_k_frequent_sorting(self, words: List[str], k: int) -&amp;gt; List[str]: cnt = collections.Counter(words) return sorted(cnt, key=lambda word: (-cnt[word], word))[:k] heapq library to obtain the top k frequent words in O(n + k * log(m)) time.</description>
+    </item>
+    
+    <item>
+      <title>75. Sort Colors</title>
+      <link>https://solairerove.github.io/posts/sort_colors/</link>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/sort_colors/</guid>
+      <description># O(n) time || O(1) space def sort_colors(self, nums: List[int]) -&amp;gt; None: lt, i, gt = 0, 0, len(nums) - 1 while i &amp;lt;= gt: if nums[i] == 0: nums[i], nums[lt] = nums[lt], nums[i] i, lt = i + 1, lt + 1 elif nums[i] == 2: nums[i], nums[gt] = nums[gt], nums[i] gt -= 1 else: i += 1 This is the famous &amp;ldquo;Dutch National Flag&amp;rdquo; problem. One common way to solve this problem is using a three-pointer approach.</description>
+    </item>
+    
     <item>
       <title>252. Meeting Rooms</title>
       <link>https://solairerove.github.io/posts/meeting_rooms/</link>
@@ -24,6 +43,15 @@
       
       <guid>https://solairerove.github.io/posts/meeting_rooms_ii/</guid>
       <description># O(n * log(n)) time || O(n) space def min_meeting_rooms(self, intervals: List[List[int]]) -&amp;gt; int: start_times = sorted([i[0] for i in intervals]) end_times = sorted([i[1] for i in intervals]) res = 0 start, end = 0, 0 while start &amp;lt; len(intervals): if start_times[start] &amp;gt;= end_times[end]: res, end = res - 1, end + 1 res, start = res + 1, start + 1 return res To solve this problem, we can think of the start and end times of the intervals as events.</description>
+    </item>
+    
+    <item>
+      <title>435. Non-overlapping Intervals</title>
+      <link>https://solairerove.github.io/posts/non_overlapping_intervals/</link>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/non_overlapping_intervals/</guid>
+      <description># O(n * log(n)) time || O(log(n)) space def erase_overlap_intervals(self, intervals: List[List[int]]) -&amp;gt; int: intervals.sort(key=lambda x: x[1]) res = 0 end = intervals[0][1] for interval in intervals[1:]: if interval[0] &amp;lt; end: res += 1 else: end = interval[1] return res To solve this problem, we can take a greedy approach. The intuition is that if we choose intervals that end early, it gives us more room for subsequent intervals to fit without overlapping.</description>
     </item>
     
   </channel>
