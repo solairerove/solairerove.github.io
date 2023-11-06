@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Fri, 03 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>763. Partition Labels</title>
+      <link>https://solairerove.github.io/posts/partition_labels/</link>
+      <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/partition_labels/</guid>
+      <description># O(n) time || O(1) space def partition_labels(self, s: str) -&amp;gt; List[int]: last_occurrence = {c: i for i, c in enumerate(s)} res = [] low = high = 0 for i, c in enumerate(s): high = max(high, last_occurrence[c]) if i == high: res.append(high - low + 1) low = high + 1 return res This problem, often referred to as &amp;ldquo;Partition Labels&amp;rdquo; on LeetCode, requires us to split the string into the maximum number of parts such that no letter appears in more than one part.</description>
+    </item>
+    
     <item>
       <title>692. Top K Frequent Words</title>
       <link>https://solairerove.github.io/posts/top_k_frequent_words/</link>
