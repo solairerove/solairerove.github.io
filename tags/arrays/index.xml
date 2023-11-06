@@ -154,7 +154,7 @@ Steps of Quickselect: Choose a &amp;lsquo;pivot&amp;rsquo; element from the list
       <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/posts/container_with_most_water/</guid>
-      <description># O(n) time || O(1) space def max_area(self, height: List[int]) -&amp;gt; int: area, low, high = 0, 0, len(height) - 1 while low &amp;lt; high: area = max(area, min(height[low], height[high]) * (high - low)) if height[low] &amp;lt;= height[high]: low += 1 else: high -= 1 return area </description>
+      <description># O(n) time || O(1) space def max_area(self, height: List[int]) -&amp;gt; int: res = 0 low, high = 0, len(height) - 1 while low &amp;lt; high: curr_width = high - low curr_height = min(height[low], height[high]) res = max(res, curr_width * curr_height) if height[low] &amp;lt;= height[high]: low += 1 else: high -= 1 return res This problem is known as the &amp;ldquo;Container With Most Water&amp;rdquo; and is a well-known example of a two-pointer technique.</description>
     </item>
     
   </channel>

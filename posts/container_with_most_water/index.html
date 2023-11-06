@@ -2,17 +2,17 @@
 <html><head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>11. Container With Most Water - Headstone lamp - leetcode grind</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="to be continued soon" />
+	<meta name="description" content="use two-pointer technique, calculate Area = width * height" />
 	<meta property="og:image" content=""/>
 	<meta property="og:title" content="11. Container With Most Water" />
-<meta property="og:description" content="to be continued soon" />
+<meta property="og:description" content="use two-pointer technique, calculate Area = width * height" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://solairerove.github.io/posts/container_with_most_water/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-03-20T00:00:00+00:00" />
 <meta property="article:modified_time" content="2023-03-20T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="11. Container With Most Water"/>
-<meta name="twitter:description" content="to be continued soon"/>
+<meta name="twitter:description" content="use two-pointer technique, calculate Area = width * height"/>
 <script src="https://solairerove.github.io/js/feather.min.js"></script>
 	
 	
@@ -60,16 +60,32 @@
 		<section class="body">
 			<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n) time || O(1) space</span>
 </span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">max_area</span>(self, height: List[<span style="color:#a2f">int</span>]) <span style="color:#666">-&gt;</span> <span style="color:#a2f">int</span>:
-</span></span><span style="display:flex;"><span>    area, low, high <span style="color:#666">=</span> <span style="color:#666">0</span>, <span style="color:#666">0</span>, <span style="color:#a2f">len</span>(height) <span style="color:#666">-</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>    res <span style="color:#666">=</span> <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>    low, high <span style="color:#666">=</span> <span style="color:#666">0</span>, <span style="color:#a2f">len</span>(height) <span style="color:#666">-</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">while</span> low <span style="color:#666">&lt;</span> high:
-</span></span><span style="display:flex;"><span>        area <span style="color:#666">=</span> <span style="color:#a2f">max</span>(area, <span style="color:#a2f">min</span>(height[low], height[high]) <span style="color:#666">*</span> (high <span style="color:#666">-</span> low))
+</span></span><span style="display:flex;"><span>        curr_width <span style="color:#666">=</span> high <span style="color:#666">-</span> low
+</span></span><span style="display:flex;"><span>        curr_height <span style="color:#666">=</span> <span style="color:#a2f">min</span>(height[low], height[high])
+</span></span><span style="display:flex;"><span>        res <span style="color:#666">=</span> <span style="color:#a2f">max</span>(res, curr_width <span style="color:#666">*</span> curr_height)
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> height[low] <span style="color:#666">&lt;=</span> height[high]:
 </span></span><span style="display:flex;"><span>            low <span style="color:#666">+=</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">else</span>:
 </span></span><span style="display:flex;"><span>            high <span style="color:#666">-=</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> area
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> res
+</span></span></code></pre></div><p>This problem is known as the &ldquo;Container With Most Water&rdquo; and is a well-known example of a two-pointer technique.</p>
+<p>Here&rsquo;s the strategy to solve it:</p>
+<ol>
+<li>Initialize two pointers, one at the beginning of the array (<code>left</code>) and one at the end (<code>right</code>).</li>
+<li>Calculate the area formed between the lines at the <code>left</code> and <code>right</code> pointers, and update the maximum area found so far.</li>
+<li>Move the pointer that points to the shorter line inwards, because if we move the pointer at the taller line, we are
+sure that the area cannot increase - the width is decreasing, and the height is limited by the shorter line.</li>
+<li>Repeat steps 2 and 3 until the two pointers meet.
+The formula to calculate the area between two lines is:
+<code>Area = width * height</code>
+where width is the difference between the indices of the two lines and height is the minimum of the two line heights.</li>
+</ol>
+
 		</section>
 
 		<div class="post-tags">
