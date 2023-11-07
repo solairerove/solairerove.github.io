@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Mon, 06 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>239. Sliding Window Maximum</title>
+      <link>https://solairerove.github.io/posts/sliding_window_maximum/</link>
+      <pubDate>Tue, 07 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/sliding_window_maximum/</guid>
+      <description># O(n) time | O(k) space def max_sliding_window(self, nums: List[int], k: int) -&amp;gt; List[int]: dq = collections.deque() res = [] for i, n in enumerate(nums): while dq and dq[0] &amp;lt;= i - k: dq.popleft() while dq and nums[dq[-1]] &amp;lt;= n: dq.pop() dq.append(i) if i &amp;gt;= k - 1: res.append(nums[dq[0]]) return res This is a classic sliding window problem that can be efficiently solved using a deque (double-ended queue). The idea is to maintain a deque of candidates in decreasing order and to ensure that the candidates are only from the current sliding window.</description>
+    </item>
+    
     <item>
       <title>763. Partition Labels</title>
       <link>https://solairerove.github.io/posts/partition_labels/</link>

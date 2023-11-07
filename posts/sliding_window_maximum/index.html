@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>239. Sliding Window Maximum - Headstone lamp - leetcode grind</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="maintain a deque of candidates idx in decreasing order only from the current sliding window" />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="239. Sliding Window Maximum" />
+<meta property="og:description" content="maintain a deque of candidates idx in decreasing order only from the current sliding window" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://solairerove.github.io/posts/sliding_window_maximum/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-07T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="239. Sliding Window Maximum"/>
+<meta name="twitter:description" content="maintain a deque of candidates idx in decreasing order only from the current sliding window"/>
+<script src="https://solairerove.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://solairerove.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://solairerove.github.io/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://solairerove.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css" media="(prefers-color-scheme: dark)"  />
+	
+
+	
+	
+
+	
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://solairerove.github.io/">Headstone lamp - leetcode grind</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/tags">Tags</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">239. Sliding Window Maximum</h1>
+			<div class="meta">Posted on Nov 7, 2023</div>
+		</div>
+		
+
+		<section class="body">
+			<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n) time | O(k) space</span>
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">max_sliding_window</span>(self, nums: List[<span style="color:#a2f">int</span>], k: <span style="color:#a2f">int</span>) <span style="color:#666">-&gt;</span> List[<span style="color:#a2f">int</span>]:
+</span></span><span style="display:flex;"><span>    dq <span style="color:#666">=</span> collections<span style="color:#666">.</span>deque()
+</span></span><span style="display:flex;"><span>    res <span style="color:#666">=</span> []
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> i, n <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">enumerate</span>(nums):
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">while</span> dq <span style="color:#a2f;font-weight:bold">and</span> dq[<span style="color:#666">0</span>] <span style="color:#666">&lt;=</span> i <span style="color:#666">-</span> k:
+</span></span><span style="display:flex;"><span>            dq<span style="color:#666">.</span>popleft()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">while</span> dq <span style="color:#a2f;font-weight:bold">and</span> nums[dq[<span style="color:#666">-</span><span style="color:#666">1</span>]] <span style="color:#666">&lt;=</span> n:
+</span></span><span style="display:flex;"><span>            dq<span style="color:#666">.</span>pop()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        dq<span style="color:#666">.</span>append(i)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> i <span style="color:#666">&gt;=</span> k <span style="color:#666">-</span> <span style="color:#666">1</span>:
+</span></span><span style="display:flex;"><span>            res<span style="color:#666">.</span>append(nums[dq[<span style="color:#666">0</span>]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> res
+</span></span></code></pre></div><p>This is a classic sliding window problem that can be efficiently solved using a deque (double-ended queue). The idea is
+to maintain a deque of candidates in decreasing order and to ensure that the candidates are only from the current
+sliding window.</p>
+<p>Here&rsquo;s the step-by-step strategy:</p>
+<ol>
+<li>
+<p>Initialize a deque <code>D</code> to store indices of array elements. The deque will store indices in decreasing order of their
+corresponding array values.</p>
+</li>
+<li>
+<p>Iterate over the array:</p>
+<ul>
+<li>Clean the deque:
+<ul>
+<li>Remove indices of elements not from the sliding window (i.e., <code>i - k &gt;= D.front()</code>).</li>
+<li>Remove indices of all elements smaller than the current element since they will not be needed (i.e.,
+<code>nums[i] &gt;= nums[D.back()]</code>).</li>
+</ul>
+</li>
+<li>Add the current element index to the deque.</li>
+<li>If the window has reached size <code>k</code>, append the current max to the output, which is the element corresponding to
+<code>D.front()</code>.</li>
+</ul>
+</li>
+</ol>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/sliding-window">sliding-window</a></li>
+					
+					<li><a href="/tags/array">array</a></li>
+					
+					<li><a href="/tags/hard">hard</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/solairerove" rel="me" title="GitHub"><i data-feather="github"></i></a>
+    <a class="border"></a></div>
+  <div class="footer-info">
+    2023  © solairerove |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>
