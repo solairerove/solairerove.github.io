@@ -63,7 +63,7 @@
 </span></span><span style="display:flex;"><span>    dq <span style="color:#666">=</span> collections<span style="color:#666">.</span>deque()
 </span></span><span style="display:flex;"><span>    res <span style="color:#666">=</span> []
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> i, n <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">enumerate</span>(nums):
-</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">while</span> dq <span style="color:#a2f;font-weight:bold">and</span> dq[<span style="color:#666">0</span>] <span style="color:#666">&lt;=</span> i <span style="color:#666">-</span> k:
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> dq <span style="color:#a2f;font-weight:bold">and</span> dq[<span style="color:#666">0</span>] <span style="color:#666">&lt;</span> i <span style="color:#666">-</span> k <span style="color:#666">+</span> <span style="color:#666">1</span>:
 </span></span><span style="display:flex;"><span>            dq<span style="color:#666">.</span>popleft()
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">while</span> dq <span style="color:#a2f;font-weight:bold">and</span> nums[dq[<span style="color:#666">-</span><span style="color:#666">1</span>]] <span style="color:#666">&lt;=</span> n:
