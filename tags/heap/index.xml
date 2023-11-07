@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Fri, 03 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/heap/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/heap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>295. Find Median from Data Stream</title>
+      <link>https://solairerove.github.io/posts/find_median_from_data_stream/</link>
+      <pubDate>Tue, 07 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/find_median_from_data_stream/</guid>
+      <description>from heapq import heappush, heappop class MedianFinder: # O(1) time || O(n) space def __init__(self): self.small = [] # [0] is highest among small numbers, max heap self.large = [] # [0] is lowest among large numbers, min heap # O(log(n)) time || O(n) space def add_num(self, num: int) -&amp;gt; None: if not self.small or num &amp;lt;= -self.small[0]: heappush(self.small, -num) else: heappush(self.large, num) if len(self.small) &amp;gt; len(self.large) + 1: heappush(self.large, -heappop(self.</description>
+    </item>
+    
     <item>
       <title>692. Top K Frequent Words</title>
       <link>https://solairerove.github.io/posts/top_k_frequent_words/</link>
