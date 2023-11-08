@@ -2,17 +2,17 @@
 <html><head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>295. Find Median from Data Stream - Headstone lamp - leetcode grind</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="from heapq import heappush, heappop class MedianFinder: # O(1) time || O(n) space def __init__(self): self.small = [] # [0] is highest among small numbers, max heap self.large = [] # [0] is lowest among large numbers, min heap # O(log(n)) time || O(n) space def add_num(self, num: int) -&gt; None: if not self.small or num &lt;= -self.small[0]: heappush(self.small, -num) else: heappush(self.large, num) if len(self.small) &gt; len(self.large) &#43; 1: heappush(self.large, -heappop(self." />
+	<meta name="description" content="use to balanced heaps, one for highest from small and second for lowest among large number." />
 	<meta property="og:image" content=""/>
 	<meta property="og:title" content="295. Find Median from Data Stream" />
-<meta property="og:description" content="from heapq import heappush, heappop class MedianFinder: # O(1) time || O(n) space def __init__(self): self.small = [] # [0] is highest among small numbers, max heap self.large = [] # [0] is lowest among large numbers, min heap # O(log(n)) time || O(n) space def add_num(self, num: int) -&gt; None: if not self.small or num &lt;= -self.small[0]: heappush(self.small, -num) else: heappush(self.large, num) if len(self.small) &gt; len(self.large) &#43; 1: heappush(self.large, -heappop(self." />
+<meta property="og:description" content="use to balanced heaps, one for highest from small and second for lowest among large number." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://solairerove.github.io/posts/find_median_from_data_stream/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-11-07T00:00:00+00:00" />
 <meta property="article:modified_time" content="2023-11-07T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="295. Find Median from Data Stream"/>
-<meta name="twitter:description" content="from heapq import heappush, heappop class MedianFinder: # O(1) time || O(n) space def __init__(self): self.small = [] # [0] is highest among small numbers, max heap self.large = [] # [0] is lowest among large numbers, min heap # O(log(n)) time || O(n) space def add_num(self, num: int) -&gt; None: if not self.small or num &lt;= -self.small[0]: heappush(self.small, -num) else: heappush(self.large, num) if len(self.small) &gt; len(self.large) &#43; 1: heappush(self.large, -heappop(self."/>
+<meta name="twitter:description" content="use to balanced heaps, one for highest from small and second for lowest among large number."/>
 <script src="https://solairerove.github.io/js/feather.min.js"></script>
 	
 	
