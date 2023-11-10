@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Tue, 07 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>480. Sliding Window Median</title>
+      <link>https://solairerove.github.io/posts/sliding_window_median/</link>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/sliding_window_median/</guid>
+      <description>class MedianFinder: def __init__(self): self.small, self.large = [], [] self.lazy = collections.defaultdict(int) self.balance = 0 def add(self, num): if not self.small or num &amp;lt;= -self.small[0]: heapq.heappush(self.small, -num) self.balance -= 1 else: heapq.heappush(self.large, num) self.balance += 1 self.rebalance() def remove(self, num): self.lazy[num] += 1 if num &amp;lt;= -self.small[0]: self.balance += 1 else: self.balance -= 1 self.rebalance() self.lazy_remove() def find_median(self): if self.balance == 0: return (-self.small[0] + self.large[0]) / 2 elif self.balance &amp;lt; 0: return -self.</description>
+    </item>
+    
     <item>
       <title>239. Sliding Window Maximum</title>
       <link>https://solairerove.github.io/posts/sliding_window_maximum/</link>

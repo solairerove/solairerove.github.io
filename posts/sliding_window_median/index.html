@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>480. Sliding Window Median - Headstone lamp - leetcode grind</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="steroid version of 295 Median Finder with lazy removals and balance variable" />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="480. Sliding Window Median" />
+<meta property="og:description" content="steroid version of 295 Median Finder with lazy removals and balance variable" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://solairerove.github.io/posts/sliding_window_median/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-10T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="480. Sliding Window Median"/>
+<meta name="twitter:description" content="steroid version of 295 Median Finder with lazy removals and balance variable"/>
+<script src="https://solairerove.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://solairerove.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://solairerove.github.io/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://solairerove.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css" media="(prefers-color-scheme: dark)"  />
+	
+
+	
+	
+
+	
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://solairerove.github.io/">Headstone lamp - leetcode grind</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/tags">Tags</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">480. Sliding Window Median</h1>
+			<div class="meta">Posted on Nov 10, 2023</div>
+		</div>
+		
+
+		<section class="body">
+			<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">class</span> <span style="color:#00f">MedianFinder</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">def</span> __init__(self):
+</span></span><span style="display:flex;"><span>        self<span style="color:#666">.</span>small, self<span style="color:#666">.</span>large <span style="color:#666">=</span> [], []
+</span></span><span style="display:flex;"><span>        self<span style="color:#666">.</span>lazy <span style="color:#666">=</span> collections<span style="color:#666">.</span>defaultdict(<span style="color:#a2f">int</span>)
+</span></span><span style="display:flex;"><span>        self<span style="color:#666">.</span>balance <span style="color:#666">=</span> <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">add</span>(self, num):
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> <span style="color:#a2f;font-weight:bold">not</span> self<span style="color:#666">.</span>small <span style="color:#a2f;font-weight:bold">or</span> num <span style="color:#666">&lt;=</span> <span style="color:#666">-</span>self<span style="color:#666">.</span>small[<span style="color:#666">0</span>]:
+</span></span><span style="display:flex;"><span>            heapq<span style="color:#666">.</span>heappush(self<span style="color:#666">.</span>small, <span style="color:#666">-</span>num)
+</span></span><span style="display:flex;"><span>            self<span style="color:#666">.</span>balance <span style="color:#666">-=</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>            heapq<span style="color:#666">.</span>heappush(self<span style="color:#666">.</span>large, num)
+</span></span><span style="display:flex;"><span>            self<span style="color:#666">.</span>balance <span style="color:#666">+=</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#666">.</span>rebalance()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">remove</span>(self, num):
+</span></span><span style="display:flex;"><span>        self<span style="color:#666">.</span>lazy[num] <span style="color:#666">+=</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> num <span style="color:#666">&lt;=</span> <span style="color:#666">-</span>self<span style="color:#666">.</span>small[<span style="color:#666">0</span>]:
+</span></span><span style="display:flex;"><span>            self<span style="color:#666">.</span>balance <span style="color:#666">+=</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>            self<span style="color:#666">.</span>balance <span style="color:#666">-=</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#666">.</span>rebalance()
+</span></span><span style="display:flex;"><span>        self<span style="color:#666">.</span>lazy_remove()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">find_median</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> self<span style="color:#666">.</span>balance <span style="color:#666">==</span> <span style="color:#666">0</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">return</span> (<span style="color:#666">-</span>self<span style="color:#666">.</span>small[<span style="color:#666">0</span>] <span style="color:#666">+</span> self<span style="color:#666">.</span>large[<span style="color:#666">0</span>]) <span style="color:#666">/</span> <span style="color:#666">2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">elif</span> self<span style="color:#666">.</span>balance <span style="color:#666">&lt;</span> <span style="color:#666">0</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">return</span> <span style="color:#666">-</span>self<span style="color:#666">.</span>small[<span style="color:#666">0</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">return</span> self<span style="color:#666">.</span>large[<span style="color:#666">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">rebalance</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">while</span> self<span style="color:#666">.</span>balance <span style="color:#666">&lt;</span> <span style="color:#666">0</span>:
+</span></span><span style="display:flex;"><span>            heapq<span style="color:#666">.</span>heappush(self<span style="color:#666">.</span>large, <span style="color:#666">-</span>heapq<span style="color:#666">.</span>heappop(self<span style="color:#666">.</span>small))
+</span></span><span style="display:flex;"><span>            self<span style="color:#666">.</span>balance <span style="color:#666">+=</span> <span style="color:#666">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">while</span> self<span style="color:#666">.</span>balance <span style="color:#666">&gt;</span> <span style="color:#666">0</span>:
+</span></span><span style="display:flex;"><span>            heapq<span style="color:#666">.</span>heappush(self<span style="color:#666">.</span>small, <span style="color:#666">-</span>heapq<span style="color:#666">.</span>heappop(self<span style="color:#666">.</span>large))
+</span></span><span style="display:flex;"><span>            self<span style="color:#666">.</span>balance <span style="color:#666">-=</span> <span style="color:#666">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">lazy_remove</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">while</span> self<span style="color:#666">.</span>small <span style="color:#a2f;font-weight:bold">and</span> self<span style="color:#666">.</span>lazy[<span style="color:#666">-</span>self<span style="color:#666">.</span>small[<span style="color:#666">0</span>]] <span style="color:#666">&gt;</span> <span style="color:#666">0</span>:
+</span></span><span style="display:flex;"><span>            self<span style="color:#666">.</span>lazy[<span style="color:#666">-</span>self<span style="color:#666">.</span>small[<span style="color:#666">0</span>]] <span style="color:#666">-=</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>            heapq<span style="color:#666">.</span>heappop(self<span style="color:#666">.</span>small)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">while</span> self<span style="color:#666">.</span>large <span style="color:#a2f;font-weight:bold">and</span> self<span style="color:#666">.</span>lazy[self<span style="color:#666">.</span>large[<span style="color:#666">0</span>]] <span style="color:#666">&gt;</span> <span style="color:#666">0</span>:
+</span></span><span style="display:flex;"><span>            self<span style="color:#666">.</span>lazy[self<span style="color:#666">.</span>large[<span style="color:#666">0</span>]] <span style="color:#666">-=</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>            heapq<span style="color:#666">.</span>heappop(self<span style="color:#666">.</span>large)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n * log(k)) time || O(n) space</span>
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">median_sliding_window</span>(self, nums: List[<span style="color:#a2f">int</span>], k: <span style="color:#a2f">int</span>) <span style="color:#666">-&gt;</span> List[<span style="color:#a2f">float</span>]:
+</span></span><span style="display:flex;"><span>    res <span style="color:#666">=</span> []
+</span></span><span style="display:flex;"><span>    median_finder <span style="color:#666">=</span> MedianFinder()
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> i, num <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">enumerate</span>(nums):
+</span></span><span style="display:flex;"><span>        median_finder<span style="color:#666">.</span>add(num)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> i <span style="color:#666">&gt;=</span> k:
+</span></span><span style="display:flex;"><span>            median_finder<span style="color:#666">.</span>remove(nums[i <span style="color:#666">-</span> k])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> i <span style="color:#666">&gt;=</span> k <span style="color:#666">-</span> <span style="color:#666">1</span>:
+</span></span><span style="display:flex;"><span>            res<span style="color:#666">.</span>append(median_finder<span style="color:#666">.</span>find_median())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> res
+</span></span></code></pre></div><p>The <code>MedianFinder</code> class from <code>295</code> is designed to find the median in a dynamic stream of data. It uses two heaps:</p>
+<ol>
+<li><code>small</code>: a max heap that stores the smaller half of the numbers.</li>
+<li><code>large</code>: a min heap that stores the larger half of the numbers.</li>
+</ol>
+<p>The class maintains a balance variable, which indicates the size difference between the two heaps. A negative balance
+indicates that the <code>small</code> heap has more elements, while a positive balance indicates that the <code>large</code> heap has more.</p>
+<h3 id="key-methods">Key Methods:</h3>
+<ul>
+<li><code>add</code>: Adds a new number to one of the heaps. If the number is less than or equal to the largest number in the small
+heap, it goes into the small heap, otherwise into the large heap. After adding a number, the rebalance_heaps method is
+called to ensure that the heaps remain balanced.</li>
+<li><code>remove</code>: Marks a number for lazy removal by incrementing its count in the lazy_remove dictionary. It adjusts the
+balance based on the value being removed. After marking for removal, it calls rebalance_heaps and
+lazy_remove_from_heaps to ensure the heaps are balanced and to remove the top elements of the heaps if they are marked
+for lazy removal.</li>
+<li><code>find_median</code>: Returns the median based on the balance of the heaps. If the balance is zero, it means the heaps are
+equal in size and the median is the average of the two top elements. If the balance is negative or positive, it
+returns the top element of the small or large heap, respectively.</li>
+<li><code>rebalance</code>: Ensures that the difference in size between the small and large heaps is no more than one. It moves
+elements between the heaps to maintain this balance.</li>
+<li><code>lazy_remove</code>: Removes the elements that are at the top of either heap if they have been marked for lazy removal.</li>
+</ul>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/sliding-window">sliding-window</a></li>
+					
+					<li><a href="/tags/heap">heap</a></li>
+					
+					<li><a href="/tags/hard">hard</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/solairerove" rel="me" title="GitHub"><i data-feather="github"></i></a>
+    <a class="border"></a></div>
+  <div class="footer-info">
+    2023  © solairerove |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>
