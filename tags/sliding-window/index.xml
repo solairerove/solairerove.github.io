@@ -9,6 +9,15 @@
     <copyright>© solairerove</copyright>
     <lastBuildDate>Fri, 10 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/sliding-window/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>424. Longest Repeating Character Replacement</title>
+      <link>https://solairerove.github.io/posts/longest_repeating_character_replacement/</link>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/longest_repeating_character_replacement/</guid>
+      <description># O(n) time | O(1) space def character_replacement(self, s: str, k: int) -&amp;gt; int: freq, max_freq, res = collections.defaultdict(int), 0, 0 low = 0 for high in range(len(s)): freq[s[high]] += 1 max_freq = max(max_freq, freq[s[high]]) if (high - low + 1) - max_freq &amp;gt; k: freq[s[low]] -= 1 low += 1 res = max(res, high - low + 1) return res Detailed Explanation: Initialize Variables: freq: A dictionary to store the frequency of each character in the current window.</description>
+    </item>
+    
+    <item>
       <title>480. Sliding Window Median</title>
       <link>https://solairerove.github.io/posts/sliding_window_median/</link>
       <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
