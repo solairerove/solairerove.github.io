@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>trees on Headstone lamp - leetcode grind (43)</title>
+    <link>https://solairerove.github.io/tags/trees/</link>
+    <description>Recent content in trees on Headstone lamp - leetcode grind (43)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© solairerove</copyright>
+    <lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/trees/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>100. Same Tree</title>
+      <link>https://solairerove.github.io/posts/same_tree/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/same_tree/</guid>
+      <description>To solve this problem, we need to compare two binary trees, p and q, and determine if they are identical. Two binary trees are identical if they have the same structure and their corresponding nodes have the same value.
+# O(n) time || O(h) space def is_same_tree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -&amp;gt; bool: if not p and not q: return True if not p or not q or p.val != q.</description>
+    </item>
+    
+  </channel>
+</rss>
