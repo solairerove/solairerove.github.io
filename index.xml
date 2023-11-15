@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>110. Balanced Binary Tree</title>
+      <link>https://solairerove.github.io/posts/balanced_binary_tree/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/balanced_binary_tree/</guid>
+      <description># O(n) time || O(n) space def is_balanced(self, root: Optional[TreeNode]) -&amp;gt; bool: def dfs(node): if not node: return 0, True l_height, l_balanced = dfs(node.left) r_height, r_balanced = dfs(node.right) return max(l_height, r_height) + 1, l_balanced and r_balanced and abs(l_height - r_height) &amp;lt;= 1 return dfs(root)[1] DFS is ideal for this problem because it allows us to compute the height of each subtree while simultaneously checking if the tree is balanced.
+In DFS, we recursively traverse down the tree, visiting a node&amp;rsquo;s children before checking the node itself (hence &amp;quot; depth-first&amp;quot;).</description>
+    </item>
+    
     <item>
       <title>100. Same Tree</title>
       <link>https://solairerove.github.io/posts/same_tree/</link>
