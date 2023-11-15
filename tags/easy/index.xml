@@ -19,6 +19,15 @@ In DFS, we recursively traverse down the tree, visiting a node&amp;rsquo;s child
     </item>
     
     <item>
+      <title>112. Path Sum</title>
+      <link>https://solairerove.github.io/posts/path_sum/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/path_sum/</guid>
+      <description># O(n) time || O(max(n, log(n)) space def has_path_sum_rec(self, root: Optional[TreeNode], target_sum: int) -&amp;gt; bool: if not root: return False def dfs(node, curr_sum): if not node: return False curr_sum += node.val if not node.left and not node.right: return curr_sum == target_sum return dfs(node.left, curr_sum) or dfs(node.right, curr_sum) return dfs(root, 0) # O(n) time || O(max(n, log(n)) space def has_path_sum_dfs(self, root: Optional[TreeNode], target_sum: int) -&amp;gt; bool: if not root: return False stack = [(root, root.</description>
+    </item>
+    
+    <item>
       <title>100. Same Tree</title>
       <link>https://solairerove.github.io/posts/same_tree/</link>
       <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>

@@ -7,7 +7,45 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/dfs-bfs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/dfs-bfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>110. Balanced Binary Tree</title>
+      <link>https://solairerove.github.io/posts/balanced_binary_tree/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/balanced_binary_tree/</guid>
+      <description># O(n) time || O(n) space def is_balanced(self, root: Optional[TreeNode]) -&amp;gt; bool: def dfs(node): if not node: return 0, True l_height, l_balanced = dfs(node.left) r_height, r_balanced = dfs(node.right) return max(l_height, r_height) + 1, l_balanced and r_balanced and abs(l_height - r_height) &amp;lt;= 1 return dfs(root)[1] DFS is ideal for this problem because it allows us to compute the height of each subtree while simultaneously checking if the tree is balanced.
+In DFS, we recursively traverse down the tree, visiting a node&amp;rsquo;s children before checking the node itself (hence &amp;quot; depth-first&amp;quot;).</description>
+    </item>
+    
+    <item>
+      <title>112. Path Sum</title>
+      <link>https://solairerove.github.io/posts/path_sum/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/path_sum/</guid>
+      <description># O(n) time || O(max(n, log(n)) space def has_path_sum_rec(self, root: Optional[TreeNode], target_sum: int) -&amp;gt; bool: if not root: return False def dfs(node, curr_sum): if not node: return False curr_sum += node.val if not node.left and not node.right: return curr_sum == target_sum return dfs(node.left, curr_sum) or dfs(node.right, curr_sum) return dfs(root, 0) # O(n) time || O(max(n, log(n)) space def has_path_sum_dfs(self, root: Optional[TreeNode], target_sum: int) -&amp;gt; bool: if not root: return False stack = [(root, root.</description>
+    </item>
+    
+    <item>
+      <title>100. Same Tree</title>
+      <link>https://solairerove.github.io/posts/same_tree/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/same_tree/</guid>
+      <description>To solve this problem, we need to compare two binary trees, p and q, and determine if they are identical. Two binary trees are identical if they have the same structure and their corresponding nodes have the same value.
+# O(n) time || O(h) space def is_same_tree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -&amp;gt; bool: if not p and not q: return True if not p or not q or p.val != q.</description>
+    </item>
+    
+    <item>
+      <title>101. Symmetric Tree</title>
+      <link>https://solairerove.github.io/posts/symmetric_tree/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/symmetric_tree/</guid>
+      <description># O(n) time || O(n) space def is_symmetric_rec(self, root: Optional[TreeNode]) -&amp;gt; bool: def is_mirror_tree(node1, node2): if not node1 and not node2: return True if not node1 or not node2 or node1.val != node2.val: return False return is_mirror_tree(node1.left, node2.right) and is_mirror_tree(node1.right, node2.left) return is_mirror_tree(root.left, root.right) # O(n) time || O(n) space def is_symmetric_dfs(self, root: Optional[TreeNode]) -&amp;gt; bool: stack = [(root.left, root.right)] while stack: left, right = stack.pop() if not left and not right: continue if not left or not right or left.</description>
+    </item>
+    
     <item>
       <title>200. Number of Islands</title>
       <link>https://solairerove.github.io/posts/number_of_islands/</link>
