@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>medium on Headstone lamp - leetcode grind (45)</title>
+    <title>medium on Headstone lamp - leetcode grind (48)</title>
     <link>https://solairerove.github.io/tags/medium/</link>
-    <description>Recent content in medium on Headstone lamp - leetcode grind (45)</description>
+    <description>Recent content in medium on Headstone lamp - leetcode grind (48)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Fri, 10 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>113. Path Sum II</title>
+      <link>https://solairerove.github.io/posts/path_sum_ii/</link>
+      <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/path_sum_ii/</guid>
+      <description># O(n) time || O(max(n, log(n)) space def path_sum_rec(self, root: Optional[TreeNode], target_sum: int) -&amp;gt; List[List[int]]: if not root: return [] res = [] def dfs(node, curr_sum, curr_path): if not node: return curr_sum += node.val curr_path.append(node.val) if not node.left and not node.right and curr_sum == target_sum: res.append(list(curr_path)) dfs(node.left, curr_sum, curr_path) dfs(node.right, curr_sum, curr_path) curr_path.pop() dfs(root, 0, []) return res # O(n) time || O(max(n, log(n)) space def path_sum_dfs(self, root: Optional[TreeNode], target_sum: int) -&amp;gt; List[List[int]]: if not root: return [] res = [] stack = [(root, root.</description>
+    </item>
+    
     <item>
       <title>424. Longest Repeating Character Replacement</title>
       <link>https://solairerove.github.io/posts/longest_repeating_character_replacement/</link>
