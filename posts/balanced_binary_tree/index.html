@@ -70,6 +70,30 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">return</span> <span style="color:#a2f">max</span>(l_height, r_height) <span style="color:#666">+</span> <span style="color:#666">1</span>, l_balanced <span style="color:#a2f;font-weight:bold">and</span> r_balanced <span style="color:#a2f;font-weight:bold">and</span> <span style="color:#a2f">abs</span>(l_height <span style="color:#666">-</span> r_height) <span style="color:#666">&lt;=</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> dfs(root)[<span style="color:#666">1</span>]
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n) time || O(n) space</span>
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">is_balanced_dfs</span>(self, root: Optional[TreeNode]) <span style="color:#666">-&gt;</span> <span style="color:#a2f">bool</span>:
+</span></span><span style="display:flex;"><span>    stack <span style="color:#666">=</span> [(root, <span style="color:#666">0</span>, <span style="color:#a2f;font-weight:bold">False</span>)]
+</span></span><span style="display:flex;"><span>    heights <span style="color:#666">=</span> {}
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">while</span> stack:
+</span></span><span style="display:flex;"><span>        node, height, visited <span style="color:#666">=</span> stack<span style="color:#666">.</span>pop()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> <span style="color:#a2f;font-weight:bold">not</span> node:
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">continue</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> visited:
+</span></span><span style="display:flex;"><span>            l_height <span style="color:#666">=</span> heights<span style="color:#666">.</span>get(node<span style="color:#666">.</span>left, <span style="color:#666">0</span>)
+</span></span><span style="display:flex;"><span>            r_height <span style="color:#666">=</span> heights<span style="color:#666">.</span>get(node<span style="color:#666">.</span>right, <span style="color:#666">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">if</span> <span style="color:#a2f">abs</span>(l_height <span style="color:#666">-</span> r_height) <span style="color:#666">&gt;</span> <span style="color:#666">1</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#a2f;font-weight:bold">return</span> <span style="color:#a2f;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            heights[node] <span style="color:#666">=</span> <span style="color:#666">1</span> <span style="color:#666">+</span> <span style="color:#a2f">max</span>(l_height, r_height)
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>            stack<span style="color:#666">.</span>append((node, height, <span style="color:#a2f;font-weight:bold">True</span>))
+</span></span><span style="display:flex;"><span>            stack<span style="color:#666">.</span>append((node<span style="color:#666">.</span>left, height <span style="color:#666">+</span> <span style="color:#666">1</span>, <span style="color:#a2f;font-weight:bold">False</span>))
+</span></span><span style="display:flex;"><span>            stack<span style="color:#666">.</span>append((node<span style="color:#666">.</span>right, height <span style="color:#666">+</span> <span style="color:#666">1</span>, <span style="color:#a2f;font-weight:bold">False</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> <span style="color:#a2f;font-weight:bold">True</span>
 </span></span></code></pre></div><p>DFS is ideal for this problem because it allows us to compute the height of each subtree while simultaneously checking
 if the tree is balanced.</p>
 <p>In DFS, we recursively traverse down the tree, visiting a node&rsquo;s children before checking the node itself (hence &quot;
