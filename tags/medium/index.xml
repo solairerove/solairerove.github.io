@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Thu, 16 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1838. Frequency of the Most Frequent Element</title>
+      <link>https://solairerove.github.io/posts/frequency_of_the_most_frequent_element/</link>
+      <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/frequency_of_the_most_frequent_element/</guid>
+      <description># O(n * log(n)) time | O(log(n)) space def max_frequency(self, nums: List[int], k: int) -&amp;gt; int: nums.sort() low, res, total = 0, 0, 0 for high in range(len(nums)): total += nums[high] while nums[high] * (high - low + 1) - total &amp;gt; k: total -= nums[low] low += 1 res = max(res, high - low + 1) return res To solve this problem, we can use a sliding window approach. The idea is to find the longest subarray in which the difference between the maximum element and the minimum element (after incrementing any element up to k times) is at most k.</description>
+    </item>
+    
     <item>
       <title>113. Path Sum II</title>
       <link>https://solairerove.github.io/posts/path_sum_ii/</link>
