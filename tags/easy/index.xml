@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>121. Best Time to Buy and Sell Stock</title>
+      <link>https://solairerove.github.io/posts/best_time_to_buy_and_sell_stock/</link>
+      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/best_time_to_buy_and_sell_stock/</guid>
+      <description># O(n) time || O(1) space def max_profit(self, prices: List[int]) -&amp;gt; int: min_price, res = prices[0], 0 for price in prices[1:]: if price &amp;lt; min_price: min_price = price else: res = max(res, price - min_price) return res The idea is to find the maximum difference between two numbers in the array where the smaller number comes before the larger number. This difference represents the maximum profit.</description>
+    </item>
+    
     <item>
       <title>110. Balanced Binary Tree</title>
       <link>https://solairerove.github.io/posts/balanced_binary_tree/</link>
