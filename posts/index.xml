@@ -18,6 +18,15 @@
     </item>
     
     <item>
+      <title>122. Best Time to Buy and Sell Stock II</title>
+      <link>https://solairerove.github.io/posts/best_time_to_buy_and_sell_stock_ii/</link>
+      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/best_time_to_buy_and_sell_stock_ii/</guid>
+      <description># O(n) time || O(1) space def max_profit(self, prices: List[int]) -&amp;gt; int: res = 0 for i in range(1, len(prices)): if prices[i] &amp;gt; prices[i - 1]: res += prices[i] - prices[i - 1] return res This LeetCode problem asks for the maximum profit that can be achieved by buying and selling stocks, with the possibility of conducting multiple transactions. However, you can&amp;rsquo;t engage in multiple transactions at once (i.e., you must sell the stock before you buy again).</description>
+    </item>
+    
+    <item>
       <title>1838. Frequency of the Most Frequent Element</title>
       <link>https://solairerove.github.io/posts/frequency_of_the_most_frequent_element/</link>
       <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
