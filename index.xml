@@ -9,6 +9,15 @@
     <copyright>© solairerove</copyright>
     <lastBuildDate>Wed, 22 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>309. Best Time to Buy and Sell Stock with Cooldown</title>
+      <link>https://solairerove.github.io/posts/best_time_to_buy_and_sell_stock_with_cooldown/</link>
+      <pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/best_time_to_buy_and_sell_stock_with_cooldown/</guid>
+      <description># O(n) time || O(1) space def max_profit(self, prices: List[int]) -&amp;gt; int: buy, sell, cooldown = -prices[0], 0, 0 for price in prices[1:]: _buy = max(buy, cooldown - price) _sell = buy + price _cooldown = max(cooldown, sell) buy, sell, cooldown = _buy, _sell, _cooldown return max(sell, cooldown) For this LeetCode problem, the challenge is to find the maximum profit from buying and selling stocks with a constraint: after selling a stock, you must have a cooldown period of one day before you can buy again.</description>
+    </item>
+    
+    <item>
       <title>714. Best Time to Buy and Sell Stock with Transaction Fee</title>
       <link>https://solairerove.github.io/posts/best_time_to_buy_and_sell_stock_with_transaction_fee/</link>
       <pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate>
