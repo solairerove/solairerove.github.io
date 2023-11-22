@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Tue, 21 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>714. Best Time to Buy and Sell Stock with Transaction Fee</title>
+      <link>https://solairerove.github.io/posts/best_time_to_buy_and_sell_stock_with_transaction_fee/</link>
+      <pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/best_time_to_buy_and_sell_stock_with_transaction_fee/</guid>
+      <description># O(n) time || O(1) space def max_profit(self, prices: List[int], fee: int) -&amp;gt; int: res, hold = 0, -prices[0] for price in prices[1:]: res = max(res, hold + price - fee) hold = max(hold, res - price) return res A dynamic programming approach can be efficient here. The idea is to keep track of two variables at each step:
+Cash: The maximum profit we can have if we don&amp;rsquo;t hold a stock at the end of day i.</description>
+    </item>
+    
     <item>
       <title>121. Best Time to Buy and Sell Stock</title>
       <link>https://solairerove.github.io/posts/best_time_to_buy_and_sell_stock/</link>
