@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Wed, 22 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>arrays</title>
+      <link>https://solairerove.github.io/tags/arrays/</link>
+      <pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/tags/arrays/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>easy</title>
+      <link>https://solairerove.github.io/tags/easy/</link>
+      <pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/tags/easy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://solairerove.github.io/tags/math/</link>
+      <pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/tags/math/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>array</title>
       <link>https://solairerove.github.io/tags/array/</link>
@@ -32,15 +59,6 @@
       <pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/tags/medium/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>easy</title>
-      <link>https://solairerove.github.io/tags/easy/</link>
-      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://solairerove.github.io/tags/easy/</guid>
       <description></description>
     </item>
     
@@ -86,15 +104,6 @@
       <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/tags/heap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>arrays</title>
-      <link>https://solairerove.github.io/tags/arrays/</link>
-      <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://solairerove.github.io/tags/arrays/</guid>
       <description></description>
     </item>
     
@@ -149,15 +158,6 @@
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/tags/bit-manipulation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>math</title>
-      <link>https://solairerove.github.io/tags/math/</link>
-      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://solairerove.github.io/tags/math/</guid>
       <description></description>
     </item>
     

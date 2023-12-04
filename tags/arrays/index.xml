@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Mon, 06 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/arrays/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/arrays/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>13. Roman to Integer</title>
+      <link>https://solairerove.github.io/posts/roman_to_integer/</link>
+      <pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/roman_to_integer/</guid>
+      <description># O(1) time || O(1) space def roman_to_int(self, s: str) -&amp;gt; int: roman = {&amp;#34;I&amp;#34;: 1, &amp;#34;V&amp;#34;: 5, &amp;#34;X&amp;#34;: 10, &amp;#34;L&amp;#34;: 50, &amp;#34;C&amp;#34;: 100, &amp;#34;D&amp;#34;: 500, &amp;#34;M&amp;#34;: 1000, &amp;#34;Z&amp;#34;: 0} res = 0 s = s + &amp;#34;Z&amp;#34; for i in range(1, len(s)): if roman[s[i]] &amp;lt;= roman[s[i - 1]]: res += roman[s[i - 1]] else: res -= roman[s[i - 1]] return res here&amp;rsquo;s trick. start from 1 element. if previous is bigger or equal add prev, in other case subtract it.</description>
+    </item>
+    
     <item>
       <title>763. Partition Labels</title>
       <link>https://solairerove.github.io/posts/partition_labels/</link>
