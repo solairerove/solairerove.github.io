@@ -60,15 +60,14 @@
 		<section class="body">
 			<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n) time || O(n) space</span>
 </span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">is_valid</span>(self, s: <span style="color:#a2f">str</span>) <span style="color:#666">-&gt;</span> <span style="color:#a2f">bool</span>:
-</span></span><span style="display:flex;"><span>    close_to_open, stack <span style="color:#666">=</span> {<span style="color:#b44">&#34;)&#34;</span>: <span style="color:#b44">&#34;(&#34;</span>, <span style="color:#b44">&#34;]&#34;</span>: <span style="color:#b44">&#34;[&#34;</span>, <span style="color:#b44">&#34;}&#34;</span>: <span style="color:#b44">&#34;{&#34;</span>}, []
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> c <span style="color:#a2f;font-weight:bold">in</span> s:
-</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> c <span style="color:#a2f;font-weight:bold">not</span> <span style="color:#a2f;font-weight:bold">in</span> close_to_open:
-</span></span><span style="display:flex;"><span>            stack<span style="color:#666">.</span>append(c)
-</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">elif</span> stack:
-</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">if</span> stack<span style="color:#666">.</span>pop() <span style="color:#666">!=</span> close_to_open[c]:
+</span></span><span style="display:flex;"><span>    brackets <span style="color:#666">=</span> {<span style="color:#b44">&#39;)&#39;</span>: <span style="color:#b44">&#39;(&#39;</span>, <span style="color:#b44">&#39;]&#39;</span>: <span style="color:#b44">&#39;[&#39;</span>, <span style="color:#b44">&#39;}&#39;</span>: <span style="color:#b44">&#39;{&#39;</span>}
+</span></span><span style="display:flex;"><span>    stack <span style="color:#666">=</span> []
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> br <span style="color:#a2f;font-weight:bold">in</span> s:
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> br <span style="color:#a2f;font-weight:bold">in</span> brackets:
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">if</span> <span style="color:#a2f;font-weight:bold">not</span> stack <span style="color:#a2f;font-weight:bold">or</span> stack<span style="color:#666">.</span>pop() <span style="color:#666">!=</span> brackets[br]:
 </span></span><span style="display:flex;"><span>                <span style="color:#a2f;font-weight:bold">return</span> <span style="color:#a2f;font-weight:bold">False</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">else</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">return</span> <span style="color:#a2f;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span>            stack<span style="color:#666">.</span>append(br)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> <span style="color:#a2f;font-weight:bold">not</span> stack
 </span></span></code></pre></div><ol>

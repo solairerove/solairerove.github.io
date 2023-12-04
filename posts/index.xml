@@ -255,7 +255,7 @@ Steps of Quickselect: Choose a &amp;lsquo;pivot&amp;rsquo; element from the list
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/posts/valid_parentheses/</guid>
-      <description># O(n) time || O(n) space def is_valid(self, s: str) -&amp;gt; bool: close_to_open, stack = {&amp;#34;)&amp;#34;: &amp;#34;(&amp;#34;, &amp;#34;]&amp;#34;: &amp;#34;[&amp;#34;, &amp;#34;}&amp;#34;: &amp;#34;{&amp;#34;}, [] for c in s: if c not in close_to_open: stack.append(c) elif stack: if stack.pop() != close_to_open[c]: return False else: return False return not stack Initialize an empty stack. Traverse the string character by character. For each character: If it&amp;rsquo;s an open bracket (&amp;rsquo;(&amp;rsquo;, &amp;lsquo;{&amp;rsquo;, or &amp;lsquo;[&amp;rsquo;), push it onto the stack.</description>
+      <description># O(n) time || O(n) space def is_valid(self, s: str) -&amp;gt; bool: brackets = {&amp;#39;)&amp;#39;: &amp;#39;(&amp;#39;, &amp;#39;]&amp;#39;: &amp;#39;[&amp;#39;, &amp;#39;}&amp;#39;: &amp;#39;{&amp;#39;} stack = [] for br in s: if br in brackets: if not stack or stack.pop() != brackets[br]: return False else: stack.append(br) return not stack Initialize an empty stack. Traverse the string character by character. For each character: If it&amp;rsquo;s an open bracket (&amp;rsquo;(&amp;rsquo;, &amp;lsquo;{&amp;rsquo;, or &amp;lsquo;[&amp;rsquo;), push it onto the stack.</description>
     </item>
     
     <item>
