@@ -86,28 +86,27 @@
 </span></span><span style="display:flex;"><span>                high <span style="color:#666">-=</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> res
-</span></span></code></pre></div><p>You can solve this problem using a sorting-based approach combined with the two-pointer technique. <br>
-Here&rsquo;s a step-by-step guide on how to do it:</p>
-<pre><code>Sort the Array: First, sort the array in ascending order.
-This makes it easier to avoid duplicate triplets and use the two-pointer technique.
-
-Initialize a Result List: Create a list to store the triplets.
-
-Iterate Through the Array: Loop through the array with a for loop.
-Let’s call the current element nums[i]. For each nums[i],
-you are going to find pairs of numbers in the subarray nums[i+1:] that add up to -nums[i].
-
-Two-Pointer Technique: Use two pointers, left and right, initialized at i+1 and len(nums) - 1, respectively.
-In each iteration, check if nums[i] + nums[left] + nums[right] is 0. 
-If it is, add [nums[i], nums[left], nums[right]] to the result list, and move both pointers towards the center.
-If the sum is less than 0, move the left pointer to the right. 
-If the sum is greater than 0, move the right pointer to the left.
-
-Avoid Duplicate Triplets: Ensure that you don’t add duplicate triplets to the result list. 
-You can do this by skipping over duplicate values of nums[i], nums[left], and nums[right].
-
-Return the Result: After the loop, return the result list.
-</code></pre>
+</span></span></code></pre></div><p>You can solve this problem using a sorting-based approach combined with the two-pointer technique. Here&rsquo;s a step-by-step
+guide on how to do it:</p>
+<ul>
+<li>Sort the Array: First, sort the array in ascending order. This makes it easier to avoid duplicate triplets and use the
+two-pointer technique.</li>
+<li>Initialize a Result List: Create a list to store the triplets.</li>
+<li>Iterate Through the Array: Loop through the array with a for loop.</li>
+<li>Let’s call the current element <code>nums[i]</code>. For each <code>nums[i]</code>, you are going to find pairs of numbers in the subarray
+<code>nums[i+1:]</code> that add up to <code>-nums[i]</code>.</li>
+<li>Two-Pointer Technique: Use two pointers, left and right, initialized at i+1 and len(nums) - 1, respectively. In each
+iteration, check if <code>nums[i] + nums[left] + nums[right]</code> is 0.
+<ul>
+<li>If it is, add <code>[nums[i], nums[left], nums[right]]</code> to the result list, and move both pointers towards the center.</li>
+<li>If the sum is less than 0, move the left pointer to the right.</li>
+<li>If the sum is greater than 0, move the right pointer to the left.</li>
+</ul>
+</li>
+<li>Avoid Duplicate Triplets: Ensure that you don’t add duplicate triplets to the result list. You can do this by skipping
+over duplicate values of <code>nums[i]</code>, <code>nums[left]</code>, and <code>nums[right]</code>.</li>
+<li>Return the Result: After the loop, return the result list.</li>
+</ul>
 
 		</section>
 
