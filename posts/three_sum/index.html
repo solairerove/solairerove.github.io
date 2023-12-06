@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>15. 3Sum - Headstone lamp - leetcode grind (48)</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>15. 3Sum - Headstone lamp - leetcode grind (54)</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="sort array, iterate over, avoid duplicates, move borders" />
 	<meta property="og:image" content=""/>
 	<meta property="og:title" content="15. 3Sum" />
@@ -35,7 +35,7 @@
 <body>
         <div class="content"><header>
 	<div class="main">
-		<a href="https://solairerove.github.io/">Headstone lamp - leetcode grind (48)</a>
+		<a href="https://solairerove.github.io/">Headstone lamp - leetcode grind (54)</a>
 	</div>
 	<nav>
 		
@@ -61,17 +61,17 @@
 			<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n^2) time || O(1) space</span>
 </span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">three_sum</span>(self, nums: List[<span style="color:#a2f">int</span>]) <span style="color:#666">-&gt;</span> List[List[<span style="color:#a2f">int</span>]]:
 </span></span><span style="display:flex;"><span>    nums<span style="color:#666">.</span>sort()
-</span></span><span style="display:flex;"><span>    triplets <span style="color:#666">=</span> []
+</span></span><span style="display:flex;"><span>    res <span style="color:#666">=</span> []
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(<span style="color:#a2f">len</span>(nums) <span style="color:#666">-</span> <span style="color:#666">2</span>):
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> i <span style="color:#666">&gt;</span> <span style="color:#666">0</span> <span style="color:#a2f;font-weight:bold">and</span> nums[i] <span style="color:#666">==</span> nums[i <span style="color:#666">-</span> <span style="color:#666">1</span>]:
 </span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">continue</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        low, high <span style="color:#666">=</span> i <span style="color:#666">+</span> <span style="color:#666">1</span>, <span style="color:#a2f">len</span>(nums) <span style="color:#666">-</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">while</span> low <span style="color:#666">&lt;</span> high:
-</span></span><span style="display:flex;"><span>            sum_ <span style="color:#666">=</span> nums[i] <span style="color:#666">+</span> nums[low] <span style="color:#666">+</span> nums[high]
+</span></span><span style="display:flex;"><span>            _sum <span style="color:#666">=</span> nums[i] <span style="color:#666">+</span> nums[low] <span style="color:#666">+</span> nums[high]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">if</span> sum_ <span style="color:#666">==</span> <span style="color:#666">0</span>:
-</span></span><span style="display:flex;"><span>                triplets<span style="color:#666">.</span>append([nums[i], nums[low], nums[high]])
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">if</span> _sum <span style="color:#666">==</span> <span style="color:#666">0</span>:
+</span></span><span style="display:flex;"><span>                res<span style="color:#666">.</span>append([nums[i], nums[low], nums[high]])
 </span></span><span style="display:flex;"><span>                low, high <span style="color:#666">=</span> low <span style="color:#666">+</span> <span style="color:#666">1</span>, high <span style="color:#666">-</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>                <span style="color:#a2f;font-weight:bold">while</span> low <span style="color:#666">&lt;</span> high <span style="color:#a2f;font-weight:bold">and</span> nums[low] <span style="color:#666">==</span> nums[low <span style="color:#666">-</span> <span style="color:#666">1</span>]:
@@ -80,12 +80,12 @@
 </span></span><span style="display:flex;"><span>                <span style="color:#a2f;font-weight:bold">while</span> low <span style="color:#666">&lt;</span> high <span style="color:#a2f;font-weight:bold">and</span> nums[high] <span style="color:#666">==</span> nums[high <span style="color:#666">+</span> <span style="color:#666">1</span>]:
 </span></span><span style="display:flex;"><span>                    high <span style="color:#666">-=</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">elif</span> sum_ <span style="color:#666">&lt;</span> <span style="color:#666">0</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">elif</span> _sum <span style="color:#666">&lt;</span> <span style="color:#666">0</span>:
 </span></span><span style="display:flex;"><span>                low <span style="color:#666">+=</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">else</span>:
 </span></span><span style="display:flex;"><span>                high <span style="color:#666">-=</span> <span style="color:#666">1</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> triplets
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> res
 </span></span></code></pre></div><p>You can solve this problem using a sorting-based approach combined with the two-pointer technique. <br>
 Here&rsquo;s a step-by-step guide on how to do it:</p>
 <pre><code>Sort the Array: First, sort the array in ascending order.
@@ -117,7 +117,7 @@ Return the Result: After the loop, return the result list.
 			<nav class="nav tags">
 				<ul class="tags">
 					
-					<li><a href="/tags/array">array</a></li>
+					<li><a href="/tags/arrays">arrays</a></li>
 					
 					<li><a href="/tags/medium">medium</a></li>
 					
