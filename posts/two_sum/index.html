@@ -60,10 +60,11 @@
 		<section class="body">
 			<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n) time || O(n) space</span>
 </span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">two_sum</span>(self, nums: List[<span style="color:#a2f">int</span>], target: <span style="color:#a2f">int</span>) <span style="color:#666">-&gt;</span> List[<span style="color:#a2f">int</span>]:
-</span></span><span style="display:flex;"><span>    dic <span style="color:#666">=</span> {}
+</span></span><span style="display:flex;"><span>    dic <span style="color:#666">=</span> collections<span style="color:#666">.</span>defaultdict(<span style="color:#a2f">int</span>)
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> i, num <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">enumerate</span>(nums):
 </span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> target <span style="color:#666">-</span> num <span style="color:#a2f;font-weight:bold">in</span> dic:
-</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">return</span> [dic[target <span style="color:#666">-</span> num], i]
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">return</span> [i, dic[target <span style="color:#666">-</span> num]]
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        dic[num] <span style="color:#666">=</span> i
 </span></span></code></pre></div><p>In this solution, we use a dictionary <code>dic</code> to store the numbers encountered so far along with their indices. <br>
 As we iterate through the array, we check if the complement <code>(target - num)</code> exists in the num_map dictionary. <br>
@@ -93,7 +94,7 @@ Otherwise, we add the current number and its index to the dictionary.</p>
   <div style="display:flex"><a class="soc" href="https://github.com/solairerove" rel="me" title="GitHub"><i data-feather="github"></i></a>
     <a class="border"></a></div>
   <div class="footer-info">
-    2023  © solairerove |  <a
+    2024  © solairerove |  <a
       href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
   </div>
 </footer>

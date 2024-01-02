@@ -345,7 +345,7 @@ Steps of Quickselect: Choose a &amp;lsquo;pivot&amp;rsquo; element from the list
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/posts/two_sum/</guid>
-      <description># O(n) time || O(n) space def two_sum(self, nums: List[int], target: int) -&amp;gt; List[int]: dic = {} for i, num in enumerate(nums): if target - num in dic: return [dic[target - num], i] dic[num] = i In this solution, we use a dictionary dic to store the numbers encountered so far along with their indices. As we iterate through the array, we check if the complement (target - num) exists in the num_map dictionary.</description>
+      <description># O(n) time || O(n) space def two_sum(self, nums: List[int], target: int) -&amp;gt; List[int]: dic = collections.defaultdict(int) for i, num in enumerate(nums): if target - num in dic: return [i, dic[target - num]] dic[num] = i In this solution, we use a dictionary dic to store the numbers encountered so far along with their indices. As we iterate through the array, we check if the complement (target - num) exists in the num_map dictionary.</description>
     </item>
     
     <item>
