@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Thu, 16 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/dfs-bfs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/dfs-bfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>226. Invert Binary Tree</title>
+      <link>https://solairerove.github.io/posts/invert_binary_tree/</link>
+      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/invert_binary_tree/</guid>
+      <description># O(n) time || O(h) space def invert_tree(self, root: Optional[TreeNode]) -&amp;gt; Optional[TreeNode]: if root: root.left, root.right = invert_tree(self, root.right), invert_tree(self, root.left) return root # O(n) time || O(h) space def invert_tree_stack(self, root: Optional[TreeNode]) -&amp;gt; Optional[TreeNode]: if not root: return root stack = [root] while stack: node = stack.pop() node.left, node.right = node.right, node.left if node.left: stack.append(node.left) if node.right: stack.append(node.right) return root </description>
+    </item>
+    
     <item>
       <title>113. Path Sum II</title>
       <link>https://solairerove.github.io/posts/path_sum_ii/</link>

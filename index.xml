@@ -18,6 +18,15 @@
     </item>
     
     <item>
+      <title>226. Invert Binary Tree</title>
+      <link>https://solairerove.github.io/posts/invert_binary_tree/</link>
+      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/invert_binary_tree/</guid>
+      <description># O(n) time || O(h) space def invert_tree(self, root: Optional[TreeNode]) -&amp;gt; Optional[TreeNode]: if root: root.left, root.right = invert_tree(self, root.right), invert_tree(self, root.left) return root # O(n) time || O(h) space def invert_tree_stack(self, root: Optional[TreeNode]) -&amp;gt; Optional[TreeNode]: if not root: return root stack = [root] while stack: node = stack.pop() node.left, node.right = node.right, node.left if node.left: stack.append(node.left) if node.right: stack.append(node.right) return root </description>
+    </item>
+    
+    <item>
       <title>21. Merge Two Sorted Lists</title>
       <link>https://solairerove.github.io/posts/merge_two_sorted_lists/</link>
       <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>

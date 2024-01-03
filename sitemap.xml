@@ -5,7 +5,13 @@
     <loc>https://solairerove.github.io/posts/valid_palindrome/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://solairerove.github.io/posts/invert_binary_tree/</loc>
+    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://solairerove.github.io/tags/arrays/</loc>
+    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/tags/dfs-bfs/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/tags/easy/</loc>
@@ -18,6 +24,9 @@
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/tags/</loc>
+    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/tags/trees/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/posts/merge_two_sorted_lists/</loc>
@@ -57,12 +66,6 @@
     <lastmod>2023-11-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/posts/path_sum_ii/</loc>
-    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/tags/dfs-bfs/</loc>
-    <lastmod>2023-11-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/tags/trees/</loc>
     <lastmod>2023-11-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/posts/balanced_binary_tree/</loc>
