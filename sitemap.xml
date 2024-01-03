@@ -2,28 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://solairerove.github.io/posts/merge_two_sorted_lists/</loc>
-    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
+    <loc>https://solairerove.github.io/posts/valid_palindrome/</loc>
+    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/tags/arrays/</loc>
+    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/tags/easy/</loc>
-    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
+    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/</loc>
+    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/posts/</loc>
+    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/tags/</loc>
+    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/posts/merge_two_sorted_lists/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/tags/linked-list/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://solairerove.github.io/posts/</loc>
-    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/tags/</loc>
-    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://solairerove.github.io/posts/roman_to_integer/</loc>
-    <lastmod>2023-12-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/tags/arrays/</loc>
     <lastmod>2023-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/tags/math/</loc>

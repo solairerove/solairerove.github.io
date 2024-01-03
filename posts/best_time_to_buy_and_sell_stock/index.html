@@ -60,14 +60,12 @@
 		<section class="body">
 			<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n) time || O(1) space</span>
 </span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">max_profit</span>(self, prices: List[<span style="color:#a2f">int</span>]) <span style="color:#666">-&gt;</span> <span style="color:#a2f">int</span>:
-</span></span><span style="display:flex;"><span>    min_price, res <span style="color:#666">=</span> prices[<span style="color:#666">0</span>], <span style="color:#666">0</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> price <span style="color:#a2f;font-weight:bold">in</span> prices[<span style="color:#666">1</span>:]:
-</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">if</span> price <span style="color:#666">&lt;</span> min_price:
-</span></span><span style="display:flex;"><span>            min_price <span style="color:#666">=</span> price
-</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">else</span>:
-</span></span><span style="display:flex;"><span>            res <span style="color:#666">=</span> <span style="color:#a2f">max</span>(res, price <span style="color:#666">-</span> min_price)
+</span></span><span style="display:flex;"><span>    min_price, max_profit <span style="color:#666">=</span> prices[<span style="color:#666">0</span>], <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#a2f">range</span>(<span style="color:#666">1</span>, <span style="color:#a2f">len</span>(prices)):
+</span></span><span style="display:flex;"><span>        min_price <span style="color:#666">=</span> <span style="color:#a2f">min</span>(min_price, prices[i])
+</span></span><span style="display:flex;"><span>        max_profit <span style="color:#666">=</span> <span style="color:#a2f">max</span>(max_profit, prices[i] <span style="color:#666">-</span> min_price)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> res
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> max_profit
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n) time || O(1) space</span>
 </span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">max_profit_lambda</span>(self, prices: List[<span style="color:#a2f">int</span>]) <span style="color:#666">-&gt;</span> <span style="color:#a2f">int</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> reduce(<span style="color:#a2f;font-weight:bold">lambda</span> acc, price: (<span style="color:#a2f">min</span>(acc[<span style="color:#666">0</span>], price), <span style="color:#a2f">max</span>(acc[<span style="color:#666">1</span>], price <span style="color:#666">-</span> acc[<span style="color:#666">0</span>])), prices[<span style="color:#666">1</span>:], (prices[<span style="color:#666">0</span>], <span style="color:#666">0</span>))[<span style="color:#666">1</span>]

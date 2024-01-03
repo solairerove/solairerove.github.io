@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Tue, 02 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>125. Valid Palindrome</title>
+      <link>https://solairerove.github.io/posts/valid_palindrome/</link>
+      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/valid_palindrome/</guid>
+      <description># O(n) time || O(1) space def is_palindrome(self, s: str) -&amp;gt; bool: low, high = 0, len(s) - 1 while low &amp;lt;= high: while low &amp;lt; len(s) - 1 and not s[low].isalnum(): low += 1 while high &amp;gt;= 0 and not s[high].isalnum(): high -= 1 if s[low].lower() != s[high].lower(): return False low, high = low + 1, high - 1 return True </description>
+    </item>
+    
     <item>
       <title>21. Merge Two Sorted Lists</title>
       <link>https://solairerove.github.io/posts/merge_two_sorted_lists/</link>
@@ -51,7 +60,7 @@ Cash: The maximum profit we can have if we don&amp;rsquo;t hold a stock at the e
       <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/posts/best_time_to_buy_and_sell_stock/</guid>
-      <description># O(n) time || O(1) space def max_profit(self, prices: List[int]) -&amp;gt; int: min_price, res = prices[0], 0 for price in prices[1:]: if price &amp;lt; min_price: min_price = price else: res = max(res, price - min_price) return res # O(n) time || O(1) space def max_profit_lambda(self, prices: List[int]) -&amp;gt; int: return reduce(lambda acc, price: (min(acc[0], price), max(acc[1], price - acc[0])), prices[1:], (prices[0], 0))[1] The idea is to find the maximum difference between two numbers in the array where the smaller number comes before the larger number.</description>
+      <description># O(n) time || O(1) space def max_profit(self, prices: List[int]) -&amp;gt; int: min_price, max_profit = prices[0], 0 for i in range(1, len(prices)): min_price = min(min_price, prices[i]) max_profit = max(max_profit, prices[i] - min_price) return max_profit # O(n) time || O(1) space def max_profit_lambda(self, prices: List[int]) -&amp;gt; int: return reduce(lambda acc, price: (min(acc[0], price), max(acc[1], price - acc[0])), prices[1:], (prices[0], 0))[1] The idea is to find the maximum difference between two numbers in the array where the smaller number comes before the larger number.</description>
     </item>
     
     <item>
