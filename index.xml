@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Wed, 03 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>300. Longest Increasing Subsequence</title>
+      <link>https://solairerove.github.io/posts/longest_increasing_subsequence/</link>
+      <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/longest_increasing_subsequence/</guid>
+      <description># O(n^2) time || O(n) space def length_of_lis_bottom_up(self, nums: List[int]) -&amp;gt; int: n = len(nums) dp = [1] * n for i in range(1, n): for j in range(i): if nums[i] &amp;gt; nums[j]: dp[i] = max(dp[i], dp[j] + 1) return max(dp) # O(n * log(n)) time || O(n) space def length_of_lis(self, nums: List[int]) -&amp;gt; int: sub = [] for n in nums: i = bisect_left(sub, n) if i == len(sub): sub.</description>
+    </item>
+    
     <item>
       <title>125. Valid Palindrome</title>
       <link>https://solairerove.github.io/posts/valid_palindrome/</link>
