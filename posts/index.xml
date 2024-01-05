@@ -14,7 +14,7 @@
       <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://solairerove.github.io/posts/longest_increasing_subsequence/</guid>
-      <description># O(n^2) time || O(n) space def length_of_lis_bottom_up(self, nums: List[int]) -&amp;gt; int: n = len(nums) dp = [1] * n for i in range(1, n): for j in range(i): if nums[i] &amp;gt; nums[j]: dp[i] = max(dp[i], dp[j] + 1) return max(dp) # O(n * log(n)) time || O(n) space def length_of_lis(self, nums: List[int]) -&amp;gt; int: sub = [] for n in nums: i = bisect_left(sub, n) if i == len(sub): sub.</description>
+      <description># O(n^2) time || O(n) space def length_of_lis_bottom_up(self, nums: List[int]) -&amp;gt; int: n = len(nums) dp = [1] * n for i in range(1, n): for j in range(i): if nums[i] &amp;gt; nums[j]: dp[i] = max(dp[i], dp[j] + 1) return max(dp) # O(n * log(n)) time || O(n) space def length_of_lis_bs(self, nums: List[int]) -&amp;gt; int: tails = [0] * len(nums) res = 0 for num in nums: low, high = 0, res while low !</description>
     </item>
     
     <item>

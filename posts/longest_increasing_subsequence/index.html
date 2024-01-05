@@ -69,6 +69,23 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> <span style="color:#a2f">max</span>(dp)
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n * log(n)) time || O(n) space</span>
+</span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">length_of_lis_bs</span>(self, nums: List[<span style="color:#a2f">int</span>]) <span style="color:#666">-&gt;</span> <span style="color:#a2f">int</span>:
+</span></span><span style="display:flex;"><span>    tails <span style="color:#666">=</span> [<span style="color:#666">0</span>] <span style="color:#666">*</span> <span style="color:#a2f">len</span>(nums)
+</span></span><span style="display:flex;"><span>    res <span style="color:#666">=</span> <span style="color:#666">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> num <span style="color:#a2f;font-weight:bold">in</span> nums:
+</span></span><span style="display:flex;"><span>        low, high <span style="color:#666">=</span> <span style="color:#666">0</span>, res
+</span></span><span style="display:flex;"><span>        <span style="color:#a2f;font-weight:bold">while</span> low <span style="color:#666">!=</span> high:
+</span></span><span style="display:flex;"><span>            mid <span style="color:#666">=</span> low <span style="color:#666">+</span> (high <span style="color:#666">-</span> low) <span style="color:#666">//</span> <span style="color:#666">2</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">if</span> tails[mid] <span style="color:#666">&lt;</span> num:
+</span></span><span style="display:flex;"><span>                low <span style="color:#666">=</span> mid <span style="color:#666">+</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a2f;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span>                high <span style="color:#666">=</span> mid
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        tails[low] <span style="color:#666">=</span> num
+</span></span><span style="display:flex;"><span>        res <span style="color:#666">=</span> <span style="color:#a2f">max</span>(res, low <span style="color:#666">+</span> <span style="color:#666">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">return</span> res
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># O(n * log(n)) time || O(n) space</span>
 </span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">def</span> <span style="color:#00a000">length_of_lis</span>(self, nums: List[<span style="color:#a2f">int</span>]) <span style="color:#666">-&gt;</span> <span style="color:#a2f">int</span>:
 </span></span><span style="display:flex;"><span>    sub <span style="color:#666">=</span> []
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">for</span> n <span style="color:#a2f;font-weight:bold">in</span> nums:
