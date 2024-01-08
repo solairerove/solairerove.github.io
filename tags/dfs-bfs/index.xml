@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Wed, 03 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/dfs-bfs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/tags/dfs-bfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>938. Range Sum of BST</title>
+      <link>https://solairerove.github.io/posts/range_sum_of_bst/</link>
+      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/range_sum_of_bst/</guid>
+      <description># O(n) time || O(h) space # n - number of all nodes # h - height of tree def range_sum_bst(self, root: Optional[TreeNode], low: int, high: int) -&amp;gt; int: if not root: return 0 if root.val &amp;lt; low: return range_sum_bst(self, root.right, low, high) elif root.val &amp;gt; high: return range_sum_bst(self, root.left, low, high) return root.val + range_sum_bst(self, root.left, low, high) + range_sum_bst(self, root.right, low, high) # O(n) time || O(h) space def range_sum_bst_iterative(self, root: Optional[TreeNode], low: int, high: int) -&amp;gt; int: if not root: return 0 stack, res = [root], 0 while stack: node = stack.</description>
+    </item>
+    
     <item>
       <title>226. Invert Binary Tree</title>
       <link>https://solairerove.github.io/posts/invert_binary_tree/</link>

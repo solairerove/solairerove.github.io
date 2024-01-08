@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://solairerove.github.io/posts/range_sum_of_bst/</loc>
+    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/tags/dfs-bfs/</loc>
+    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/tags/easy/</loc>
+    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/</loc>
+    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/posts/</loc>
+    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/tags/</loc>
+    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://solairerove.github.io/tags/trees/</loc>
+    <lastmod>2024-01-08T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://solairerove.github.io/posts/longest_increasing_subsequence/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,31 +32,13 @@
     <loc>https://solairerove.github.io/tags/dp/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://solairerove.github.io/</loc>
-    <lastmod>2024-01-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://solairerove.github.io/tags/medium/</loc>
-    <lastmod>2024-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/posts/</loc>
-    <lastmod>2024-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/tags/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/posts/valid_palindrome/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/posts/invert_binary_tree/</loc>
-    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/tags/dfs-bfs/</loc>
-    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/tags/easy/</loc>
-    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://solairerove.github.io/tags/trees/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://solairerove.github.io/posts/merge_two_sorted_lists/</loc>
