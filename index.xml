@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Mon, 08 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>872. Leaf-Similar Trees</title>
+      <link>https://solairerove.github.io/posts/leaf_similar_trees/</link>
+      <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/leaf_similar_trees/</guid>
+      <description># O(n) time || O(h) space # n - number of all nodes # h - height of tree def leaf_similar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -&amp;gt; bool: def dfs(node: TreeNode): if not node: return [] if not node.left and not node.right: return [node.val] return dfs(node.left) + dfs(node.right) return dfs(root1) == dfs(root2) The approach to solving this problem involves two main steps:
+Traverse each tree to collect its leaf values: We can do this using either depth-first search (DFS) or breadth-first search (BFS).</description>
+    </item>
+    
     <item>
       <title>938. Range Sum of BST</title>
       <link>https://solairerove.github.io/posts/range_sum_of_bst/</link>
