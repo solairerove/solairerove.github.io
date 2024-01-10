@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
-    <lastBuildDate>Tue, 09 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://solairerove.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>733. Flood Fill</title>
+      <link>https://solairerove.github.io/posts/flood_fill/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/flood_fill/</guid>
+      <description># O(n) time || O(n) space def flood_fill(self, image: List[List[int]], sr: int, sc: int, color: int) -&amp;gt; List[List[int]]: rows, cols = len(image), len(image[0]) original_color = image[sr][sc] if original_color == color: return image def dfs(r, c): if 0 &amp;lt;= r &amp;lt; rows and 0 &amp;lt;= c &amp;lt; cols and image[r][c] == original_color: image[r][c] = color dfs(r - 1, c) dfs(r + 1, c) dfs(r, c - 1) dfs(r, c + 1) dfs(sr, sc) return image Get the original color of the pixel at (sr, sc).</description>
+    </item>
+    
     <item>
       <title>872. Leaf-Similar Trees</title>
       <link>https://solairerove.github.io/posts/leaf_similar_trees/</link>
