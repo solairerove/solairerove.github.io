@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>trees on Headstone lamp - leetcode grind (60)</title>
+    <title>trees on Headstone lamp - leetcode grind (62)</title>
     <link>https://solairerove.github.io/tags/trees/</link>
-    <description>Recent content in trees on Headstone lamp - leetcode grind (60)</description>
+    <description>Recent content in trees on Headstone lamp - leetcode grind (62)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© solairerove</copyright>
@@ -80,6 +80,15 @@ Traverse each tree to collect its leaf values: We can do this using either depth
       
       <guid>https://solairerove.github.io/posts/symmetric_tree/</guid>
       <description># O(n) time || O(n) space def is_symmetric_rec(self, root: Optional[TreeNode]) -&amp;gt; bool: def is_mirror_tree(node1, node2): if not node1 and not node2: return True if not node1 or not node2 or node1.val != node2.val: return False return is_mirror_tree(node1.left, node2.right) and is_mirror_tree(node1.right, node2.left) return is_mirror_tree(root.left, root.right) # O(n) time || O(n) space def is_symmetric_dfs(self, root: Optional[TreeNode]) -&amp;gt; bool: stack = [(root.left, root.right)] while stack: left, right = stack.pop() if not left and not right: continue if not left or not right or left.</description>
+    </item>
+    
+    <item>
+      <title>235. Lowest Common Ancestor of a Binary Search Tree</title>
+      <link>https://solairerove.github.io/posts/lowest_common_ancestor_of_a_binary_search_tree/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://solairerove.github.io/posts/lowest_common_ancestor_of_a_binary_search_tree/</guid>
+      <description># O(h) time || O(h) space def lowest_common_ancestor_dfs(self, root: TreeNode, p: TreeNode, q: TreeNode) -&amp;gt; Optional[TreeNode]: def dfs(node): if not node: return None if node.val &amp;lt; p.val and node.val &amp;lt; q.val: return dfs(node.right) if node.val &amp;gt; p.val and node.val &amp;gt; q.val: return dfs(node.left) return node return dfs(root) Start from the root node. Compare the values of the root with p and q: If both p and q are greater than the root, then LCA lies in the right subtree.</description>
     </item>
     
   </channel>
